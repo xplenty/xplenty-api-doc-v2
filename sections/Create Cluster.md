@@ -1,4 +1,4 @@
-# Create Cluster
+## Create Cluster
 
 ### Description
 This call creates a new cluster. A cluster is a group of machines ("nodes") allocated to your account. The number of nodes in the cluster is determined by the "plan_id" value that you supply to the call. While the cluster is active, only your account's users can run jobs on the cluster.
