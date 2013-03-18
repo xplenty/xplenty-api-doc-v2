@@ -124,7 +124,7 @@ Once you have an API key, you can either attach it to each request as a "key" pa
 
     curl -H "Accept: application/vnd.xplenty+json" -u apikeyhere: https://api.xplenty.com/clusters
 
-<a id="XplentyAPI" name="id="XplentyAPI"">
+<a id="XplentyAPI" name="XplentyAPI">
 ## Xplenty REST API
 </a>
 
