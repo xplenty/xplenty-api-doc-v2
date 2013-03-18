@@ -10,7 +10,7 @@ You can choose to use the [Xplenty REST API](#XplentyAPI), or one of its wrapper
 These are the topics covered on this page:
 * [Getting Started](#GettingStarted)
 * [Xplenty Terms](#XplentyTerms)
-* [REST Interface Specifications](#"RESTSpec")
+* [REST Interface Specifications](#RESTSpec)
 * [Security](#Security)
 * [Xplenty REST API](#XplentyAPI)
 * [Rate Limits](#RateLimits)
