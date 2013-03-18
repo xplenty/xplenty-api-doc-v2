@@ -7,7 +7,7 @@ You can choose to use the [Xplenty REST API](https://github.com/xplenty/xplenty-
 
 ## Getting Started
 
-For a quick overview of how to get started with the Xplenty RESI API, you can read:
+For a quick overview of how to get started with the Xplenty REST API, you can read:
 * [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Control%20and%20Monitoring%20Tasks.md)
 * [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Typical%20Workflow.md)
 
