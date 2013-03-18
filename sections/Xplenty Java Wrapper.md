@@ -1,3 +1,5 @@
+## Xplenty Java Wrapper
+
 The Xplenty jar is a Java artifact that provides a simple wrapper for the Xplenty REST API. 
 To use it, create an XplentyAPI object and call its methods to access the Xplenty API.
 This page describes the available XplentyAPI methods.
