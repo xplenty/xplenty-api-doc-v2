@@ -12,7 +12,7 @@ Here are the steps of a typical workflow for running a job using the Xplenty API
 * [Step 8: Verify Cluster Termination](#VerifyClusterTermination)
 
 ***
-<a id="CreateCluster">
+<a id="CreateCluster" name="CreateCluster">
 ### Step 1: Create a Cluster
 </a>
 Create a new cluster according to the required cluster plan. 
@@ -44,7 +44,7 @@ Create a new cluster according to the required cluster plan.
 ```
 
 ***
-<a name="VerifyCluster">
+<a name="VerifyCluster" id="VerifyCluster">
 ### Step 2: Verify Cluster Initialization
 </a>
 Poll the cluster status and verify that it changes to the "available" value. When requesting cluster information, the cluster ID must appear at the end of the cluster URL.
@@ -70,7 +70,7 @@ Poll the cluster status and verify that it changes to the "available" value. Whe
     }
 ```
 ***
-<a id="RunJob">
+<a id="RunJob" name="RunJob">
 ### Step 3: Run a Job
 </a>
 Request to run a new job, passing values for the cluster ID, the package ID, and variables that determine which data will be processed, where the output will be written, and any other custom variables you have defined in the package. 
@@ -110,7 +110,7 @@ Request to run a new job, passing values for the cluster ID, the package ID, and
     }
 ```
 ***
-<a id="VerifyJob">
+<a id="VerifyJob" name="VerifyJob">
 ### Step 4: Verify Job Initialization
 </a>
 Poll the job's status to verify that it changes to the "running" value. When requesting job information, the job ID must appear at the end of the job URL.
@@ -144,7 +144,7 @@ Poll the job's status to verify that it changes to the "running" value. When req
     }
 ```
 ***
-<a id="MonitorJob">
+<a id="MonitorJob" name="MonitorJob">
 ### Step 5: Monitor Job Status Until Completion
 </a>
 Continue to monitor the job's status while it runs, by retrieving job information periodically. When requesting job information, the job ID must appear at the end of the job URL.
@@ -180,13 +180,13 @@ Check the value of the job's "status" field. When it changes to "completed" or "
     }
 ```
 ***
-<a id="RunMoreJobs">
+<a id="RunMoreJobs" name="RunMoreJobs">
 ### Step 6: Run Additional Jobs (Optional)
 </a>
 Optionally, repeat steps 3, 4 and 5, to run additional jobs for other data or other packages.
 
 ***
-<a id="TerminateCluster">
+<a id="TerminateCluster" name="TerminateCluster">
 ### Step 7: Terminate the Cluster
 </a>
 Request to terminate the cluster.
@@ -212,7 +212,7 @@ Request to terminate the cluster.
     }
 ```
 ***
-<a id="VerifyClusterTermination">
+<a id="VerifyClusterTermination" name="VerifyClusterTermination">
 ### Step 8: Verify Cluster Termination
 </a>
 Poll the cluster status and verify that it changes to the "terminated" value. When requesting cluster information, the cluster ID must appear at the end of the cluster URL.
