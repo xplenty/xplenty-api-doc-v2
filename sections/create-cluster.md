@@ -2,7 +2,7 @@
 
 ### Description
 This call creates a new cluster. A cluster is a group of machines ("nodes") allocated to your account. The number of nodes in the cluster is determined by the "plan_id" value that you supply to the call. While the cluster is active, only your account's users can run jobs on the cluster.
-You will need to provide an active cluster when [starting a new job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Run%20Job.md).
+You will need to provide an active cluster when [starting a new job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/run-job.md).
 
 A successful call returns the following details for the new cluster:
 * **id** - the cluster's numeric identifier
@@ -18,7 +18,7 @@ A successful call returns the following details for the new cluster:
   
 ### Notes
 * This call only triggers cluster creation, which is why it returns the "pending" status. You can run a job on a pending cluster, but if for any reason the cluster failed to initialize, the job will fail to run.
-You can verify that a cluster has initialized successfully by [getting the cluster's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Get%20Cluster%20Information.md) and checking for the "available" status.
+You can verify that a cluster has initialized successfully by [getting the cluster's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) and checking for the "available" status.
 * Save the cluster ID value returned in the response "id" field. You will use the value to refer to this cluster in subsequent API calls.
 
 ### Input Parameters
@@ -28,24 +28,24 @@ You can verify that a cluster has initialized successfully by [getting the clust
 
 ### Request (Curl Call)
 ```shell
-    curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>:"https://api.xplenty.com/<accountID>/api/clusters" 
-    -d "cluster[plan_id]=<clusterPlanID>" 
-    -d "cluster[name]=<clusterName>" 
-    -d "cluster[description]=<clusterDescription>"
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>:"https://api.xplenty.com/<accountID>/api/clusters" 
+	-d "cluster[plan_id]=<clusterPlanID>" 
+	-d "cluster[name]=<clusterName>" 
+	-d "cluster[description]=<clusterDescription>"
 ```
 
 ### Response Example
 ```json
-    {
-        "id": 167,
-        "name": "New Cluster",
-        "description": "New Cluster Description",
-        "status": "pending",
-        "owner_id": 27,
-        "plan_id": 1,
-        "created_at": "2013-03-03T13:06:51Z",
-        "updated_at": "2013-03-03T13:06:51Z",
-        "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
-    }
+{
+	"id": 167,
+	"name": "New Cluster",
+	"description": "New Cluster Description",
+	"status": "pending",
+	"owner_id": 27,
+	"plan_id": 1,
+	"created_at": "2013-03-03T13:06:51Z",
+	"updated_at": "2013-03-03T13:06:51Z",
+	"running_jobs_count": 0,
+	"url": "https://api.xplenty.com/xplenation/api/clusters/167"
+}
 ```

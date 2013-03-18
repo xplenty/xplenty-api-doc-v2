@@ -5,7 +5,7 @@
 The Xplenty API provides functions for controlling and monitoring Xplenty clusters and jobs.
 After defining an Xplenty data processing package using the Xplenty web application, you can call the Xplenty API to create Hadoop clusters, run jobs, monitor their progress, and terminate jobs and clusters.
 
-You can choose to use the [Xplenty REST API](#XplentyAPI), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Java%20Wrapper.md) or the [Python wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Python%20Wrapper.md).
+You can choose to use the [Xplenty REST API](#XplentyAPI), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-Java-wrapper.md) or the [Python wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-python-wrapper.md).
 
 These are the topics covered on this page:
 * [Getting Started](#GettingStarted)
@@ -22,8 +22,8 @@ These are the topics covered on this page:
 </a>
 
 For a quick overview of how to get started with the Xplenty REST API, you can read:
-* [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Control%20and%20Monitoring%20Tasks.md)
-* [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Typical%20Workflow.md)
+* [xplenty-control-and-monitoring-tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
+* [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-typical-workflow.md)
 
 <a id="XplentyTerms" name="XplentyTerms">
 ## Xplenty Terms
@@ -150,15 +150,15 @@ Once you have an API key, you can either attach it to each request as a "key" pa
 
 These are the methods supported by the Xplenty API:
 
-* [List Cluster Plans](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/List%20Cluster%20Plans.md)
-* [Create Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Create%20Cluster.md)
-* [List Clusters](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/List%20Clusters.md)
-* [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Get%20Cluster%20Information.md)
-* [Terminate Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Terminate%20Cluster.md)
-* [Run Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Run%20Job.md)
-* [List Jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/List%20Jobs.md)
-* [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Get%20Job%20Information.md)
-* [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Terminate%20Job.md)
+* [List Cluster Plans](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-cluster-plans.md)
+* [Create Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md)
+* [List Clusters](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-clusters.md)
+* [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md)
+* [Terminate Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-cluster.md)
+* [Run Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/run-job.md)
+* [List Jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-jobs.md)
+* [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md)
+* [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-job.md)
 
 ### Collection Resources And Pagination
 The response to a GET request for collection resources (e.g. /clusters) may not return all the objects in the collection, depending on how many there are. To query collection resources incrementally, use the following parameters:
@@ -225,6 +225,6 @@ Please refer to our [Terms of Service](http://www.xplenty.com/tos) page.
 ## References
 </a>
 
-[REpresentational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)
+[Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)
 
 [Cross-Origin Resource Sharing](http://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing)

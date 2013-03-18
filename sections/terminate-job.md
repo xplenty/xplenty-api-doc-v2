@@ -4,7 +4,7 @@
 This call terminates an active job. Usually it's unnecessary to request to terminate a job, because normally the job will end when its tasks are completed. You may want to actively terminate a job if you need its cluster resources for a more urgent job, or if the job is taking too long to complete.
 
 ### Notes
-* This call only triggers the job's termination, which is why a status of "pending_terminate" is returned. To verify termination, [get the job's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Get%20Job%20Information.md) and check for a status of "terminated".
+* This call only triggers the job's termination, which is why a status of "pending_terminate" is returned. To verify termination, [get the job's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md) and check for a status of "terminated".
 * If a job is terminated by the user, it may return only partial results or none at all, depending on its tasks and its stage at the time of termination.
 
 ### Input Parameters
