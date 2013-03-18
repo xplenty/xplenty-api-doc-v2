@@ -127,7 +127,7 @@ Once you have an API key, you can either attach it to each request as a "key" pa
 ## Xplenty REST API
 
 
-### <a id="XplentyAPI">Xplenty API Methods</a>
+### Xplenty API Methods
 
 These are the methods supported by the Xplenty API:
 
