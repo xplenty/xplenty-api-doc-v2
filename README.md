@@ -3,7 +3,7 @@
 The Xplenty API provides functions for controlling and monitoring Xplenty clusters and jobs.
 After defining an Xplenty data processing package using the Xplenty web application, you can call the Xplenty API to create Hadoop clusters, run jobs, monitor their progress, and terminate jobs and clusters.
 
-You can choose to use the [Xplenty REST API](#XplentyAPI), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplentydoc/wiki/Xplenty-Java-Wrapper) or the [Python wrapper](https://github.com/xplenty/xplentydoc/wiki/Xplenty-Python-Wrapper).
+You can choose to use the [Xplenty REST API](https://github.com/xplenty/xplenty-api-doc/blob/master/README.md#XplentyAPI), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplentydoc/wiki/Xplenty-Java-Wrapper) or the [Python wrapper](https://github.com/xplenty/xplentydoc/wiki/Xplenty-Python-Wrapper).
 
 ## Xplenty Terms
 
