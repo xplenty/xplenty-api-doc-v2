@@ -10,6 +10,12 @@ You can choose to use the [Xplenty REST API](#XplentyAPI), or one of its wrapper
 These are the topics covered on this page:
 * [Getting Started](#GettingStarted)
 * [Xplenty Terms](#XplentyTerms)
+* [REST Interface Specifications]("RESTSpec")
+* [Security](#Security)
+* [Xplenty REST API](#XplentyAPI)
+* [Rate Limits](#RateLimits)
+* [Terms of Service](#ToS)
+* [References](#References)
 
 <a id="GettingStarted" name="GettingStarted">
 ## Getting Started
@@ -18,12 +24,6 @@ These are the topics covered on this page:
 For a quick overview of how to get started with the Xplenty REST API, you can read:
 * [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Control%20and%20Monitoring%20Tasks.md)
 * [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Typical%20Workflow.md)
-* [REST Interface Specifications]("RESTSpec")
-* [Security](#Security)
-* [Xplenty REST API](#XplentyAPI)
-* [Rate Limits](#RateLimits)
-* [Terms of Service](#ToS)
-* [References](#References)
 
 <a id="XplentyTerms" name="XplentyTerms">
 ## Xplenty Terms
