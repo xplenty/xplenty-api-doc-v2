@@ -131,15 +131,15 @@ Once you have an API key, you can either attach it to each request as a "key" pa
 </a>
 These are the methods supported by the Xplenty API:
 
-* [List Cluster Plans](https://github.com/xplenty/xplentydoc/wiki/List-Cluster-Plans)
-* [Create Cluster](https://github.com/xplenty/xplentydoc/wiki/Create-Cluster)
-* [List Clusters](https://github.com/xplenty/xplentydoc/wiki/List-Clusters)
-* [Get Cluster Information](https://github.com/xplenty/xplentydoc/wiki/Get-Cluster-Information)
-* [Terminate Cluster](https://github.com/xplenty/xplentydoc/wiki/Terminate-Cluster)
-* [Run Job](https://github.com/xplenty/xplentydoc/wiki/Run-Job)
-* [List Jobs](https://github.com/xplenty/xplentydoc/wiki/List-Jobs)
-* [Get Job Information](https://github.com/xplenty/xplentydoc/wiki/Get-Job-Information)
-* [Terminate Job](https://github.com/xplenty/xplentydoc/wiki/Terminate-Job)
+* [List Cluster Plans](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/List%20Cluster%20Plans.md)
+* [Create Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Create%20Cluster.md)
+* [List Clusters](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/List%20Clusters.md)
+* [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Get%20Cluster%20Information.md)
+* [Terminate Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Terminate%20Cluster.md)
+* [Run Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Run%20Job.md)
+* [List Jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/List%20Jobs.md)
+* [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Get%20Job%20Information.md)
+* [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Terminate%20Job.md)
 
 ### Collection Resources And Pagination
 The response to a GET request for collection resources (e.g. /clusters) may not return all the objects in the collection, depending on how many there are. To query collection resources incrementally, use the following parameters:
