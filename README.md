@@ -12,7 +12,7 @@ These are the topics covered on this page:
 * [Xplenty Terms](#XplentyTerms)
 * [REST Interface Specifications](#RESTSpec)
 * [Security](#Security)
-* [Xplenty REST API](#XplentyAPI)
+* [Resources](#ApiResources)
 * [Rate Limits](#RateLimits)
 * [Terms of Service](#ToS)
 * [References](#References)
@@ -22,7 +22,7 @@ These are the topics covered on this page:
 </a>
 
 For a quick overview of how to get started with the Xplenty REST API, you can read:
-* [xplenty-control-and-monitoring-tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
+* [Xplenty Control And Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
 * [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-typical-workflow.md)
 
 <a id="XplentyTerms" name="XplentyTerms">
@@ -35,8 +35,6 @@ Here are some of the terms you will encounter in the Xplenty API documentation.
 
 An Xplenty **package** is a data flow definition that you define in the Xplenty web application. 
 It describes the data to process (location, schema, fields), data manipulation to perform, and the output destinations (location, schema). The package's workflow is implemented by jobs.
-
-An Xplenty package is a data flow definition that you define in the Xplenty web application. 
 
 ### Job
 An Xplenty **job** is a process that is responsible for performing a data flow according to a specific package on a Hadoop cluster. The job is a batch process that runs on a finite amount of data and then terminates. Several jobs can run the same package simultaneously.
@@ -142,8 +140,8 @@ Once you have an API key, you can either attach it to each request as a "key" pa
 
     curl -H "Accept: application/vnd.xplenty+json" -u apikeyhere: https://api.xplenty.com/clusters
 
-<a id="XplentyAPI" name="XplentyAPI">
-## Xplenty REST API
+<a id="ApiResources" name="ApiResources">
+## API Resources
 </a>
 
 ### Xplenty API Methods
