@@ -22,7 +22,7 @@ These are the topics covered on this page:
 </a>
 
 For a quick overview of how to get started with the Xplenty REST API, you can read:
-* [Xplenty Control And Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
+* [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
 * [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-typical-workflow.md)
 
 <a id="XplentyTerms" name="XplentyTerms">
@@ -158,7 +158,7 @@ These are the methods supported by the Xplenty API:
 * [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md)
 * [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-job.md)
 
-### Collection Resources And Pagination
+### Collection Resources and Pagination
 The response to a GET request for collection resources (e.g. /clusters) may not return all the objects in the collection, depending on how many there are. To query collection resources incrementally, use the following parameters:
 
 * **offset** - the index of the first object to retrieve, starting from 0
