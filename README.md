@@ -126,9 +126,9 @@ Once you have an API key, you can either attach it to each request as a "key" pa
 
 ## Xplenty REST API
 
-<a id="XplentyAPI">
-### Xplenty API Methods
-</a>
+
+### <a id="XplentyAPI">Xplenty API Methods</a>
+
 These are the methods supported by the Xplenty API:
 
 * [List Cluster Plans](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/List%20Cluster%20Plans.md)
