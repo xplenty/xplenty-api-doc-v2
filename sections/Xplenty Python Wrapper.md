@@ -1,3 +1,5 @@
+## Xplenty Python Wrapper
+
 The Xplenty PY is a python artifact that provides a simple wrapper for the Xplenty REST API. To use it, create an XplentyClient object and call its methods to access the Xplenty API. This page describes the available XplentyClient methods.
 
 ### Create an Xplenty Client Object
