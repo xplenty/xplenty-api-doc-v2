@@ -5,6 +5,12 @@ After defining an Xplenty data processing package using the Xplenty web applicat
 
 You can choose to use the [Xplenty REST API](https://github.com/xplenty/xplenty-api-doc/blob/master/README.md#XplentyAPI), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplentydoc/wiki/Xplenty-Java-Wrapper) or the [Python wrapper](https://github.com/xplenty/xplentydoc/wiki/Xplenty-Python-Wrapper).
 
+## Getting Started
+
+For a quick overview of how to get started with the Xplenty RESI API, you can read:
+* [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Control%20and%20Monitoring%20Tasks.md)
+* [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Typical%20Workflow.md)
+
 ## Xplenty Terms
 
 Here are some of the terms you will encounter in the Xplenty API documentation.
@@ -29,12 +35,6 @@ A **cluster plan** is a definition of a cluster type, which includes the number 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
 An account is created when the user signs up to use the Xplenty service, and an API key is generated for the account, which must be supplied when calling the Xplenty API.
-
-## Getting Started
-
-For a quick overview of how to get started with the Xplenty RESI API, you can read:
-* [Xplenty Control and Monitoring Task](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Control%20and%20Monitoring%20Tasks.md)
-* [Xplenty Typical Workflow.md](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Typical%20Workflow.md)
 
 ## REST Interface Specifications
 
