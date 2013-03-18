@@ -1,3 +1,5 @@
+# Xplenty API Specification
+
 ## Introduction
 
 The Xplenty API provides functions for controlling and monitoring Xplenty clusters and jobs.
