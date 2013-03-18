@@ -30,6 +30,12 @@ A **cluster plan** is a definition of a cluster type, which includes the number 
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
 An account is created when the user signs up to use the Xplenty service, and an API key is generated for the account, which must be supplied when calling the Xplenty API.
 
+## Getting Started
+
+For a quick overview of how to get started with the Xplenty RESI API, you can read:
+* [Xplenty Control and Monitoring Task](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Control%20and%20Monitoring%20Tasks.md)
+* [Xplenty Typical Workflow.md](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Typical%20Workflow.md)
+
 ## REST Interface Specifications
 
 ### Using the Xplenty REST API
