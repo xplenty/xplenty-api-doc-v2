@@ -2,7 +2,7 @@
 
 ### Description
 This call creates a new cluster. A cluster is a group of machines ("nodes") allocated to your account. The number of nodes in the cluster is determined by the "plan_id" value that you supply to the call. While the cluster is active, only your account's users can run jobs on the cluster.
-You will need to provide an active cluster when [starting a new job](https://github.com/xplenty/xplentydoc/wiki/Run-Job).
+You will need to provide an active cluster when [starting a new job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Run%20Job.md).
 
 A successful call returns the following details for the new cluster:
 * **id** - the cluster's numeric identifier
@@ -18,7 +18,7 @@ A successful call returns the following details for the new cluster:
   
 ### Notes
 * This call only triggers cluster creation, which is why it returns the "pending" status. You can run a job on a pending cluster, but if for any reason the cluster failed to initialize, the job will fail to run.
-You can verify that a cluster has initialized successfully by [getting the cluster's information](https://github.com/xplenty/xplentydoc/wiki/Get-Cluster-Information) and checking for the "available" status.
+You can verify that a cluster has initialized successfully by [getting the cluster's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Get%20Cluster%20Information.md) and checking for the "available" status.
 * Save the cluster ID value returned in the response "id" field. You will use the value to refer to this cluster in subsequent API calls.
 
 ### Input Parameters
