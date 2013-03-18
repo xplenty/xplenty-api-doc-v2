@@ -1,3 +1,5 @@
+## Xplenty Typical Workflow
+
 Here are the steps of a typical workflow for running a job using the Xplenty API, after defining a package using the Xplenty web application and determining the required cluster plan. You may want to repeat this workflow on a recurring basis, for instance every day or every week, depending on the rate that your data accumulates.
 
 * [Step 1: Create a Cluster](#CreateCluster)
