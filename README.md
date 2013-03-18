@@ -12,7 +12,7 @@ These are the topics covered on this page:
 * [Xplenty Terms](#XplentyTerms)
 * [REST Interface Specifications](#RESTSpec)
 * [Security](#Security)
-* [Resources](#ApiResources)
+* [API Resources](#ApiResources)
 * [Rate Limits](#RateLimits)
 * [Terms of Service](#ToS)
 * [References](#References)
