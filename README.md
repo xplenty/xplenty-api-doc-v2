@@ -7,13 +7,27 @@ After defining an Xplenty data processing package using the Xplenty web applicat
 
 You can choose to use the [Xplenty REST API](#XplentyAPI), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Java%20Wrapper.md) or the [Python wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Python%20Wrapper.md).
 
+These are the topics covered on this page:
+* [Getting Started](#GettingStarted)
+* [Xplenty Terms](#XplentyTerms)
+
+<a id="GettingStarted" name="GettingStarted">
 ## Getting Started
+</a>
 
 For a quick overview of how to get started with the Xplenty REST API, you can read:
 * [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Control%20and%20Monitoring%20Tasks.md)
 * [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/Xplenty%20Typical%20Workflow.md)
+* [REST Interface Specifications]("RESTSpec")
+* [Security](#Security)
+* [Xplenty REST API](#XplentyAPI)
+* [Rate Limits](#RateLimits)
+* [Terms of Service](#ToS)
+* [References](#References)
 
+<a id="XplentyTerms" name="XplentyTerms">
 ## Xplenty Terms
+</a>
 
 Here are some of the terms you will encounter in the Xplenty API documentation.
 
@@ -38,7 +52,9 @@ A **cluster plan** is a definition of a cluster type, which includes the number 
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
 An account is created when the user signs up to use the Xplenty service, and an API key is generated for the account, which must be supplied when calling the Xplenty API.
 
+<a id="RESTSpec" name="RESTSpec">
 ## REST Interface Specifications
+</a>
 
 ### Using the Xplenty REST API
 
@@ -111,7 +127,9 @@ When the API returns an error messages, it does so in your requested format. For
 
     {"message":"Item not found."}
 
+<a id="Security" name="Security">
 ## Security
+</a>
 
 ### Encrypted Communication (SSL)
 
@@ -157,7 +175,9 @@ Alternatively, you can use the **page** parameter, instead of **offset**, as fol
 
 The pagination info is included in the [Link header](http://www.w3.org/Protocols/9707-link-header.html).
 
+<a id="RateLimits" name="RateLimits">
 ## Rate Limits
+</a>
 
 The Xplenty API only allows clients to make a limited number of calls in a given hour. It uses a credit allocation system to ensure fair distribution of capacity. Each user is allocated 5,000 credits per hour. This is keyed off either your login or the request IP. If you exceed this limit, you'll get a "429 Too Many Requests" response for subsequent requests.
 
@@ -195,11 +215,15 @@ If your user has been blacklisted and you think there has been an error, you can
 2. Explain why you think your application was blacklisted.
 3. Describe in detail how you have fixed the problem that you think caused you to be blacklisted.
 
+<a id="ToS" name="ToS">
 ## Terms of Service
+</a>
 
 Please refer to our [Terms of Service](http://www.xplenty.com/tos) page.
 
+<a id="References" name="References">
 ## References
+</a>
 
 [REpresentational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)
 
