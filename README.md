@@ -123,7 +123,11 @@ These are the HTTP status codes that the Xplenty API can return:
 
 When the API returns an error messages, it does so in your requested format. For example, an error from a JSON method might look like this:
 
-    {"message":"Item not found."}
+```json
+{
+    "message": "Item not found."
+}
+```
 
 <a id="Security" name="Security">
 ## Security
