@@ -1,4 +1,4 @@
-# xplenty-control-and-monitoring-tasks
+# Xplenty Control and Monitoring Tasks
 
 Here are the main tasks you can perform with the Xplenty control and monitoring API.
 

@@ -5,14 +5,14 @@
 The Xplenty API provides functions for controlling and monitoring Xplenty clusters and jobs.
 After defining an Xplenty data processing package using the Xplenty web application, you can call the Xplenty API to create Hadoop clusters, run jobs, monitor their progress, and terminate jobs and clusters.
 
-You can choose to use the [Xplenty REST API](#XplentyAPI), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-Java-wrapper.md) or the [Python wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-python-wrapper.md).
+You can choose to use the [Xplenty REST API](#RESTSpec), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-Java-wrapper.md) or the [Python wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-python-wrapper.md).
 
 These are the topics covered on this page:
 * [Getting Started](#GettingStarted)
 * [Xplenty Terms](#XplentyTerms)
 * [REST Interface Specifications](#RESTSpec)
 * [Security](#Security)
-* [Xplenty REST API](#XplentyAPI)
+* [Resources](#ApiResources)
 * [Rate Limits](#RateLimits)
 * [Terms of Service](#ToS)
 * [References](#References)
@@ -22,7 +22,7 @@ These are the topics covered on this page:
 </a>
 
 For a quick overview of how to get started with the Xplenty REST API, you can read:
-* [xplenty-control-and-monitoring-tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
+* [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
 * [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-typical-workflow.md)
 
 <a id="XplentyTerms" name="XplentyTerms">
@@ -35,8 +35,6 @@ Here are some of the terms you will encounter in the Xplenty API documentation.
 
 An Xplenty **package** is a data flow definition that you define in the Xplenty web application. 
 It describes the data to process (location, schema, fields), data manipulation to perform, and the output destinations (location, schema). The package's workflow is implemented by jobs.
-
-An Xplenty package is a data flow definition that you define in the Xplenty web application. 
 
 ### Job
 An Xplenty **job** is a process that is responsible for performing a data flow according to a specific package on a Hadoop cluster. The job is a batch process that runs on a finite amount of data and then terminates. Several jobs can run the same package simultaneously.
@@ -125,7 +123,11 @@ These are the HTTP status codes that the Xplenty API can return:
 
 When the API returns an error messages, it does so in your requested format. For example, an error from a JSON method might look like this:
 
-    {"message":"Item not found."}
+```json
+{
+    "message": "Item not found."
+}
+```
 
 <a id="Security" name="Security">
 ## Security
@@ -140,10 +142,12 @@ Most of the Xplenty API calls require authentication, supplied in the form of th
 
 Once you have an API key, you can either attach it to each request as a "key" parameter, or use HTTP Basic Authentication with a blank username and the API key as a password. Here's an example using curl (the colon separates the username and password):
 
-    curl -H "Accept: application/vnd.xplenty+json" -u apikeyhere: https://api.xplenty.com/clusters
+```shell
+curl -H "Accept: application/vnd.xplenty+json" -u <apikeyhere>: https://api.xplenty.com/<accountID>/clusters
+```
 
-<a id="XplentyAPI" name="XplentyAPI">
-## Xplenty REST API
+<a id="ApiResources" name="ApiResources">
+## API Resources
 </a>
 
 ### Xplenty API Methods
@@ -160,7 +164,7 @@ These are the methods supported by the Xplenty API:
 * [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md)
 * [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-job.md)
 
-### Collection Resources And Pagination
+### Collection Resources and Pagination
 The response to a GET request for collection resources (e.g. /clusters) may not return all the objects in the collection, depending on how many there are. To query collection resources incrementally, use the following parameters:
 
 * **offset** - the index of the first object to retrieve, starting from 0
