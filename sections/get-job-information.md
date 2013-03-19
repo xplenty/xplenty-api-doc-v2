@@ -29,7 +29,7 @@ The details returned for the job are as follows:
 * **runtime_in_seconds** - the time in seconds that the job has run up to the current time
 
 ### Input Parameters
-The job resource ID must be supplied at the end of the request URL.
+The **job resource ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call)
 ```shell
