@@ -10,7 +10,7 @@ The call returns the given cluster's details, including a status of "pending_ter
 To verify termination, [get the cluster's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) and check for a status of "terminated".
 
 ### Input Parameters
-The cluster resource ID must be supplied at the end of the request URL.
+The **cluster resource ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call)
 ```shell
