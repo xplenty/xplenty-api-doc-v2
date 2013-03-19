@@ -8,7 +8,7 @@ This call terminates an active job. Usually it's unnecessary to request to termi
 * If a job is terminated by the user, it may return only partial results or none at all, depending on its tasks and its stage at the time of termination.
 
 ### Input Parameters
-The job resource ID must be supplied at the end of the request URL.
+The **job resource ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call)
 ```shell
