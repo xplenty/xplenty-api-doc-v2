@@ -5,15 +5,15 @@
 The Xplenty API provides functions for controlling and monitoring Xplenty clusters and jobs.
 After defining an Xplenty data processing package using the Xplenty web application, you can call the Xplenty API to create Hadoop clusters, run jobs, monitor their progress, and terminate jobs and clusters.
 
-You can choose to use the [Xplenty REST API](#RESTSpec), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-Java-wrapper.md) or the [Python wrapper](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-python-wrapper.md).
+You can choose to use the [Xplenty REST API](#RESTSpec), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty.jar) or the [Python wrapper](https://github.com/xplenty/xplenty.py).
 
 These are the topics covered on this page:
 * [Getting Started](#GettingStarted)
-* [Xplenty Terms](#XplentyTerms)
+* [Xplenty Terminology](#XplentyTerminology)
 * [REST Interface Specifications](#RESTSpec)
 * [Security](#Security)
-* [API Resources](#ApiResources)
 * [Rate Limits](#RateLimits)
+* [API Resources](#ApiResources)
 * [Terms of Service](#ToS)
 * [References](#References)
 
@@ -25,8 +25,8 @@ For a quick overview of how to get started with the Xplenty REST API, you can re
 * [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
 * [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-typical-workflow.md)
 
-<a id="XplentyTerms" name="XplentyTerms">
-## Xplenty Terms
+<a id="XplentyTerminology" name="XplentyTerminology">
+## Xplenty Terminology
 </a>
 
 Here are some of the terms you will encounter in the Xplenty API documentation.
@@ -146,24 +146,6 @@ Once you have an API key, you can either attach it to each request as a "key" pa
 curl -H "Accept: application/vnd.xplenty+json" -u <apikeyhere>: https://api.xplenty.com/<accountID>/clusters
 ```
 
-<a id="ApiResources" name="ApiResources">
-## API Resources
-</a>
-
-### Xplenty API Methods
-
-These are the methods supported by the Xplenty API:
-
-* [List Cluster Plans](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-cluster-plans.md)
-* [Create Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md)
-* [List Clusters](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-clusters.md)
-* [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md)
-* [Terminate Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-cluster.md)
-* [Run Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/run-job.md)
-* [List Jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-jobs.md)
-* [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md)
-* [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-job.md)
-
 ### Collection Resources and Pagination
 The response to a GET request for collection resources (e.g. /clusters) may not return all the objects in the collection, depending on how many there are. To query collection resources incrementally, use the following parameters:
 
@@ -218,6 +200,24 @@ If your user has been blacklisted and you think there has been an error, you can
 1. If you are using the REST API, make a call to the /rate_limit_status from the computer which is blacklisted and include the response in your email.
 2. Explain why you think your application was blacklisted.
 3. Describe in detail how you have fixed the problem that you think caused you to be blacklisted.
+
+<a id="ApiResources" name="ApiResources">
+## API Resources
+</a>
+
+### Xplenty API Methods
+
+These are the methods supported by the Xplenty API:
+
+* [List Cluster Plans](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-cluster-plans.md)
+* [Create Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md)
+* [List Clusters](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-clusters.md)
+* [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md)
+* [Terminate Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-cluster.md)
+* [Run Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/run-job.md)
+* [List Jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-jobs.md)
+* [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md)
+* [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-job.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
