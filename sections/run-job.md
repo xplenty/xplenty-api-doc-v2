@@ -7,9 +7,9 @@ This call creates a new job and triggers it to run. The job performs the series 
 * Save the job ID value returned in the response "id" field. You will use the value to refer to this job in subsequent API calls.
 
 ### Input Parameters
-* cluster_id - the ID of the cluster on which to run the job
-* package_id - the ID of the package whose tasks the job will perform
-* variables - custom input variables can optionally be defined in the package. If the package has input variables, you can supply their names and values in the run request (see "variables" syntax below).
+* **cluster_id** - the ID of the cluster on which to run the job
+* **package_id** - the ID of the package whose tasks the job will perform
+* **variables** - custom input variables can optionally be defined in the package. If the package has input variables, you can supply their names and values in the run request (see "variables" syntax below).
 
 ### Request (Curl Call)
 ```shell

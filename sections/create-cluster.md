@@ -22,9 +22,9 @@ You can verify that a cluster has initialized successfully by [getting the clust
 * Save the cluster ID value returned in the response "id" field. You will use the value to refer to this cluster in subsequent API calls.
 
 ### Input Parameters
-* plan_id - the cluster plan to use when creating the cluster (determines the number of nodes in the cluster and its pricing)
-* name (optional) - a name to assign to the new cluster. If not supplied, the system will generate a name for the cluster.
-* description (optional) - a description to assign to the new cluster. If not supplied, the description will remain blank.
+* **plan_id** - the cluster plan to use when creating the cluster (determines the number of nodes in the cluster and its pricing)
+* **name** (optional) - a name to assign to the new cluster. If not supplied, the system will generate a name for the cluster.
+* **description** (optional) - a description to assign to the new cluster. If not supplied, the description will remain blank.
 
 ### Request (Curl Call)
 ```shell

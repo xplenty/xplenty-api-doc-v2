@@ -22,7 +22,7 @@ This call returns the details of the cluster with the given ID, as follows:
 * **url** - the unique cluster resource URL
 
 ### Input Parameters
-The cluster resource ID must be supplied at the end of the request URL.
+The **cluster resource ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call)
 ```shell
