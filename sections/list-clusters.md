@@ -34,7 +34,7 @@ The details returned for each cluster are:
 ### Request (Curl Call)
 ```shell
     curl -X GET -H "Accept: application/vnd.xplenty+json" 
-    -u <APIkey>: "https://api-staging.xplenty.com/<accountID>/api/clusters?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>"
+    -u <APIkey>: "https://api-staging.xplenty.com/<accountID>/api/clusters?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
 ```
 
 ### Response Example

@@ -38,7 +38,7 @@ The details returned for each job are as follows:
 ### Request (Curl Call)
 ```shell
     curl -X GET -H "Accept: application/vnd.xplenty+json" 
-    -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>"
+    -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
 ```
 ### Response Example
 ```json
