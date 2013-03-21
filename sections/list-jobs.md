@@ -30,9 +30,9 @@ The details returned for each job are as follows:
 * **runtime_in_seconds** - the time in seconds that the job has run up to the current time
 
 ### Input Parameters
-* **status** (optional) - Possible values are: idle, pending, running, completed, failed, pending_stoppage, stopping, stopped, all (default). The call will return only jobs with the given status, or all the jobs if the "all" value is specified. 
-* **sort** (optional) - Possible values are: updated, created (default). The job list will be sorted by the jobs' "updated_by" values or "created_by" values respectively, depending on the value of the "sort" parameter.
-* **direction** (optional) - Possible values are: asc, desc (default). The jobs will be sorted in ascending or descending order of the "sort" attribute, depending on the value of "direction".
+* **status** (optional) - Possible values are: ```idle```, ```pending```, ```running```, ```completed```, ```failed```, ```pending_stoppage```, ```stopping```, ```stopped```, ```all``` (default). The call will return only jobs with the given status, or all the jobs if the ```all``` value is specified. 
+* **sort** (optional) - Possible values are: ```updated```, ```created``` (default). The job list will be sorted by the jobs' "updated_by" values or "created_by" values respectively, depending on the value of the "sort" parameter.
+* **direction** (optional) - Possible values are: ```asc```, ```desc``` (default). The jobs will be sorted in ascending or descending order of the "sort" attribute, depending on the value of "direction".
 
 ### Request (Curl Call)
 ```shell
