@@ -26,9 +26,9 @@ The details returned for each cluster are:
 * **url** - the unique cluster resource URL
 
 ### Input Parameters
-* **status** (optional) - Possible values are: pending, creating, available, pending_terminate, terminating, terminated, error, all (default). The call will return only clusters with the given status, or all the clusters if the "all" value is specified. 
-* **sort** (optional) - Possible values are: updated, created (default). The cluster list will be sorted by the clusters' "updated_by" values or "created_by" values respectively, depending on the value of the "sort" parameter.
-* **direction** (optional) - Possible values are: asc, desc (default). The clusters will be sorted in ascending or descending order of the "sort" attribute, depending on the value of "direction".
+* **status** (optional) - Possible values are: ```pending```, ```creating```, ```available```, ```pending_terminate```, ```terminating```, ```terminated```, ```error```, ```all``` (default). The call will return only clusters with the given status, or all the clusters if the "all" value is specified. 
+* **sort** (optional) - Possible values are: ```updated```, ```created``` (default). The cluster list will be sorted by the clusters' "updated_by" values or "created_by" values respectively, depending on the value of the "sort" parameter.
+* **direction** (optional) - Possible values are: ```asc```, ```desc``` (default). The clusters will be sorted in ascending or descending order of the "sort" attribute, depending on the value of "direction".
 
 ### Request (Curl Call)
 ```shell
