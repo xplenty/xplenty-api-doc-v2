@@ -42,7 +42,7 @@ The details returned for each job are as follows:
 ```
 ### Response Example
 ```json
-    [
+[
     {
         "id": 304,
         "status": "failed",
@@ -110,5 +110,5 @@ The details returned for each job are as follows:
         "url": "https://api.xplenty.com/xplenation/api/jobs/157",
         "runtime_in_seconds": 417
     }
-    ]
+]
 ```

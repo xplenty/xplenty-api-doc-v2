@@ -39,42 +39,42 @@ The details returned for each cluster are:
 
 ### Response Example
 ```json
-    [
-        {
-            "id": 99,
-            "name": "Daily Outliers Test #100",
-            "description": "Daily Outliers Test",
-            "status": "terminated",
-            "owner_id": 27,
-            "plan_id": 1,
-            "created_at": "2013-01-25T08:18:39Z",
-            "updated_at": "2013-01-28T16:45:24Z",
-            "running_jobs_count": 0,
-            "url": "https://api.xplenty.com/javasdk/api/clusters/99"
-        },
-        {
-            "id": 98,
-            "name": "Daily Outliers Test #101",
-            "description": "Daily Outliers Test",
-            "status": "terminated",
-            "owner_id": 27,
-            "plan_id": 1,
-            "created_at": "2013-01-25T08:17:56Z",
-            "updated_at": "2013-01-28T16:45:14Z",
-            "running_jobs_count": 0,
-            "url": "https://api.xplenty.com/javasdk/api/clusters/98"
-        },
-        {
-            "id": 97,
-            "name": "Daily Outliers Test #102",
-            "description": "Daily Outliers Test",
-            "status": "terminated",
-            "owner_id": 27,
-            "plan_id": 1,
-            "created_at": "2013-01-25T07:36:04Z",
-            "updated_at": "2013-01-25T07:45:19Z",
-            "running_jobs_count": 0,
-            "url": "https://api.xplenty.com/javasdk/api/clusters/97"
-        }
-    ]
+[
+    {
+        "id": 99,
+        "name": "Daily Outliers Test #100",
+        "description": "Daily Outliers Test",
+        "status": "terminated",
+        "owner_id": 27,
+        "plan_id": 1,
+        "created_at": "2013-01-25T08:18:39Z",
+        "updated_at": "2013-01-28T16:45:24Z",
+        "running_jobs_count": 0,
+        "url": "https://api.xplenty.com/javasdk/api/clusters/99"
+    },
+    {
+        "id": 98,
+        "name": "Daily Outliers Test #101",
+        "description": "Daily Outliers Test",
+        "status": "terminated",
+        "owner_id": 27,
+        "plan_id": 1,
+        "created_at": "2013-01-25T08:17:56Z",
+        "updated_at": "2013-01-28T16:45:14Z",
+        "running_jobs_count": 0,
+        "url": "https://api.xplenty.com/javasdk/api/clusters/98"
+    },
+    {
+        "id": 97,
+        "name": "Daily Outliers Test #102",
+        "description": "Daily Outliers Test",
+        "status": "terminated",
+        "owner_id": 27,
+        "plan_id": 1,
+        "created_at": "2013-01-25T07:36:04Z",
+        "updated_at": "2013-01-25T07:45:19Z",
+        "running_jobs_count": 0,
+        "url": "https://api.xplenty.com/javasdk/api/clusters/97"
+    }
+]
 ```
