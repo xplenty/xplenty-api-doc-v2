@@ -105,6 +105,7 @@ These are the HTTP status codes that the Xplenty API can return:
  
 * **200 OK**: Request succeeded.
 * **201 Created**: The requested resource was created successfully.
+* **204 No Content**: Request succeeded. No content is returned.
 * **304 Not Modified**: There was no new data to return.
 * **400 Bad Request**: The request was invalid.  An accompanying error message will explain why.
 * **401 Unauthorized**: You are attempting to access the API with invalid credentials.
@@ -115,7 +116,7 @@ These are the HTTP status codes that the Xplenty API can return:
 * **415 Unsupported Media Type**: The specified media type is not supported.
 * **422 Unprocessable Entity**: You have sent invalid fields.
 * **429 Too Many Requests**: The request exceeded the rate limitations.
-* **500 Internal Server Error**: An internal error occurred in the service. 
+* **500 Internal Server Error**: An internal error occurred in the request. 
 * **502 Bad Gateway**: Xplenty is down or being upgraded.
 * **503 Service Unavailable**: The Xplenty servers are up, but overloaded with requests. Try again later.
 
