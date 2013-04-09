@@ -18,7 +18,7 @@ Below are descriptions of the API calls that add, delete and retrieve watchers f
 ## Notes
 By default, the user who created a cluster or job item will be a watcher of that item.
 
-## Add User as Cluster Watcher
+## Watch Cluster
 This call adds the calling user as a watcher of the specified cluster.
 
 ### Input Parameters
@@ -34,3 +34,34 @@ curl -X POST   		-H "Accept: application/vnd.xplenty+json" -u api_key: "https://
 
 ```
 
+## Stop Watching Cluster
+This call deletes the calling user from the watcher list of the specified cluster.
+
+### Input Parameters
+* **cluster_id** - the ID of the cluster to stop watching
+
+### Request (Curl Call)
+```shell
+curl -X DELETE   	-H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
+```
+
+### Response Example
+```json
+
+```
+
+## Get Cluster Watchers
+This call retrieves the list of users watching the specified cluster.
+
+### Input Parameters
+* **cluster_id** - the ID of the cluster to whose watchers you want to retrieve
+
+### Request (Curl Call)
+```shell
+curl -X GET   		-H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
+```
+
+### Response Example
+```json
+
+```
