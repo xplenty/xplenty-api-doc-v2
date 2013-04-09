@@ -18,7 +18,7 @@ The details returned for each job are as follows:
     * **stopped** - the job has stopped
 * **variables** - a list of the variables supplied to the "run" request
 * **owner_id** - the numeric user ID
-* **progress** - the job progress in percentages (a value between 0 and 1)
+* **progress** - the job progress in percentages (a value between 0.0 and 1.0)
 * **outputs_count** - the number of output targets defined in the job's package
 * **started_at** - the date and time at which the job started running
 * **created_at** - the date and time at which the "run" request was made 
