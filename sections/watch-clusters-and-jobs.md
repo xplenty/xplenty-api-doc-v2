@@ -31,7 +31,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-
 
 ### Response Example
 ```json
-
+{"created_at":"2013-04-09T11:19:20+03:00","cluster_url":"https://api-staging.xplenty.com/xpd1/api/clusters/370"}
 ```
 
 ## Stop Watching Cluster
@@ -45,10 +45,8 @@ This call deletes the calling user from the watcher list of the specified cluste
 curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
 ```
 
-### Response Example
-```json
-
-```
+### Response
+Header 204.
 
 ## Get Cluster Watchers
 This call retrieves the list of users watching the specified cluster.
@@ -79,7 +77,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-
 
 ### Response Example
 ```json
-
+{"created_at":"2013-04-09T11:28:27+03:00","job_url":"https://api-staging.xplenty.com/xpd1/api/jobs/492"}
 ```
 
 ## Stop Watching Job
@@ -93,10 +91,8 @@ This call deletes the calling user from the watcher list of the specified job.
 curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/jobs/{job_id}/watchers"
 ```
 
-### Response Example
-```json
-
-```
+### Response
+Header 204.
 
 ## Get Job Watchers
 This call retrieves the list of users watching the specified job.
