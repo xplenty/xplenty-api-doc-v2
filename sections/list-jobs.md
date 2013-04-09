@@ -22,6 +22,7 @@ The details returned for each job are as follows:
 * **outputs_count** - the number of output targets defined in the job's package
 * **started_at** - the date and time at which the job started running
 * **created_at** - the date and time at which the "run" request was made 
+* **failed_at** - the date and time at which the job failed (if it failed)* 
 * **updated_at** - the date and time the job was last updated (occurs when package tasks are completed)
 * **cluster_id** - the ID of the cluster in which the job was run
 * **package_id** - the ID of the package that the job ran (or is running)
