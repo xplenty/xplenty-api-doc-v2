@@ -10,7 +10,7 @@ If you're watching an item, you'll receive notifications when the items reach ce
 and also when a new job is run on the cluster.
 
 The notifications can be sent as email messages, or as messages which you can view in the Xplenty web application.
-You can configure the method of notification in the Xplenty web application.
+You can configure the method of notification for your user in the Xplenty web application.
 
 Users can add or delete themselves from the watcher list of specific items, and can retrieve the list of watchers for a specific item.
 Below are descriptions of the API calls that add, delete and retrieve watchers for clusters and jobs.
@@ -63,7 +63,7 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-s
 
 ### Response Example
 ```json
-
+{"id":1,"display_name":"Xplenty"}
 ```
 
 ## Watch Job
@@ -111,5 +111,5 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-s
 
 ### Response Example
 ```json
-
+{"id":1,"display_name":"Xplenty"}
 ```
