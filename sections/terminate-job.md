@@ -30,6 +30,7 @@ The **job resource ID** must be supplied at the end of the request URL.
         "started_at": "2013-03-04T08:10:48Z",
         "created_at": "2013-03-04T08:10:42Z",
         "updated_at": "2013-03-04T08:11:27Z",
+        "failed_at": null,
         "cluster_id": 176,
         "package_id": 103,
         "errors": null,
