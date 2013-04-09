@@ -219,6 +219,7 @@ These are the methods supported by the Xplenty API:
 * [List Jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-jobs.md)
 * [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md)
 * [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-job.md)
+* [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/watch-clusters-and-jobs.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
