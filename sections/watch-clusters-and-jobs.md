@@ -1,6 +1,6 @@
-## Watch Jobs and Clusters
+# Watch Jobs and Clusters
 
-### Description
+## Description
 You can choose to "watch" cluster or job items that you or other users have created. 
 If you're watching an item, you'll receive notifications when the items reach certain statuses.
 
@@ -14,17 +14,18 @@ You can configure the method of notification in the Xplenty web application.
 Users can add or delete themselves from the watcher list of specific items, and can retrieve the list of watchers for a specific item.
 Below are description of the 6 API calls that add, delete and retrieve watchers for clusters and jobs.
 
-### Notes
+## Notes
 By default, the user who created a cluster or job item will be a watcher of that item.
 
+## Add User as Cluster Watcher
+This call adds the calling user as a watcher of the specified cluster.
+
 ### Input Parameters
-* **cluster_id** - the ID of the cluster on which to run the job
-* **package_id** - the ID of the package whose tasks the job will perform
-* **variables** - custom input variables can optionally be defined in the package. If the package has input variables, you can supply their names and values in the run request (see "variables" syntax below).
+* **cluster_id** - the ID of the cluster to watch
 
 ### Request (Curl Call)
 ```shell
-
+curl -X POST   		-H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
 ```
 
 ### Response Example
