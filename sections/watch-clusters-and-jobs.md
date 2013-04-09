@@ -10,7 +10,7 @@ If you're watching an item, you'll receive notifications on important updates.
 and also when a new job is run on the cluster.
 
 The notifications can be sent as email messages, or as messages which you can view in the Xplenty web application.
-You can change the method of notification for your user in [your user notification settings page](https://app.xplenty.com/settings/notifications).
+You can change the method of notification for your user in [notification settings page](https://app.xplenty.com/settings/notifications).
 
 Users can add or remove themselves from the watcher list of specific items, and can retrieve the list of watchers for a specific item.
 Below are descriptions of the API calls that add, delete and retrieve watchers for clusters and jobs.
