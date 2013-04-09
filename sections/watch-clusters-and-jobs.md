@@ -4,9 +4,9 @@
 You can choose to "watch" cluster or job items that you or other users have created. 
 If you're watching an item, you'll receive notifications when the items reach certain statuses.
 
-For job items, you'll receive notifications when the job reaches the "completed", "failed" or "stopped" statuses.
+*For job items*, you'll receive notifications when the job reaches the "completed", "failed" or "stopped" statuses.
 
-For cluster items, you'll receive notifications when the cluster reaches the "available", "terminated" or "error" statuses,
+*For cluster items*, you'll receive notifications when the cluster reaches the "available", "terminated" or "error" statuses,
 and also when a new job is run on the cluster.
 
 The notifications can be sent as email messages, or as messages which you can view in the Xplenty web application.
