@@ -26,7 +26,7 @@ This call adds the calling user as a watcher of the specified cluster.
 
 ### Request (Curl Call)
 ```shell
-curl -X POST   		-H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
 ```
 
 ### Response Example
@@ -42,7 +42,7 @@ This call deletes the calling user from the watcher list of the specified cluste
 
 ### Request (Curl Call)
 ```shell
-curl -X DELETE   	-H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
+curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
 ```
 
 ### Response Example
@@ -58,8 +58,55 @@ This call retrieves the list of users watching the specified cluster.
 
 ### Request (Curl Call)
 ```shell
-curl -X GET   		-H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/clusters/{cluster_id}/watchers"
 ```
+
+### Response Example
+```json
+
+```
+
+## Watch Job
+This call adds the calling user as a watcher of the specified job.
+
+### Input Parameters
+* **job_id** - the ID of the job to watch
+
+### Request (Curl Call)
+```shell
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/jobs/{job_id}/watchers"
+```
+
+### Response Example
+```json
+
+```
+
+## Stop Watching Job
+This call deletes the calling user from the watcher list of the specified job.
+
+### Input Parameters
+* **job_id** - the ID of the job to stop watching
+
+### Request (Curl Call)
+```shell
+curl -X DELETE   	-H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/jobs/{job_id}/watchers"
+```
+
+### Response Example
+```json
+
+```
+
+## Get Job Watchers
+This call retrieves the list of users watching the specified job.
+
+### Input Parameters
+* **job_id** - the ID of the job to whose watchers you want to retrieve
+
+### Request (Curl Call)
+```shell
+curl -X GET   		-H "Accept: application/vnd.xplenty+json" -u api_key: "https://api-staging.xplenty.com/xpd1/api/jobs/{job_id}/watchers"
 
 ### Response Example
 ```json
