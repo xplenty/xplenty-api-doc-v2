@@ -37,6 +37,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
 	"started_at": null,
 	"created_at": "2013-03-04T08:10:42Z",
 	"updated_at": "2013-03-04T08:10:42Z",
+	"failed_at": null,
 	"cluster_id": 176,
 	"package_id": 103,
 	"errors": null,
