@@ -212,7 +212,7 @@ If your user has been blacklisted and you think there has been an error, you can
 
 These are the methods supported by the Xplenty API:
 
-* [List Cluster Plans](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-cluster-plans.md)
+* DEPRECATED [List Cluster Plans](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-cluster-plans.md)
 * [Create Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md)
 * [List Clusters](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-clusters.md)
 * [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md)
