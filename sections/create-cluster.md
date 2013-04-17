@@ -13,9 +13,11 @@ A successful call returns the following details for the new cluster:
 * **plan_id** - the ID of the cluster's plan
 * **created_at** - the date and time the cluster was created
 * **updated_at** - same value as "created_at" for a new cluster
-* **running_jobs_count** - the number of jobs currently running on the cluster (0 for a new cluster)
+* **available_since** - the date and time the cluster was available
+* **terminated_at** - the date and time the cluster was terminated
+* **running_jobs_count** - the number of jobs currently running on the cluster
 * **url** - the unique cluster resource URL
-  
+
 ### Notes
 * This call only triggers cluster creation, which is why it returns the "pending" status. You can run a job on a pending cluster, but if for any reason the cluster failed to initialize, the job will fail to run.
 You can verify that a cluster has initialized successfully by [getting the cluster's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) and checking for the "available" status.
