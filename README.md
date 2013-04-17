@@ -46,7 +46,7 @@ An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that th
 
 ### Cluster Plan
 
-Deprecated: A **cluster plan** is a definition of a cluster type, which includes the number of nodes in the cluster and its pricing. Cluster plan details can be viewed in the Xplenty web application. When you create a new cluster, you specify its cluster plan. You  may choose different cluster plans for different types of jobs and packages, depending on the computing power you require.
+Deprecated: A **cluster plan** is a definition of a cluster type, which includes the number of nodes in the cluster. Cluster plan details can be viewed in the Xplenty web application. When you create a new cluster, you specify its cluster plan. You  may choose different cluster plans for different types of jobs and packages, depending on the computing power you require.
 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
