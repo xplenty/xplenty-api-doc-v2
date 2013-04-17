@@ -1,6 +1,9 @@
-## List Cluster Plans
+## List Cluster Plans (DEPRECATED)
 
 ### Description
+
+
+
 A cluster plan is a definition of a cluster type, which includes the number of nodes in the cluster and its pricing. Cluster plan details can be viewed in the Xplenty web application.
 This call returns a list of all the available cluster plans, including the name and numeric ID of each plan. After you've determined which cluster plan is appropriate for your needs, use this call to retrieve the cluster plan ID. The cluster plan ID can then be used when [creating a new cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md).
 
