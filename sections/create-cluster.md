@@ -19,10 +19,13 @@ A successful call returns the following details for the new cluster:
 ### Notes
 * This call only triggers cluster creation, which is why it returns the "pending" status. You can run a job on a pending cluster, but if for any reason the cluster failed to initialize, the job will fail to run.
 You can verify that a cluster has initialized successfully by [getting the cluster's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) and checking for the "available" status.
+* You must 
 * Save the cluster ID value returned in the response "id" field. You will use the value to refer to this cluster in subsequent API calls.
 
 ### Input Parameters
-* **plan_id** - the cluster plan to use when creating the cluster (determines the number of nodes in the cluster and its pricing)
+* **nodes** - determines the number of compute nodes in the cluster. The value range is between 2 and your account's maximum, determined by the chosen pricing plan. 
+* **type** (optional) - if value is set to "sandbox" then the nodes parameter is ignored and a sandbox cluster is created.
+* **plan_id (DEPRECATED)** - the cluster plan to use when creating the cluster (determines the number of compute nodes in the cluster). If you pass this parameter, the *nodes* and *type* parameter will be ignored.
 * **name** (optional) - a name to assign to the new cluster. If not supplied, the system will generate a name for the cluster.
 * **description** (optional) - a description to assign to the new cluster. If not supplied, the description will remain blank.
 
@@ -30,6 +33,8 @@ You can verify that a cluster has initialized successfully by [getting the clust
 ```shell
 curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>:"https://api.xplenty.com/<accountID>/api/clusters" 
 	-d "cluster[plan_id]=<clusterPlanID>" 
+	-d "cluster[nodes]=4"
+	-d "cluster[type]=sandbox"
 	-d "cluster[name]=<clusterName>" 
 	-d "cluster[description]=<clusterDescription>"
 ```
