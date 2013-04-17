@@ -25,9 +25,13 @@ The **cluster resource ID** must be supplied at the end of the request URL.
         "description": "New Cluster Description",
         "status": "pending_terminate",
         "owner_id": 27,
-        "plan_id": 1,
+        "plan_id": null,
+        "nodes": 1,
+        "type": "sandbox",
         "created_at": "2013-03-03T13:06:51Z",
         "updated_at": "2013-03-03T14:16:18Z",
+        "available_since": "2013-03-03T13:09:22Z",
+        "terminated_at": null,        
         "running_jobs_count": 0,
         "url": "https://api.xplenty.com/xplenation/api/clusters/167"
     }
