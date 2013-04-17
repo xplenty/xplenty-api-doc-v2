@@ -48,12 +48,12 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>:"https://api.
 	"status": "pending",
 	"owner_id": 27,
 	"plan_id": null,
-    	"nodes": 1,
-    	"type": "sandbox",
+	"nodes": 1,
+	"type": "sandbox",
 	"created_at": "2013-03-03T13:06:51Z",
 	"updated_at": "2013-03-03T13:06:51Z",
 	"available_since": null,
-    	"terminated_at": "2013-04-17T07:37:33Z",
+	"terminated_at": "2013-04-17T07:37:33Z",
 	"running_jobs_count": 0,
 	"url": "https://api.xplenty.com/xplenation/api/clusters/167"
 }
