@@ -21,7 +21,9 @@ The details returned for each cluster are:
 * **owner_id** - the numeric user ID
 * **plan_id** - the ID of the cluster's plan
 * **created_at** - the date and time the cluster was created
-* **updated_at** - the date and time the cluster was last updated. 
+* **updated_at** - the date and time the cluster was last updated 
+* **available_since** - the date and time the cluster was available
+* **terminated_at** - the date and time the cluster was terminated
 * **running_jobs_count** - the number of jobs currently running on the cluster
 * **url** - the unique cluster resource URL
 
@@ -47,10 +49,14 @@ The details returned for each cluster are:
         "status": "terminated",
         "owner_id": 27,
         "plan_id": 1,
+        "nodes": 2,
+        "type": "production",
         "created_at": "2013-01-25T08:18:39Z",
         "updated_at": "2013-01-28T16:45:24Z",
+        "available_since": "2013-01-28T16:46:22Z",
+        "terminated_at": "2013-01-28T17:45:33Z",
         "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/javasdk/api/clusters/99"
+        "url": "https://api.xplenty.com/xplenation/api/clusters/99"
     },
     {
         "id": 98,
@@ -59,10 +65,14 @@ The details returned for each cluster are:
         "status": "terminated",
         "owner_id": 27,
         "plan_id": 1,
+        "nodes": 2,
+        "type": "production",
         "created_at": "2013-01-25T08:17:56Z",
         "updated_at": "2013-01-28T16:45:14Z",
+        "available_since": "2013-01-28T08:23:12Z",
+        "terminated_at": "2013-01-28T16:45:14Z",
         "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/javasdk/api/clusters/98"
+        "url": "https://api.xplenty.com/xplenation/api/clusters/98"
     },
     {
         "id": 97,
@@ -70,11 +80,15 @@ The details returned for each cluster are:
         "description": "Daily Outliers Test",
         "status": "terminated",
         "owner_id": 27,
-        "plan_id": 1,
+        "plan_id": null,
+        "nodes": 0,
+        "type": "sandbox",
         "created_at": "2013-01-25T07:36:04Z",
         "updated_at": "2013-01-25T07:45:19Z",
+        "available_since": "2013-01-25T07:40:02Z",
+        "terminated_at": "2013-01-25T07:45:19Z",
         "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/javasdk/api/clusters/97"
+        "url": "https://api.xplenty.com/xplenation/api/clusters/97"
     }
 ]
 ```
