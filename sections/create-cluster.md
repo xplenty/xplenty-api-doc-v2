@@ -33,7 +33,7 @@ You can verify that a cluster has initialized successfully by [getting the clust
 
 ### Request (Curl Call)
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>:"https://api.xplenty.com/<accountID>/api/clusters" 
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters" 
 	-d "cluster[plan_id]=<clusterPlanID>" 
 	-d "cluster[nodes]=4"
 	-d "cluster[type]=sandbox"
