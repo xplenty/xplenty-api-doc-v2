@@ -26,7 +26,7 @@ This call adds the calling user as a watcher of the specified cluster.
 
 ### Request (Curl Call)
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/_<accountID>_/api/clusters/{cluster_id}/watchers"
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/<accountID>/api/clusters/{cluster_id}/watchers'
 ```
 
 ### Response Example
@@ -42,7 +42,7 @@ This call removes the calling user from the watcher list of the specified cluste
 
 ### Request (Curl Call)
 ```shell
-curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/_<accountID>_/api/clusters/{cluster_id}/watchers"
+curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/{cluster_id}/watchers"
 ```
 
 ### Response
@@ -56,7 +56,7 @@ This call retrieves the list of users watching the specified cluster.
 
 ### Request (Curl Call)
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/_<accountID>_/api/clusters/{cluster_id}/watchers"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/<accountID>/api/clusters/{cluster_id}/watchers'
 ```
 
 ### Response Example
@@ -72,7 +72,7 @@ This call adds the calling user as a watcher of the specified job.
 
 ### Request (Curl Call)
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/_<accountID>_/api/jobs/{job_id}/watchers"
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/<accountID>/api/jobs/{job_id}/watchers'
 ```
 
 ### Response Example
@@ -88,7 +88,7 @@ This call removes the calling user from the watcher list of the specified job.
 
 ### Request (Curl Call)
 ```shell
-curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/_<accountID>_/api/jobs/{job_id}/watchers"
+curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/<accountID>/api/jobs/{job_id}/watchers'
 ```
 
 ### Response
