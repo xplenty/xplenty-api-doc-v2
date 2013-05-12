@@ -61,7 +61,7 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.
 
 ### Response Example
 ```json
-{"id":1,"display_name":"Xplenty"}
+[{"id":1,"display_name":"Xplenty"}]
 ```
 
 ## Watch Job
@@ -107,5 +107,5 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api.x
 
 ### Response Example
 ```json
-{"id":1,"display_name":"Xplenty"}
+[{"id":1,"display_name":"Xplenty"}]
 ```
