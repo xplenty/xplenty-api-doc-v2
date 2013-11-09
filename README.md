@@ -143,7 +143,7 @@ Xplenty provides all REST API methods over SSL. Whenever your code might be oper
 ### Authentication
 Most of the Xplenty API calls require authentication, supplied in the form of the API key which is generated for each account.
 
-Once you have an API key, you can either attach it to each request as a "key" parameter, or use HTTP Basic Authentication with a blank username and the API key as a password. Here's an example using curl (the colon separates the username and password):
+Once you have an API key, you can either attach it to each request as a "key" parameter, or use HTTP Basic Authentication with the API key as a username and a blank password. Here's an example using curl (the colon separates the username and password):
 
 ```shell
 curl -H "Accept: application/vnd.xplenty+json" -u <apikeyhere>: https://api.xplenty.com/<accountID>/clusters
