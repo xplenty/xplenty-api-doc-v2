@@ -39,24 +39,40 @@ The **job resource ID** must be supplied at the end of the request URL.
 
 ### Response Example
 ```json
-    {
-        "id": 304,
-        "status": "failed",
-        "variables": 
+{
+    "id": 157,
+    "status": "completed",
+    "variables": {},
+    "owner_id": 1,
+    "progress": 1,
+    "outputs_count": 2,
+    "outputs": [
         {
-            "InputPath": "/today"
+            "component_name": "destination1",
+            "created_at": "2013-03-04T07:17:51Z",
+            "id": 521,
+            "name": "projected_results",
+            "records_count": 10415234,
+            "updated_at": "2013-03-04T07:17:51Z",
+            "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/521",
         },
-        "owner_id": 1,
-        "progress": 0,
-        "outputs_count": 0,
-        "started_at": "2013-03-04T08:02:20Z",
-        "created_at": "2013-03-04T08:02:17Z",
-        "updated_at": "2013-03-04T08:03:01Z",
-        "failed_at": null,
-        "cluster_id": 176,
-        "package_id": 103,
-        "errors": "Package failed to execute.",
-        "url": "https://api.xplenty.com/xplenation/api/jobs/304",
-        "runtime_in_seconds": 40
-    }
+        {
+            "component_name": "destination2",
+            "created_at": "2013-03-04T07:14:44Z",
+            "id": 522,
+            "name": "projected_results2",
+            "records_count": 423,
+            "updated_at": "2013-03-04T07:14:44Z",
+            "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/522",
+        },
+    ],
+    "started_at": "2012-12-30T14:21:29Z",
+    "created_at": "2012-12-30T14:21:18Z",
+    "updated_at": "2012-12-30T14:29:29Z",
+    "cluster_id": 52,
+    "package_id": 434,
+    "errors": "",
+    "url": "https://api.xplenty.com/xplenation/api/jobs/157",
+    "runtime_in_seconds": 417
+}
 ```
