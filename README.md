@@ -211,6 +211,7 @@ These are the methods supported by the Xplenty API:
 
 * [Create Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md)
 * [List Clusters](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-clusters.md)
+* [Update Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/update-cluster.md)
 * [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md)
 * [Terminate Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-cluster.md)
 * [Run Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/run-job.md)

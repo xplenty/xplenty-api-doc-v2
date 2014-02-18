@@ -7,6 +7,9 @@ The most common way to manage clusters is to [create a cluster](https://github.c
 When you create a cluster, you determine its size by specifying if it's a sandbox cluster or the number of compute nodes when it's of production type.
 
 After creating a cluster, poll its status by [retrieving the cluster information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) and checking its status value. When the status changes to "available", the cluster has finished initializing and is ready to run jobs.
+
+You can also [update the cluster information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/update-cluster.md) and even horizontally scale the cluster's compute nodes.
+
 After terminating a cluster, poll its status and verify that it changes to "terminated", to ensure that its resources have been released.
 
 ## Job Management
