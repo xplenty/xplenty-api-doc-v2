@@ -28,6 +28,7 @@ The details returned for the job are as follows:
 * **errors** - a textual message describing errors encountered while the job was run
 * **url** - the job resource URL
 * **runtime_in_seconds** - the time in seconds that the job has run up to the current time
+* **completed_at** - the date and time at which the job completed (stopped, failed or completed)
 
 ### Input Parameters
 The **job resource ID** must be supplied at the end of the request URL.
@@ -73,6 +74,7 @@ The **job resource ID** must be supplied at the end of the request URL.
     "package_id": 434,
     "errors": "",
     "url": "https://api.xplenty.com/xplenation/api/jobs/157",
-    "runtime_in_seconds": 417
+    "runtime_in_seconds": 417,
+    "completed_at": null
 }
 ```

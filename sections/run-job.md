@@ -58,6 +58,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
     "package_id": 434,
     "errors": "",
     "url": "https://api.xplenty.com/xplenation/api/jobs/157",
-    "runtime_in_seconds": 417
+    "runtime_in_seconds": 417,
+    "completed_at": "2012-12-30T14:29:29Z"
 }
 ```

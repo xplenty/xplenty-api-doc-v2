@@ -33,6 +33,8 @@ The **cluster resource ID** must be supplied at the end of the request URL.
         "available_since": "2013-03-03T13:09:22Z",
         "terminated_at": null,        
         "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
+        "url": "https://api.xplenty.com/xplenation/api/clusters/167",
+        "terminate_on_idle": false,
+        "time_to_idle": 3600
     }
 ```

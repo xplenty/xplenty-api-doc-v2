@@ -13,11 +13,9 @@ An Xplenty package is a data flow definition that you define in the Xplenty web 
 An Xplenty **job** is a process that is responsible for performing a data flow according to a specific package on a Hadoop cluster. The job is a batch process that runs on a finite amount of data and then terminates. Several jobs can run the same package simultaneously.
 When you call the Xplenty API to run a new job, you supply the name of the package whose workflow the job should perform, and the cluster on which to run.
 
-### Cluster and Cluster Plan
+### Cluster
 
-An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until you request to terminate the cluster.
-
-A **cluster plan** is a definition of a cluster type, which includes the number of nodes in the cluster and its pricing. Cluster plan details can be viewed in the Xplenty web application. When you create a new cluster, you specify its cluster plan. You  may choose different cluster plans for different types of jobs and packages, depending on the computing power you require.
+An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until it's terminated.
 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.

@@ -42,11 +42,7 @@ When you call the Xplenty API to run a new job, you supply the name of the packa
 
 ### Cluster 
 
-An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until you request to terminate the cluster.
-
-### Cluster Plan
-
-Deprecated: A **cluster plan** is a definition of a cluster type, which includes the number of nodes in the cluster. Cluster plan details can be viewed in the Xplenty web application. When you create a new cluster, you specify its cluster plan. You  may choose different cluster plans for different types of jobs and packages, depending on the computing power you require.
+An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until it's terminated.
 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
@@ -213,7 +209,6 @@ If your user has been blacklisted and you think there has been an error, you can
 
 These are the methods supported by the Xplenty API:
 
-* DEPRECATED [List Cluster Plans](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-cluster-plans.md)
 * [Create Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md)
 * [List Clusters](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-clusters.md)
 * [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md)

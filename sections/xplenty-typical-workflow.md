@@ -1,6 +1,6 @@
 ## Xplenty Typical Workflow
 
-Here are the steps of a typical workflow for running a job using the Xplenty API, after defining a package using the Xplenty web application and determining the required cluster plan. You may want to repeat this workflow on a recurring basis, for instance every day or every week, depending on the rate that your data accumulates.
+Here are the steps of a typical workflow for running a job using the Xplenty API, after defining a package using the Xplenty web application and determining the required cluster size. You may want to repeat this workflow on a recurring basis, for instance every day or every week, depending on the rate that your data accumulates.
 
 * [Step 1: Create a Cluster](#CreateCluster)
 * [Step 2: Verify Cluster Initialization](#VerifyCluster)
@@ -15,16 +15,17 @@ Here are the steps of a typical workflow for running a job using the Xplenty API
 <a id="CreateCluster" name="CreateCluster">
 ### Step 1: Create a Cluster
 </a>
-Create a new cluster according to the required cluster plan. 
+Create a new cluster. The following example creates cluster of type "production" with 2 compute nodes. 
 
 **_Note:_** Save the cluster ID value returned in the response "id" field. You will use the value to refer to this cluster in subsequent API calls.
 
 **Request**
 ```shell
     curl -X POST -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS:"https://api.xplenty.com/xplenation/api/clusters" 
-    -d "cluster[plan_id]=1" 
     -d "cluster[name]=DailyCluster_03032013" 
     -d "cluster[description]=Cluster for running daily jobs. Date 03032013."
+    -d "cluster[type]=production" 
+    -d "cluster[nodes]=2" 
 ```
 
 **Response**
@@ -34,12 +35,17 @@ Create a new cluster according to the required cluster plan.
         "name": "DailyCluster_03032013",
         "description": "Cluster for running daily jobs. Date 03032013.",
         "status": "pending",
+        "nodes": 2,
+        "type": "production",
         "owner_id": 27,
         "plan_id": 1,
         "created_at": "2013-03-03T13:06:51Z",
         "updated_at": "2013-03-03T13:06:51Z",
+        "terminated_at": null,
         "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
+        "url": "https://api.xplenty.com/xplenation/api/clusters/167",
+        "terminate_on_idle": false,
+        "time_to_idle": 3600
     }
 ```
 
@@ -61,12 +67,17 @@ Poll the cluster status and verify that it changes to the "available" value. Whe
         "name": "DailyCluster_25072013",
         "description": "Cluster for running daily jobs. Date 03032013.",
         "status": "available",
+        "nodes": 2,
+        "type": "production",
         "owner_id": 27,
         "plan_id": 1,
         "created_at": "2013-03-03T13:06:51Z",
         "updated_at": "2013-03-03T13:13:19Z",
+        "terminated_at": null,
         "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
+        "url": "https://api.xplenty.com/xplenation/api/clusters/167",
+        "terminate_on_idle": false,
+        "time_to_idle": 3600
     }
 ```
 ***
@@ -99,6 +110,7 @@ Request to run a new job, passing values for the cluster ID, the package ID, and
         "owner_id": 27,
         "progress": 0,
         "outputs_count": 0,
+        "outputs": [],
         "started_at": null,
         "created_at": "2013-03-04T08:10:42Z",
         "updated_at": "2013-03-04T08:10:42Z",
@@ -106,7 +118,8 @@ Request to run a new job, passing values for the cluster ID, the package ID, and
         "package_id": 103,
         "errors": null,
         "url": "https://api.xplenty.com/xplenation/api/jobs/305",
-        "runtime_in_seconds": 0
+        "runtime_in_seconds": 0,
+        "completed_at": null
     }
 ```
 ***
@@ -133,6 +146,7 @@ Poll the job's status to verify that it changes to the "running" value. When req
         "owner_id": 27,
         "progress": 5,
         "outputs_count": 0,
+        "outputs": [],
         "started_at": "2013-03-03T08:02:20Z",
         "created_at": "2013-03-03T08:02:17Z",
         "updated_at": "2013-03-03T08:03:01Z",
@@ -140,7 +154,8 @@ Poll the job's status to verify that it changes to the "running" value. When req
         "package_id": 103,
         "errors": "",
         "url": "https://api.xplenty.com/xplenation/api/jobs/305",
-        "runtime_in_seconds": 40
+        "runtime_in_seconds": 40,
+        "completed_at": null
     }
 ```
 ***
@@ -169,6 +184,7 @@ Check the value of the job's "status" field. When it changes to "completed" or "
         "owner_id": 27,
         "progress": 100,
         "outputs_count": 0,
+        "outputs": [],
         "started_at": "2013-03-03T08:02:20Z",
         "created_at": "2013-03-03T08:02:17Z",
         "updated_at": "2013-03-03T08:07:01Z",
@@ -176,7 +192,8 @@ Check the value of the job's "status" field. When it changes to "completed" or "
         "package_id": 103,
         "errors": "",
         "url": "https://api.xplenty.com/xplenation/api/jobs/305",
-        "runtime_in_seconds": 200
+        "runtime_in_seconds": 200,
+        "completed_at": null
     }
 ```
 ***
@@ -203,12 +220,18 @@ Request to terminate the cluster.
         "name": "DailyCluster_25072013",
         "description": "Cluster for running daily jobs. Date 03032013.",
         "status": "pending_terminate",
+        "nodes": 2,
+        "type": "production",
         "owner_id": 27,
         "plan_id": 1,
         "created_at": "2013-03-03T08:02:17Z",
         "updated_at": "2013-03-03T08:07:01Z",
+        "available_since": "2013-01-28T16:46:22Z",
+        "terminated_at": null,
         "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
+        "url": "https://api.xplenty.com/xplenation/api/clusters/167",
+        "terminate_on_idle": false,
+        "time_to_idle": 3600
     }
 ```
 ***
@@ -229,11 +252,17 @@ Poll the cluster status and verify that it changes to the "terminated" value. Wh
         "name": "DailyCluster_25072013",
         "description": "Cluster for running daily jobs. Date 03032013.",
         "status": "terminated",
+        "nodes": 2,
+        "type": "production",
         "owner_id": 27,
         "plan_id": 1,
         "created_at": "2013-03-03T13:06:51Z",
         "updated_at": "2013-03-03T13:13:19Z",
+        "available_since": "2013-01-28T16:46:22Z",
+        "terminated_at": "2013-03-03T13:13:19Z",
         "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
+        "url": "https://api.xplenty.com/xplenation/api/clusters/167",
+        "terminate_on_idle": false,
+        "time_to_idle": 3600
     }
 ```
