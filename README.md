@@ -5,7 +5,7 @@
 The Xplenty API provides functions for controlling and monitoring Xplenty clusters and jobs.
 After defining an Xplenty data processing package using the Xplenty web application, you can call the Xplenty API to create Hadoop clusters, run jobs, monitor their progress, and terminate jobs and clusters.
 
-You can choose to use the [Xplenty REST API](#RESTSpec), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty.jar), [Python wrapper](https://github.com/xplenty/xplenty.py) or  [Ruby wrapper](https://github.com/xplenty/xplenty.rb).
+You can choose to use the [Xplenty REST API](#RESTSpec), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty.jar), the [Python wrapper](https://github.com/xplenty/xplenty.py) or the  [Ruby wrapper](https://github.com/xplenty/xplenty.rb).
 
 These are the topics covered on this page:
 * [Getting Started](#GettingStarted)
@@ -84,6 +84,8 @@ All published date and time objects are UTC based and returned in ISO 8601 forma
 The API presently supports the [JSON](http://en.wikipedia.org/wiki/Json) format only.
 Specify a custom mime type in the [Accept] header as follows:
 
+**AI?? why if only JSON supported**
+
     application/vnd.xplenty+json
 
 Unless you specify a version, the latest representation of resources will always be returned in the response. If you’re building an application and want to ensure a consistent response format, specify a version as follows:
@@ -124,7 +126,7 @@ These are the HTTP status codes that the Xplenty API can return:
 
 **Error Responses**
 
-When the API returns an error messages, it does so in your requested format. For example, an error from a JSON method might look like this:
+When the API returns an error message, it does so in your requested format. For example, an error from a JSON method might look like this:
 
 ```json
 {
@@ -138,7 +140,7 @@ When the API returns an error messages, it does so in your requested format. For
 
 ### Encrypted Communication (SSL)
 
-Xplenty provides all REST API methods over SSL. Whenever your code might be operating on a non-secure network (that is, if you're developing a client application), please make use of SSL for all authenticated or sensitive requests. For example, requesting cluster information should be performed by an Xplenty client over SSL. Service-to-service communication may not benefit from SSL if you trust your hosting provider (or if you are your own hosting provider).
+Xplenty provides all REST API methods over SSL. Whenever your code might be operating on a non-secure network (that is, if you're developing a client application), please make use of SSL for all authenticated or sensitive requests.  Service-to-service communication may not benefit from SSL if you trust your hosting provider (or if you are your own hosting provider).
 
 ### Authentication
 Most of the Xplenty API calls require authentication, supplied in the form of the API key which is generated for each account.
@@ -151,7 +153,10 @@ curl -H "Accept: application/vnd.xplenty+json" -u <apikeyhere>: https://api.xple
 API key authentication works well for personal scripts, but is not recommended for third party services. We plan to deliver OAuth in the near future to provide better granularity and control when providing access to third party services.
 
 ### Collection Resources and Pagination
-The response to a GET request for collection resources (e.g. /clusters) may not return all the objects in the collection, depending on how many there are. To query collection resources incrementally, use the following parameters:
+**AI?? Should be in its own section, not security.**
+**AI?? Does GET response info syntax have to be documented**
+
+The response to a GET request for collection resources (e.g. clusters) may not return all the objects in the collection, depending on the number of objects. To query collection resources incrementally, use the following parameters:
 
 * **offset** - the index of the first object to retrieve, starting from 0
 * **limit** - the number of items to return (default is 20, maximum is 100)
@@ -164,6 +169,8 @@ Alternatively, you can use the **page** parameter, instead of **offset**, as fol
 * **limit** - the number of items to return (default is 20, maximum is 100)
 
 The pagination info is included in the [Link header](http://www.w3.org/Protocols/9707-link-header.html).
+
+**AI?? This is link to a draft of a draft**
 
 <a id="RateLimits" name="RateLimits">
 ## Rate Limits
@@ -187,9 +194,6 @@ Every time you call the API, the current rate status will be returned in the res
 ### Cost of API calls
 Unless otherwise noted, an API call deducts 1 credit from your allocation. 
 
-### Errors
-
-**429 Too Many Requests (Rate Limit Exceeded)**
 
 When a client exceeds the allocated rate limit, the Xplenty API returns a "429 Too Many Requests" response with an associated "Rate Limit Exceeded" message as the error description.
 
