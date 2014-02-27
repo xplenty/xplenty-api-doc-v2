@@ -19,32 +19,33 @@ A successful call returns the following details for the new cluster:
     * **error** - an error was encountered on the cluster
 * **owner_id** - the numeric user ID of the cluster's owner
 * **plan_id** - the ID of the cluster's plan
-* **type** - the type of the cluster ("sandbox" or "production")
 * **nodes** - the number of compute nodes for the cluster
+* **type** - the type of the cluster ("sandbox" or "production")
 * **created_at** - the date and time the cluster was created
 * **updated_at** - the date and time the cluster was last updated
 * **available_since** - the date and time the cluster became available
 * **terminated_at** - the date and time the cluster was terminated
 * **running_jobs_count** - the number of jobs currently running on the cluster
+* **url** - the unique cluster resource URL
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
-* **url** - the unique cluster resource URL
 
 ### Notes
-* This call only triggers cluster creation, which is why it returns the "pending" status. You can run a job on a pending cluster, but if for any reason the cluster failed to initialize, the job will fail to run.
-You can verify that a cluster has initialized successfully by [getting the cluster's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) and checking for the "available" status.
-* You must 
-* Save the cluster ID value returned in the response "id" field. You will use the value to refer to this cluster in subsequent API calls.
+* This call only triggers cluster creation, and therefore it returns the "pending" status. You can run a job on a pending cluster, but if for any reason the cluster failed to initialize, the job will fail to run.
+You can verify that a cluster has initialized successfully by [retrieving the cluster's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) and checking for the "available" status.
+* You must save the cluster ID value returned in the response "id" field. You will use the value to refer to this cluster in subsequent API calls.
 
 ### Input Parameters
-* **nodes** - determines the number of compute nodes in the cluster. The value range is between 2 and your account's maximum, determined by the chosen pricing plan. 
-* **type** (optional) - if value is set to "sandbox" then the nodes parameter is ignored and a sandbox cluster is created.
-* **name** (optional) - a name to assign to the new cluster. If not supplied, the system will generate a name for the cluster.
-* **description** (optional) - a description to assign to the new cluster. If not supplied, the description will remain blank.
-* **terminate_on_idle** (optional) - when set to either true, t or 1 this cluster will be terminated after it becomes idle.
-* **time_to_idle** (optional) - the time interval (in seconds) in which this cluster will become idle. Defaults to 3600 seconds (60 minutes).
+|Name|Required?|    Default|Description|
+|----|---------|    -------|-----------|
+|nodes|Y| |Determines the number of compute nodes in the cluster. The value range is between 2 and your account's maximum, determined by the chosen pricing plan|
+type|N|production|If the value is set to "sandbox", a sandbox cluster is created and the "nodes" parameter is ignored
+name|N|System generated|Name to assign to the new cluster
+description|N|Blank|Description to assign to the new cluster
+terminate_on_idle|N|false|If the value is set to either true, t or 1 this cluster will be terminated after it becomes idle
+time_to_idle|N|3600 seconds (60 minutes)|The time interval (in seconds) after which this cluster will become idle
 
-### Request (Curl Call)
+### Request (Curl Call) Example
 ```shell
 curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters" 
 	-d "cluster[nodes]=4"
