@@ -1,6 +1,6 @@
 # Xplenty Control and Monitoring Tasks
 
-Here are the main tasks you can perform with the Xplenty control and monitoring API.
+These are the main tasks you can perform with the Xplenty control and monitoring API.
 
 ## Cluster Management
 The most common way to manage clusters is to [create a cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md) when you need to run one or more jobs, and [terminate the cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-cluster.md) when the jobs are completed. 
