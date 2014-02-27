@@ -1,7 +1,7 @@
 ## Get Cluster Information
 
 ### Description
-This call returns the details of the cluster with the given ID, as follows:
+This call returns these details of the cluster with the given ID:
 
 * **id** - the cluster's numeric identifier
 * **name** - the name given to the cluster upon creation
@@ -16,22 +16,23 @@ This call returns the details of the cluster with the given ID, as follows:
     * **error** - an error was encountered on the cluster
 * **owner_id** - the numeric user ID of the cluster's owner
 * **plan_id** - the ID of the cluster's plan
-* **type** - the type of the cluster ("sandbox" or "production")
 * **nodes** - the number of compute nodes for the cluster
+* **type** - the type of the cluster ("sandbox" or "production")
 * **created_at** - the date and time the cluster was created
 * **updated_at** - the date and time the cluster was last updated
 * **available_since** - the date and time the cluster became available
 * **terminated_at** - the date and time the cluster was terminated
 * **running_jobs_count** - the number of jobs currently running on the cluster
+* **url** - the unique cluster resource URL
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
-* **url** - the unique cluster resource URL
 
 
 ### Input Parameters
+
 The **cluster resource ID** must be supplied at the end of the request URL.
 
-### Request (Curl Call)
+### Request (Curl Call) Syntax
 ```shell
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>"
 ```
