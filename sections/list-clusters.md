@@ -2,8 +2,8 @@
 
 ### Description
 This call returns a list of clusters that were created by users in your account.
-You can use this information to monitor and display your clusters and their statuses.
-Optionally, you can use the input parameters to filter the cluster list so that it contains
+You can use this information to monitor and display your clusters and their status.
+Optionally, you can supply the input parameters to filter the cluster list so that it contains
 only clusters with a specific status, and to determine the order by which the list will be sorted.
 
 The details returned for each cluster are:
@@ -21,24 +21,27 @@ The details returned for each cluster are:
     * **error** - an error was encountered on the cluster
 * **owner_id** - the numeric user ID of the cluster's owner
 * **plan_id** - the ID of the cluster's plan
-* **type** - the type of the cluster ("sandbox" or "production")
 * **nodes** - the number of compute nodes for the cluster
+* **type** - the type of the cluster ("sandbox" or "production")
 * **created_at** - the date and time the cluster was created
 * **updated_at** - the date and time the cluster was last updated
 * **available_since** - the date and time the cluster became available
 * **terminated_at** - the date and time the cluster was terminated
 * **running_jobs_count** - the number of jobs currently running on the cluster
+* **url** - the unique cluster resource URL
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
-* **url** - the unique cluster resource URL
 
 ### Input Parameters
-* **status** (optional) - Possible values are: ```pending```, ```creating```, ```available```, ```pending_terminate```, ```terminating```, ```terminated```, ```error```, ```all``` (default). The call will return only clusters with the given status, or all the clusters if the "all" value is specified. 
-* **sort** (optional) - Possible values are: ```updated```, ```created``` (default). The cluster list will be sorted by the clusters' "updated_by" values or "created_by" values respectively, depending on the value of the "sort" parameter.
-* **direction** (optional) - Possible values are: ```asc```, ```desc``` (default). The clusters will be sorted in ascending or descending order of the "sort" attribute, depending on the value of "direction".
-* **since** (optional) - The cluster list will be filtered out of any clusters updated before the given time. The time should be passed in as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
-### Request (Curl Call)
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
+status|N|"all"|Possible values are any status listed above or ```all```. The call will return only clusters with the given status, or all the clusters if the "all" value is specified.
+sort|N|"created"|Possible values are ```updated``` or ```created```. The cluster list will be sorted by the clusters' "updated_by" or "created_by" value respectively.
+direction|N|"desc"|Possible values are: ```asc```, ```desc```. The clusters will be sorted in ascending or descending order of the "sort" attribute.
+since|N| |The cluster list will only contain clusters updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
+
+### Request (Curl Call) Syntax
 ```shell
     curl -X GET -H "Accept: application/vnd.xplenty+json" 
     -u <APIkey>: "https://api-staging.xplenty.com/<accountID>/api/clusters?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
