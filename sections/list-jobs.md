@@ -1,10 +1,11 @@
 ## List Jobs
 
 ### Description
-This call returns information for all the jobs that have been created under your account.
-Optionally, you can use the input parameters to filter the job list so that it contains only jobs with a specific status, and to determine the order by which the list will be sorted.
+This call returns information for the list of jobs that were created by users in your account.
+You can use this information to monitor your jobs and their status.
+Optionally, you can supply the input parameters to filter the job list so that it contains only jobs with a specific status, and to determine the order by which the list will be sorted.
 
-The details returned for each job are as follows:
+The details returned for each job are:
 
 * **id** - the numeric job ID
 * **status** - the job status. Possible values are: 
@@ -20,10 +21,11 @@ The details returned for each job are as follows:
 * **owner_id** - the numeric user ID
 * **progress** - the job progress in percentages (a value between 0.0 and 1.0)
 * **outputs_count** - the number of output targets defined in the job's package
+* **outputs** - list of the output targets defined in the job's package
 * **started_at** - the date and time at which the job started running
 * **created_at** - the date and time at which the "run" request was made 
-* **failed_at** - the date and time at which the job failed (if it failed)* 
 * **updated_at** - the date and time the job was last updated (occurs when package tasks are completed)
+* **failed_at** - the date and time at which the job failed (if it failed)* 
 * **cluster_id** - the ID of the cluster in which the job was run
 * **package_id** - the ID of the package that the job ran (or is running)
 * **errors** - a textual message describing errors encountered while the job was run
@@ -31,12 +33,15 @@ The details returned for each job are as follows:
 * **runtime_in_seconds** - the time in seconds that the job has run up to the current time
 
 ### Input Parameters
-* **status** (optional) - Possible values are: ```idle```, ```pending```, ```running```, ```completed```, ```failed```, ```pending_stoppage```, ```stopping```, ```stopped```, ```all``` (default). The call will return only jobs with the given status, or all the jobs if the ```all``` value is specified. 
-* **sort** (optional) - Possible values are: ```updated```, ```created``` (default). The job list will be sorted by the jobs' "updated_by" values or "created_by" values respectively, depending on the value of the "sort" parameter.
-* **direction** (optional) - Possible values are: ```asc```, ```desc``` (default). The jobs will be sorted in ascending or descending order of the "sort" attribute, depending on the value of "direction".
-* **since** (optional) - The job list will be filtered out of any jobs updated before the given time. The time should be passed in as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
-### Request (Curl Call)
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
+status|N|"all"|Possible values are any status listed above or ```all```. The call will return only jobs with the given status, or all the clusters if the "all" value is specified.
+sort|N|"created"|Possible values are ```updated``` or ```created```. The job list will be sorted by the jobs' "updated_by" or "created_by" value respectively.
+direction|N|"desc"|Possible values are: ```asc```, ```desc```. The jobss will be sorted in ascending or descending order of the "sort" attribute.
+since|N| |The job list will only contain jobs updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
+
+### Request (Curl Call) Syntax
 ```shell
     curl -X GET -H "Accept: application/vnd.xplenty+json" 
     -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
