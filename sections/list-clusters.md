@@ -1,7 +1,7 @@
 ## List Clusters
 
 ### Description
-This call returns a list of clusters that were created by users in your account.
+This call returns information for a list of clusters that were created by users in your account.
 You can use this information to monitor and display your clusters and their status.
 Optionally, you can supply the input parameters to filter the cluster list so that it contains
 only clusters with a specific status, and to determine the order by which the list will be sorted.
