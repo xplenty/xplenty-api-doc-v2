@@ -1,9 +1,9 @@
 ## Get Job Information
 
 ### Description
-The calls retrieves information for a job, according to the given job ID.
+The calls returns information for a job with the given job ID.
 
-The details returned for the job are as follows:
+The details returned for the job are as:
 
 * **id** - the numeric job ID
 * **status** - the job status. Possible values are: 
@@ -19,6 +19,7 @@ The details returned for the job are as follows:
 * **owner_id** - the numeric user ID
 * **progress** - the job progress in percentages (a value between 0.0 and 1.0)
 * **outputs_count** - the number of output targets defined in the job's package
+* **outputs** -  list of the output targets defined in the job's package
 * **started_at** - the date and time at which the job started running
 * **created_at** - the date and time at which the "run" request was made
 * **failed_at** - the date and time at which the job failed (if it failed)
@@ -33,7 +34,7 @@ The details returned for the job are as follows:
 ### Input Parameters
 The **job resource ID** must be supplied at the end of the request URL.
 
-### Request (Curl Call)
+### Request (Curl Call) Syntax
 ```shell
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs/<jobID>"
 ```
