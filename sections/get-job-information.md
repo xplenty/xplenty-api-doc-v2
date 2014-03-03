@@ -3,7 +3,7 @@
 ### Description
 The calls returns information for a job with the given job ID.
 
-The details returned for the job are as:
+The details returned for the job are:
 
 * **id** - the numeric job ID
 * **status** - the job status. Possible values are: 
@@ -20,9 +20,9 @@ The details returned for the job are as:
 * **progress** - the job progress in percentages (a value between 0.0 and 1.0)
 * **outputs_count** - the number of output targets defined in the job's package
 * **outputs** -  list of the output targets defined in the job's package
-* **started_at** - the date and time at which the job started running
-* **created_at** - the date and time at which the "run" request was made
-* **failed_at** - the date and time at which the job failed (if it failed)
+* **started_at** - the date and time the job started running
+* **created_at** - the date and time the "run" request was made
+* **failed_at** - the date and time the job failed (if it failed)
 * **updated_at** - the date and time the job was last updated (occurs when package tasks are completed)
 * **cluster_id** - the ID of the cluster in which the job was run
 * **package_id** - the ID of the package that the job ran (or is running)
@@ -70,6 +70,7 @@ The **job resource ID** must be supplied at the end of the request URL.
     ],
     "started_at": "2012-12-30T14:21:29Z",
     "created_at": "2012-12-30T14:21:18Z",
+    "failed_at": null,
     "updated_at": "2012-12-30T14:29:29Z",
     "cluster_id": 52,
     "package_id": 434,
