@@ -1,7 +1,9 @@
-## Get Cluster Information
+## Update Cluster
 
 ### Description
-This call returns these details of the cluster with the given ID:
+This call updates the given cluster, including scaling a running cluster of type "production".
+
+A successful call returns the following details for the cluster after the changes.
 
 * **id** - the cluster's numeric identifier
 * **name** - the name given to the cluster upon creation
@@ -27,34 +29,44 @@ This call returns these details of the cluster with the given ID:
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
 
-
 ### Input Parameters
-
-The **cluster resource ID** must be supplied at the end of the request URL.
+|Name|Required?|    Default|Description|
+|----|---------|    -------|-----------|
+|cluster_id|Y| |The id of the cluster to update
+|nodes|N| |Determines the number of compute nodes in the cluster. The value range is between 2 and your account's maximum, determined by the chosen pricing plan|
+name|N| |The name given to the cluster upon creation
+description|N| |The description given to the cluster upon creation
+terminate_on_idle|N| |If the value is set to either true, t or 1 this cluster will be terminated after it becomes idle
+time_to_idle|N| |The time interval (in seconds) after which this cluster will become idle
 
 ### Request (Curl Call) Syntax
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>"
+    curl -X PUT -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>"
+    -d "cluster[nodes]=4"
+    -d "cluster[name]=<clusterName>" 
+    -d "cluster[description]=<clusterDescription>"
+    -d "cluster[terminate_on_idle]=1"
+    -d "cluster[time_to_idle]=7200"
 ```
 
 ### Response Example
 ```json
     {
-        "id": 99,
-        "name": "Daily Outliers Test #100",
-        "description": "Daily Outliers Test",
-        "status": "terminated",
+        "id": 167,
+        "name": "New Cluster",
+        "description": "New Cluster Description",
+        "status": "pending_terminate",
         "owner_id": 27,
-        "plan_id": 1,
-        "nodes": 2,
+        "plan_id": null,
+        "nodes": 4,
         "type": "production",
-        "created_at": "2013-01-25T08:18:39Z",
-        "updated_at": "2013-01-28T16:45:24Z",
-        "available_since": "2013-01-28T16:46:22Z",
-        "terminated_at": "2013-01-28T17:45:33Z",
+        "created_at": "2013-03-03T13:06:51Z",
+        "updated_at": "2013-03-03T14:16:18Z",
+        "available_since": "2013-03-03T13:09:22Z",
+        "terminated_at": null,        
         "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/99",
-        "terminate_on_idle": false,
-        "time_to_idle": 3600
+        "url": "https://api.xplenty.com/xplenation/api/clusters/167",
+        "terminate_on_idle": true,
+        "time_to_idle": 7200
     }
 ```

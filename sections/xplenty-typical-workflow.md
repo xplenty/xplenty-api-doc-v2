@@ -1,6 +1,6 @@
 ## Xplenty Typical Workflow
 
-Here are the steps of a typical workflow for running a job using the Xplenty API, after defining a package using the Xplenty web application and determining the required cluster plan. You may want to repeat this workflow on a recurring basis, for instance every day or every week, depending on the rate that your data accumulates.
+These are the steps of a typical workflow for running a job using the Xplenty API, after [defining a package using the Xplenty web application](http://community.xplenty.com/knowledgebase/articles/184931-xplenty-s-packages) and determining the required cluster size. You may want to repeat this workflow on a recurring basis, for instance every day or every week, depending on the rate that your data accumulates.
 
 * [Step 1: Create a Cluster](#CreateCluster)
 * [Step 2: Verify Cluster Initialization](#VerifyCluster)
@@ -15,60 +15,34 @@ Here are the steps of a typical workflow for running a job using the Xplenty API
 <a id="CreateCluster" name="CreateCluster">
 ### Step 1: Create a Cluster
 </a>
-Create a new cluster according to the required cluster plan. 
+Create a new cluster. The following example creates cluster of type "production" with 2 compute nodes. 
 
 **_Note:_** Save the cluster ID value returned in the response "id" field. You will use the value to refer to this cluster in subsequent API calls.
 
 **Request**
 ```shell
     curl -X POST -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS:"https://api.xplenty.com/xplenation/api/clusters" 
-    -d "cluster[plan_id]=1" 
     -d "cluster[name]=DailyCluster_03032013" 
     -d "cluster[description]=Cluster for running daily jobs. Date 03032013."
+    -d "cluster[type]=production" 
+    -d "cluster[nodes]=2" 
 ```
 
-**Response**
-```json
-    {
-        "id": 167,
-        "name": "DailyCluster_03032013",
-        "description": "Cluster for running daily jobs. Date 03032013.",
-        "status": "pending",
-        "owner_id": 27,
-        "plan_id": 1,
-        "created_at": "2013-03-03T13:06:51Z",
-        "updated_at": "2013-03-03T13:06:51Z",
-        "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
-    }
-```
+View [Create Cluster] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md) for the details of the request and response
 
 ***
 <a name="VerifyCluster" id="VerifyCluster">
 ### Step 2: Verify Cluster Initialization
 </a>
-Poll the cluster status and verify that it changes to the "available" value. When requesting cluster information, the cluster ID must appear at the end of the cluster URL.
+Poll the cluster status and check its status value. When the status changes to "available", the cluster has finished initializing and is ready to run jobs. When requesting cluster information, the cluster ID must appear at the end of the cluster URL.
 
 **Request**
 ```shell
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
 ```
 
-**Response**
-```json
-    {
-        "id": 167,
-        "name": "DailyCluster_25072013",
-        "description": "Cluster for running daily jobs. Date 03032013.",
-        "status": "available",
-        "owner_id": 27,
-        "plan_id": 1,
-        "created_at": "2013-03-03T13:06:51Z",
-        "updated_at": "2013-03-03T13:13:19Z",
-        "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
-    }
-```
+View [Get Cluster Information] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) for details of the response.
+
 ***
 <a id="RunJob" name="RunJob">
 ### Step 3: Run a Job
@@ -86,63 +60,21 @@ Request to run a new job, passing values for the cluster ID, the package ID, and
     -d "job[variables][OutputPath]=/output03032013"
 ```
 
-**Response**
-```json
-    {
-        "id": 305,
-        "status": "pending",
-        "variables": 
-        {
-            "InputPath": "/input03032013"
-            "OutputPath": "/output03032013"
-        },
-        "owner_id": 27,
-        "progress": 0,
-        "outputs_count": 0,
-        "started_at": null,
-        "created_at": "2013-03-04T08:10:42Z",
-        "updated_at": "2013-03-04T08:10:42Z",
-        "cluster_id": 167,
-        "package_id": 103,
-        "errors": null,
-        "url": "https://api.xplenty.com/xplenation/api/jobs/305",
-        "runtime_in_seconds": 0
-    }
-```
+View [Run Job] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/run-job.md) for details of the request and response.
+
 ***
 <a id="VerifyJob" name="VerifyJob">
 ### Step 4: Verify Job Initialization
 </a>
-Poll the job's status to verify that it changes to the "running" value. When requesting job information, the job ID must appear at the end of the job URL.
+Poll the job status and check its status value. When the status changes to "running", the job has been successfully launched. When requesting job information, the job ID must appear at the end of the job URL.
 
 **Request**
 ```shell
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305"
 ```
 
-**Response**
-```json
-    {
-        "id": 305,
-        "status": "running",
-        "variables": 
-        {
-            "InputPath": "/input03032013"
-            "OutputPath": "/output03032013"
-        },
-        "owner_id": 27,
-        "progress": 5,
-        "outputs_count": 0,
-        "started_at": "2013-03-03T08:02:20Z",
-        "created_at": "2013-03-03T08:02:17Z",
-        "updated_at": "2013-03-03T08:03:01Z",
-        "cluster_id": 167,
-        "package_id": 103,
-        "errors": "",
-        "url": "https://api.xplenty.com/xplenation/api/jobs/305",
-        "runtime_in_seconds": 40
-    }
-```
+View [Get Job Information] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md) for details of the response.
+
 ***
 <a id="MonitorJob" name="MonitorJob">
 ### Step 5: Monitor Job Status Until Completion
@@ -156,29 +88,8 @@ Check the value of the job's "status" field. When it changes to "completed" or "
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305"
 ```
 
-**Response**
-```json
-    {
-        "id": 305,
-        "status": "running",
-        "variables": 
-        {
-            "InputPath": "/input03032013"
-            "OutputPath": "/output03032013"
-        },
-        "owner_id": 27,
-        "progress": 100,
-        "outputs_count": 0,
-        "started_at": "2013-03-03T08:02:20Z",
-        "created_at": "2013-03-03T08:02:17Z",
-        "updated_at": "2013-03-03T08:07:01Z",
-        "cluster_id": 167,
-        "package_id": 103,
-        "errors": "",
-        "url": "https://api.xplenty.com/xplenation/api/jobs/305",
-        "runtime_in_seconds": 200
-    }
-```
+View [Get Job Information] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md) for details of the response.
+
 ***
 <a id="RunMoreJobs" name="RunMoreJobs">
 ### Step 6: Run Additional Jobs (Optional)
@@ -189,51 +100,25 @@ Optionally, repeat steps 3, 4 and 5, to run additional jobs for other data or ot
 <a id="TerminateCluster" name="TerminateCluster">
 ### Step 7: Terminate the Cluster
 </a>
-Request to terminate the cluster.
+Request to terminate the cluster, releasing its resources.
 
 **Request**
 ```shell
     curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
 ```
 
-**Response**
-```json
-    {
-        "id": 167,
-        "name": "DailyCluster_25072013",
-        "description": "Cluster for running daily jobs. Date 03032013.",
-        "status": "pending_terminate",
-        "owner_id": 27,
-        "plan_id": 1,
-        "created_at": "2013-03-03T08:02:17Z",
-        "updated_at": "2013-03-03T08:07:01Z",
-        "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
-    }
-```
+View [Terminate Cluster] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-cluster.md) for details of the response.
+
 ***
 <a id="VerifyClusterTermination" name="VerifyClusterTermination">
 ### Step 8: Verify Cluster Termination
 </a>
-Poll the cluster status and verify that it changes to the "terminated" value. When requesting cluster information, the cluster ID must appear at the end of the cluster URL.
+Poll the cluster status and check its status value. When the status changes to "terminated", the cluster resources have been released.
+When requesting cluster information, the cluster ID must appear at the end of the cluster URL.
 
 **Request**
 ```shell
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
 ```
 
-**Response**
-```json
-    {
-        "id": 167,
-        "name": "DailyCluster_25072013",
-        "description": "Cluster for running daily jobs. Date 03032013.",
-        "status": "terminated",
-        "owner_id": 27,
-        "plan_id": 1,
-        "created_at": "2013-03-03T13:06:51Z",
-        "updated_at": "2013-03-03T13:13:19Z",
-        "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/167"
-    }
-```
+View [Get Cluster Information] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) for details of the response.

@@ -23,14 +23,15 @@ The details returned for each job are:
 * **outputs_count** - the number of output targets defined in the job's package
 * **outputs** - list of the output targets defined in the job's package
 * **started_at** - the date and time at which the job started running
-* **created_at** - the date and time at which the "run" request was made 
+* **created_at** - the date and time at which the "run" request was made
+* **failed_at** - the date and time at which the job failed (if it failed)
 * **updated_at** - the date and time the job was last updated (occurs when package tasks are completed)
-* **failed_at** - the date and time at which the job failed (if it failed)* 
 * **cluster_id** - the ID of the cluster in which the job was run
 * **package_id** - the ID of the package that the job ran (or is running)
 * **errors** - a textual message describing errors encountered while the job was run
 * **url** - the job resource URL
 * **runtime_in_seconds** - the time in seconds that the job has run up to the current time
+* **completed_at** - the date and time at which the job completed (stopped, failed or completed)
 
 ### Input Parameters
 
@@ -68,7 +69,8 @@ since|N| |The job list will only contain jobs updated at the given time or later
         "package_id": 103,
         "errors": "Package failed to execute.",
         "url": "https://api.xplenty.com/xplenation/api/jobs/304",
-        "runtime_in_seconds": 40
+        "runtime_in_seconds": 40,
+        "completed_at": "2013-03-04T08:03:01Z"
     },
     {
         "id": 303,
@@ -86,7 +88,8 @@ since|N| |The job list will only contain jobs updated at the given time or later
         "package_id": 434,
         "errors": "Package failed to execute.",
         "url": "https://api.xplenty.com/xplenation/api/jobs/303",
-        "runtime_in_seconds": 38
+        "runtime_in_seconds": 38,
+        "completed_at": "2013-03-04T07:39:11Z"
     },
     {
         "id": 299,
@@ -104,7 +107,8 @@ since|N| |The job list will only contain jobs updated at the given time or later
         "package_id": 434,
         "errors": "Package failed to execute.",
         "url": "https://api.xplenty.com/xplenation/api/jobs/299",
-        "runtime_in_seconds": 0
+        "runtime_in_seconds": 0,
+        "completed_at": "2013-03-04T07:17:51Z"
     },
     {
         "id": 157,
@@ -140,7 +144,8 @@ since|N| |The job list will only contain jobs updated at the given time or later
         "package_id": 434,
         "errors": "",
         "url": "https://api.xplenty.com/xplenation/api/jobs/157",
-        "runtime_in_seconds": 417
+        "runtime_in_seconds": 417,
+        "completed_at": "2012-12-30T14:29:29Z"
     }
 ]
 ```
