@@ -228,6 +228,12 @@ Please refer to our [Terms of Service](http://www.xplenty.com/tos) page.
 ## References
 </a>
 
+[Cross-Origin Resource Sharing (CORS)](http://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing)
+
+[Hadoop](http://en.wikipedia.org/wiki/Apache_Hadoop)
+
+[JavaScript Object Notation (JSON)](http://en.wikipedia.org/wiki/JSON)
+
 [Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)
 
-[Cross-Origin Resource Sharing](http://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing)
+[Secure Socket Layer (SSL)](http://en.wikipedia.org/wiki/Secure_Sockets_Layer)
