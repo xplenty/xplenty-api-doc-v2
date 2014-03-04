@@ -11,12 +11,6 @@ A successful call returns the following details for the new cluster:
 * **description** - the description given to the cluster upon creation
 * **status** - the cluster's status. Possible values are:
     * **pending** - the user sent a request to create the cluster
-    * **creating** - the cluster is initializing
-    * **available** - the cluster is initialized and is available to run jobs
-    * **pending_terminate** - the user has sent a termination request for the cluster
-    * **terminating** - the cluster is terminating
-    * **terminated** - the cluster is no longer active
-    * **error** - an error was encountered on the cluster
 * **owner_id** - the numeric user ID of the cluster's owner
 * **plan_id** - the ID of the cluster's plan
 * **nodes** - the number of compute nodes for the cluster
@@ -68,7 +62,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
 	"created_at": "2013-03-03T13:06:51Z",
 	"updated_at": "2013-03-03T13:06:51Z",
 	"available_since": null,
-	"terminated_at": "2013-04-17T07:37:33Z",
+	"terminated_at": null,
 	"running_jobs_count": 0,
 	"url": "https://api.xplenty.com/xplenation/api/clusters/167",
 	"terminate_on_idle": false,
