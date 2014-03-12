@@ -4,7 +4,7 @@
 This call returns information for all the jobs that have been created under your account.
 Optionally, you can use the input parameters to filter the job list so that it contains only jobs with a specific status, and to determine the order by which the list will be sorted.
 
-The details returned for each job are as follows:
+The details returned for each job are:
 
 * **id** - the numeric job ID
 * **status** - the job status. Possible values are: 
@@ -121,7 +121,7 @@ The details returned for each job are as follows:
                 "preview_url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/521/preview",
                 "records_count": 10415234,
                 "updated_at": "2013-03-04T07:17:51Z",
-                "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/521",
+                "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/521"
             },
             {
                 "component_name": "destination2",
@@ -131,7 +131,7 @@ The details returned for each job are as follows:
                 "preview_url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/522/preview",
                 "records_count": 423,
                 "updated_at": "2013-03-04T07:14:44Z",
-                "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/522",
+                "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/522"
             },
         ],
         "started_at": "2012-12-30T14:21:29Z",
