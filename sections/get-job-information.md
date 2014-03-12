@@ -3,7 +3,7 @@
 ### Description
 The calls returns information for a job with the given job ID.
 
-The details returned for the job are as:
+The details returned for the job are:
 
 * **id** - the numeric job ID
 * **status** - the job status. Possible values are: 
@@ -57,7 +57,7 @@ The **job resource ID** must be supplied at the end of the request URL.
             "preview_url": "https://api.xplenty.com/xplentation/api/jobs/157/outputs/521/preview",
             "records_count": 10415234,
             "updated_at": "2013-03-04T07:17:51Z",
-            "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/521",
+            "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/521"
         },
         {
             "component_name": "destination2",
@@ -67,7 +67,7 @@ The **job resource ID** must be supplied at the end of the request URL.
             "preview_url": "https://api.xplenty.com/xplentation/api/jobs/157/outputs/522/preview",
             "records_count": 423,
             "updated_at": "2013-03-04T07:14:44Z",
-            "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/522",
+            "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/522"
         },
     ],
     "started_at": "2012-12-30T14:21:29Z",
