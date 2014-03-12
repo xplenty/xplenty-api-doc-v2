@@ -3,6 +3,9 @@
 ### Description
 The calls returns information for a job with the given job ID.
 
+You can preview the output, which will display up to 100 lines, using the preview_url listed in the outputs of the response. 
+View [Preview Job Output] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/preview-output.md) for details.
+
 The details returned for the job are:
 
 * **id** - the numeric job ID
