@@ -7,9 +7,10 @@ These are the steps of a typical workflow for running a job using the Xplenty AP
 * [Step 3: Run a Job](#RunJob)
 * [Step 4: Verify Job Initialization](#VerifyJob)
 * [Step 5: Monitor Job Status Until Completion](#MonitorJob)
-* [Step 6: Run Additional Jobs (Optional)](#RunMoreJobs)
-* [Step 7: Terminate the Cluster](#TerminateCluster)
-* [Step 8: Verify Cluster Termination](#VerifyClusterTermination)
+* [Step 6: Preview Job Output] (#PreviewJob)
+* [Step 7: Run Additional Jobs (Optional)](#RunMoreJobs)
+* [Step 8: Terminate the Cluster](#TerminateCluster)
+* [Step 9: Verify Cluster Termination](#VerifyClusterTermination)
 
 ***
 <a id="CreateCluster" name="CreateCluster">
@@ -91,14 +92,28 @@ Check the value of the job's "status" field. When it changes to "completed" or "
 View [Get Job Information] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md) for details of the response.
 
 ***
+<a id="PreviewJob" name="PreviewJob">
+### Step 6: Preview Job Output
+</a>
+Optionally preview the output, which will display up to 100 lines. When requesting job output, the job ID and output id must must be supplied in the request URL.
+
+**Request**
+```shell
+    curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305/outputs/4160/preview"
+```
+
+View [Preview Job Output] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/preview-output.md) for details of the response.
+
+***
+
 <a id="RunMoreJobs" name="RunMoreJobs">
-### Step 6: Run Additional Jobs (Optional)
+### Step 7: Run Additional Jobs (Optional)
 </a>
 Optionally, repeat steps 3, 4 and 5, to run additional jobs for other data or other packages.
 
 ***
 <a id="TerminateCluster" name="TerminateCluster">
-### Step 7: Terminate the Cluster
+### Step 8: Terminate the Cluster
 </a>
 Request to terminate the cluster, releasing its resources.
 
@@ -111,7 +126,7 @@ View [Terminate Cluster] (https://github.com/xplenty/xplenty-api-doc/blob/master
 
 ***
 <a id="VerifyClusterTermination" name="VerifyClusterTermination">
-### Step 8: Verify Cluster Termination
+### Step 9: Verify Cluster Termination
 </a>
 Poll the cluster status and check its status value. When the status changes to "terminated", the cluster resources have been released.
 When requesting cluster information, the cluster ID must appear at the end of the cluster URL.
