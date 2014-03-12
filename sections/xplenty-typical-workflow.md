@@ -8,9 +8,9 @@ These are the steps of a typical workflow for running a job using the Xplenty AP
 * [Step 4: Verify Job Initialization](#VerifyJob)
 * [Step 5: Monitor Job Status Until Completion](#MonitorJob)
 * [Step 6: Preview Job Output] (#PreviewJob)
-* [Step 6: Run Additional Jobs (Optional)](#RunMoreJobs)
-* [Step 7: Terminate the Cluster](#TerminateCluster)
-* [Step 8: Verify Cluster Termination](#VerifyClusterTermination)
+* [Step 7: Run Additional Jobs (Optional)](#RunMoreJobs)
+* [Step 8: Terminate the Cluster](#TerminateCluster)
+* [Step 9: Verify Cluster Termination](#VerifyClusterTermination)
 
 ***
 <a id="CreateCluster" name="CreateCluster">
