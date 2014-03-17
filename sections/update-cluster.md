@@ -28,6 +28,7 @@ A successful call returns the following details for the cluster after the change
 * **url** - the unique cluster resource URL
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
+* **terminated_on_idle** - indicates whether the cluster terminated because it became idle
 
 ### Input Parameters
 |Name|Required?|    Default|Description|
@@ -67,6 +68,7 @@ time_to_idle|N| |The time interval (in seconds) after which this cluster will be
         "running_jobs_count": 0,
         "url": "https://api.xplenty.com/xplenation/api/clusters/167",
         "terminate_on_idle": true,
-        "time_to_idle": 7200
+        "time_to_idle": 7200,
+        "terminated_on_idle": false
     }
 ```
