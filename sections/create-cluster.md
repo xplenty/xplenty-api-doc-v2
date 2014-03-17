@@ -29,6 +29,7 @@ A successful call returns the following details for the new cluster:
 * **url** - the unique cluster resource URL
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
+* **terminated_on_idle** - indicates whether the cluster terminated because it became idle
 
 ### Notes
 * This call only triggers cluster creation, and therefore it returns the "pending" status. You can run a job on a pending cluster, but if for any reason the cluster failed to initialize, the job will fail to run.
@@ -72,6 +73,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
 	"running_jobs_count": 0,
 	"url": "https://api.xplenty.com/xplenation/api/clusters/167",
 	"terminate_on_idle": false,
-    "time_to_idle": 3600
+	"time_to_idol": 3600,
+	"terminated_on_idle": false
 }
 ```
