@@ -27,7 +27,7 @@ A successful call returns the following details for the job:
 * **package_id** - the ID of the package that the job ran (or is running)
 * **errors** - a textual message describing errors encountered while the job was run
 * **url** - the job resource URL
-* **runtime_in_seconds** - the time in seconds that the job has run up to the current time,
+* **runtime_in_seconds** - the time in seconds that the job has run up to the current time
 * **completed_at** - the date and time at which the job completed (stopped, failed or completed)
 
 ### Notes
