@@ -1,4 +1,4 @@
-## List Jobs
+## List Packages
 
 ### Description
 This call returns information for the list of packages that were created by users in your account.
@@ -11,12 +11,12 @@ The details returned for each package are:
 * **description** - the description given to the package upon creation
 * **variables** - the list of package variables
 * **owner_id** - the numeric user id of the package owner
-* **created_at** - the date and time the "run" request was made
-* **updated_at** - the date and time the job was last updated (occurs when package tasks are completed)
-* **url** - the job resource URL
+* **created_at** - the date and time the package was created
+* **updated_at** - the date and time the package was last updated
+* **url** - the package resource URL
 
 ### Input Parameters
-The **package ID** must be supplied at the end of the request URL.
+None
 
 ### Request (Curl Call) Syntax
 ```shell
