@@ -11,7 +11,7 @@ The details returned for the job are:
 * **id** - the numeric package ID
 * **name** - the name given to the package upon creation
 * **description** - the description given to the package upon creation
-* **variables** - package variables
+* **variables** - the list of package variables
 * **owner_id** - the numeric user id of the package owner
 * **created_at** - the date and time the "run" request was made
 * **updated_at** - the date and time the job was last updated (occurs when package tasks are completed)
