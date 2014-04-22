@@ -3,18 +3,15 @@
 ### Description
 The calls returns information for a package with the given package ID.
 
-You can preview the output, which will display up to 100 lines, using the preview_url listed in the outputs of the response. 
-View [Preview Job Output] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/preview-output.md) for details.
-
-The details returned for the job are:
+The details returned for the package are:
 
 * **id** - the numeric package ID
 * **name** - the name given to the package upon creation
 * **description** - the description given to the package upon creation
 * **variables** - the list of package variables
 * **owner_id** - the numeric user id of the package owner
-* **created_at** - the date and time the "run" request was made
-* **updated_at** - the date and time the job was last updated (occurs when package tasks are completed)
+* **created_at** - the date and time the package was created
+* **updated_at** - the date and time the package was last updated 
 * **url** - the job resource URL
 
 ### Input Parameters
