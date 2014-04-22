@@ -219,6 +219,8 @@ These are the methods supported by the Xplenty API:
 * [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md)
 * [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-job.md)
 * [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/watch-clusters-and-jobs.md)
+* [List Packages](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-packages.md)
+* [Get Package Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-package-information.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
