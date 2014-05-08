@@ -33,8 +33,8 @@ $ heroku addons:upgrade xplenty:newplan
 
 Xplenty can be removed via the  CLI.
 
-> warningXplenty
-> This will remove your xplenty connection and cannot be undone!
+> Warning:
+>  This will remove your xplenty connection and cannot be undone!
 
 ```term
 $ heroku addons:remove xplenty
@@ -42,7 +42,7 @@ $ heroku addons:remove xplenty
 
 ## Support
 
-All xplenty support and runtime issues should be submitted via on of the [Heroku Support channels](support-channels). Any non-support related issues or product feedback is welcome at [xplenty customer feedback](https://xplenty.uservoice.com).
+All xplenty support and runtime issues should be submitted via one of the [Heroku Support channels](https://support.heroku.com). Any non-support related issues or product feedback is welcome at [xplenty customer feedback](https://xplenty.uservoice.com).
 
 ## Additional resources
 * [Xplenty website](https://www.xplenty.com)
