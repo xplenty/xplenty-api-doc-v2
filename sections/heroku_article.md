@@ -29,6 +29,18 @@ The interface can be accessed via the CLI.
 $ heroku addons:open xplenty
 ```
 
+##Understanding Xplenty Terminology
+
+###Package
+An Xplenty package is a data flow definition. It describes the data to process (location, schema, fields), data manipulation to perform, and the output destinations (location, schema). Once the package is defined, it is run as a job on a cluster.
+
+###Cluster
+An Xplenty cluster is a Hadoop cluster - a group of machines (nodes) that that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until you request to terminate the cluster.
+
+###Job
+An Xplenty job is a process that is responsible for running a specific package on a Hadoop cluster. The job is a batch process that processes a finite amount of data and then terminates. Several jobs can run the same package simultaneously. When you run a new job, you select the name of the package whose workflow the job should perform, and the cluster on which to run.
+
+
 ## Migrating between plans
 
 
