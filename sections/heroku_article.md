@@ -1,3 +1,12 @@
+##Xplenty
+
+[Xplenty](http://www.xplenty.com) is a data integration service that harnesses the power of [Hadoop](http://hadoop.apache.org) to provide an easy-to-use, scalable [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) service that makes it a snap to prepare your structured and semi-structured data for analytics.
+
+With [Xplenty](http://www.xplenty.com), you can process data generated from Heroku apps. [Xplenty](http://www.xplenty.com) can join data from multiple sources, including MySQL, PostgreSQL and MongoDB, and provides a wide range of out-of-the-box data transformation tasks, from simple sorting and aggregation to sophisticated functions and data manipulations.
+
+When finished, place your transformed data in analytics stores such as [AWS Redshift](https://aws.amazon.com/redshift), [SAP HANA](https://aws.amazon.com/sap/saphana), or back in your favorite relational database, cloud storage or NoSQL data store.
+
+
 ##Installing the add-on
 Xplenty can be installed to a Heroku application via the CLI:
 
