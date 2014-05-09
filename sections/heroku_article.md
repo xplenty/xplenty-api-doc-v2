@@ -45,9 +45,9 @@ You can define connections that contain access information required to connect t
 
 You can define two types of connections:
 
-1) cloud storage connections
+1) [cloud storage connection](http://community.xplenty.com/knowledgebase/articles/170932)
 
-2) database connections
+2) [database connection](http://community.xplenty.com/knowledgebase/articles/204166)
 
 
 ## Migrating between plans
