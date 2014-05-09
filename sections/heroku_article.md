@@ -40,15 +40,6 @@ An Xplenty cluster is a Hadoop cluster - a group of machines (nodes) that that i
 ###Job
 An Xplenty job is a process that is responsible for running a specific package on a Hadoop cluster. The job is a batch process that processes a finite amount of data and then terminates. Several jobs can run the same package simultaneously. When you run a new job, you select the name of the package whose workflow the job should perform, and the cluster on which to run.
 
-##Defining Connections
-You can define connections that contain access information required to connect to your various data stores. The access information is stored securely and can only be used by your account's members. 
-
-You can define two types of connections:
-
-1) [cloud storage connection](http://community.xplenty.com/knowledgebase/articles/170932)
-
-2) [database connection](http://community.xplenty.com/knowledgebase/articles/204166)
-
 
 ## Migrating between plans
 
