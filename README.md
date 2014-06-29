@@ -222,6 +222,9 @@ These are the methods supported by the Xplenty API:
 * [List Packages](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-packages.md)
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-package-information.md)
 
+These are the wrappers and methods provided by third parties:
+* [.net wrapper for Xplenty Rest API](https://github.com/dilievsky/xplenty.dll)
+
 <a id="ToS" name="ToS">
 ## Terms of Service
 </a>
