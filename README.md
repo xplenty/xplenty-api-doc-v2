@@ -135,7 +135,7 @@ When the API returns an error messages, it does so in your requested format. For
 
 Use a wrapper in the official Xplenty library, or a [third party library](#Thirdparty).
 
-[Java wrapper](https://github.com/xplenty/xplenty.jar) 
+[Java wrapper](https://github.com/xplenty/xplenty.jar)  
 [Python wrapper](https://github.com/xplenty/xplenty.py)  
 [Ruby wrapper](https://github.com/xplenty/xplenty.rb)
 
