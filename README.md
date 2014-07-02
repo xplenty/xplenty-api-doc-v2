@@ -5,12 +5,13 @@
 The Xplenty API provides functions for controlling and monitoring Xplenty clusters and jobs.
 After defining an Xplenty data processing package using the Xplenty web application, you can call the Xplenty API to create Hadoop clusters, run jobs, monitor their progress, and terminate jobs and clusters.
 
-You can choose to use the [Xplenty REST API](#RESTSpec), or one of its wrappers: the [Java wrapper](https://github.com/xplenty/xplenty.jar), [Python wrapper](https://github.com/xplenty/xplenty.py) or  [Ruby wrapper](https://github.com/xplenty/xplenty.rb).
+You can choose to use the [Xplenty REST API](#RESTSpec), or one of its wrapper [Libraries](#Libraries). 
 
 These are the topics covered on this page:
 * [Getting Started](#GettingStarted)
 * [Xplenty Terminology](#XplentyTerminology)
 * [REST Interface Specifications](#RESTSpec)
+* [Libraries](#Libraries)
 * [Security](#Security)
 * [Rate Limits](#RateLimits)
 * [API Resources](#ApiResources)
@@ -128,6 +129,21 @@ When the API returns an error messages, it does so in your requested format. For
 }
 ```
 
+<a id="#Libraries" name="#Libraries">
+## Libraries
+</a>
+
+Use a wrapper in the official Xplenty library, or a [third party library](#Thirdparty).
+
+[Java wrapper](https://github.com/xplenty/xplenty.jar) 
+[Python wrapper](https://github.com/xplenty/xplenty.py)  
+[Ruby wrapper](https://github.com/xplenty/xplenty.rb)
+
+<a id="#Thirdparty" name="#thirdparty">
+### Third Party
+[.NET wrapper for Xplenty Rest API](https://github.com/dilievsky/xplenty.dll)
+</a>
+
 <a id="Security" name="Security">
 ## Security
 </a>
@@ -222,9 +238,6 @@ These are the methods supported by the Xplenty API:
 * [List Packages](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-packages.md)
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-package-information.md)
 
-These are the wrappers and methods provided by third parties:
-* [.net wrapper for Xplenty Rest API](https://github.com/dilievsky/xplenty.dll)
-
 <a id="ToS" name="ToS">
 ## Terms of Service
 </a>
@@ -235,6 +248,6 @@ Please refer to our [Terms of Service](http://www.xplenty.com/tos) page.
 ## References
 </a>
 
-[Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)
+[Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)   
 
 [Cross-Origin Resource Sharing](http://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing)
