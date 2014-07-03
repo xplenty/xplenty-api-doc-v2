@@ -31,6 +31,7 @@ The details returned for each cluster are:
 * **url** - the unique cluster resource URL
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
+* **terminated_on_idle** - indicates whether the cluster terminated because it became idle
 
 ### Input Parameters
 
@@ -66,7 +67,8 @@ since|N| |The cluster list will only contain clusters updated at the given time 
         "running_jobs_count": 0,
         "url": "https://api.xplenty.com/xplenation/api/clusters/99",
         "terminate_on_idle": false,
-        "time_to_idle": 3600
+        "time_to_idle": 3600,
+        "terminated_on_idle": false
     },
     {
         "id": 98,
@@ -84,7 +86,8 @@ since|N| |The cluster list will only contain clusters updated at the given time 
         "running_jobs_count": 0,
         "url": "https://api.xplenty.com/xplenation/api/clusters/98"
         "terminate_on_idle": false,
-        "time_to_idle": 3600
+        "time_to_idle": 3600,
+        "terminated_on_idle": false
     },
     {
         "id": 97,
@@ -102,7 +105,8 @@ since|N| |The cluster list will only contain clusters updated at the given time 
         "running_jobs_count": 0,
         "url": "https://api.xplenty.com/xplenation/api/clusters/97"
         "terminate_on_idle": true,
-        "time_to_idle": 3600
+        "time_to_idle": 3600,
+        "terminated_on_idle": true
     }
 ]
 ```

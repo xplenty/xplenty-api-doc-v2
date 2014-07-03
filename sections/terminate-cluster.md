@@ -22,6 +22,7 @@ A successful call returns the following details for the given cluster.
 * **url** - the unique cluster resource URL
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
+* **terminated_on_idle** - indicates whether the cluster terminated because it became idle
 
 ### Notes
 * This call only triggers the termination process, which is why a status of "pending_terminate" is returned.
@@ -53,6 +54,7 @@ The **cluster resource ID** must be supplied at the end of the request URL.
         "running_jobs_count": 0,
         "url": "https://api.xplenty.com/xplenation/api/clusters/167",
         "terminate_on_idle": false,
-        "time_to_idle": 3600
+        "time_to_idle": 3600,
+        "terminated_on_idle": false
     }
 ```
