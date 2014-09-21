@@ -47,9 +47,10 @@ variables|N| |If the package has input variables, you can supply their names and
 curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs" 
 	-d "job[cluster_id]=<clusterID>" 
 	-d "job[package_id]=<packageID>" 
-	-d "job[variables][<VARNAME1>]=<value1>" 
-	-d "job[variables][<VARNAME2>]=<value2>"
-	-d "job[variables][<VARNAME3>]=<value3>"
+	-d "job[dynamic_variables][<VARNAME1>]=CurrentTime()" 
+	-d "job[dynamic_variables][<VARNAME2>]=$<variable2>"
+	-d "job[dynamic_variables][<VARNAME2>]='a string'"
+	-d "job[variables][<VARNAME3>]=<value1>"
 	...
 ```
 
