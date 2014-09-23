@@ -41,6 +41,7 @@ A successful call returns the following details for the job:
 cluster_id|Y| |the ID of the cluster on which to run the job
 package_id|Y| |the ID of the package the job will perform
 variables|N| |If the package has input variables, you can supply their names and values in the run request. See the syntax below.
+dynamic_variables|N| |If the package has dynamic input variables, that use expressions as values, you can supply their names and values in the run request. See the syntax below.
 
 ### Request (Curl Call) Syntax
 ```shell
