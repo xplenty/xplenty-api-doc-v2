@@ -8,7 +8,7 @@ Optionally, you can supply the input parameters to filter the job list so that i
 The details returned for each job are:
 
 * **id** - the numeric job ID
-* **status** - the job status. Possible values are: 
+* **status** - the job status. Possible values are:
     * **idle** - the user sent a request to run the job
     * **pending** - the job is initializing
     * **running** - the job is running
@@ -44,7 +44,7 @@ since|N| |The job list will only contain jobs updated at the given time or later
 
 ### Request (Curl Call) Syntax
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" 
+    curl -X GET -H "Accept: application/vnd.xplenty+json"
     -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
 ```
 ### Response Example
@@ -53,7 +53,7 @@ since|N| |The job list will only contain jobs updated at the given time or later
     {
         "id": 304,
         "status": "failed",
-        "variables": 
+        "variables":
         {
             "InputPath": "/today"
         },
