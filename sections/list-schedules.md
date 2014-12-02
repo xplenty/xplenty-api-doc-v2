@@ -45,7 +45,6 @@ since|N| |The schedule list will only contain schedules updated at the given tim
     "start_at": "2014-10-18T16:29:00Z",
     "status": "enabled",
     "task": {
-      "owner_id": 2,
       "nodes": 2,
       "reuse_cluster": true,
       "terminate_on_idle": true,
@@ -86,7 +85,6 @@ since|N| |The schedule list will only contain schedules updated at the given tim
     "start_at": "2014-10-20T12:34:00Z",
     "status": "disabled",
     "task": {
-      "owner_id": 2,
       "nodes": 2,
       "reuse_cluster": true,
       "terminate_on_idle": true,
@@ -127,7 +125,6 @@ since|N| |The schedule list will only contain schedules updated at the given tim
     "start_at": "2014-11-24T07:48:00Z",
     "status": "enabled",
     "task": {
-      "owner_id": 2,
       "nodes": 2,
       "reuse_cluster": true,
       "terminate_on_idle": true,

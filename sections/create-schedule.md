@@ -70,7 +70,6 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
   "start_at": "2014-09-25T08:33:00Z",
   "status": "enabled",
   "task": {
-    "owner_id": 1,
     "nodes": 3,
     "jobs": [
       {

@@ -76,7 +76,6 @@ A successful call returns the following details for the schedule after the chang
       "start_at": "2014-09-25T08:33:00Z",
       "status": "enabled",
       "task": {
-        "owner_id": 1,
         "nodes": 3,
         "jobs": [
           {

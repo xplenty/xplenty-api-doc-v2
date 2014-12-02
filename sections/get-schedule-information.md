@@ -76,7 +76,6 @@ The **schedule ID** must be supplied at the end of the request URL.
   "start_at": "2014-09-25T08:33:00Z",
   "status": "enabled",
   "task": {
-    "owner_id": 1,
     "nodes": 3,
     "jobs": [
       {
