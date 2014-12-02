@@ -45,10 +45,12 @@ since|N| |The schedule list will only contain schedules updated at the given tim
     "start_at": "2014-10-18T16:29:00Z",
     "status": "enabled",
     "task": {
-      "account_id": 1,
       "owner_id": 2,
       "nodes": 2,
-      "data_process_definitions": [
+      "reuse_cluster": true,
+      "terminate_on_idle": true,
+      "time_to_idle": 60,
+      "jobs": [
         {
           "job_id": "1",
           "variables": {
@@ -60,10 +62,7 @@ since|N| |The schedule list will only contain schedules updated at the given tim
             "_SHUFFLE_INPUT_BUFFER_PERCENT": "0.7"
           }
         }
-      ],
-      "reuse_cluster": true,
-      "terminate_on_idle": true,
-      "time_to_idle": 60
+      ]
     },
     "updated_at": "2014-11-24T07:29:21Z",
     "url": "https://api.xplenty.com/xplenation/api/schedules/6"
@@ -87,10 +86,12 @@ since|N| |The schedule list will only contain schedules updated at the given tim
     "start_at": "2014-10-20T12:34:00Z",
     "status": "disabled",
     "task": {
-      "account_id": 1,
       "owner_id": 2,
-      "nodes": 177,
-      "data_process_definitions": [
+      "nodes": 2,
+      "reuse_cluster": true,
+      "terminate_on_idle": true,
+      "time_to_idle": 60,
+      "jobs": [
         {
           "job_id": "1",
           "variables": {
@@ -102,10 +103,7 @@ since|N| |The schedule list will only contain schedules updated at the given tim
             "_SHUFFLE_INPUT_BUFFER_PERCENT": "0.7"
           }
         }
-      ],
-      "reuse_cluster": true,
-      "terminate_on_idle": true,
-      "time_to_idle": 60
+      ]
     },
     "updated_at": "2014-11-24T07:29:29Z",
     "url": "https://api.xplenty.com/xplenation/api/schedules/7"
@@ -129,10 +127,12 @@ since|N| |The schedule list will only contain schedules updated at the given tim
     "start_at": "2014-11-24T07:48:00Z",
     "status": "enabled",
     "task": {
-      "account_id": 1,
       "owner_id": 2,
       "nodes": 2,
-      "data_process_definitions": [
+      "reuse_cluster": true,
+      "terminate_on_idle": true,
+      "time_to_idle": 60,
+      "jobs": [
         {
           "job_id": "1",
           "variables": {
@@ -141,16 +141,10 @@ since|N| |The schedule list will only contain schedules updated at the given tim
             "_LINE_RECORD_READER_MAX_LENGTH": "1048576",
             "_DEFAULT_TIMEZONE": "''+00:00''",
             "_DEFAULT_PARALLELISM": "0",
-            "_SHUFFLE_INPUT_BUFFER_PERCENT": "0.7",
-            "_COPY_PARALLELISM": "(int)$_CLUSTER_NODES_COUNT * 3",
-            "_COPY_TARGET_PARTITIONS": "100",
-            "_COPY_TARGET_SIZE": "64"
+            "_SHUFFLE_INPUT_BUFFER_PERCENT": "0.7"
           }
         }
-      ],
-      "reuse_cluster": true,
-      "terminate_on_idle": "1",
-      "time_to_idle": 60
+      ]
     },
     "updated_at": "2014-11-24T07:48:56Z",
     "url": "https://api.xplenty.com/xplenation/api/schedules/8"
