@@ -48,7 +48,7 @@ When you call the Xplenty API to run a new job, you supply the name of the packa
 
 ### Cluster 
 
-An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until you request to terminate the cluster.
+An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until you request to terminate the cluster.
 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
