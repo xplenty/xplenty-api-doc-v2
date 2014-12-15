@@ -40,7 +40,7 @@ name|N|System generated|Name to assign to the new cluster
 description|N|Blank|Description to assign to the new cluster
 terminate_on_idle|N|false|If the value is set to either true, t or 1 this cluster will be terminated after it becomes idle
 time_to_idle|N|3600 seconds (60 minutes)|The time interval (in seconds) after which this cluster will become idle
-region|N| |The region in which the cluster should be created|
+region|N|Account region setting|The region in which the cluster should be created|
 
 ### Request (Curl Call) Example
 ```shell
