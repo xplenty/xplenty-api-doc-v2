@@ -24,6 +24,7 @@ A successful call returns the following details for the new cluster:
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
 * **terminated_on_idle** - indicates whether the cluster terminated because it became idle
+* **region** - the region in which the cluster was created
 
 ### Notes
 * This call only triggers cluster creation, and therefore it returns the "pending" status. You can run a job on a pending cluster, but if for any reason the cluster failed to initialize, the job will fail to run.
@@ -39,6 +40,7 @@ name|N|System generated|Name to assign to the new cluster
 description|N|Blank|Description to assign to the new cluster
 terminate_on_idle|N|false|If the value is set to either true, t or 1 this cluster will be terminated after it becomes idle
 time_to_idle|N|3600 seconds (60 minutes)|The time interval (in seconds) after which this cluster will become idle
+region|N|Account region setting|The region in which the cluster should be created|
 
 ### Request (Curl Call) Example
 ```shell
@@ -68,6 +70,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
 	"url": "https://api.xplenty.com/xplenation/api/clusters/167",
 	"terminate_on_idle": false,
 	"time_to_idol": 3600,
-	"terminated_on_idle": false
+	"terminated_on_idle": false,
+	"region": "amazon-web-services::us-east-1"
 }
 ```

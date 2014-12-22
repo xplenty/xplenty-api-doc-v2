@@ -27,6 +27,7 @@ This call returns these details of the cluster with the given ID:
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
 * **terminated_on_idle** - indicates whether the cluster terminated because it became idle
+* **region** - the region in which the cluster was created
 
 
 ### Input Parameters
