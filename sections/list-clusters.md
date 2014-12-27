@@ -33,6 +33,7 @@ The details returned for each cluster are:
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
 * **terminated_on_idle** - indicates whether the cluster terminated because it became idle
 * **region** - the region in which the cluster was created
+* **zone** - the zone in which the cluster was created
 
 ### Input Parameters
 
@@ -70,7 +71,8 @@ since|N| |The cluster list will only contain clusters updated at the given time 
         "terminate_on_idle": false,
         "time_to_idle": 3600,
         "terminated_on_idle": false,
-        "region": "amazon-web-services::us-east-1"
+        "region": "amazon-web-services::us-east-1",
+        "zone": "us-east-1b"
     },
     {
         "id": 98,
@@ -90,7 +92,8 @@ since|N| |The cluster list will only contain clusters updated at the given time 
         "terminate_on_idle": false,
         "time_to_idle": 3600,
         "terminated_on_idle": false,
-        "region": "amazon-web-services::us-east-1"
+        "region": "amazon-web-services::us-east-1",
+        "zone": "us-east-1d"
     },
     {
         "id": 97,
@@ -110,7 +113,8 @@ since|N| |The cluster list will only contain clusters updated at the given time 
         "terminate_on_idle": true,
         "time_to_idle": 3600,
         "terminated_on_idle": true,
-        "region": "amazon-web-services::us-east-1"
+        "region": "amazon-web-services::us-east-1",
+        "zone": "us-east-1c"
     }
 ]
 ```
