@@ -52,7 +52,7 @@ An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that is
 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
-An account is created when the user signs up to use the Xplenty service. An API key is generated for the account, which must be supplied when calling the Xplenty API.
+An account is created when the user signs up to use the Xplenty service. An API key is generated for the user, which must be supplied when calling the Xplenty API.
 
 <a id="RESTSpec" name="RESTSpec">
 ## REST Interface Specifications
