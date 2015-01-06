@@ -30,6 +30,7 @@ A successful call returns the following details for the cluster after the change
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
 * **terminated_on_idle** - indicates whether the cluster terminated because it became idle
 * **region** - the region in which the cluster was created
+* **zone** - the zone in which the cluster was created
 
 ### Input Parameters
 |Name|Required?|    Default|Description|
@@ -71,6 +72,7 @@ time_to_idle|N| |The time interval (in seconds) after which this cluster will be
         "terminate_on_idle": true,
         "time_to_idle": 7200,
         "terminated_on_idle": false,
-        "region": "amazon-web-services::us-east-1"
+        "region": "amazon-web-services::us-east-1",
+        "zone": "us-east-1c"
     }
 ```

@@ -41,6 +41,7 @@ description|N|Blank|Description to assign to the new cluster
 terminate_on_idle|N|false|If the value is set to either true, t or 1 this cluster will be terminated after it becomes idle
 time_to_idle|N|3600 seconds (60 minutes)|The time interval (in seconds) after which this cluster will become idle
 region|N|Account region setting|The region in which the cluster should be created|
+zone|N||The zone in which the cluster should be created (for availability zone supported regions)|
 
 ### Request (Curl Call) Example
 ```shell
@@ -71,6 +72,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
 	"terminate_on_idle": false,
 	"time_to_idol": 3600,
 	"terminated_on_idle": false,
-	"region": "amazon-web-services::us-east-1"
+	"region": "amazon-web-services::us-east-1",
+	"zone": "us-east-1b"
 }
 ```
