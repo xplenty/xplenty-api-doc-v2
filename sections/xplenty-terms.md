@@ -7,9 +7,8 @@ Here are some of the terms you will encounter in the Xplenty API documentation.
 An Xplenty **package** is a data flow definition that you define in the Xplenty web application. 
 It describes the data to process (location, schema, fields), data manipulation to perform, and the output destinations (location, schema). The package's workflow is implemented by jobs.
 
-An Xplenty package is a data flow definition that you define in the Xplenty web application. 
-
 ### Job
+
 An Xplenty **job** is a process that is responsible for performing a data flow according to a specific package on a Hadoop cluster. The job is a batch process that runs on a finite amount of data and then terminates. Several jobs can run the same package simultaneously.
 When you call the Xplenty API to run a new job, you supply the name of the package whose workflow the job should perform, and the cluster on which to run.
 
