@@ -29,7 +29,7 @@ Create a new cluster. The following example creates cluster of type "production"
     -d "cluster[nodes]=2" 
 ```
 
-View [Create Cluster] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md) for the details of the request and response
+View [Create Cluster] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-cluster.md) for the details of the request and response
 
 ***
 <a name="VerifyCluster" id="VerifyCluster">
@@ -42,7 +42,7 @@ Poll the cluster status and check its status value. When the status changes to "
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
 ```
 
-View [Get Cluster Information] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) for details of the response.
+View [Get Cluster Information] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-cluster-information.md) for details of the response.
 
 ***
 <a id="RunJob" name="RunJob">
@@ -61,7 +61,7 @@ Request to run a new job, passing values for the cluster ID, the package ID, and
     -d "job[variables][OutputPath]=/output03032013"
 ```
 
-View [Run Job] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/run-job.md) for details of the request and response.
+View [Run Job] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/run-job.md) for details of the request and response.
 
 ***
 <a id="VerifyJob" name="VerifyJob">
@@ -74,7 +74,7 @@ Poll the job status and check its status value. When the status changes to "runn
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305"
 ```
 
-View [Get Job Information] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md) for details of the response.
+View [Get Job Information] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-job-information.md) for details of the response.
 
 ***
 <a id="MonitorJob" name="MonitorJob">
@@ -89,7 +89,7 @@ Check the value of the job's "status" field. When it changes to "completed" or "
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305"
 ```
 
-View [Get Job Information] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md) for details of the response.
+View [Get Job Information] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-job-information.md) for details of the response.
 
 ***
 <a id="PreviewJob" name="PreviewJob">
@@ -102,7 +102,7 @@ Optionally preview the output, which will display up to 100 lines. When requesti
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305/outputs/4160/preview"
 ```
 
-View [Preview Job Output] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/preview-output.md) for details of the response.
+View [Preview Job Output] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/preview-output.md) for details of the response.
 
 ***
 
@@ -122,7 +122,7 @@ Request to terminate the cluster, releasing its resources.
     curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
 ```
 
-View [Terminate Cluster] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-cluster.md) for details of the response.
+View [Terminate Cluster] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-cluster.md) for details of the response.
 
 ***
 <a id="VerifyClusterTermination" name="VerifyClusterTermination">
@@ -136,4 +136,4 @@ When requesting cluster information, the cluster ID must appear at the end of th
     curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
 ```
 
-View [Get Cluster Information] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md) for details of the response.
+View [Get Cluster Information] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-cluster-information.md) for details of the response.

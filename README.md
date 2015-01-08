@@ -28,8 +28,8 @@ These are the topics covered on this page:
 </a>
 
 For a quick overview of how to get started with the Xplenty REST API, you can read:
-* [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
-* [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/xplenty-typical-workflow.md)
+* [Xplenty Control and Monitoring Tasks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/xplenty-control-and-monitoring-tasks.md)
+* [Xplenty Typical Workflow](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/xplenty-typical-workflow.md)
 
 <a id="XplentyTerminology" name="XplentyTerminology">
 ## Xplenty Terminology
@@ -90,7 +90,7 @@ Specify a custom mime type in the [Accept] header as follows:
 
 Unless you specify a version, the latest representation of resources will always be returned in the response. If you’re building an application and want to ensure a consistent response format, specify a version as follows:
 
-    application/vnd.xplenty+json; version=1
+    application/vnd.xplenty+json; version=2
 
 
 ### CORS (Cross Origin Resource Sharing)
@@ -225,18 +225,18 @@ If your user has been blacklisted and you think there has been an error, you can
 
 These are the methods supported by the Xplenty API:
 
-* [Create Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-cluster.md)
-* [List Clusters](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-clusters.md)
-* [Update Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/update-cluster.md)
-* [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-cluster-information.md)
-* [Terminate Cluster](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-cluster.md)
-* [Run Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/run-job.md)
-* [List Jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-jobs.md)
-* [Get Job Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-job-information.md)
-* [Terminate Job](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/terminate-job.md)
-* [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/watch-clusters-and-jobs.md)
-* [List Packages](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/list-packages.md)
-* [Get Package Information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-package-information.md)
+* [Create Cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-cluster.md)
+* [List Clusters](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-clusters.md)
+* [Update Cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-cluster.md)
+* [Get Cluster Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-cluster-information.md)
+* [Terminate Cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-cluster.md)
+* [Run Job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/run-job.md)
+* [List Jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-jobs.md)
+* [Get Job Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-job-information.md)
+* [Terminate Job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-job.md)
+* [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/watch-clusters-and-jobs.md)
+* [List Packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-packages.md)
+* [Get Package Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-information.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
