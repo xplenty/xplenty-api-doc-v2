@@ -1,11 +1,11 @@
 ## Get Cluster Information
 
 ### Description
-This call returns these details of the [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md) with the given ID.
+This call returns the details of the [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md) with the given ID.
 
 ### Input Parameters
 
-The **cluster resource ID** must be supplied at the end of the request URL.
+The **cluster ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell

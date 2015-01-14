@@ -9,7 +9,7 @@ Use this call when all of the cluster's jobs are completed and it's no longer ne
 You can verify that a cluster has terminated successfully by [retrieving the cluster's information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-cluster-information.md) and checking for the "terminated" status.
 
 ### Input Parameters
-The **cluster resource ID** must be supplied at the end of the request URL.
+The **cluster ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
