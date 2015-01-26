@@ -32,6 +32,8 @@ The details returned for each cluster are:
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
 * **terminated_on_idle** - indicates whether the cluster terminated because it became idle
+* **region** - the region in which the cluster was created
+* **zone** - the zone in which the cluster was created
 
 ### Input Parameters
 
@@ -67,7 +69,9 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
     "url": "https://api.xplenty.com/xplenation/api/clusters/99",
     "terminate_on_idle": false,
     "time_to_idle": 3600,
-    "terminated_on_idle": false
+    "terminated_on_idle": false,
+    "region": "amazon-web-services::us-east-1",
+    "zone": "us-east-1b"
   },
   {
     "id": 98,
@@ -86,7 +90,9 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
     "url": "https://api.xplenty.com/xplenation/api/clusters/98"
     "terminate_on_idle": false,
     "time_to_idle": 3600,
-    "terminated_on_idle": false
+    "terminated_on_idle": false,
+    "region": "amazon-web-services::us-east-1",
+    "zone": "us-east-1d"
   },
   {
     "id": 97,
@@ -105,7 +111,9 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
     "url": "https://api.xplenty.com/xplenation/api/clusters/97"
     "terminate_on_idle": true,
     "time_to_idle": 3600,
-    "terminated_on_idle": true
+    "terminated_on_idle": true,
+    "region": "amazon-web-services::us-east-1",
+    "zone": "us-east-1c"
   }
 ]
 ```

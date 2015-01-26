@@ -48,7 +48,7 @@ When you call the Xplenty API to run a new job, you supply the name of the packa
 
 ### Cluster
 
-An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until you request to terminate the cluster.
+An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until you request to terminate the cluster.
 
 ### Schedule
 
@@ -56,7 +56,7 @@ An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that th
 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
-An account is created when the user signs up to use the Xplenty service. An API key is generated for the account, which must be supplied when calling the Xplenty API.
+An account is created when the user signs up to use the Xplenty service. An API key is generated for the user, which must be supplied when calling the Xplenty API.
 
 <a id="RESTSpec" name="RESTSpec">
 ## REST Interface Specifications
@@ -163,6 +163,8 @@ Xplenty provides all REST API methods over SSL. Whenever your code might be oper
 
 ### Authentication
 Most of the Xplenty API calls require authentication, supplied in the form of the API key which is generated for each account.
+
+In order to get your API key, view your user's personal information page. See [here](http://community.xplenty.com/knowledgebase/articles/178926) for more information.
 
 Once you have an API key, you can either attach it to each request as a "key" parameter, or use HTTP Basic Authentication with the API key as a username and a blank password. Here's an example using curl (the colon separates the username and password):
 

@@ -23,6 +23,8 @@ A successful call returns the following details for the given cluster.
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
 * **terminated_on_idle** - indicates whether the cluster terminated because it became idle
+* **region** - the region in which the cluster was created
+* **zone** - the zone in which the cluster was created
 
 ### Notes
 * This call only triggers the termination process, which is why a status of "pending_terminate" is returned.
@@ -55,6 +57,8 @@ curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://a
   "url": "https://api.xplenty.com/xplenation/api/clusters/167",
   "terminate_on_idle": false,
   "time_to_idle": 3600,
-  "terminated_on_idle": false
+  "terminated_on_idle": false,
+  "region": "amazon-web-services::us-east-1",
+  "zone": "us-east-1b"
 }
 ```
