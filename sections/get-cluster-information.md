@@ -35,28 +35,28 @@ The **cluster resource ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>"
 ```
 
 ### Response Example
 ```json
-    {
-        "id": 99,
-        "name": "Daily Outliers Test #100",
-        "description": "Daily Outliers Test",
-        "status": "terminated",
-        "owner_id": 27,
-        "plan_id": 1,
-        "nodes": 2,
-        "type": "production",
-        "created_at": "2013-01-25T08:18:39Z",
-        "updated_at": "2013-01-28T16:45:24Z",
-        "available_since": "2013-01-28T16:46:22Z",
-        "terminated_at": "2013-01-28T17:45:33Z",
-        "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/99",
-        "terminate_on_idle": false,
-        "time_to_idle": 3600,
-        "terminated_on_idle": false
-    }
+{
+  "id": 99,
+  "name": "Daily Outliers Test #100",
+  "description": "Daily Outliers Test",
+  "status": "terminated",
+  "owner_id": 27,
+  "plan_id": 1,
+  "nodes": 2,
+  "type": "production",
+  "created_at": "2013-01-25T08:18:39Z",
+  "updated_at": "2013-01-28T16:45:24Z",
+  "available_since": "2013-01-28T16:46:22Z",
+  "terminated_at": "2013-01-28T17:45:33Z",
+  "running_jobs_count": 0,
+  "url": "https://api.xplenty.com/xplenation/api/clusters/99",
+  "terminate_on_idle": false,
+  "time_to_idle": 3600,
+  "terminated_on_idle": false
+}
 ```

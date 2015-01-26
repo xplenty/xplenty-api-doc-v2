@@ -20,7 +20,7 @@ None
 
 ### Request (Curl Call) Syntax
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/packages"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/packages"
 ```
 
 ### Response Example

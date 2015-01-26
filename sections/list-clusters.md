@@ -38,75 +38,74 @@ The details returned for each cluster are:
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 status|N|"all"|Possible values are any status listed above or ```all```. The call will return only clusters with the given status, or all the clusters if the "all" value is specified.
-sort|N|"created"|Possible values are ```updated``` or ```created```. The cluster list will be sorted by the clusters' "updated_by" or "created_by" value respectively.
+sort|N|"created"|Possible values are ```updated``` or ```created```. The cluster list will be sorted by the clusters' "updated_at" or "created_at" value respectively.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The clusters will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The cluster list will only contain clusters updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
 ### Request (Curl Call) Syntax
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" 
-    -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
 ```
 
 ### Response Example
 ```json
 [
-    {
-        "id": 99,
-        "name": "Daily Outliers Test #100",
-        "description": "Daily Outliers Test",
-        "status": "terminated",
-        "owner_id": 27,
-        "plan_id": 1,
-        "nodes": 2,
-        "type": "production",
-        "created_at": "2013-01-25T08:18:39Z",
-        "updated_at": "2013-01-28T16:45:24Z",
-        "available_since": "2013-01-28T16:46:22Z",
-        "terminated_at": "2013-01-28T17:45:33Z",
-        "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/99",
-        "terminate_on_idle": false,
-        "time_to_idle": 3600,
-        "terminated_on_idle": false
-    },
-    {
-        "id": 98,
-        "name": "Daily Outliers Test #101",
-        "description": "Daily Outliers Test",
-        "status": "terminated",
-        "owner_id": 27,
-        "plan_id": 1,
-        "nodes": 2,
-        "type": "production",
-        "created_at": "2013-01-25T08:17:56Z",
-        "updated_at": "2013-01-28T16:45:14Z",
-        "available_since": "2013-01-28T08:23:12Z",
-        "terminated_at": "2013-01-28T16:45:14Z",
-        "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/98"
-        "terminate_on_idle": false,
-        "time_to_idle": 3600,
-        "terminated_on_idle": false
-    },
-    {
-        "id": 97,
-        "name": "Daily Outliers Test #102",
-        "description": "Daily Outliers Test",
-        "status": "terminated",
-        "owner_id": 27,
-        "plan_id": null,
-        "nodes": 0,
-        "type": "sandbox",
-        "created_at": "2013-01-25T07:36:04Z",
-        "updated_at": "2013-01-25T07:45:19Z",
-        "available_since": "2013-01-25T07:40:02Z",
-        "terminated_at": "2013-01-25T07:45:19Z",
-        "running_jobs_count": 0,
-        "url": "https://api.xplenty.com/xplenation/api/clusters/97"
-        "terminate_on_idle": true,
-        "time_to_idle": 3600,
-        "terminated_on_idle": true
-    }
+  {
+    "id": 99,
+    "name": "Daily Outliers Test #100",
+    "description": "Daily Outliers Test",
+    "status": "terminated",
+    "owner_id": 27,
+    "plan_id": 1,
+    "nodes": 2,
+    "type": "production",
+    "created_at": "2013-01-25T08:18:39Z",
+    "updated_at": "2013-01-28T16:45:24Z",
+    "available_since": "2013-01-28T16:46:22Z",
+    "terminated_at": "2013-01-28T17:45:33Z",
+    "running_jobs_count": 0,
+    "url": "https://api.xplenty.com/xplenation/api/clusters/99",
+    "terminate_on_idle": false,
+    "time_to_idle": 3600,
+    "terminated_on_idle": false
+  },
+  {
+    "id": 98,
+    "name": "Daily Outliers Test #101",
+    "description": "Daily Outliers Test",
+    "status": "terminated",
+    "owner_id": 27,
+    "plan_id": 1,
+    "nodes": 2,
+    "type": "production",
+    "created_at": "2013-01-25T08:17:56Z",
+    "updated_at": "2013-01-28T16:45:14Z",
+    "available_since": "2013-01-28T08:23:12Z",
+    "terminated_at": "2013-01-28T16:45:14Z",
+    "running_jobs_count": 0,
+    "url": "https://api.xplenty.com/xplenation/api/clusters/98"
+    "terminate_on_idle": false,
+    "time_to_idle": 3600,
+    "terminated_on_idle": false
+  },
+  {
+    "id": 97,
+    "name": "Daily Outliers Test #102",
+    "description": "Daily Outliers Test",
+    "status": "terminated",
+    "owner_id": 27,
+    "plan_id": null,
+    "nodes": 0,
+    "type": "sandbox",
+    "created_at": "2013-01-25T07:36:04Z",
+    "updated_at": "2013-01-25T07:45:19Z",
+    "available_since": "2013-01-25T07:40:02Z",
+    "terminated_at": "2013-01-25T07:45:19Z",
+    "running_jobs_count": 0,
+    "url": "https://api.xplenty.com/xplenation/api/clusters/97"
+    "terminate_on_idle": true,
+    "time_to_idle": 3600,
+    "terminated_on_idle": true
+  }
 ]
 ```

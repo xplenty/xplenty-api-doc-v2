@@ -31,30 +31,30 @@ The **job resource ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-    curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs/<jobID>"
+curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs/<jobID>"
 ```
 
 ### Response Example
 ```json
-    {
-        "id": 305,
-        "status": "pending_stoppage",
-        "variables": 
-        {
-            "InputPath": "/today"
-        },
-        "owner_id": 1,
-        "progress": 0,
-        "outputs_count": 0,
-        "started_at": "2013-03-04T08:10:48Z",
-        "created_at": "2013-03-04T08:10:42Z",
-        "updated_at": "2013-03-04T08:11:27Z",
-        "failed_at": null,
-        "cluster_id": 176,
-        "package_id": 103,
-        "errors": null,
-        "url": "https://api.xplenty.com/xplenation/api/jobs/305",
-        "runtime_in_seconds": 40,
-        "completed_at": null
-    }
+{
+  "id": 305,
+  "status": "pending_stoppage",
+  "variables": 
+  {
+    "InputPath": "/today"
+  },
+  "owner_id": 1,
+  "progress": 0,
+  "outputs_count": 0,
+  "started_at": "2013-03-04T08:10:48Z",
+  "created_at": "2013-03-04T08:10:42Z",
+  "updated_at": "2013-03-04T08:11:27Z",
+  "failed_at": null,
+  "cluster_id": 176,
+  "package_id": 103,
+  "errors": null,
+  "url": "https://api.xplenty.com/xplenation/api/jobs/305",
+  "runtime_in_seconds": 40,
+  "completed_at": null
+}
 ```

@@ -19,7 +19,7 @@ An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that is
 
 ### Schedule
 
-An Xplenty **scheddule** is a <!-- # TODO -->
+An Xplenty **schedule** is a <!-- # TODO -->
 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.

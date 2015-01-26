@@ -17,8 +17,6 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 | name                    | Y         | Untitled     | Name to assign to the new schedule                                   |
 | status                  | N         | disabled     | Initial status of the schedule                                       |
 | start_at                | Y         | Current time | Time when the task will first trigger                                |
-| end_at                  | N         | blank        | Time after which schedule will no longer trigger                     |
-| recurrence_count        | N         | blank        | Number of times the schedule is going to be executed                 |
 | description             | N         | blank        | Description to assign to the new schedule                            |
 | interval_amount         | Y         | 1            | Number of interval units between schedule's task executions          |
 | interval_unit           | Y         | hours        | Schedule's interval unit                                             |
