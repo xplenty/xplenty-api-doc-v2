@@ -1,7 +1,7 @@
 ## Create Schedule
 
 ### Description
-This call creates a new schedule. Schedule is a
+This call creates a new schedule. A schedule executes packages periodically starting at a specified date and time. The packages will be executed as scheduled, using an existing cluster that fits the scheduled cluster size or if one doesn't exist, a cluster will be provisioned automatically with the number of specified nodes. 
 
 A successful call returns the following details for the the schedule:
 <!-- #TODO -->
