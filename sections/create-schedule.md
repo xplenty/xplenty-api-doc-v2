@@ -4,11 +4,35 @@
 This call creates a new schedule. A schedule executes packages periodically starting at a specified date and time. The packages will be executed as scheduled, using an existing cluster that fits the scheduled cluster size or if one doesn't exist, a cluster will be provisioned automatically with the number of specified nodes. 
 
 A successful call returns the following details for the the schedule:
-<!-- #TODO -->
+
+* **id** the numeric schedule ID
+* **name** the name given to the schedule upon creation
+* **description** the description given to the schedule upon creation
+* **owner_id** the numeric user id of the package owner
+* **status** the schedule's status. Possible values are:
+    * **enabled**
+    * **disabled**
+* **start_at** the date and time when the schedule should start executing
+* **next_run_at** the date and time the schedule's task will run next
+* **interval_amount** number of interval units between schedule's task executions
+* **interval_unit** Possible values are:
+    * **minutes**
+    * **hours**
+    * **days**
+    * **weeks**
+    * **months**
+    * **years**
+* **task**
+* **last_run_at** the date and time that schedule's task ran last
+* **last_run_status** status of the execution of the schedule's task
+* **execution_count** number of times the schedule has run
+* **created_at** the date and time the schedule was created
+* **updated_at** the date and time the schedule was updated
+* **url** the schedule resource ID
 
 ### Notes
-* This call only triggers schedule creation, and therefore it returns the "disabled" status. To enable a schedule you need to chagne its status to "enabled" using [update schedule's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/update-schedule-information.md)
-You can verify that a schedule has initialized successfully by [retrieving the shcedule's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-schedule-information.md) and checking for the "enabled" status.
+* This call only triggers schedule creation, and therefore it returns the "disabled" status. To enable a schedule you need to change its status to "enabled" using [update schedule's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/update-schedule-information.md)
+You can verify that a schedule has initialized successfully by [retrieving the schedule's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-schedule-information.md) and checking for the "enabled" status.
 * You must save the chedule ID value returned in the response "id" field. You will use the value to refer to this schedule in subsequent API calls.
 
 ### Input Parameters
@@ -22,8 +46,8 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 | interval_unit           | Y         | hours        | Schedule's interval unit                                             |
 | repeat_by               | N         | blank        | Indicates repeat day for monthly tasks                               |
 | day_of_week             | N         | blank        | Day of the week when the task will be executed (for weekly interval) |
-| task[nodes]             | N         | 2            | The number of compute nodes for the task will exacute on             |
-| task[terminate_on_idle] | N         | true         | Indicates if the cluster will termiate automatically                 |
+| task[nodes]             | N         | 2            | The number of compute nodes for the task to execute on             |
+| task[terminate_on_idle] | N         | true         | Indicates if the cluster will terminate automatically                 |
 | task[time_to_idle]      | N         | 60           | Time after which the cluster will terminate                          |
 | task[reuse_cluster]     | N         | true         | #TODO is it always true now ?                                        |
 | task[job_ids]           | N         | blank        | Array of job ids for the task                                        |
