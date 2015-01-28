@@ -92,9 +92,9 @@ Add multiple variables for a package and multiple packages. The index is 0 for t
   "status": "enabled",
   "task": {
     "nodes": 3,
-    "jobs": [
+    "packages": [
       {
-        "job_id": "1",
+        "package_id": "1",
         "variables": {
           "_MAX_COMBINED_SPLIT_SIZE": "67108864",
           "_BYTES_PER_REDUCER": "209715200",
@@ -105,7 +105,6 @@ Add multiple variables for a package and multiple packages. The index is 0 for t
         }
       }
     ],
-    "reuse_cluster": true,
     "terminate_on_idle": true,
     "time_to_idle": 60
   },
