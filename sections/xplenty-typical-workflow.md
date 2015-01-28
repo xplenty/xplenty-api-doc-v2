@@ -65,7 +65,7 @@ View [Run Job] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/
 
 ### Schedule a Job
 
-A job can be run on a schedule. Create a schedule when jobs should run, specifying the schedule time and days to run, start and end. The jobs will then be run per the schedule until the schedule ends or is terminated.
+A job can be run on a schedule. Create a schedule when jobs should run, specifying the schedule time and days to run, start and end and packages. The jobs will then be run per the schedule until the schedule ends or is terminated.
 
 **Note:** When running by schedule, the cluster does not have to be created, as in the previous steps, and can be created automatically with the number of nodes specified.
 
@@ -86,7 +86,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
     -d "schedule[task][terminate_on_idle]=<terminate_on_idle>"
     -d "schedule[task][time_to_idle]=<time_to_idle>"
     -d "schedule[task][reuse_cluster]=<reuse_cluster>"
-    -d "schedule[task][job_ids]=<job_ids>"
+    -d "schedule[task][packages]=<package_ids>"
 ```
 View [Create Schedule] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-schedule.md) for details of the request and response.
 
