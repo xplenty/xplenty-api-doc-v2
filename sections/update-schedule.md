@@ -47,9 +47,8 @@ A successful call returns the following details for the schedule after the chang
 | day_of_week             | N         | blank        | Day of the week when the task will be executed (for weekly interval) |
 | task[nodes]             | N         | 2            | The number of compute nodes for the task will exacute on             |
 | task[terminate_on_idle] | N         | true         | Indicates if the cluster will terminate automatically                 |
-| task[time_to_idle]      | N         | 60           | Time after which the cluster will terminate                          |
-| task[reuse_cluster]     | N         | true         | #TODO is it always true now ?                                        |
-| task[job_ids]           | N         | blank        | Array of job ids for the task                                        |
+| task[time_to_idle]      | N         | 60           | Time after which the cluster will terminate                          | 
+| task[packages]  | N         | blank        | Array of package ids with variables                                        |
 
 ### Request (Curl Call) Syntax
 ```shell
@@ -64,8 +63,18 @@ curl -X PUT -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
   -d "schedule[task][nodes]=<nodes>"
   -d "schedule[task][terminate_on_idle]=<terminate_on_idle>"
   -d "schedule[task][time_to_idle]=<time_to_idle>"
-  -d "schedule[task][reuse_cluster]=<reuse_cluster>"
-  -d "schedule[task][job_ids]=<job_ids>"
+   -d "task[packages][<index>][package_id] = <package_id>"
+   -d "task[packages][<index>][variables][<var_name>] = variable value"
+```
+
+Add multiple variables for a package and multiple packages. The index is 0 for the first package and incremented for each additional package. For example:
+```shell
+   -d "task[packages][0][package_id] = 1234"
+   -d "task[packages][0][variables][today] = val1"
+   -d "task[packages][0][variables][yesterday] = val2"
+   -d "task[packages][1][package_id] = 3456"
+   -d "task[packages][1][variables][today] = val3"
+   -d "task[packages][1][variables][yesterday] = val4"
 ```
 
 ### Response Example
