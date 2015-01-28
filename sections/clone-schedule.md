@@ -46,9 +46,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
 ```json
 {
   "created_at": "2014-09-25T08:48:51Z",
-  "day_of_week": null,
   "description": "dsada",
-  "end_at": "2014-09-25T10:45:00Z",
   "execution_count": 0,
   "id": 2,
   "interval_amount": 34,
@@ -58,8 +56,6 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
   "name": "Untitled",
   "next_run_at": "2014-12-02T08:33:00Z",
   "owner_id": 1,
-  "recurrence_count": 2,
-  "repeat_by": null,
   "start_at": "2014-09-25T08:33:00Z",
   "status": "enabled",
   "task": {
