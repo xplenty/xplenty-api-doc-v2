@@ -24,7 +24,7 @@ A successful call returns the following details for the the schedule:
     * **years**
 * **task**
 * **last_run_at** the date and time that schedule's task ran last
-* **last_run_status** status of the execution of the schedule's task
+* **last_run_status** status of the last execution of the schedule's task
 * **execution_count** number of times the schedule has run
 * **created_at** the date and time the schedule was created
 * **updated_at** the date and time the schedule was updated
@@ -44,13 +44,10 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 | description             | N         | blank        | Description to assign to the new schedule                            |
 | interval_amount         | Y         | 1            | Number of interval units between schedule's task executions          |
 | interval_unit           | Y         | hours        | Schedule's interval unit                                             |
-| repeat_by               | N         | blank        | Indicates repeat day for monthly tasks                               |
-| day_of_week             | N         | blank        | Day of the week when the task will be executed (for weekly interval) |
 | task[nodes]             | N         | 2            | The number of compute nodes for the task to execute on             |
 | task[terminate_on_idle] | N         | true         | Indicates if the cluster will terminate automatically                 |
 | task[time_to_idle]      | N         | 60           | Time after which the cluster will terminate                          |
-| task[reuse_cluster]     | N         | true         | #TODO is it always true now ?                                        |
-| task[job_ids]           | N         | blank        | Array of job ids for the task                                        |
+| task[packages]  | N         | blank        | Array of package ids with variables                                        |
 
 ### Request (Curl Call) Example
 ```shell
@@ -58,19 +55,17 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
     -d "schedule[name]=<name>"
     -d "schedule[status]=enabled"
     -d "schedule[start_at]=<start_at>"
-    -d "schedule[end_at]=<end_at>"
-    -d "schedule[recurrence_count]=<recurrece_count>"
     -d "schedule[description]=<description>"
     -d "schedule[interval_amount]=<interval_amount>"
     -d "schedule[interval_unit]=<interval_unit>"
-    -d "schedule[repeat_by]=<repeat_by>"
-    -d "schedule[day_of_week]=<day_of_week>"
     -d "schedule[task][nodes]=<nodes>"
     -d "schedule[task][terminate_on_idle]=<terminate_on_idle>"
     -d "schedule[task][time_to_idle]=<time_to_idle>"
-    -d "schedule[task][reuse_cluster]=<reuse_cluster>"
-    -d "schedule[task][job_ids]=<job_ids>"
+    -d task[packages][<index>][package_id] = <package_id>
+    -d task[packages][<index>][variables][<var_name>] = variable value
 ```
+Add multiple variables for a package and multiple packages. The index is 0 for the first package and incremented for each additional package.
+
 ### Response Example
 ```json
 {
