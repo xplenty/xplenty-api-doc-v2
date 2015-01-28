@@ -25,7 +25,7 @@ The details returned for each schedule are:
     * **months**
 * **task**
 * **last_run_at** the date and time that schedule's task ran last
-* **last_run_status** status of the execution of the schedule's task
+* **last_run_status** status of the last execution of the schedule's task
 * **execution_count** number of times the schedule has run
 * **created_at** the date and time the schedule was created
 * **updated_at** the date and time the schedule was updated
