@@ -63,6 +63,33 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: 
 
 View [Run Job] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/run-job.md) for details of the request and response.
 
+### Schedule a Job
+
+A job can be run on a schedule. Create a schedule when jobs should run, specifying the schedule time and days to run, start and end. The jobs will then be run per the schedule until the schedule ends or is terminated.
+
+**Note:** When running by schedule, the cluster does not have to be created, as in the previous steps, and can be created automatically with the number of nodes specified.
+
+**Request** 
+```shell
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/schedules"
+    -d "schedule[name]=<name>"
+    -d "schedule[status]=enabled"
+    -d "schedule[start_at]=<start_at>"
+    -d "schedule[end_at]=<end_at>"
+    -d "schedule[recurrence_count]=<recurrece_count>"
+    -d "schedule[description]=<description>"
+    -d "schedule[interval_amount]=<interval_amount>"
+    -d "schedule[interval_unit]=<interval_unit>"
+    -d "schedule[repeat_by]=<repeat_by>"
+    -d "schedule[day_of_week]=<day_of_week>"
+    -d "schedule[task][nodes]=<nodes>"
+    -d "schedule[task][terminate_on_idle]=<terminate_on_idle>"
+    -d "schedule[task][time_to_idle]=<time_to_idle>"
+    -d "schedule[task][reuse_cluster]=<reuse_cluster>"
+    -d "schedule[task][job_ids]=<job_ids>"
+```
+View [Create Schedule] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-schedule.md) for details of the request and response.
+
 ***
 <a id="VerifyJob" name="VerifyJob">
 ### Step 4: Verify Job Initialization
