@@ -4,7 +4,7 @@
 This call clones the given schedule.
 
 
-A successful call returns the following details for the schedule after the changes.
+A successful call returns the following details for the schedule after the schedule is cloned.
 
 * **id** the numeric schedule ID
 * **name** the name given to the schedule upon creation
