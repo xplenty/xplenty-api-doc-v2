@@ -1,4 +1,4 @@
-## List Jobs
+## List Schedules
 
 ### Description
 This call returns information for the list of schedules that were created by users in your account.
@@ -7,6 +7,30 @@ Optionally, you can supply the input parameters to filter the schedule list so t
 
 The details returned for each schedule are:
 
+* **id** the numeric schedule ID
+* **name** the name given to the schedule upon creation
+* **description** the description given to the schedule upon creation
+* **owner_id** the numeric user id of the package owner
+* **status** the schedule's status. Possible values are:
+    * **enabled**
+    * **disabled**
+* **start_at** the date and time when the schedule should start executing
+* **next_run_at** the date and time the schedule's task will run next
+* **interval_amount** number of interval units between schedule's task executions
+* **interval_unit** Possible values are:
+    * **minutes**
+    * **hours**
+    * **days**
+    * **weeks**
+    * **months**
+* **task**
+* **last_run_at** the date and time that schedule's task ran last
+* **last_run_status** status of the execution of the schedule's task
+* **execution_count** number of times the schedule has run
+* **created_at** the date and time the schedule was created
+* **updated_at** the date and time the schedule was updated
+* **url** the schedule resource ID
+
 
 ### Input Parameters
 
@@ -14,7 +38,7 @@ The details returned for each schedule are:
 |----|---------|-------|-----------|
 status|N|"all"|Possible values are any status listed above or ```all```. The call will return only schedules with the given status, or all the schedules if the "all" value is specified.
 sort|N|"created"|Possible values are ```updated``` or ```created```. The schedule list will be sorted by the schedules' "updated_at" or "created_at" value respectively.
-direction|N|"desc"|Possible values are: ```asc```, ```desc```. The scheduless will be sorted in ascending or descending order of the "sort" attribute.
+direction|N|"desc"|Possible values are: ```asc```, ```desc```. The schedules will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The schedule list will only contain schedules updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
 
