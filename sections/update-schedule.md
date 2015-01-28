@@ -4,7 +4,7 @@
 This call updates the given schedule.
 Note that you cannot edit start_at date if schedule's execution count is greater than zero.
 
-If you want to use similar schedule you can clone it using the [clone schedule method](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/clone-schedule.md)
+If you want to use a similar schedule you can clone it using the [clone schedule method](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/clone-schedule.md)
 
 A successful call returns the following details for the schedule after the changes.
 
@@ -12,11 +12,11 @@ A successful call returns the following details for the schedule after the chang
 * **name** the name given to the schedule upon creation
 * **description** the description given to the schedule upon creation
 * **owner_id** the numeric user id of the package owner
-* **status** the schdule's status. Possible values are:
+* **status** the schedule's status. Possible values are:
     * **enabled**
     * **disabled**
 * **start_at** the date and time when the schedule should start executing
-* **next_run_at** the date and time the schedule's task will run next time
+* **next_run_at** the date and time the schedule's task will run next
 * **interval_amount** number of interval units between schedule's task executions
 * **interval_unit** Possible values are:
     * **minutes**
@@ -25,9 +25,9 @@ A successful call returns the following details for the schedule after the chang
     * **weeks**
     * **months**
 * **task**
-* **last_run_at** the date and time when schedule's task run last time
+* **last_run_at** the date and time that schedule's task ran last
 * **last_run_status** status of the execution of the schedule's task
-* **execution_count** number of times the schedule has ran
+* **execution_count** number of times the schedule has run
 * **created_at** the date and time the schedule was created
 * **updated_at** the date and time the schedule was updated
 * **url** the schedule resource ID
@@ -46,7 +46,7 @@ A successful call returns the following details for the schedule after the chang
 | repeat_by               | N         | blank        | Indicates repeat day for monthly tasks                               |
 | day_of_week             | N         | blank        | Day of the week when the task will be executed (for weekly interval) |
 | task[nodes]             | N         | 2            | The number of compute nodes for the task will exacute on             |
-| task[terminate_on_idle] | N         | true         | Indicates if the cluster will termiate automatically                 |
+| task[terminate_on_idle] | N         | true         | Indicates if the cluster will terminate automatically                 |
 | task[time_to_idle]      | N         | 60           | Time after which the cluster will terminate                          |
 | task[reuse_cluster]     | N         | true         | #TODO is it always true now ?                                        |
 | task[job_ids]           | N         | blank        | Array of job ids for the task                                        |
