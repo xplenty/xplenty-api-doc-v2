@@ -73,7 +73,6 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
         }
       }
     ],
-    "reuse_cluster": true,
     "terminate_on_idle": true,
     "time_to_idle": 60
   },
