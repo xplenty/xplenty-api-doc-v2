@@ -75,19 +75,16 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
     -d "schedule[name]=<name>"
     -d "schedule[status]=enabled"
     -d "schedule[start_at]=<start_at>"
-    -d "schedule[end_at]=<end_at>"
-    -d "schedule[recurrence_count]=<recurrece_count>"
     -d "schedule[description]=<description>"
     -d "schedule[interval_amount]=<interval_amount>"
     -d "schedule[interval_unit]=<interval_unit>"
-    -d "schedule[repeat_by]=<repeat_by>"
-    -d "schedule[day_of_week]=<day_of_week>"
     -d "schedule[task][nodes]=<nodes>"
     -d "schedule[task][terminate_on_idle]=<terminate_on_idle>"
     -d "schedule[task][time_to_idle]=<time_to_idle>"
-    -d "schedule[task][reuse_cluster]=<reuse_cluster>"
-    -d "schedule[task][packages]=<package_ids>"
+    -d "task[packages][<index>][package_id] = <package_id>"
+    -d "task[packages][<index>][variables][<var_name>] = variable value"
 ```
+
 View [Create Schedule] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/create-schedule.md) for details of the request and response.
 
 ***
