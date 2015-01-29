@@ -19,7 +19,7 @@ An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that is
 
 ### Schedule
 
-An Xplenty schedule executes packages periodically starting at a specified date and time. The packages will be executed as scheduled, using an existing cluster that fits the scheduled cluster size or if one doesn't exist, a cluster will be provisioned automatically with the number of specified nodes. By default, the cluster is taken down as soon as package execution is completed.
+An Xplenty **schedule** executes packages periodically starting at a specified date and time. The packages will be executed as scheduled, using an existing cluster that fits the scheduled cluster size or, if one doesn't exist, a cluster provisioned automatically with the number of specified nodes. By default, the cluster is taken down as soon as package execution is completed.
 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
