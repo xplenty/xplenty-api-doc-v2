@@ -43,8 +43,6 @@ A successful call returns the following details for the schedule after the chang
 | description             | N         | blank        | Description to assign to the new schedule                            |
 | interval_amount         | Y         | 1            | Number of interval units between schedule's task executions          |
 | interval_unit           | Y         | hours        | Schedule's interval unit                                             |
-| repeat_by               | N         | blank        | Indicates repeat day for monthly tasks                               |
-| day_of_week             | N         | blank        | Day of the week when the task will be executed (for weekly interval) |
 | task[nodes]             | N         | 2            | The number of compute nodes for the task will exacute on             |
 | task[terminate_on_idle] | N         | true         | Indicates if the cluster will terminate automatically                 |
 | task[time_to_idle]      | N         | 60           | Time after which the cluster will terminate                          | 
@@ -57,7 +55,6 @@ curl -X PUT -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
   -d "schedule[description]=<description>"
   -d "schedule[status]=enabled"
   -d "schedule[start_at]=<start_at>"
-  -d "schedule[recurrence_count]=<recurrece_count>"
   -d "schedule[interval_amount]=<interval_amount>"
   -d "schedule[interval_unit]=<interval_unit>"
   -d "schedule[task][nodes]=<nodes>"
