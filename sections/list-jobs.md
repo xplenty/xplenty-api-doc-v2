@@ -54,7 +54,7 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
     "status": "failed",
     "variables":
     {
-        "InputPath": "/today"
+        "InputPath": "'/today'"
     },
     "owner_id": 1,
     "progress": 0,
