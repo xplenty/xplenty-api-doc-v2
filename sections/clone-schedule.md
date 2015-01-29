@@ -67,7 +67,7 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
           "_MAX_COMBINED_SPLIT_SIZE": "67108864",
           "_BYTES_PER_REDUCER": "209715200",
           "_LINE_RECORD_READER_MAX_LENGTH": "1024000",
-          "_DEFAULT_TIMEZONE": "+00:00",
+          "_DEFAULT_TIMEZONE": "'+00:00'",
           "_DEFAULT_PARALLELISM": "0",
           "_SHUFFLE_INPUT_BUFFER_PERCENT": "0.7"
         }
