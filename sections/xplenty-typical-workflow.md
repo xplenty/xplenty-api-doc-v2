@@ -65,7 +65,7 @@ View [Run Job] (https://github.com/xplenty/xplenty-api-doc/blob/master/sections/
 
 ### Schedule a Job
 
-A job can be run on a schedule. Create a schedule when jobs should run, specifying the schedule time and days to run, start and end and packages. The jobs will then be run per the schedule until the schedule ends or is terminated.
+A job can be run on a schedule. Create a schedule when jobs should run, specifying the schedule time and days to run, start time and packages. The jobs will then be run per the schedule until the schedule is terminated.
 
 **Note:** When running by schedule, the cluster does not have to be created, as in the previous steps, and can be created automatically with the number of nodes specified.
 
