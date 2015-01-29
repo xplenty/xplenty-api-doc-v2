@@ -60,9 +60,9 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
   "status": "enabled",
   "task": {
     "nodes": 3,
-    "jobs": [
+    "packages": [
       {
-        "job_id": "1",
+        "package_id": "1",
         "variables": {
           "_MAX_COMBINED_SPLIT_SIZE": "67108864",
           "_BYTES_PER_REDUCER": "209715200",
