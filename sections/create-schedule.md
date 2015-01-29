@@ -67,11 +67,11 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
 Add multiple variables for a package and multiple packages. The index is 0 for the first package and incremented for each additional package. For example:
 ```shell
    -d "task[packages][0][package_id] = 1234"
-   -d "task[packages][0][variables][today] = val1"
-   -d "task[packages][0][variables][yesterday] = val2"
+   -d "task[packages][0][variables][today] = 'val1'"
+   -d "task[packages][0][variables][yesterday] = 'val2'"
    -d "task[packages][1][package_id] = 3456"
-   -d "task[packages][1][variables][today] = val3"
-   -d "task[packages][1][variables][yesterday] = val4"
+   -d "task[packages][1][variables][today] = 'val3'"
+   -d "task[packages][1][variables][yesterday] = 'val4'"
 ```
 
 ### Response Example
@@ -94,14 +94,18 @@ Add multiple variables for a package and multiple packages. The index is 0 for t
     "nodes": 3,
     "packages": [
       {
-        "package_id": "1",
+        "package_id": "1234",
         "variables": {
-          "_MAX_COMBINED_SPLIT_SIZE": "67108864",
-          "_BYTES_PER_REDUCER": "209715200",
-          "_LINE_RECORD_READER_MAX_LENGTH": "1024000",
-          "_DEFAULT_TIMEZONE": "+00:00",
-          "_DEFAULT_PARALLELISM": "0",
-          "_SHUFFLE_INPUT_BUFFER_PERCENT": "0.7"
+          "today": "'val1'",
+          "yesterday": "'val2'"
+        }
+      }
+      ,      
+      {
+        "package_id": "3456",
+        "variables": {
+          "today": "'val3'",
+          "yesterday": "'val4'"
         }
       }
     ],
