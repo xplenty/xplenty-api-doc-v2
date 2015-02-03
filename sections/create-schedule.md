@@ -75,10 +75,14 @@ Add multiple variables for a package and multiple packages. The index is 0 for t
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 201 Created
+```
+
 ```json
 {
   "created_at": "2014-09-25T08:48:51Z",
-  "description": "dsada",
+  "description": "My daily schedule",
   "execution_count": 0,
   "id": 2,
   "interval_amount": 34,

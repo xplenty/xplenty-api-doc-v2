@@ -56,6 +56,10 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 201 Created
+```
+
 ```json
 {
   "id": 157,

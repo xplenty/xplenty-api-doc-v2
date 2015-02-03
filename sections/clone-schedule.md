@@ -3,7 +3,6 @@
 ### Description
 This call clones the given schedule.
 
-
 A successful call returns the following details for the schedule after the schedule is cloned.
 
 * **id** the numeric schedule ID
@@ -43,17 +42,21 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 201 Created
+```
+
 ```json
 {
   "created_at": "2014-09-25T08:48:51Z",
-  "description": "dsada",
+  "description": "My daily schedule",
   "execution_count": 0,
   "id": 2,
   "interval_amount": 34,
   "interval_unit": "days",
   "last_run_at": null,
   "last_run_status": null,
-  "name": "Untitled",
+  "name": "Copy of Untitled",
   "next_run_at": "2014-12-02T08:33:00Z",
   "owner_id": 1,
   "start_at": "2014-09-25T08:33:00Z",

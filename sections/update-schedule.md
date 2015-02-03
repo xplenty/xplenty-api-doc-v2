@@ -75,6 +75,10 @@ Add multiple variables for a package and multiple packages. The index is 0 for t
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 {
   "created_at": "2014-09-25T08:48:51Z",

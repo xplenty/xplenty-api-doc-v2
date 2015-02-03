@@ -24,6 +24,10 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 [
   {

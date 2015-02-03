@@ -39,6 +39,10 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 {
   "created_at": "2014-09-25T08:48:51Z",

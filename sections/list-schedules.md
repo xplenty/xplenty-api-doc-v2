@@ -47,6 +47,10 @@ since|N| |The schedule list will only contain schedules updated at the given tim
 curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/schedules?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
 ```
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 [
   {

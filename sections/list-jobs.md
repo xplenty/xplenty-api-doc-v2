@@ -47,6 +47,10 @@ since|N| |The job list will only contain jobs updated at the given time or later
 curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
 ```
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 [
   {
