@@ -1,4 +1,4 @@
-## Terminate Schedule
+## Delete Schedule
 
 ### Description
 This call removes the given schedule.
