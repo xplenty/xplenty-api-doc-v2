@@ -1,15 +1,13 @@
 ## Delete Schedule
 
 ### Description
-This call removes the given schedule.
+This call deletes the given [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md).
 
 Use this call when the schedule is no longer needed.
 
-A successful call returns empty body and a status of 204.
-
 ### Notes
 * This call removes the schedule all together - contrary to some other resources this one **won't** be archived / updated.
-You can verify that a schedule has been removed successfully by [retrieving the schedules's information](https://github.com/xplenty/xplenty-api-doc/blob/master/sections/get-schedule-information.md).
+You can verify that a schedule has been removed successfully by [retrieving the schedules's information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-schedule-information.md).
 
 ### Input Parameters
 The **schedule resource ID** must be supplied at the end of the request URL.

@@ -1,18 +1,7 @@
 ## Get Package Information
 
 ### Description
-The calls returns information for a package with the given package ID.
-
-The details returned for the package are:
-
-* **id** - the numeric package ID
-* **name** - the name given to the package upon creation
-* **description** - the description given to the package upon creation
-* **variables** - the list of package variables
-* **owner_id** - the numeric user id of the package owner
-* **created_at** - the date and time the package was created
-* **updated_at** - the date and time the package was last updated 
-* **url** - the job resource URL
+The calls returns information for a [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md) with the given package ID.
 
 ### Input Parameters
 The **package ID** must be supplied at the end of the request URL.

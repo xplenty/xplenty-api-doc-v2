@@ -1,19 +1,8 @@
 ## List Packages
 
 ### Description
-This call returns information for the list of packages that were created by users in your account.
+This call returns information for the list of [packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md) that were created by users in your account.
 You can use this information to monitor your packages.
-
-The details returned for each package are:
-
-* **id** - the numeric package ID
-* **name** - the name given to the package upon creation
-* **description** - the description given to the package upon creation
-* **variables** - the list of package variables
-* **owner_id** - the numeric user id of the package owner
-* **created_at** - the date and time the package was created
-* **updated_at** - the date and time the package was last updated
-* **url** - the package resource URL
 
 ### Input Parameters
 None

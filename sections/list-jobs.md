@@ -1,37 +1,9 @@
 ## List Jobs
 
 ### Description
-This call returns information for the list of jobs that were created by users in your account.
+This call returns information for the list of [jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md) that were created by users in your account.
 You can use this information to monitor your jobs and their status.
 Optionally, you can supply the input parameters to filter the job list so that it contains only jobs with a specific status, and to determine the order by which the list will be sorted.
-
-The details returned for each job are:
-
-* **id** - the numeric job ID
-* **status** - the job status. Possible values are:
-    * **idle** - the user sent a request to run the job
-    * **pending** - the job is initializing
-    * **running** - the job is running
-    * **completed** - the job completed successfully
-    * **failed** - the job failed to complete
-    * **pending_stoppage** - the user sent a request to stop the job
-    * **stopping** - the job is stopping
-    * **stopped** - the job has stopped
-* **variables** - a list of the variables supplied to the "run" request
-* **owner_id** - the numeric user ID
-* **progress** - the job progress in percentages (a value between 0.0 and 1.0)
-* **outputs_count** - the number of output targets defined in the job's package
-* **outputs** - list of the output targets defined in the job's package
-* **started_at** - the date and time the job started running
-* **created_at** - the date and time the "run" request was made
-* **failed_at** - the date and time the job failed (if it failed)
-* **updated_at** - the date and time the job was last updated (occurs when package tasks are completed)
-* **cluster_id** - the ID of the cluster in which the job was run
-* **package_id** - the ID of the package that the job ran (or is running)
-* **errors** - a textual message describing errors encountered while the job was run
-* **url** - the job resource URL
-* **runtime_in_seconds** - the time in seconds that the job has run up to the current time
-* **completed_at** - the date and time at which the job completed (stopped, failed or completed)
 
 ### Input Parameters
 
