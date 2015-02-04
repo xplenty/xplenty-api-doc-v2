@@ -237,6 +237,7 @@ These are the methods supported by the Xplenty API:
 * [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/watch-clusters-and-jobs.md)
 * [List Packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-packages.md)
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-information.md)
+* [List available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
