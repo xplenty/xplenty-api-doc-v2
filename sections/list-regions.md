@@ -6,7 +6,7 @@ You can use this information to verify in which regions you can create a cluster
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/regions"
+curl -X GET -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/regions"
 ```
 ### Response Example
 ```json
