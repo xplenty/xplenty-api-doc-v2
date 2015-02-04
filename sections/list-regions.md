@@ -1,8 +1,8 @@
 ## List available Regions
 
 ### Description
-This call returns information for the list of regions that are available for account.
-You can use this information to verify in which regions you can create a cluster.
+This call returns information for the list of regions that are available for your account.
+You can use this information to verify the regions in which you can create a cluster.
 
 ### Request (Curl Call) Syntax
 ```shell
