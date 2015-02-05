@@ -22,7 +22,7 @@ Create a new cluster. The following example creates cluster of type "production"
 
 **Request**
 ```shell
-    curl -X POST -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS:"https://api.xplenty.com/xplenation/api/clusters" 
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS:"https://api.xplenty.com/xplenation/api/clusters" 
     -d "cluster[name]=DailyCluster_03032013" 
     -d "cluster[description]=Cluster for running daily jobs. Date 03032013."
     -d "cluster[type]=production" 
@@ -39,7 +39,7 @@ Poll the cluster status and check its status value. When the status changes to "
 
 **Request**
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
 ```
 
 View [Get Cluster Information] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-cluster-information.md) for details of the response.
@@ -54,7 +54,7 @@ Request to run a new job, passing values for the cluster ID, the package ID, and
 
 **Request**
 ```shell
-    curl -X POST -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs" 
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs" 
     -d "job[cluster_id]=167" 
     -d "job[package_id]=103" 
     -d "job[variables][InputPath]=/input03032013" 
@@ -62,6 +62,30 @@ Request to run a new job, passing values for the cluster ID, the package ID, and
 ```
 
 View [Run Job] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/run-job.md) for details of the request and response.
+
+### Schedule a Job
+
+A job can be run on a schedule. Create a schedule when jobs should run, specifying the schedule time and days to run, start time and packages. The jobs will then be run per the schedule until the schedule is terminated.
+
+**Note:** When running by schedule, the cluster does not have to be created, as in the previous steps, and can be created automatically with the number of nodes specified.
+
+**Request** 
+```shell
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/schedules"
+    -d "schedule[name]=<name>"
+    -d "schedule[status]=enabled"
+    -d "schedule[start_at]=<start_at>"
+    -d "schedule[description]=<description>"
+    -d "schedule[interval_amount]=<interval_amount>"
+    -d "schedule[interval_unit]=<interval_unit>"
+    -d "schedule[task][nodes]=<nodes>"
+    -d "schedule[task][terminate_on_idle]=<terminate_on_idle>"
+    -d "schedule[task][time_to_idle]=<time_to_idle>"
+    -d "schedule[task][packages][<index>][package_id]=<package_id>"
+    -d "schedule[task][packages][<index>][variables][<var_name>]=variable value"
+```
+
+View [Create Schedule] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-schedule.md) for details of the request and response.
 
 ***
 <a id="VerifyJob" name="VerifyJob">
@@ -71,7 +95,7 @@ Poll the job status and check its status value. When the status changes to "runn
 
 **Request**
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305"
 ```
 
 View [Get Job Information] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-job-information.md) for details of the response.
@@ -86,7 +110,7 @@ Check the value of the job's "status" field. When it changes to "completed" or "
 
 **Request**
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305"
 ```
 
 View [Get Job Information] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-job-information.md) for details of the response.
@@ -99,7 +123,7 @@ Optionally preview the output, which will display up to 100 lines. When requesti
 
 **Request**
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305/outputs/4160/preview"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/jobs/305/outputs/4160/preview"
 ```
 
 View [Preview Job Output] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/preview-output.md) for details of the response.
@@ -119,7 +143,7 @@ Request to terminate the cluster, releasing its resources.
 
 **Request**
 ```shell
-    curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
+curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
 ```
 
 View [Terminate Cluster] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-cluster.md) for details of the response.
@@ -133,7 +157,7 @@ When requesting cluster information, the cluster ID must appear at the end of th
 
 **Request**
 ```shell
-    curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u V4eyfgNqYcSasXGhzNxS: "https://api.xplenty.com/xplenation/api/clusters/167"
 ```
 
 View [Get Cluster Information] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-cluster-information.md) for details of the response.

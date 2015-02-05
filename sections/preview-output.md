@@ -13,10 +13,14 @@ The **job resource ID** and **output ID** must be supplied in the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-  curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs/<jobID>/outputs/<outputID>/preview"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs/<jobID>/outputs/<outputID>/preview"
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 {
   "preview": "appl\t258072",

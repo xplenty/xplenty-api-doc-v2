@@ -3,13 +3,13 @@
 ## Introduction
 
 The Xplenty API provides functions for controlling and monitoring Xplenty clusters and jobs.
-After defining an Xplenty data processing package using the Xplenty web application, you can call the Xplenty API to:  
+After defining an Xplenty data processing package using the Xplenty web application, you can call the Xplenty API to:
 * create Hadoop clusters
-* run jobs 
+* run jobs
 * monitor their progress
 * terminate jobs and clusters
 
-You can choose to use the [Xplenty REST API](#RESTSpec), or one of its wrapper [Libraries](#Libraries). 
+You can choose to use the [Xplenty REST API](#RESTSpec), or one of its wrapper [Libraries](#Libraries).
 
 These are the topics covered on this page:
 * [Getting Started](#GettingStarted)
@@ -39,16 +39,20 @@ These are some of the terms you will encounter in the Xplenty API documentation.
 
 ### Package
 
-An Xplenty **package** is a data flow definition that you define in the Xplenty web application. 
+An Xplenty **package** is a data flow definition that you define in the Xplenty web application.
 It describes the data to process (location, schema, fields), data manipulation to perform, and the output destinations (location, schema). The package's workflow is implemented by jobs.
 
 ### Job
 An Xplenty **job** is a process that is responsible for performing a data flow according to a specific package on a Hadoop cluster. The job is a batch process that runs on a finite amount of data and then terminates. Several jobs can run the same package simultaneously.
 When you call the Xplenty API to run a new job, you supply the name of the package whose workflow the job should perform, and the cluster on which to run.
 
-### Cluster 
+### Cluster
 
 An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until you request to terminate the cluster.
+
+### Schedule
+
+An Xplenty **schedule** executes packages periodically starting at a specified date and time. The packages will be executed as scheduled, using an existing cluster that fits the scheduled cluster size or if one doesn't exist, a cluster will be provisioned automatically with the number of specified nodes. By default, the cluster is taken down as soon as package execution is completed.
 
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
@@ -64,7 +68,7 @@ The Xplenty REST API conforms to the design principles of [Representational Stat
 
 To get a quick start with the Xplenty API, we recommend using the [curl](http://curl.haxx.se) command-line utility.
 
-All URLs start with: 
+All URLs start with:
     https://api.xplenty.com/{account_id}/api/
 
 Parameter values should be converted to UTF-8 and [URL encoded](http://en.wikipedia.org/wiki/Percent_encoding).
@@ -73,7 +77,7 @@ All Xplenty APIs support jsonp, which is the json format with a callback specifi
 
     callback=callback_method
 
-All date parameters will be treated as UTC and their formats must be in ISO 8601 format: 
+All date parameters will be treated as UTC and their formats must be in ISO 8601 format:
 
     YYYY-MM-DDTHH:MM:SSZ
 
@@ -106,7 +110,7 @@ The latest version of the Xplenty API (V1) supports CORS requests from any domai
 **HTTP Status Codes**
 
 These are the HTTP status codes that the Xplenty API can return:
- 
+
 * **200 OK**: Request succeeded.
 * **201 Created**: The requested resource was created successfully.
 * **204 No Content**: Request succeeded. No content is returned.
@@ -120,7 +124,7 @@ These are the HTTP status codes that the Xplenty API can return:
 * **415 Unsupported Media Type**: The specified media type is not supported.
 * **422 Unprocessable Entity**: You have sent invalid fields.
 * **429 Too Many Requests**: The request exceeded the rate limitations.
-* **500 Internal Server Error**: An internal error occurred in the request. 
+* **500 Internal Server Error**: An internal error occurred in the request.
 * **502 Bad Gateway**: Xplenty is down or being upgraded.
 * **503 Service Unavailable**: The Xplenty servers are up, but overloaded with requests. Try again later.
 
@@ -140,8 +144,8 @@ When the API returns an error message, it does so in your requested format. For 
 
 Use a wrapper in the official Xplenty library, or a [third party library](#Thirdparty).
 
-[Java wrapper](https://github.com/xplenty/xplenty.jar)  
-[Python wrapper](https://github.com/xplenty/xplenty.py)  
+[Java wrapper](https://github.com/xplenty/xplenty.jar)
+[Python wrapper](https://github.com/xplenty/xplenty.py)
 [Ruby wrapper](https://github.com/xplenty/xplenty.rb)
 
 <a id="Thirdparty" name="Thirdparty">
@@ -200,7 +204,7 @@ Every time you call the API, the current rate status will be returned in the res
 </table>
 
 ### Cost of API calls
-Unless otherwise noted, an API call deducts 1 credit from your allocation. 
+Unless otherwise noted, an API call deducts 1 credit from your allocation.
 
 
 When a client exceeds the allocated rate limit, the Xplenty API returns a "429 Too Many Requests" response with an associated "Rate Limit Exceeded" message as the error description.
@@ -237,6 +241,12 @@ These are the methods supported by the Xplenty API:
 * [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/watch-clusters-and-jobs.md)
 * [List Packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-packages.md)
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-information.md)
+* [Create schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-schedule.md)
+* [List schedules](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-schedules.md)
+* [Update schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-schedule.md)
+* [Get schedule Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-schedule-information.md)
+* [Delete schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-schedule.md)
+
 
 <a id="ToS" name="ToS">
 ## Terms of Service
@@ -248,6 +258,6 @@ Please refer to our [Terms of Service](http://www.xplenty.com/tos) page.
 ## References
 </a>
 
-[Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer) 
+[Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)
 
 [Secure Socket Layer (SSL)](http://en.wikipedia.org/wiki/Secure_Sockets_Layer)

@@ -17,6 +17,10 @@ curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://a
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 {
   "id": 167,

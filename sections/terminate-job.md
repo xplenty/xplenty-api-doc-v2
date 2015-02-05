@@ -16,13 +16,17 @@ curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://a
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 {
   "id": 305,
   "status": "pending_stoppage",
   "variables": 
   {
-      "InputPath": "/today"
+    "InputPath": "'/today'"
   },
   "owner_id": 1,
   "progress": 0,

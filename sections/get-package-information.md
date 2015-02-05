@@ -8,10 +8,14 @@ The **package ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-  curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/packages/<packageID>"
+curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/packages/<packageID>"
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 {
   "id": 2373,

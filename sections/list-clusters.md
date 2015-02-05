@@ -12,7 +12,7 @@ only clusters with a specific status, and to determine the order by which the li
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 status|N|"all"|Possible values are any status listed above or ```all```. The call will return only clusters with the given status, or all the clusters if the "all" value is specified.
-sort|N|"created"|Possible values are ```updated``` or ```created```. The cluster list will be sorted by the clusters' "updated_by" or "created_by" value respectively.
+sort|N|"created"|Possible values are ```updated``` or ```created```. The cluster list will be sorted by the clusters' "updated_at" or "created_at" value respectively.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The clusters will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The cluster list will only contain clusters updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
@@ -22,6 +22,10 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 [
   {
