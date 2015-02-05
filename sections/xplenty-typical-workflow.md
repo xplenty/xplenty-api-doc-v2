@@ -81,8 +81,8 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
     -d "schedule[task][nodes]=<nodes>"
     -d "schedule[task][terminate_on_idle]=<terminate_on_idle>"
     -d "schedule[task][time_to_idle]=<time_to_idle>"
-    -d "schedule[task][packages][<index>][package_id] = <package_id>"
-    -d "schedule[task][packages][<index>][variables][<var_name>] = variable value"
+    -d "schedule[task][packages][<index>][package_id]=<package_id>"
+    -d "schedule[task][packages][<index>][variables][<var_name>]=variable value"
 ```
 
 View [Create Schedule] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-schedule.md) for details of the request and response.

@@ -34,17 +34,17 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
     -d "schedule[task][nodes]=<nodes>"
     -d "schedule[task][terminate_on_idle]=<terminate_on_idle>"
     -d "schedule[task][time_to_idle]=<time_to_idle>"
-    -d "schedule[task][packages][<index>][package_id] = <package_id>"
-    -d "schedule[task][packages][<index>][variables][<var_name>] = variable value"
+    -d "schedule[task][packages][<index>][package_id]=<package_id>"
+    -d "schedule[task][packages][<index>][variables][<var_name>]=variable value"
 ```
 Add multiple variables for a package and multiple packages. The index is 0 for the first package and incremented for each additional package. For example:
 ```shell
-   -d "schedule[task][packages][0][package_id] = 1234"
-   -d "schedule[task][packages][0][variables][today] = 'val1'"
-   -d "schedule[task][packages][0][variables][yesterday] = 'val2'"
-   -d "schedule[task][packages][1][package_id] = 3456"
-   -d "schedule[task][packages][1][variables][today] = 'val3'"
-   -d "schedule[task][packages][1][variables][yesterday] = 'val4'"
+   -d "schedule[task][packages][0][package_id]=1234"
+   -d "schedule[task][packages][0][variables][today]='val1'"
+   -d "schedule[task][packages][0][variables][yesterday]='val2'"
+   -d "schedule[task][packages][1][package_id]=3456"
+   -d "schedule[task][packages][1][variables][today]='val3'"
+   -d "schedule[task][packages][1][variables][yesterday]='val4'"
 ```
 
 ### Response Example
