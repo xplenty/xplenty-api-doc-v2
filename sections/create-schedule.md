@@ -16,7 +16,7 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 | start_at                | Y         | Current time | Time when the task will first trigger                                |
 | description             | N         | blank        | Description to assign to the new schedule                            |
 | interval_amount         | Y         | 1            | Number of interval units between schedule's task executions          |
-| interval_unit           | Y         | hours        | Schedule's interval unit                                             |
+| interval_unit           | Y         | hours        | Schedule's interval unit. Possible values are: `minutes`, `hours`, `days`, `weeks`, `years`.|
 | task[nodes]             | N         | 2            | The number of compute nodes for the task to execute on             |
 | task[terminate_on_idle] | N         | true         | Indicates if the cluster will terminate automatically                 |
 | task[time_to_idle]      | N         | 60           | Time after which the cluster will terminate                          |
