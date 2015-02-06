@@ -52,22 +52,22 @@ HTTP/1.1 200 OK
 [{
     "id": 323,
     "name": "App Logs (MongoDB)",
-    "type": "MongoDatabaseConnection"
+    "type": "mongo"
 }, {
     "id": 324,
     "name": "Website Logs (MongoDB)",
-    "type": "MongoDatabaseConnection"
+    "type": "mongo"
 }, {
     "id": 325,
     "name": "Website Logs (S3)",
-    "type": "AmazonS3Connection"
+    "type": "s3"
 }, {
     "id": 326,
     "name": "My Google Adwords",
-    "type": "GoogleAdwordsConnection"
+    "type": "adwords"
 }, {
     "id": 318,
     "name": "Data Warehouse (Redshift)",
-    "type": "RedshiftDatabaseConnection"
+    "type": "redshift"
 }]
 ```
