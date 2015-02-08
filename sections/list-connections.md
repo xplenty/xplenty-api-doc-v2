@@ -7,26 +7,23 @@ Optionally, you can supply the input parameters to filter the connection list so
 specific types only and to determine the order by which the list will be sorted.
 Possible input values for type parameter:
 
-* s3
-* swift
-* gs
-* rackspace
-* softlayer
-* hdfs
-* adwords
-* analytics
-* postgres
-* redshift
-* mongo
-* redis
-* mysql
-* hana
-* oracle
-* sqlserver
-* herokupostgres
-* googlecloudsql
-* bigquery
-* segment
+* s3 - Amazon S3
+* swift - Swift (OpenStack Object Storage)
+* gs - Google Cloud Storage
+* rackspace - Rackspace Cloud Files
+* softlayer - SoftLayer Object Storage
+* hdfs - Hadoop Distributed File System
+* adwords - Google AdWords
+* postgres - PostgresSQL
+* redshift - Amazon Redshift
+* mongo - MongoDB
+* mysql - MySQL
+* hana - SAP Hana
+* sqlserver - Microsoft SQL Server
+* herokupostgres - Heroku PostgresSQL
+* googlecloudsql - Google Cloud SQL
+* bigquery - Google BigQuery
+* segment - Segment SQL
 
 
 ### Input Parameters
@@ -34,9 +31,9 @@ Possible input values for type parameter:
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 type|N| |Possible values are listed above. The call will return only connections with the given types, or all the connections if value is not specified. Values can be joined with commas, e.g. 's3,postgres,redis'.
-sort|N|"created"|Possible values are ```id```, ```name```, ```type```.
+sort|N|"created"|Possible values are  ```updated```, ```created```, ```id```, ```name```, ```type```.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The connection will be sorted in ascending or descending order of the "sort" attribute.
-since|N| |The connection list will only contain connections created at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
+since|N| |The connection list will only contain connections updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
 ### Request (Curl Call) Syntax
 ```shell
@@ -49,25 +46,31 @@ HTTP/1.1 200 OK
 ```
 
 ```json
-[{
+[
+  {
     "id": 323,
     "name": "App Logs (MongoDB)",
     "type": "mongo"
-}, {
+  }, 
+  {
     "id": 324,
     "name": "Website Logs (MongoDB)",
     "type": "mongo"
-}, {
+  }, 
+  {
     "id": 325,
     "name": "Website Logs (S3)",
     "type": "s3"
-}, {
+  }, 
+  {
     "id": 326,
     "name": "My Google Adwords",
     "type": "adwords"
-}, {
+  }, 
+  {
     "id": 318,
     "name": "Data Warehouse (Redshift)",
     "type": "redshift"
-}]
+  }
+]
 ```
