@@ -1,37 +1,39 @@
 ## List Account Connections
 
 ### Description
-This call returns list of account connections.
+This call returns list of account connections that were created by users in your account. Optionally, you can supply the input parameters to filter the connection list so that it contains only connections with
+specific types and to determine the order by which the list will be sorted.
 
-Optionally, you can supply the input parameters to filter the connection list so that it contains
-specific types only and to determine the order by which the list will be sorted.
-Possible input values for type parameter:
+The details returned for each schedule are:
 
-* s3 - Amazon S3
-* swift - Swift (OpenStack Object Storage)
-* gs - Google Cloud Storage
-* rackspace - Rackspace Cloud Files
-* softlayer - SoftLayer Object Storage
-* hdfs - Hadoop Distributed File System
-* adwords - Google AdWords
-* postgres - PostgresSQL
-* redshift - Amazon Redshift
-* mongo - MongoDB
-* mysql - MySQL
-* hana - SAP Hana
-* sqlserver - Microsoft SQL Server
-* herokupostgres - Heroku PostgresSQL
-* googlecloudsql - Google Cloud SQL
-* bigquery - Google BigQuery
-* segment - Segment SQL
+* **id** the numeric connection ID
+* **name** the name given to the connection upon creation
+* **type** the type of connection. Possible values are:
+    * **s3** - Amazon S3
+    * **swift** - Swift (OpenStack Object Storage)
+    * **gs** - Google Cloud Storage
+    * **rackspace** - Rackspace Cloud Files
+    * **softlayer** - SoftLayer Object Storage
+    * **hdfs** - Hadoop Distributed File System
+    * **adwords** - Google AdWords
+    * **postgres** - PostgresSQL
+    * **redshift** - Amazon Redshift
+    * **mongo** - MongoDB
+    * **mysql** - MySQL
+    * **hana** - SAP Hana
+    * **sqlserver** - Microsoft SQL Server
+    * **herokupostgres** - Heroku PostgresSQ
+    * **googlecloudsql** - Google Cloud SQL
+    * **bigquery** - Google BigQuery
+    * **segment** - Segment SQL
 
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-type|N| |Possible values are listed above. The call will return only connections with the given types, or all the connections if value is not specified. Values can be joined with commas, e.g. 's3,postgres,redis'.
-sort|N|"created"|Possible values are  ```updated```, ```created```, ```id```, ```name```, ```type```.
+type|N|"all" |Possible values are listed above or ```all```. The call will return only connections with the given types, or all the connections if the "all" value is specified. Values can be joined with commas, e.g. 's3,postgres,redis'.
+sort|N|"created"|Possible values are ```id```, ```name```, ```type```.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The connection will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The connection list will only contain connections updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
