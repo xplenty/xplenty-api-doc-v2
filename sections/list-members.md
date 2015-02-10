@@ -33,18 +33,22 @@ HTTP/1.1 200 OK
     "id":1,
     "name":"Xplenty Admin",
     "email":"admin@example.com",
-    "role":"admin",
     "gravatar_email":"admin@example.com",
     "avatar_url":"https://xplenty.com/path/to/avatar.png",
+    "created": "2013-01-17T22:41:21Z",
+    "updated": "2013-01-17T22:41:21Z",
+    "role":"admin",
     "owner":true
   },
   {
     "id":2,
     "name":"John Smith",
     "email":"john@smith.com",
-    "role":"member",
     "gravatar_email":"john@smith.com",
     "avatar_url":"https://xplenty.com/path/to/avatar.png",
+    "created": "2013-01-17T22:41:21Z",
+    "updated": "2013-01-17T22:41:21Z",
+    "role":"member",
     "owner":false
   }
 ]
