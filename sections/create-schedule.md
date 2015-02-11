@@ -24,17 +24,17 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 
 ### Request (Curl Call) Example
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/schedules"
-    -d "schedule[name]=<name>"
-    -d "schedule[status]=enabled"
-    -d "schedule[start_at]=<start_at>"
-    -d "schedule[description]=<description>"
-    -d "schedule[interval_amount]=<interval_amount>"
-    -d "schedule[interval_unit]=<interval_unit>"
-    -d "schedule[task][nodes]=<nodes>"
-    -d "schedule[task][terminate_on_idle]=<terminate_on_idle>"
-    -d "schedule[task][time_to_idle]=<time_to_idle>"
-    -d "schedule[task][packages][<index>][package_id]=<package_id>"
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/schedules" \
+    -d "schedule[name]=<name>" \
+    -d "schedule[status]=enabled" \
+    -d "schedule[start_at]=<start_at>" \
+    -d "schedule[description]=<description>" \
+    -d "schedule[interval_amount]=<interval_amount>" \
+    -d "schedule[interval_unit]=<interval_unit>" \
+    -d "schedule[task][nodes]=<nodes>" \
+    -d "schedule[task][terminate_on_idle]=<terminate_on_idle>" \
+    -d "schedule[task][time_to_idle]=<time_to_idle>" \
+    -d "schedule[task][packages][<index>][package_id]=<package_id>" \
     -d "schedule[task][packages][<index>][variables][<var_name>]=variable value"
 ```
 Add multiple variables for a package and multiple packages. The index is 0 for the first package and incremented for each additional package. For example:
