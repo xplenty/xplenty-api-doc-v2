@@ -8,7 +8,7 @@ When you create a cluster, you either specify it's a sandbox type cluster or spe
 
 After creating a cluster, poll its status by [retrieving the cluster information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-cluster-information.md) and checking its status value. When the status changes to "available", the cluster has finished initializing and is ready to run jobs.
 
-You can also [update the cluster information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-cluster.md,), including modifying the number of compute nodes in the cluster.
+You can also [update the cluster information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-cluster.md), including modifying the number of compute nodes in the cluster.
 
 After terminating a cluster, poll its status and verify that it has changed to "terminated", to ensure that its resources have been released.
 
