@@ -4,7 +4,7 @@
 This call returns list of account connections that were created by users in your account. Optionally, you can supply the input parameters to filter the connection list so that it contains only connections with
 specific types and to determine the order by which the list will be sorted.
 
-The details returned for each schedule are:
+The details returned for each connection are:
 
 * **id** the numeric connection ID
 * **name** the name given to the connection upon creation
