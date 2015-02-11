@@ -35,8 +35,8 @@ HTTP/1.1 200 OK
     "email":"admin@example.com",
     "gravatar_email":"admin@example.com",
     "avatar_url":"https://xplenty.com/path/to/avatar.png",
-    "created": "2013-01-17T22:41:21Z",
-    "updated": "2013-01-17T22:41:21Z",
+    "created_at": "2013-01-17T22:41:21Z",
+    "updated_at": "2013-01-17T22:41:21Z",
     "role":"admin",
     "owner":true
   },
@@ -46,8 +46,8 @@ HTTP/1.1 200 OK
     "email":"john@smith.com",
     "gravatar_email":"john@smith.com",
     "avatar_url":"https://xplenty.com/path/to/avatar.png",
-    "created": "2013-01-17T22:41:21Z",
-    "updated": "2013-01-17T22:41:21Z",
+    "created_at": "2013-01-17T22:41:21Z",
+    "updated_at": "2013-01-17T22:41:21Z",
     "role":"member",
     "owner":false
   }
