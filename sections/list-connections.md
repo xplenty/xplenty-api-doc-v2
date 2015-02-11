@@ -6,9 +6,9 @@ specific types and to determine the order by which the list will be sorted.
 
 The details returned for each connection are:
 
-* **id** the numeric connection ID
-* **name** the name given to the connection upon creation
-* **type** the type of connection. Possible values are:
+* **id** - the numeric connection ID
+* **name** - the name given to the connection upon creation
+* **type** - the type of connection. Possible values are:
     * **s3** - Amazon S3
     * **swift** - Swift (OpenStack Object Storage)
     * **gs** - Google Cloud Storage
@@ -22,7 +22,7 @@ The details returned for each connection are:
     * **mysql** - MySQL
     * **hana** - SAP Hana
     * **sqlserver** - Microsoft SQL Server
-    * **herokupostgres** - Heroku PostgresSQ
+    * **herokupostgres** - Heroku Postgres
     * **googlecloudsql** - Google Cloud SQL
     * **bigquery** - Google BigQuery
     * **segment** - Segment SQL
