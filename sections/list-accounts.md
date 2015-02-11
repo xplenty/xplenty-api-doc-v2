@@ -35,7 +35,7 @@ HTTP/1.1 200 OK
     "region":"amazon-web-services::us-east-1",
     "location":null,
     "billing_email":"admin@xplenty.com",
-    "gravatar_email":""admin@xplenty.com"",
+    "gravatar_email":"admin@xplenty.com,
     "avatar_url":"http://gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e.png?d=retro&s=140",
     "created_at":"2015-02-04T12:51:04Z",
     "updated_at":"2015-02-04T12:51:04Z",
@@ -50,14 +50,14 @@ HTTP/1.1 200 OK
     "region":"amazon-web-services::us-east-1",
     "location":null,
     "billing_email":"admin@example.com",
-    "gravatar_email":""admin@example.com"",
+    "gravatar_email":"admin@example.com,
     "avatar_url":"http://gravatar.com/avatar/d24d8cd923f00b204e9800998ecf8427e.png?d=retro&s=140",
     "created_at":"2015-02-04T12:51:04Z",
     "updated_at":"2015-02-04T12:51:04Z",
     "schedules_count":0,
     "connections_count":2,
-    "role":"admin",
-    "owner":true
+    "role":"member",
+    "owner":false
   }
 ]
 ```
