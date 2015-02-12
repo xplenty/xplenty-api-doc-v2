@@ -42,7 +42,11 @@ HTTP/1.1 200 OK
     "schedules_count":0,
     "connections_count":2,
     "role":"admin",
-    "owner":true
+    "owner":true,
+    "members_count":2,
+    "packages_count":0,
+    "jobs_count":0,
+    "running_jobs_count":0
   },
   {
     "id":"sample-admin",
@@ -57,7 +61,11 @@ HTTP/1.1 200 OK
     "schedules_count":0,
     "connections_count":2,
     "role":"member",
-    "owner":false
+    "owner":false,
+    "members_count":3,
+    "packages_count":0,
+    "jobs_count":1,
+    "running_jobs_count":0
   }
 ]
 ```
