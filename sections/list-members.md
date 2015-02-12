@@ -1,18 +1,27 @@
 ## List Account Members
 
 ### Description
-This call returns list of account members.
+This call returns information for a list of account members. Optionally, you can supply the input parameters to filter the member list so that it contains
+only members with a specific role or email and to determine the order by which the list will be sorted.
 
-Optionally, you can supply the input parameters to filter the member list so that it contains
-user with specific role or email only and to determine the order by which the list will be sorted.
+The details returned for each memeber are:
 
+* **id** - the member's numeric identifier
+* **name** - the name given to the member upon creation
+* **email** - the member's email
+* **gravatar_email** - the member's gravater email
+* **avatar_url** - the url for the member's avatar
+* **created_at** - the date and time the memeber was created
+* **updated_at** - the date and time the member was last updated
+* **role** - the member's role ("admin" or "member")
+* **owner** - indicator if the member is the account owner
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-role|N| |Possible values: admin, member, all. The call will return only members with the given role, or all the members if value is not specified or 'all' param was used.
-email|N| |The call will return one member with the given email, or all the members if value is not specified.
+role|N| |Possible values are ```admin```, ```member```, ```all```. The call will return only members with the given role, or all the members if value is not specified or the 'all' value is specified.
+email|N| |The call will return only the member with the given email, or all the members if a value is not specified.
 sort|N|"created"|Possible values are  ```updated```, ```created```, ```name```, ```email```.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The members will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The member list will only contain users updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
