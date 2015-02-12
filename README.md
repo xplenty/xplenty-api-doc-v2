@@ -246,9 +246,11 @@ These are the methods supported by the Xplenty API:
 * [Update schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-schedule.md)
 * [Get schedule Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-schedule-information.md)
 * [Delete schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-schedule.md)
-* [List supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
-* [List available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
-* [List user's Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-accounts.md)
+* [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
+* [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
+* [List Account Members](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-members.md)
+* [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
+* [List User Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-accounts.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service

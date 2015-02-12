@@ -15,11 +15,11 @@ time_to_idle|N| |The time interval (in seconds) after which this cluster will be
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X PUT -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>"
-    -d "cluster[nodes]=4"
-    -d "cluster[name]=<clusterName>" 
-    -d "cluster[description]=<clusterDescription>"
-    -d "cluster[terminate_on_idle]=1"
+curl -X PUT -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>" \
+    -d "cluster[nodes]=4" \
+    -d "cluster[name]=<clusterName>" \ 
+    -d "cluster[description]=<clusterDescription>" \
+    -d "cluster[terminate_on_idle]=1" \
     -d "cluster[time_to_idle]=7200"
 ```
 
