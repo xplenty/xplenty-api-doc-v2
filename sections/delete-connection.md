@@ -5,6 +5,9 @@ This call deletes the given connection.
 
 Use this call when the connection is no longer needed.
 
+### Notes
+* Please note that deleting the connection will invalidate all items referencing it.
+
 ### Input Parameters
 The **connection type** and **connection resource ID** must be supplied at the end of the request URL.
 
