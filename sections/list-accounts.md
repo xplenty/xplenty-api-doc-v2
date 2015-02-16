@@ -1,18 +1,35 @@
-## List Account Members
+## List User's Accounts 
 
 ### Description
-This call returns list of active accounts where authenticated user is a member (can have admin or just member role).
+This call returns information for a list of active accounts in which the authenticated user is a member (with either admin or  member role). Optionally, you can supply the input parameters to filter the account list so that it contains only
+accounts with a specific role or id, and to determine the order by which the list will be sorted.
 
-Optionally, you can supply the input parameters to filter the account list so that it contains
-account with specific role or id only and to determine the order by which the list will be sorted.
+The details returned for each account are:
 
+* **id** - the account's numeric identifier
+* **name** - the name given to the account upon creation
+* **region** - the account's region
+* **location** - the account's location
+* **billing_email** - the account's billing email
+* **gravatar_email** - the account's gravatar email
+* **avatar_url** - the url for the account's avatar
+* **created_at** - the date and time the account was created
+* **updated_at** - the date and time the account was last updated
+* **schedules_count** - the number of schedules for the account
+* **connections_count** - the number of connections for the account
+* **role** - the member's role in the account ("admin" or "member")
+* **owner** - indicator if the member is the account owner
+* **members_count** - the number of members in the account
+* **packages_count** - the number of packages for the account
+* **jobs_count** - the number of jobs for the account
+* **running_jobs_count** - the number of running jobs for the account
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-role|N| |Possible values: admin, member, all. The call will return only accounts where authenticated user has given role, or all the accounts if value is not specified or 'all' value was used.
-id|N| |The call will return one account with the given id, or all of the them if value is not specified.
+role|N| |Possible values: ```admin```, ```member```, ```all```. The call will return only accounts where the authenticated user has the given role, or all the accounts if the value is not specified or the 'all' value is specified.
+id|N| |The call will return one account with the given id, or all of the accounts if a value is not specified.
 sort|N|"created"|Possible values are  ```updated```, ```created```, ```id```, ```name```.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The accounts will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The account list will only contain accounts updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
