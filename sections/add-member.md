@@ -14,7 +14,7 @@ role|N|member|Possible values are `member` or `admin`.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members?email=<email>&role=<roleName>"
+curl -X POST -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members?email=<email>&role=<roleName>" -d ''
 ```
 
 ### Response Example
