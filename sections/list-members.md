@@ -9,7 +9,7 @@ The details returned for each member are:
 * **id** - the member's numeric identifier
 * **name** - the name given to the member upon creation
 * **email** - the member's email
-* **gravatar_email** - the member's gravater email
+* **gravatar_email** - the member's gravatar email
 * **avatar_url** - the url for the member's avatar
 * **created_at** - the date and time the member was created
 * **updated_at** - the date and time the member was last updated
