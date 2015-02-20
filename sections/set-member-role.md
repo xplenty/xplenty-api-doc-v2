@@ -1,9 +1,19 @@
 ## Set Member's Role
 
 ### Description
-This call sets one of two roles to Account for User: `member` or `admin`. 
+This call sets the Account Member's role to either: `member` or `admin`. 
 
-API returns information about user in case of success.
+The details returned for the member are:
+
+* **id** - the member's numeric identifier
+* **name** - the name given to the member upon creation
+* **email** - the member's email
+* **gravatar_email** - the member's gravater email
+* **avatar_url** - the url for the member's avatar
+* **created_at** - the date and time the member was created
+* **updated_at** - the date and time the member was last updated
+* **role** - the member's role ("member" or "admin")
+* **owner** - indicator if the member is the account owner
 
 ### Input Parameters
 
