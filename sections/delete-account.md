@@ -1,10 +1,22 @@
-## Delete Account Connection
+## Delete Account
 
 ### Description
-This call deletes account. Operation can be execute by owner only.
+This call deletes the given account. The operation can be executed only by the account owner.
 
 ### Notes
 * Please note that this action is **irreversible**.
+
+The details returned for the deleted account are:
+
+* **id** - the account's numeric identifier
+* **name** - the name given to the account upon creation
+* **region** - the account's region
+* **location** - the account's location
+* **billing_email** - the account's billing email
+* **gravatar_email** - the account's gravatar email
+* **avatar_url** - the url for the account's avatar
+* **created_at** - the date and time the account was created
+* **updated_at** - the date and time the account was last updated
 
 ### Input Parameters
 The **connection ID** must be supplied at the end of the request URL.
