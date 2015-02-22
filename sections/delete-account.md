@@ -19,7 +19,7 @@ The details returned for the deleted account are:
 * **updated_at** - the date and time the account was last updated
 
 ### Input Parameters
-The **connection ID** must be supplied at the end of the request URL.
+The **account ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
