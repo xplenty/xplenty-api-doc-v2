@@ -28,7 +28,7 @@ The details returned for each account are:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-role|N| |Possible values: ```admin```, ```member```, ```all```. The call will return only accounts where the authenticated user has the given role, or all the accounts if the value is not specified or the 'all' value is specified.
+role|N|"all"|Possible values: ```admin```, ```member```, ```all```. The call will return only accounts where the authenticated user has the given role, or all the accounts if the value is not specified or the 'all' value is specified.
 id|N| |The call will return one account with the given id, or all of the accounts if a value is not specified.
 sort|N|"created"|Possible values are  ```updated```, ```created```, ```id```, ```name```.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The accounts will be sorted in ascending or descending order of the "sort" attribute.
