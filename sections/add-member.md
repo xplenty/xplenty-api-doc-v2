@@ -1,16 +1,26 @@
 ## Add Account Member
 
 ### Description
-This call invites new member to Account with E-mail. Invitation could automatically sets `admin` role for user.
+This call adds a new member to the account. The call sends a new user invitation in case the user is not yet a member of Xplenty. 
 
-API returns information about user in case of success.
+The details returned for the member are:
+
+* **id** - the member's numeric identifier
+* **name** - the name given to the member upon creation
+* **email** - the member's email
+* **gravatar_email** - the member's gravatar email
+* **avatar_url** - the url for the member's avatar
+* **created_at** - the date and time the member was created
+* **updated_at** - the date and time the member was last updated
+* **role** - the member's role ("admin" or "member")
+* **owner** - indicator if the member is the account owner
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-email|Y| |E-mail of user.
-role|N|member|Possible values are `member` or `admin`.
+email|Y| |The user's email.
+role|N|member|The role to assign to the member. Possible values are `member` or `admin`.
 
 ### Request (Curl Call) Syntax
 ```shell
