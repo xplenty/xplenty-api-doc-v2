@@ -29,14 +29,13 @@ The details returned for each account are:
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 role|N|"all"|Possible values: ```admin```, ```member```, ```all```. The call will return only accounts where the authenticated user has the given role, or all the accounts if the value is not specified or the 'all' value is specified.
-id|N| |The call will return one account with the given id, or all of the accounts if a value is not specified.
 sort|N|"created"|Possible values are  ```updated```, ```created```, ```id```, ```name```.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The accounts will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The account list will only contain accounts updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/accounts?role=<roleFilter>&id=<idField>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
+curl -X GET -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/accounts?role=<roleFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
 ```
 
 ### Response Example
