@@ -24,7 +24,9 @@ role|N|member|The role to assign to the member. Possible values are `member` or 
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X POST -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members" -d '{
+curl -X POST -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" \
+    -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members" \
+    -d '{
       "email": "<email>",
       "role": "<role>"
     }'
