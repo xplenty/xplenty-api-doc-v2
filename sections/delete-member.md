@@ -1,7 +1,19 @@
 ## Delete Account Member
 
 ### Description
-This call deletes member of the given account. It does not remove user, only membership.
+This call deletes the member from the account. It does not remove the user, just the account membership.
+
+The details returned for the deleted member are:
+
+* **id** - the member's numeric identifier
+* **name** - the name given to the member upon creation
+* **email** - the member's email
+* **gravatar_email** - the member's gravatar email
+* **avatar_url** - the url for the member's avatar
+* **created_at** - the date and time the member was created
+* **updated_at** - the date and time the member was last updated
+* **role** - the member's role ("admin" or "member")
+* **owner** - indicator if the member is the account owner
 
 ### Input Parameters
 The **user ID** must be supplied at the end of the request URL.
