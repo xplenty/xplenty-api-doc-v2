@@ -30,7 +30,7 @@ allow_fallback|N||If the value is set to either true, t or 1 instances will be c
 ### Request (Curl Call) Example
 ```shell
 $ curl -X POST -H "Accept: application/vnd.xplenty+json; version=2"  -H "Content-Type: application/json" \
--u api key: "https://api.xplenty.com/:account ID/api/clusters" \
+-u api key "https://api.xplenty.com/:account ID/api/clusters" \
 -d '{
   "nodes":4 \
   "type":"production" \
