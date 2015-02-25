@@ -27,7 +27,7 @@ The details returned for the updated account are:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-id|N| |The account string identifier.
+account_id|N| |The account string identifier. Account ID provided in URL identifies account but account_id parameter passed in JSON allows to change ID.
 name|N| |The account's name.
 location|N| |The account's location.
 region|N| |The account's region.
@@ -38,14 +38,14 @@ gravatar_email|N| |The account's gravatar email
 ```shell
 curl -X PUT -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" \
     -u <APIkey>: "https://api.xplenty.com/accounts/<accountID>" \
-    -d '{ account: {
-      "id": "<accountID>",
+    -d '{
+      "account_id": "<accountID>",
       "name": "<name>",
       "location": "<location>",
       "region": "<region>",
       "billing_email": "<billingEmail>",
       "gravatar_email": "<gravatarEmail>"
-    }}'
+    }'
 ```
 
 ### Response Example
