@@ -19,7 +19,7 @@ since|N| |The cluster list will only contain clusters updated at the given time 
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X GET -H "Accept: application/vnd.xplenty+json; version=2"\
--u API key: "https://api.xplenty.com/<accountID>/api/clusters?status=:status filter&sort=:sort field&direction=:sort direction&since=:since time"
+-u API key "https://api.xplenty.com/<accountID>/api/clusters?status=:status filter&sort=:sort field&direction=:sort direction&since=:since time"
 ```
 
 ### Response Example
