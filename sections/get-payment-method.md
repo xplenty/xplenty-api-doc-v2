@@ -5,7 +5,8 @@ This call returns the details of the payment method for the given account. If th
 
 The details returned for the method are:
 
-* **card_number** - last 4th digits of the card
+* **card_last_4** - last 4 digits of card number
+* **card_number** - card number with last 4th digits visible
 * **expiration_date** - card's expiration date
 * **card_type** - card's type
 
@@ -26,6 +27,7 @@ HTTP/1.1 200 OK
 
 ```json
 {
+  "card_last_4": "1234",
   "card_number":"xxxx-xxxx-xxxx-1234",
   "expiration_date":"12/2015",
   "card_type":"Visa"
