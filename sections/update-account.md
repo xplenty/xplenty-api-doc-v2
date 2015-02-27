@@ -36,8 +36,8 @@ gravatar_email|N| |The account's gravatar email
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X PUT -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2"
-    -u <APIkey>: "https://api.xplenty.com/accounts/<accountID>"
+curl -X PUT -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" \
+    -u <APIkey>: "https://api.xplenty.com/accounts/<accountID>" \
     -d '{
       "account_id": "<accountID>",
       "name": "<name>",
