@@ -6,7 +6,8 @@ You can use this information to verify the regions in which you can create a clu
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/regions"
+$curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/regions" \
+  -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 ### Response Example
 ```json
