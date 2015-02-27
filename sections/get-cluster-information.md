@@ -9,7 +9,8 @@ The **cluster ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>"
+curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:cluster_id" \
+-H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
 ### Response Example
