@@ -5,7 +5,8 @@ This call returns information for a list of [cluster instance](https://github.co
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>/instances"
+curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:cluster_id/instances" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example
