@@ -39,7 +39,8 @@ since|N| |The connection list will only contain connections updated at the given
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/connections?type=<typeFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
+$ curl -X GET -u api_key: "https://api.xplenty.com/:accountID/api/connections" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example

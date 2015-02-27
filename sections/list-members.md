@@ -19,7 +19,8 @@ since|N| |The member list will only contain users updated at the given time or l
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members?role=<typeFilter>&email=<emailField>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/members" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example

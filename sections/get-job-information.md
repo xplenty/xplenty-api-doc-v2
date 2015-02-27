@@ -13,7 +13,7 @@ The **job resource ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/jobs/:job_id" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/jobs/:job_id" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
