@@ -27,8 +27,8 @@ variables|N| |The list of package variables in the hash format
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X PUT  -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" 
-     -u <APIkey>: "https://api.xplenty.com/<accountID>/packages/<packageID>"
+curl -X PUT  -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" \
+     -u <APIkey>: "https://api.xplenty.com/<accountID>/packages/<packageID>" \
      -d '{
         "name" : "Test package 1",
         "description" : "Sample description",
