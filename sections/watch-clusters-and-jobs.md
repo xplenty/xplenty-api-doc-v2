@@ -26,7 +26,8 @@ This call adds the calling user as a watcher of the specified cluster.
 
 ### Request (Curl Call)
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/<accountID>/api/clusters/{cluster_id}/watchers'
+$ curl -X POST -u api_key: 'https://api.xplenty.com/:account_id/api/clusters/:cluster_id/watchers' \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example
