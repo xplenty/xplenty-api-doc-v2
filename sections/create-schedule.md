@@ -36,6 +36,38 @@ curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api
     -d "schedule[task][time_to_idle]=<time_to_idle>" \
     -d "schedule[task][packages][<index>][package_id]=<package_id>" \
     -d "schedule[task][packages][<index>][variables][<var_name>]=variable value"
+$ curl -X POST -u api_key "https://api.xplenty.com/:account_id/api/schedules" \
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name":"schedule name",
+	"status":"enabled",
+	"start_at":  ,
+	"description":="schedule description",
+	"interval_amount": ,
+	"interval_unit": ,
+	"task": {
+      "nodes":4,
+	  "terminate_on_idle": ,
+	  "time_to_idle": ,
+	  "packages": [
+      {
+        "package_id": "1234",
+        "variables": {
+          "today": "'val1'",
+          "yesterday": "'val2'"
+        }
+      }
+      ,   
+	  {
+        "package_id": "3456",
+        "variables": {
+          "today": "'val3'",
+          "yesterday": "'val4'"
+        }
+      }
+    ],
+  }'
 ```
 Add multiple variables for a package and multiple packages. The index is 0 for the first package and incremented for each additional package. For example:
 ```shell
