@@ -4,7 +4,6 @@
 This call returns the details of the [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md) with the given ID.
 
 ### Input Parameters
-
 The **cluster ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
