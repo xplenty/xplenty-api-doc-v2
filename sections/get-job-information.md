@@ -6,8 +6,6 @@ The calls returns information for a [job](https://github.com/xplenty/xplenty-api
 You can preview the output, which will display up to 100 lines, using the preview_url listed in the outputs of the response. 
 View [Preview Job Output] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/preview-output.md) for details.
 
-The details returned for the job are:
-
 ### Input Parameters
 The **job resource ID** must be supplied at the end of the request URL.
 

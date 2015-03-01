@@ -1,7 +1,7 @@
 ## List Account Members
 
 ### Description
-This call returns list of account members.
+This call returns list of account [members](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md).
 
 Optionally, you can supply the input parameters to filter the member list so that it contains
 user with specific role or email only and to determine the order by which the list will be sorted.

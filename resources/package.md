@@ -1,4 +1,4 @@
-An Xplenty **package** is a data flow definition that you define in the Xplenty web application. 
+An Xplenty **package** is a data flow definition that you define in the Xplenty web application.
 It describes the data to process (location, schema, fields), data manipulation to perform, and the output destinations (location, schema). The package's workflow is implemented by jobs.
 
 ### Package Attributes

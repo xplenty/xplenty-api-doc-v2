@@ -1,28 +1,7 @@
 ## List User's Accounts 
 
 ### Description
-This call returns information for a list of active accounts in which the authenticated user is a member (with either admin or  member role). Optionally, you can supply the input parameters to filter the account list so that it contains only
-accounts with a specific role or id, and to determine the order by which the list will be sorted.
-
-The details returned for each account are:
-
-* **id** - the account's numeric identifier
-* **name** - the name given to the account upon creation
-* **region** - the account's region
-* **location** - the account's location
-* **billing_email** - the account's billing email
-* **gravatar_email** - the account's gravatar email
-* **avatar_url** - the url for the account's avatar
-* **created_at** - the date and time the account was created
-* **updated_at** - the date and time the account was last updated
-* **schedules_count** - the number of schedules for the account
-* **connections_count** - the number of connections for the account
-* **role** - the member's role in the account ("admin" or "member")
-* **owner** - indicator if the member is the account owner
-* **members_count** - the number of members in the account
-* **packages_count** - the number of packages for the account
-* **jobs_count** - the number of jobs for the account
-* **running_jobs_count** - the number of running jobs for the account
+This call returns information for a list of active [accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md) in which the authenticated user is a member of (with either admin or  member role). Optionally, you can supply the input parameters to filter the account list so that it contains only accounts with a specific role or id, and to determine the order by which the list will be sorted.
 
 ### Input Parameters
 
