@@ -1,9 +1,7 @@
 ## Set Member's Role
 
 ### Description
-This call sets one of two roles to Account for User: `member` or `admin`. 
-
-API returns information about user in case of success.
+This call sets the Account [member's](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) role to either: `member` or `admin`. 
 
 ### Input Parameters
 
@@ -14,7 +12,7 @@ role|Y| |Possible values are `member` or `admin`.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members/<userID>?role=<roleName>"
+curl -X PUT -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members/<userID>?role=<roleName>" -d ''
 ```
 
 ### Response Example
