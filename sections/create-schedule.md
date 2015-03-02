@@ -24,32 +24,20 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 
 ### Request (Curl Call) Example
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/schedules" \
-    -d "schedule[name]=<name>" \
-    -d "schedule[status]=enabled" \
-    -d "schedule[start_at]=<start_at>" \
-    -d "schedule[description]=<description>" \
-    -d "schedule[interval_amount]=<interval_amount>" \
-    -d "schedule[interval_unit]=<interval_unit>" \
-    -d "schedule[task][nodes]=<nodes>" \
-    -d "schedule[task][terminate_on_idle]=<terminate_on_idle>" \
-    -d "schedule[task][time_to_idle]=<time_to_idle>" \
-    -d "schedule[task][packages][<index>][package_id]=<package_id>" \
-    -d "schedule[task][packages][<index>][variables][<var_name>]=variable value"
-$ curl -X POST -u api_key "https://api.xplenty.com/:account_id/api/schedules" \
+$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/schedules" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
     "name":"schedule name",
 	"status":"enabled",
-	"start_at":  ,
+	"start_at":"2014-09-25T08:33:00Z",
 	"description":="schedule description",
-	"interval_amount": ,
-	"interval_unit": ,
+	"interval_amount":30,
+	"interval_unit":"days",
 	"task": {
       "nodes":4,
-	  "terminate_on_idle": ,
-	  "time_to_idle": ,
+	  "terminate_on_idle":true,
+	  "time_to_idle":60,
 	  "packages": [
       {
         "package_id": "1234",
@@ -57,8 +45,7 @@ $ curl -X POST -u api_key "https://api.xplenty.com/:account_id/api/schedules" \
           "today": "'val1'",
           "yesterday": "'val2'"
         }
-      }
-      ,   
+      },  
 	  {
         "package_id": "3456",
         "variables": {
@@ -69,15 +56,7 @@ $ curl -X POST -u api_key "https://api.xplenty.com/:account_id/api/schedules" \
     ],
   }'
 ```
-Add multiple variables for a package and multiple packages. The index is 0 for the first package and incremented for each additional package. For example:
-```shell
-   -d "schedule[task][packages][0][package_id]=1234"
-   -d "schedule[task][packages][0][variables][today]='val1'"
-   -d "schedule[task][packages][0][variables][yesterday]='val2'"
-   -d "schedule[task][packages][1][package_id]=3456"
-   -d "schedule[task][packages][1][variables][today]='val3'"
-   -d "schedule[task][packages][1][variables][yesterday]='val4'"
-```
+Add multiple variables for a package and multiple packages.
 
 ### Response Example
 ```HTTP
