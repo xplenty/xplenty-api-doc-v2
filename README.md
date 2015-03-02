@@ -96,6 +96,28 @@ Unless you specify a version, the latest representation of resources will always
 
     application/vnd.xplenty+json; version=2
 
+### Parameters
+
+Many API methods take optional parameters. For GET requests, any parameters not specified as a segment in the path can be passed as an HTTP query string parameter:
+
+```shell
+$ curl -i "https://api.xplenty.com/xplenty-account/api/clusters?status=available"
+In this example, the 'xplenty-account' and 'available' values are provided for the :account_id parameter in the path while :status is passed in the query string.
+```
+
+For POST, PATCH, PUT, and DELETE requests, parameters not included in the URL should be JSON encoded:
+
+```shell
+$ curl -X POST -u api_key "https://api.xplenty.com/xplenty-account/api/clusters" \
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "my cluster",
+    "description": "production cluster",
+    "type": "production",
+    "nodes": 2
+  }'
+```
 
 ### CORS (Cross Origin Resource Sharing)
 
