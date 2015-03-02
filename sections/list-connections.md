@@ -39,7 +39,7 @@ since|N| |The connection list will only contain connections updated at the given
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "https://api.xplenty.com/:accountID/api/connections" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections" \
   -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
