@@ -15,7 +15,7 @@ time_to_idle|N| |The time interval (in seconds) after which this cluster will be
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X PUT -u api_key "https://api.xplenty.com/:account_id/api/clusters/:cluster_id" \
+$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:cluster_id" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
