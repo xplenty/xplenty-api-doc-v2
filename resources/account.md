@@ -2,7 +2,8 @@ An Xplenty **account** represents a related group (usually a company) of Xplenty
 
 ### Account Attributes
 
-* **id** - the account's unique identifier
+* **id** - the account's numeric identifier
+* **account_id** - the account's unique identifier
 * **name** - the name given to the account upon creation
 * **region** - the account's region
 * **location** - the account's location
@@ -19,3 +20,4 @@ An Xplenty **account** represents a related group (usually a company) of Xplenty
 * **packages_count** - the number of packages for the account
 * **jobs_count** - the number of jobs for the account
 * **running_jobs_count** - the number of running jobs for the account
+* **url** - the account resource URL

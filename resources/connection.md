@@ -3,7 +3,7 @@ The access information is stored securely and can only be used by your account's
 
 ### Connection Attributes
 
-* **id** - the connection's unique identifier
+* **id** - the connection's numeric identifier
 * **name** - the descriptive name given to the connection
 * **created_at** - the date and time the connection was created
 * **updated_at** - the date and time the connection was last updated
@@ -25,3 +25,4 @@ The access information is stored securely and can only be used by your account's
   * **googlecloudsql** - Google Cloud SQL
   * **bigquery** - Google BigQuery
   * **segment** - Segment SQL
+* **url** - the connection resource URL

@@ -10,4 +10,4 @@ It describes the data to process (location, schema, fields), data manipulation t
 * **owner_id** - the numeric user id of the package owner
 * **created_at** - the date and time the package was created
 * **updated_at** - the date and time the package was last updated 
-* **url** - the job resource URL
+* **url** - the package resource URL

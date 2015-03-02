@@ -25,4 +25,4 @@ An Xplenty **schedule** executes packages periodically starting at a specified d
 * **execution_count** number of times the schedule has run
 * **created_at** the date and time the schedule was created
 * **updated_at** the date and time the schedule was updated
-* **url** the schedule resource ID
+* **url** the schedule resource URL

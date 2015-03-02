@@ -11,3 +11,4 @@ An Xplenty **user** represents an individual signed up to use the Xplenty platfo
 * **updated_at** - the date and time the account was last updated
 * **role** - the user's role in the sepcified account ("admin" or "member")
 * **owner** - indicator if the user is the owner of the specified account
+* **url** the user resource url
