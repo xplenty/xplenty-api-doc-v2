@@ -38,9 +38,9 @@ HTTP/1.1 201 Created
 {
   "id":123,
   "comment":"sample@example.com",
-  "name":"My public key"
+  "name":"My public key",
   "fingerprint":"10:37:49:10:f2:d5:f2:e2:48:e5:66:9f:1d:2f:87:96",
-  "url":"http://api.xplenty.com/user/keys/123"
+  "url":"http://api.xplenty.com/user/keys/123",
   "created_at":"2015-02-27T07:55:39Z",
   "updated_at":"2015-02-27T07:55:39Z"
 }
