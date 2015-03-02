@@ -1,4 +1,6 @@
-A successful call returns the following details for the schedule after the schedule is cloned.
+An Xplenty **schedule** executes packages periodically starting at a specified date and time. The packages will be executed as scheduled, using an existing cluster that fits the scheduled cluster size or if one doesn't exist, a cluster will be provisioned automatically with the number of specified nodes. By default, the cluster is taken down as soon as package execution is completed.
+
+### Schedule Attributes
 
 * **id** the numeric schedule ID
 * **name** the name given to the schedule upon creation
@@ -23,4 +25,4 @@ A successful call returns the following details for the schedule after the sched
 * **execution_count** number of times the schedule has run
 * **created_at** the date and time the schedule was created
 * **updated_at** the date and time the schedule was updated
-* **url** the schedule resource ID
+* **url** the schedule resource URL
