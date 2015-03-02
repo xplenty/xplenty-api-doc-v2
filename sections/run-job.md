@@ -27,12 +27,11 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/jobs" \
 	    "current_time":"CurrentTime()",
         "MY_CURRENT_TIME":"$CURRENT_TIME_VAR",
         "MY_STRING_VAR":"'some string'"
-    },
-    -d "job[dynamic_variables][<VARNAME1>]=CurrentTime()" \
-    -d "job[dynamic_variables][<VARNAME2>]=$<variable2>" \
-    -d "job[dynamic_variables][<VARNAME2>]='a string'" \
-    -d "job[variables][<VARNAME3>]=<value1>"
-    ...
+      },
+	  "variables": {
+        "MY_STATIC_VAR":"some static variable"
+	  }
+	}
 ```
 
 ### Response Example
