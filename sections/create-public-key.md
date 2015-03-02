@@ -10,8 +10,8 @@ The details returned for created key are:
 * **fingerprint** - fingerprint of the key
 * **name** - name of the key
 * **url** - API url for key
-* **created_at** - the date and time the member was created
-* **updated_at** - the date and time the member was last updated
+* **created_at** - the date and time the key was created
+* **updated_at** - the date and time the key was last updated
 
 ### Input Parameters
 |Name|Required?|Default|Description|
@@ -22,10 +22,10 @@ The details returned for created key are:
 ### Request (Curl Call) Example
 ```shell
 curl -X POST -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" \
-    -u <APIkey>: "https://api.xplenty.com/user/keys" \
+    -u api_key: "https://api.xplenty.com/user/keys" \
     -d '{
-      "public_key" : "<publicKey>",
-      "name" : "<name>"
+      "public_key" : "ssh-dss AAAAB3NzaC1kc3MAAACBAJ7gwhsEDUOw1AkGD/9OhmyLVpDezUkAKUvSF//hdNX/uFNxqpnqunHRj1vhenM0CklrWDmgBe7K1tnPZzNb0kXfLDaBFkpuCfQLazWcTHUao5YvW4Ze8tzcPaNOrlg6Dlow1VfrFoX9zhjGKbPKUQlSKiRTf3mfB7MyWr3xNQ59AAAAFQCTGtEsp3X06DpK0X25zJXlGkhB+wAAAIBDHW10fingslAEmmp4cSKn7alYIannhtML7bHP62HaSJTV4jcCw88ZKU9sRp7D+t5qU0YaoTjvFOfVaiuekEM5Ch2A3RI+WkcmFUjP1+UFR6DKwUgCIjlokbwEgveEpttOBAODhD6OlL1977EUECwXLprYHoP37yHVqUfc78ui+gAAAIBR1dhKoMADWce31WA0arJKREJeiP0IEaR5xEEnclFkvRRhK71vszCWMeemjUPeahqgdVur4LQ2iX43KfESX8jpK3lDiRF4zsv8+2SeQIwi6XbRR0SpyuOVCtRtvQAbw/3n76htDtc9zDVw0qPrTjUEtONt9AE4McqF7V44wpwaYQ== owner@example.com",
+      "name" : "My publick key"
     }'
 ```
 
