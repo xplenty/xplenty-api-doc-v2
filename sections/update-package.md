@@ -3,18 +3,6 @@
 ### Description
 This call updates details of the given [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md).
 
-The details returned for the updated package are:
-
-* **id** - the numeric package ID
-* **name** - the name given to the package
-* **description** - the description given to the package
-* **variables** - the list of package variables in the hash format, e.g. { "variable1" : "321" }
-* **owner_id** - the numeric user id of the package owner
-* **created_at** - the date and time the package was created
-* **updated_at** - the date and time the package was last updated 
-* **url** - the job resource URL
-
-
 ### Input Parameters
 Name|Required?|Default|Description|
 |----|---------|-------|-----------|
@@ -23,18 +11,22 @@ id|Y| |The package ID must be supplied at the end of the request URL.
 name|N| |Name of the package
 description|N| |Description of the package
 data_flow_json|N| |Data flow prepared in JSON format
-variables|N| |The list of package variables in the hash format
+variables|N| |The list of package variables in its JSON format
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X PUT  -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" \
-     -u <APIkey>: "https://api.xplenty.com/<accountID>/packages/<packageID>" \
-     -d '{
-        "name" : "Test package 1",
-        "description" : "Sample description",
-        "data_flow_json" : { "step1" : "value" },
-        "variables" : { "variable1" : "123", "variable2" : "456" }
-     }'
+curl -X PUT  -u api_key: "https://api.xplenty.com/:account_id/packages/:package_id" \
+  -H "Accept: application/vnd.xplenty+json, version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Test package 1",
+    "description": "Sample description",
+    "data_flow_json": { "step1" : "value" },
+    "variables": { 
+      "variable1": "123", 
+      "variable2": "456" 
+    }
+  }'
 ```
 
 ### Response Example

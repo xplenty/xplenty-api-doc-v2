@@ -1,32 +1,7 @@
 ## List Account Connections
 
 ### Description
-This call returns list of account connections that were created by users in your account. Optionally, you can supply the input parameters to filter the connection list so that it contains only connections with
-specific types and to determine the order by which the list will be sorted.
-
-The details returned for each schedule are:
-
-* **id** the numeric connection ID
-* **name** the name given to the connection upon creation
-* **type** the type of connection. Possible values are:
-    * **s3** - Amazon S3
-    * **swift** - Swift (OpenStack Object Storage)
-    * **gs** - Google Cloud Storage
-    * **rackspace** - Rackspace Cloud Files
-    * **softlayer** - SoftLayer Object Storage
-    * **hdfs** - Hadoop Distributed File System
-    * **adwords** - Google AdWords
-    * **postgres** - PostgresSQL
-    * **redshift** - Amazon Redshift
-    * **mongo** - MongoDB
-    * **mysql** - MySQL
-    * **hana** - SAP Hana
-    * **sqlserver** - Microsoft SQL Server
-    * **herokupostgres** - Heroku PostgresSQ
-    * **googlecloudsql** - Google Cloud SQL
-    * **bigquery** - Google BigQuery
-    * **segment** - Segment SQL
-
+This call returns list of account [connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md) that were created by users in your account. Optionally, you can supply the input parameters to filter the connection list so that it contains only connections with specific types and to determine the order by which the list will be sorted.
 
 ### Input Parameters
 
