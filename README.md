@@ -240,6 +240,7 @@ These are the methods supported by the Xplenty API:
 * [Terminate Job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-job.md)
 * [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/watch-clusters-and-jobs.md)
 * [List Packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-packages.md)
+* [Delete Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-package.md)
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-information.md)
 * [Create schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-schedule.md)
 * [List schedules](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-schedules.md)
