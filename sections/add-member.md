@@ -1,19 +1,7 @@
 ## Add Account Member
 
 ### Description
-This call adds a new member to the account. The call sends a new user invitation in case the user is not yet a member of Xplenty. 
-
-The details returned for the member are:
-
-* **id** - the member's numeric identifier
-* **name** - the name given to the member upon creation
-* **email** - the member's email
-* **gravatar_email** - the member's gravatar email
-* **avatar_url** - the url for the member's avatar
-* **created_at** - the date and time the member was created
-* **updated_at** - the date and time the member was last updated
-* **role** - the member's role ("admin" or "member")
-* **owner** - indicator if the member is the account owner
+This call adds a new [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) membership to an account. The call sends an invitation to join Xplenty in case the user is not yet a member of Xplenty. 
 
 ### Input Parameters
 
@@ -24,12 +12,13 @@ role|N|member|The role to assign to the member. Possible values are `member` or 
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X POST -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" \
-    -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members" \
-    -d '{
-      "email": "<email>",
-      "role": "<role>"
-    }'
+curl -X POST -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members" \
+  -H "Accept: application/vnd.xplenty+json, version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "sample@example.com",
+    "role": "admin"
+  }'
 ```
 
 ### Response Example
