@@ -5,24 +5,13 @@ This call deletes the given [package](https://github.com/xplenty/xplenty-api-doc
 
 Use this call when the package is no longer needed.
 
-The details returned for removed package:
-
-* **id** - the numeric package ID
-* **name** - the name given to the package upon creation
-* **description** - the description given to the package upon creation
-* **variables** - the list of package variables
-* **owner_id** - the numeric user id of the package owner
-* **created_at** - the date and time the package was created
-* **updated_at** - the date and time the package was last updated 
-* **url** - the job resource URL
-
-
 ### Input Parameters
 The **package ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X DELETE -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/packages/<packageID>"
+curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/packages/:package_id" \
+  -H "Accept: application/vnd.xplenty+json, version=2" 
 ```
 
 ### Response Example
