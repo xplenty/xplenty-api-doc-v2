@@ -102,7 +102,7 @@ Many API methods take optional parameters. For GET requests, any parameters not 
 
 ```shell
 $ curl -i "https://api.xplenty.com/xplenty-account/api/clusters?status=available"
-In this example, the 'xplenty-account' and 'available' values are provided for the :account_id parameter in the path while :status is passed in the query string.
+In this example, the 'xplenty-account' value is provided for the :account_id parameter in the path while the 'available' value is provided for :status that is passed in the query string.
 ```
 
 For POST, PATCH, PUT, and DELETE requests, parameters not included in the URL should be JSON encoded:
