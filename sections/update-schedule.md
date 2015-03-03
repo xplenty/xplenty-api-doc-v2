@@ -23,18 +23,6 @@ If you want to use a similar schedule you can clone it using the [clone schedule
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X PUT -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/schedules/<scheduleID>" \
-  -d "schedule[name]=<name>" \
-  -d "schedule[description]=<description>" \
-  -d "schedule[status]=enabled" \
-  -d "schedule[start_at]=<start_at>" \
-  -d "schedule[interval_amount]=<interval_amount>" \
-  -d "schedule[interval_unit]=<interval_unit>" \
-  -d "schedule[task][nodes]=<nodes>" \
-  -d "schedule[task][terminate_on_idle]=<terminate_on_idle>" \
-  -d "schedule[task][time_to_idle]=<time_to_idle>" \
-  -d "schedule[task][packages][<index>][package_id]=<package_id>" \
-  -d "schedule[task][packages][<index>][variables][<var_name>]=variable value"
 $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/schedules/:schedule_id" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
@@ -42,7 +30,7 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/schedules/:sc
     "name":"schedule name",
 	"status":"enabled",
 	"start_at":"2014-09-25T08:33:00Z",
-	"description":="schedule description",
+	"description":"schedule description",
 	"interval_amount":30,
 	"interval_unit":"days",
 	"task": {
@@ -68,7 +56,7 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/schedules/:sc
   }'
 ```
 
-Add multiple variables for a package and multiple packages. 
+You can add multiple variables for a package and multiple packages. 
 
 ### Response Example
 ```HTTP
