@@ -31,7 +31,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/schedules" \
     "name":"schedule name",
 	"status":"enabled",
 	"start_at":"2014-09-25T08:33:00Z",
-	"description":="schedule description",
+	"description":"schedule description",
 	"interval_amount":30,
 	"interval_unit":"days",
 	"task": {
@@ -56,7 +56,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/schedules" \
     ],
   }'
 ```
-Add multiple variables for a package and multiple packages.
+You can add multiple variables for a package and multiple packages.
 
 ### Response Example
 ```HTTP
