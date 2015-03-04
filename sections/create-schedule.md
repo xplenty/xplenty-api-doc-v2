@@ -24,28 +24,40 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 
 ### Request (Curl Call) Example
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/schedules" \
-    -d "schedule[name]=<name>" \
-    -d "schedule[status]=enabled" \
-    -d "schedule[start_at]=<start_at>" \
-    -d "schedule[description]=<description>" \
-    -d "schedule[interval_amount]=<interval_amount>" \
-    -d "schedule[interval_unit]=<interval_unit>" \
-    -d "schedule[task][nodes]=<nodes>" \
-    -d "schedule[task][terminate_on_idle]=<terminate_on_idle>" \
-    -d "schedule[task][time_to_idle]=<time_to_idle>" \
-    -d "schedule[task][packages][<index>][package_id]=<package_id>" \
-    -d "schedule[task][packages][<index>][variables][<var_name>]=variable value"
+$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/schedules" \
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name":"Untitled",
+    "status":"enabled",
+    "start_at":"2014-09-25T08:33:00Z",
+    "description":"My daily schedule",
+    "interval_amount":34,
+    "interval_unit":"days",
+    "task": {
+      "nodes":4,
+      "terminate_on_idle":true,
+      "time_to_idle":60,
+      "packages":[
+        {
+          "package_id": "1234",
+          "variables": {
+            "today": "'val1'",
+            "yesterday": "'val2'"
+          }
+        },  
+        {
+          "package_id": "3456",
+          "variables": {
+            "today": "'val3'",
+            "yesterday": "'val4'"
+          }
+        }
+      ]
+    }
+  }'
 ```
-Add multiple variables for a package and multiple packages. The index is 0 for the first package and incremented for each additional package. For example:
-```shell
-   -d "schedule[task][packages][0][package_id]=1234"
-   -d "schedule[task][packages][0][variables][today]='val1'"
-   -d "schedule[task][packages][0][variables][yesterday]='val2'"
-   -d "schedule[task][packages][1][package_id]=3456"
-   -d "schedule[task][packages][1][variables][today]='val3'"
-   -d "schedule[task][packages][1][variables][yesterday]='val4'"
-```
+You can add multiple variables for a package and multiple packages.
 
 ### Response Example
 ```HTTP
@@ -68,7 +80,9 @@ HTTP/1.1 201 Created
   "start_at": "2014-09-25T08:33:00Z",
   "status": "enabled",
   "task": {
-    "nodes": 3,
+    "nodes": 4,
+    "terminate_on_idle": true,
+    "time_to_idle": 60,
     "packages": [
       {
         "package_id": "1234",
@@ -85,9 +99,7 @@ HTTP/1.1 201 Created
           "yesterday": "'val4'"
         }
       }
-    ],
-    "terminate_on_idle": true,
-    "time_to_idle": 60
+    ]
   },
   "updated_at": "2014-10-29T14:22:05Z",
   "url": "https://api.xplenty.com/xplenation/api/schedules/2"

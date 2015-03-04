@@ -20,7 +20,11 @@ An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that is
 
 An Xplenty **schedule** executes packages periodically starting at a specified date and time. The packages will be executed as scheduled, using an existing cluster that fits the scheduled cluster size or, if one doesn't exist, a cluster provisioned automatically with the number of specified nodes. By default, the cluster is taken down as soon as package execution is completed.
 
-### Account and User
+### User
+
+An Xplenty **user** represents an individual signed up to use the Xplenty platform.
+
+### Account 
 
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
 An account is created when the user signs up to use the Xplenty service, and an API key is generated for the account, which must be supplied when calling the Xplenty API.
@@ -29,3 +33,7 @@ An account is created when the user signs up to use the Xplenty service, and an 
 
 An Xplenty **connection** contain access information required to connect to your various data stores.
 The access information is stored securely and can only be used by your account's members. 
+
+### Public Key
+
+A **public key** represent public SSH key associated with a user and is used to authorize users with cluster instances.

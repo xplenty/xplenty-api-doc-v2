@@ -14,7 +14,8 @@ since|N| |The account list will only contain accounts updated at the given time 
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/accounts?role=<roleFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
+$ curl -X GET-u api_key: "https://api.xplenty.com/accounts" \
+  -H "Accept: application/vnd.xplenty+json, version=2" 
 ```
 
 ### Response Example
@@ -25,12 +26,13 @@ HTTP/1.1 200 OK
 ```json
 [
   {
-    "id":"xplenty-admin",
+    "id":1,
+    "account_id":"sample-account-1",
     "name":"Xplenty Admin",
     "region":"amazon-web-services::us-east-1",
     "location":null,
-    "billing_email":"admin@xplenty.com",
-    "gravatar_email":"admin@xplenty.com",
+    "billing_email":"billing@example.com",
+    "gravatar_email":"gravatar@example.com",
     "avatar_url":"http://gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e.png?d=retro&s=140",
     "created_at":"2015-02-04T12:51:04Z",
     "updated_at":"2015-02-04T12:51:04Z",
@@ -39,17 +41,19 @@ HTTP/1.1 200 OK
     "role":"admin",
     "owner":true,
     "members_count":2,
-    "packages_count":0,
+    "packages_count":51,
     "jobs_count":0,
-    "running_jobs_count":0
+    "running_jobs_count":0,
+    "url":"https://api.xplenty.com/accounts/sample-account-1"
   },
   {
-    "id":"sample-admin",
+    "id":2,
+    "account_id":"sample-account-2",
     "name":"Sample Admin",
     "region":"amazon-web-services::us-east-1",
     "location":null,
-    "billing_email":"admin@example.com",
-    "gravatar_email":"admin@example.com",
+    "billing_email":"billing@example.com",
+    "gravatar_email":"gravatar@example.com",
     "avatar_url":"http://gravatar.com/avatar/d24d8cd923f00b204e9800998ecf8427e.png?d=retro&s=140",
     "created_at":"2015-02-04T12:51:04Z",
     "updated_at":"2015-02-04T12:51:04Z",
@@ -58,9 +62,10 @@ HTTP/1.1 200 OK
     "role":"member",
     "owner":false,
     "members_count":3,
-    "packages_count":0,
+    "packages_count":35,
     "jobs_count":1,
-    "running_jobs_count":0
+    "running_jobs_count":0,
+    "url":"https://api.xplenty.com/accounts/sample-account-2"
   }
 ]
 ```

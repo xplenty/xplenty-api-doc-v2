@@ -96,6 +96,28 @@ Unless you specify a version, the latest representation of resources will always
 
     application/vnd.xplenty+json; version=2
 
+### Parameters
+
+Many API methods take optional parameters. For GET requests, any parameters not specified as a segment in the path can be passed as an HTTP query string parameter:
+
+```shell
+$ curl -i "https://api.xplenty.com/xplenty-account/api/clusters?status=available"
+In this example, the 'xplenty-account' value is provided for the :account_id parameter in the path while the 'available' value is provided for :status that is passed in the query string.
+```
+
+For POST, PATCH, PUT, and DELETE requests, parameters not included in the URL should be JSON encoded:
+
+```shell
+$ curl -X POST -u api_key "https://api.xplenty.com/xplenty-account/api/clusters" \
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "my cluster",
+    "description": "production cluster",
+    "type": "production",
+    "nodes": 2
+  }'
+```
 
 ### CORS (Cross Origin Resource Sharing)
 
@@ -169,7 +191,7 @@ In order to get your API key, view your user's personal information page. See [h
 Once you have an API key, you can either attach it to each request as a "key" parameter, or use HTTP Basic Authentication with the API key as a username and a blank password. Here's an example using curl (the colon separates the username and password):
 
 ```shell
-curl -H "Accept: application/vnd.xplenty+json" -u <apikeyhere>: https://api.xplenty.com/<accountID>/clusters
+curl -H "Accept: application/vnd.xplenty+json" -u <apikeyhere>: https://api.xplenty.com/:account_id/clusters
 ```
 API key authentication works well for personal scripts, but is not recommended for third party services. We plan to deliver OAuth in the near future to provide better granularity and control when providing access to third party services.
 
@@ -193,7 +215,7 @@ The Xplenty API only allows clients to make a limited number of calls in a given
 All Xplenty API methods are rate-limited except for querying the rate limit.
 You can check your rate limit status without incurring an API hit, as follows:
 
-    GET /rate_limit_status
+    `GET /rate_limit_status`
 
 Every time you call the API, the current rate status will be returned in the response under the following headers:
 
@@ -240,7 +262,9 @@ These are the methods supported by the Xplenty API:
 * [Terminate Job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-job.md)
 * [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/watch-clusters-and-jobs.md)
 * [List Packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-packages.md)
+* [Delete Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-package.md)
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-information.md)
+* [Update Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-package.md)
 * [Create schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-schedule.md)
 * [List schedules](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-schedules.md)
 * [Update schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-schedule.md)
@@ -249,13 +273,17 @@ These are the methods supported by the Xplenty API:
 * [List User Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-accounts.md)
 * [Update Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-account.md)
 * [Delete Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-account.md)
+* [Get Account Payment Method](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-payment-method.md)
+* [Add Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/add-member.md)
 * [List Account Members](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-members.md)
 * [Delete Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-member.md)
 * [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
 * [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
+* [Create Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-public-key.md)
+* [Get Public Key Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-public-key-information.md)
+* [Delete Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-public-key.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
-* [Delete Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-public-key.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service

@@ -29,11 +29,15 @@ allow_fallback|N||If the value is set to either true, t or 1 instances will be c
 
 ### Request (Curl Call) Example
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters" \
-  -d "cluster[nodes]=4" \
-  -d "cluster[type]=production" \
-  -d "cluster[name]=<clusterName>" \ 
-  -d "cluster[description]=<clusterDescription>"
+$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/clusters" \
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nodes":4,
+    "type":"production",
+    "name":"New Cluster",
+    "description":"New Cluster Description"
+  }'
 ```
 
 ### Response Example
@@ -56,7 +60,6 @@ HTTP/1.1 201 Created
   "available_since": null,
   "terminated_at": null,
   "running_jobs_count": 0,
-  "url": "https://api.xplenty.com/xplenation/api/clusters/167",
   "terminate_on_idle": false,
   "time_to_idol": 3600,
   "terminated_on_idle": false,
@@ -68,6 +71,7 @@ HTTP/1.1 201 Created
   "slave_spot_price": 0.153,
   "master_spot_percentage": null,
   "slave_spot_percentage": 0.5,
-  "allow_fallback": true
+  "allow_fallback": true,
+  "url": "https://api.xplenty.com/xplenation/api/clusters/167"
 }
 ```

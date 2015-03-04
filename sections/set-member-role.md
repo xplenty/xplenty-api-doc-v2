@@ -12,7 +12,11 @@ role|Y| |Possible values are `member` or `admin`.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X PUT -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/members/<userID>?role=<roleName>" -d ''
+$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/members/:user_id" \
+  -H "Accept: application/vnd.xplenty+json, version=2"
+  -d '{
+    "role":"admin"
+  }'
 ```
 
 ### Response Example
@@ -30,6 +34,7 @@ HTTP/1.1 200 OK
   "created_at": "2013-01-17T22:41:21Z",
   "updated_at": "2013-01-17T22:41:21Z",
   "role":"admin",
-  "owner":true
+  "owner":false,
+  "url": "https://api.xplenty.com/xplenation/api/members/1",
 }
 ```

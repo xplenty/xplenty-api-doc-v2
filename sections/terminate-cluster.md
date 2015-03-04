@@ -13,7 +13,8 @@ The **cluster ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>"
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:cluster_id" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example
@@ -36,7 +37,6 @@ HTTP/1.1 200 OK
   "available_since": "2013-03-03T13:09:22Z",
   "terminated_at": null,        
   "running_jobs_count": 0,
-  "url": "https://api.xplenty.com/xplenation/api/clusters/167",
   "terminate_on_idle": false,
   "time_to_idle": 3600,
   "terminated_on_idle": false,
@@ -48,6 +48,7 @@ HTTP/1.1 200 OK
   "slave_spot_price": null,
   "master_spot_percentage": null,
   "slave_spot_percentage": null,
-  "allow_fallback": true
+  "allow_fallback": true,
+  "url": "https://api.xplenty.com/xplenation/api/clusters/167"
 }
 ```
