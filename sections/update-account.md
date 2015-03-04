@@ -52,7 +52,7 @@ HTTP/1.1 200 OK
   "members_count":3,
   "packages_count":0,
   "jobs_count":1,
-  "running_jobs_count":0
+  "running_jobs_count":0,
   "url":"https://api.xplenty.com/accounts/sample-admin"
 }
 ```

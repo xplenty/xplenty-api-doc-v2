@@ -8,7 +8,8 @@ The **user ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X DELETE -H "Accept: application/vnd.xplenty+json, version=2" -u api_key: "https://api.xplenty.com/:account_id/api/members/<userID>"
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/members/:user_id" \
+  -H "Accept: application/vnd.xplenty+json, version=2"
 ```
 
 ### Response Example
@@ -26,6 +27,7 @@ HTTP/1.1 200 OK
   "created_at": "2013-01-17T22:41:21Z",
   "updated_at": "2013-01-17T22:41:21Z",
   "role":"admin",
-  "owner":true
+  "owner":true,
+  "url":"https://api.xplenty.com/xplenation/api/members/1"
 }
 ```

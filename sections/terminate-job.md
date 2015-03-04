@@ -8,7 +8,7 @@ This call terminates an active [job](https://github.com/xplenty/xplenty-api-doc-
 * If a job is stopped by the user, it may return only partial results or none at all, depending on its tasks and its stage at the time of stoppage.
 
 ### Input Parameters
-The **job resource ID** must be supplied at the end of the request URL.
+The **job ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
@@ -39,8 +39,8 @@ HTTP/1.1 200 OK
   "cluster_id": 176,
   "package_id": 103,
   "errors": null,
-  "url": "https://api.xplenty.com/xplenation/api/jobs/305",
   "runtime_in_seconds": 40,
-  "completed_at": null
+  "completed_at": null,
+  "url": "https://api.xplenty.com/xplenation/api/jobs/305"
 }
 ```

@@ -12,7 +12,7 @@ This call clones the given [schedule](https://github.com/xplenty/xplenty-api-doc
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/schedules/:schedule_id/clone" \
-  -H "Accept: application/vnd.xplenty+json; version=2" 
+  -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
 ### Response Example

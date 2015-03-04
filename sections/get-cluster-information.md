@@ -32,7 +32,6 @@ HTTP/1.1 200 OK
   "available_since": "2013-01-28T16:46:22Z",
   "terminated_at": "2013-01-28T17:45:33Z",
   "running_jobs_count": 0,
-  "url": "https://api.xplenty.com/xplenation/api/clusters/99",
   "terminate_on_idle": false,
   "time_to_idle": 3600,
   "terminated_on_idle": false,
@@ -44,6 +43,7 @@ HTTP/1.1 200 OK
   "slave_spot_price": null,
   "master_spot_percentage": null,
   "slave_spot_percentage": null,
-  "allow_fallback": true
+  "allow_fallback": true,
+  "url": "https://api.xplenty.com/xplenation/api/clusters/99"
 }
 ```

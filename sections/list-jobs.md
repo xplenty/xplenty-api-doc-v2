@@ -44,9 +44,9 @@ HTTP/1.1 200 OK
     "cluster_id": 176,
     "package_id": 103,
     "errors": "Package failed to execute.",
-    "url": "https://api.xplenty.com/xplenation/api/jobs/304",
     "runtime_in_seconds": 40,
-    "completed_at": "2013-03-04T08:03:01Z"
+    "completed_at": "2013-03-04T08:03:01Z",
+    "url": "https://api.xplenty.com/xplenation/api/jobs/304"
   },
   {
     "id": 303,
@@ -63,9 +63,9 @@ HTTP/1.1 200 OK
     "cluster_id": 176,
     "package_id": 434,
     "errors": "Package failed to execute.",
-    "url": "https://api.xplenty.com/xplenation/api/jobs/303",
     "runtime_in_seconds": 38,
-    "completed_at": "2013-03-04T07:39:11Z"
+    "completed_at": "2013-03-04T07:39:11Z",
+    "url": "https://api.xplenty.com/xplenation/api/jobs/303"
   },
   {
     "id": 299,
@@ -82,9 +82,9 @@ HTTP/1.1 200 OK
     "cluster_id": 176,
     "package_id": 434,
     "errors": "Package failed to execute.",
-    "url": "https://api.xplenty.com/xplenation/api/jobs/299",
     "runtime_in_seconds": 0,
-    "completed_at": "2013-03-04T07:17:51Z"
+    "completed_at": "2013-03-04T07:17:51Z",
+    "url": "https://api.xplenty.com/xplenation/api/jobs/299"
   },
   {
     "id": 157,
@@ -121,9 +121,9 @@ HTTP/1.1 200 OK
     "cluster_id": 52,
     "package_id": 434,
     "errors": "",
-    "url": "https://api.xplenty.com/xplenation/api/jobs/157",
     "runtime_in_seconds": 417,
-    "completed_at": "2012-12-30T14:29:29Z"
+    "completed_at": "2012-12-30T14:29:29Z",
+    "url": "https://api.xplenty.com/xplenation/api/jobs/157"
   }
 ]
 ```

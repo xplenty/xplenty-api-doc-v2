@@ -39,7 +39,8 @@ HTTP/1.1 200 OK
     "created_at": "2013-01-17T22:41:21Z",
     "updated_at": "2013-01-17T22:41:21Z",
     "role":"admin",
-    "owner":true
+    "owner":true,
+    "url": "https://api.xplenty.com/xplenation/api/members/1"
   },
   {
     "id":2,
@@ -50,7 +51,8 @@ HTTP/1.1 200 OK
     "created_at": "2013-01-17T22:41:21Z",
     "updated_at": "2013-01-17T22:41:21Z",
     "role":"member",
-    "owner":false
+    "owner":false,
+    "url": "https://api.xplenty.com/xplenation/api/members/2"
   }
 ]
 ```

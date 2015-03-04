@@ -20,10 +20,10 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:clu
   -H "Content-Type: application/json" \
   -d '{
     "nodes":4,
-	"name:"cluster name",
+    "name:"cluster name",
     "description":"cluster description",
-	"terminate_on_idle":1,
-	"time_to_idle":7200
+    "terminate_on_idle":1,
+    "time_to_idle":7200
   }'
 ```
 
@@ -47,7 +47,6 @@ HTTP/1.1 200 OK
   "available_since": "2013-03-03T13:09:22Z",
   "terminated_at": null,        
   "running_jobs_count": 0,
-  "url": "https://api.xplenty.com/xplenation/api/clusters/167",
   "terminate_on_idle": true,
   "time_to_idle": 7200,
   "terminated_on_idle": false,
@@ -59,6 +58,7 @@ HTTP/1.1 200 OK
   "slave_spot_price": null,
   "master_spot_percentage": null,
   "slave_spot_percentage": null,
-  "allow_fallback": true
+  "allow_fallback": true,
+  "url": "https://api.xplenty.com/xplenation/api/clusters/167"
 }
 ```

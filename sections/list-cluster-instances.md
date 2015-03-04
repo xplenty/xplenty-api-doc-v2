@@ -10,6 +10,10 @@ $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:clu
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 [
   {
@@ -18,7 +22,8 @@ $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:clu
     "public_dns": "ec2-55-27-210-201.compute-1.amazonaws.com",
     "status": "available",
     "master": true,
-    "spot": false
+    "spot": false,
+    "url":"https://api.xplenty.com/xplenation/api/clusters/5/instances/i-4d1b39a7"
   },
   {
     "instance_id": "i-4d1b39a8",
@@ -26,7 +31,8 @@ $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:clu
     "public_dns": "ec2-52-27-210-201.compute-1.amazonaws.com",
     "status": "available",
     "master": false,
-    "spot": false
+    "spot": false,
+    "url":"https://api.xplenty.com/xplenation/api/clusters/5/instances/i-4d1b39a8"
   },
   {
     "instance_id": "i-4d1b39a9",
@@ -34,7 +40,8 @@ $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:clu
     "public_dns": "ec2-59-23-93-132.compute-1.amazonaws.com",
     "status": "available",
     "master": false,
-    "spot": true
+    "spot": true,
+    "url":"https://api.xplenty.com/xplenation/api/clusters/5/instances/i-4d1b39a9"
   }
 ]
 ```

@@ -30,35 +30,40 @@ HTTP/1.1 200 OK
     "name": "App Logs (MongoDB)",
     "type": "mongo",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/323"
   }, 
   {
     "id": 324,
     "name": "Website Logs (MongoDB)",
     "type": "mongo",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/324"
   }, 
   {
     "id": 325,
     "name": "Website Logs (S3)",
     "type": "s3",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/325"
   }, 
   {
     "id": 326,
     "name": "My Google Adwords",
     "type": "adwords",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/326"
   }, 
   {
     "id": 318,
     "name": "Data Warehouse (Redshift)",
     "type": "redshift",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/318"
   }
 ]
 ```

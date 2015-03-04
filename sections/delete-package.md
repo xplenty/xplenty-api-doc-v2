@@ -10,7 +10,7 @@ The **package ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/packages/:package_id" \
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/packages/:package_id" \
   -H "Accept: application/vnd.xplenty+json, version=2" 
 ```
 
@@ -29,6 +29,6 @@ HTTP/1.1 200 OK
   "owner_id":5,
   "created_at":"2015-02-26T11:46:05Z",
   "updated_at":"2015-02-26T11:46:05Z",
-  "url":"http://xplenty.com/test-account-3/api/packages/3"
+  "url":"https://api.xplenty.com/xplenation/api/packages/3"
 }
 ```

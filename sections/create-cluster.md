@@ -35,8 +35,8 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/clusters" \
   -d '{
     "nodes":4,
     "type":"production",
-    "name":"cluster name", 
-    "description":"cluster description"
+    "name":"New Cluster",
+    "description":"New Cluster Description"
   }'
 ```
 
@@ -60,7 +60,6 @@ HTTP/1.1 201 Created
   "available_since": null,
   "terminated_at": null,
   "running_jobs_count": 0,
-  "url": "https://api.xplenty.com/xplenation/api/clusters/167",
   "terminate_on_idle": false,
   "time_to_idol": 3600,
   "terminated_on_idle": false,
@@ -72,6 +71,7 @@ HTTP/1.1 201 Created
   "slave_spot_price": 0.153,
   "master_spot_percentage": null,
   "slave_spot_percentage": 0.5,
-  "allow_fallback": true
+  "allow_fallback": true,
+  "url": "https://api.xplenty.com/xplenation/api/clusters/167"
 }
 ```

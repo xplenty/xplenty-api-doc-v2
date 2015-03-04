@@ -28,32 +28,33 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/schedules" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
-    "name":"schedule name",
-	"status":"enabled",
-	"start_at":"2014-09-25T08:33:00Z",
-	"description":"schedule description",
-	"interval_amount":30,
-	"interval_unit":"days",
-	"task": {
+    "name":"Untitled",
+    "status":"enabled",
+    "start_at":"2014-09-25T08:33:00Z",
+    "description":"My daily schedule",
+    "interval_amount":34,
+    "interval_unit":"days",
+    "task": {
       "nodes":4,
-	  "terminate_on_idle":true,
-	  "time_to_idle":60,
-	  "packages": [
-      {
-        "package_id": "1234",
-        "variables": {
-          "today": "'val1'",
-          "yesterday": "'val2'"
+      "terminate_on_idle":true,
+      "time_to_idle":60,
+      "packages":[
+        {
+          "package_id": "1234",
+          "variables": {
+            "today": "'val1'",
+            "yesterday": "'val2'"
+          }
+        },  
+        {
+          "package_id": "3456",
+          "variables": {
+            "today": "'val3'",
+            "yesterday": "'val4'"
+          }
         }
-      },  
-	  {
-        "package_id": "3456",
-        "variables": {
-          "today": "'val3'",
-          "yesterday": "'val4'"
-        }
-      }
-    ],
+      ]
+    }
   }'
 ```
 You can add multiple variables for a package and multiple packages.
@@ -79,7 +80,9 @@ HTTP/1.1 201 Created
   "start_at": "2014-09-25T08:33:00Z",
   "status": "enabled",
   "task": {
-    "nodes": 3,
+    "nodes": 4,
+    "terminate_on_idle": true,
+    "time_to_idle": 60,
     "packages": [
       {
         "package_id": "1234",
@@ -96,9 +99,7 @@ HTTP/1.1 201 Created
           "yesterday": "'val4'"
         }
       }
-    ],
-    "terminate_on_idle": true,
-    "time_to_idle": 60
+    ]
   },
   "updated_at": "2014-10-29T14:22:05Z",
   "url": "https://api.xplenty.com/xplenation/api/schedules/2"
