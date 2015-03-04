@@ -215,7 +215,7 @@ The Xplenty API only allows clients to make a limited number of calls in a given
 All Xplenty API methods are rate-limited except for querying the rate limit.
 You can check your rate limit status without incurring an API hit, as follows:
 
-    GET /rate_limit_status
+    `GET /rate_limit_status`
 
 Every time you call the API, the current rate status will be returned in the response under the following headers:
 
@@ -279,10 +279,11 @@ These are the methods supported by the Xplenty API:
 * [Delete Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-member.md)
 * [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
 * [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
-* [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
-* [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
 * [Create Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-public-key.md)
 * [Get Public Key Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-public-key-information.md)
+* [Delete Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-public-key.md)
+* [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
+* [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
