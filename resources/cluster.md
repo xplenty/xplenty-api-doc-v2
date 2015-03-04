@@ -18,7 +18,6 @@ You will need to provide an active cluster when [starting a new job](https://git
 * **available_since** - the date and time the cluster became available
 * **terminated_at** - the date and time the cluster was terminated
 * **running_jobs_count** - the number of jobs currently running on the cluster
-* **url** - the unique cluster resource URL
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
 * **terminated_on_idle** - indicates whether the cluster terminated because it became idle
@@ -30,4 +29,4 @@ You will need to provide an active cluster when [starting a new job](https://git
 * **master_spot_percentage** - the percentage of master instances requested as spot (value between 0 and 1)
 * **slave_spot_percentage** - the percentage of slave instances requested as spot (value between 0 and 1)
 * **allow_fallback** - indicates whether instances will be created as on-demand instances if spot requests are not fulfilled
-
+* **url** - the cluster resource URL

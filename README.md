@@ -191,7 +191,7 @@ In order to get your API key, view your user's personal information page. See [h
 Once you have an API key, you can either attach it to each request as a "key" parameter, or use HTTP Basic Authentication with the API key as a username and a blank password. Here's an example using curl (the colon separates the username and password):
 
 ```shell
-curl -H "Accept: application/vnd.xplenty+json" -u <apikeyhere>: https://api.xplenty.com/<accountID>/clusters
+curl -H "Accept: application/vnd.xplenty+json" -u <apikeyhere>: https://api.xplenty.com/:account_id/clusters
 ```
 API key authentication works well for personal scripts, but is not recommended for third party services. We plan to deliver OAuth in the near future to provide better granularity and control when providing access to third party services.
 
@@ -262,16 +262,23 @@ These are the methods supported by the Xplenty API:
 * [Terminate Job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-job.md)
 * [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/watch-clusters-and-jobs.md)
 * [List Packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-packages.md)
+* [Delete Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-package.md)
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-information.md)
 * [Create schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-schedule.md)
 * [List schedules](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-schedules.md)
 * [Update schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-schedule.md)
 * [Get schedule Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-schedule-information.md)
 * [Delete schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-schedule.md)
+* [List User Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-accounts.md)
+* [Update Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-account.md)
+* [Delete Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-account.md)
+* [Add Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/add-member.md)
+* [List Account Members](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-members.md)
+* [Delete Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-member.md)
+* [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
+* [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
-* [List Account Members](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-members.md)
-* [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service

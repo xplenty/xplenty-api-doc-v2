@@ -3,9 +3,7 @@
 ### Description
 This call returns information for a list of [clusters](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md) that were created by users in your account.
 You can use this information to monitor and display your clusters and their status.
-Optionally, you can supply the input parameters to filter the cluster list so that it contains
-only clusters with a specific status, and to determine the order by which the list will be sorted.
-
+Optionally, you can supply the input parameters to filter the cluster list so that it contains only clusters with a specific status, and to determine the order by which the list will be sorted.
 
 ### Input Parameters
 

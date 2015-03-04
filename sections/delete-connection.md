@@ -1,0 +1,32 @@
+## Delete Account Connection
+
+### Description
+This call deletes the given [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md) .
+
+Use this call when the connection is no longer needed.
+
+### Notes
+Please note that deleting the connection will **invalidate all items referencing it**.
+
+### Input Parameters
+The **connection type** and **connection resource ID** must be supplied at the end of the request URL.
+
+### Request (Curl Call) Syntax
+```shell
+curl -X DELETE -H "Accept: application/vnd.xplenty+json, version=2" -u api_key: "https://api.xplenty.com/:account_id/api/connections/<connectionType>/<connectionID>"
+```
+
+### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
+```json
+{
+  "id":234,
+  "name":"Amazon S3 sample connection",
+  "created_at":"2015-02-16T07:58:52Z",
+  "updated_at":"2015-02-16T07:58:52Z",
+  "type":"s3"
+}
+```
