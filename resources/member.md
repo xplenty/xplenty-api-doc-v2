@@ -1,7 +1,6 @@
 A **member** represents a user that has been given access to an Xplenty account.
 
-
-### User Attributes
+### Member Attributes
 
 * **id** - the users's numeric identifier
 * **name** - the full name of the user

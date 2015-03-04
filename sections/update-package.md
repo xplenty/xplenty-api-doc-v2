@@ -1,7 +1,7 @@
 ## Update Package
 
 ### Description
-This call updates details of the given [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md).
+Update an existing [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md).
 
 ### Input Parameters
 Name|Required?|Default|Description|

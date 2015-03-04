@@ -1,7 +1,7 @@
 ## Terminate Cluster
 
 ### Description
-This call deactivates the given [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md), releasing its resources and terminating its runtime period.
+Terminate an existing [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md), releasing its resources and terminating its runtime period.
 Use this call when all of the cluster's jobs are completed and it's no longer needed.
 
 ### Notes

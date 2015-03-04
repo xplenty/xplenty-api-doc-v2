@@ -1,7 +1,7 @@
 ## Run Job
 
 ### Description
-This call creates a new [job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md) and triggers it to run. The job performs the series of data processing tasks that are defined in the job's package. Unless the job encounters an error or is terminated by the user, it will run until it completes its tasks on all of the input data.
+Create a new [job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md) and trigger it to run. The job performs the series of data processing tasks that are defined in the job's package. Unless the job encounters an error or is terminated by the user, it will run until it completes its tasks on all of the input data.
 
 ### Notes
 * You must save the job ID value returned in the response "id" field. You will use the value to refer to this job in subsequent API calls.

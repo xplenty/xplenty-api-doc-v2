@@ -1,7 +1,7 @@
 ## Get Public Key
 
 ### Description
-This call returns information of user's [public key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/public-key.md).
+Info for user's [public key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/public-key.md).
 
 ### Input Parameters
 The **key ID** must be supplied at the end of the request URL.

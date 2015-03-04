@@ -1,7 +1,7 @@
 ## Get Authenticated User
 
 ### Description
-Infor for the authenticated user.
+Info for the authenticated user.
 
 ### Input Parameters
 Name|Required?|Default|Description|

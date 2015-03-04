@@ -3,8 +3,6 @@
 ### Description
 Delete an existing [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md).
 
-Use this call when the connection is no longer needed.
-
 ### Notes
 Please note that deleting the connection will **invalidate all items referencing it**.
 
