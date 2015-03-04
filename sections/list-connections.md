@@ -14,7 +14,8 @@ since|N| |The connection list will only contain connections updated at the given
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/connections?type=<typeFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example
@@ -29,35 +30,40 @@ HTTP/1.1 200 OK
     "name": "App Logs (MongoDB)",
     "type": "mongo",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/323"
   }, 
   {
     "id": 324,
     "name": "Website Logs (MongoDB)",
     "type": "mongo",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/324"
   }, 
   {
     "id": 325,
     "name": "Website Logs (S3)",
     "type": "s3",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/325"
   }, 
   {
     "id": 326,
     "name": "My Google Adwords",
     "type": "adwords",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/326"
   }, 
   {
     "id": 318,
     "name": "Data Warehouse (Redshift)",
     "type": "redshift",
     "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z"
+    "updated_at":"2015-02-04T12:51:04Z",
+    "url": "https://api.xplenty.com/xplenation/api/connections/318"
   }
 ]
 ```

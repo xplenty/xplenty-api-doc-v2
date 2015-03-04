@@ -16,7 +16,8 @@ since|N| |The cluster list will only contain clusters updated at the given time 
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters?status=<statusFilter>&sort=<sortField>&direction=<sortDirection>&since=<sinceTime>"
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters" \
+  -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
 ### Response Example
@@ -40,7 +41,6 @@ HTTP/1.1 200 OK
     "available_since": "2013-01-28T16:46:22Z",
     "terminated_at": "2013-01-28T17:45:33Z",
     "running_jobs_count": 0,
-    "url": "https://api.xplenty.com/xplenation/api/clusters/99",
     "terminate_on_idle": false,
     "time_to_idle": 3600,
     "terminated_on_idle": false,
@@ -52,7 +52,8 @@ HTTP/1.1 200 OK
     "slave_spot_price": null,
     "master_spot_percentage": null,
     "slave_spot_percentage": null,
-    "allow_fallback": true
+    "allow_fallback": true,
+    "url": "https://api.xplenty.com/xplenation/api/clusters/99",
   },
   {
     "id": 98,
@@ -68,7 +69,6 @@ HTTP/1.1 200 OK
     "available_since": "2013-01-28T08:23:12Z",
     "terminated_at": "2013-01-28T16:45:14Z",
     "running_jobs_count": 0,
-    "url": "https://api.xplenty.com/xplenation/api/clusters/98"
     "terminate_on_idle": false,
     "time_to_idle": 3600,
     "terminated_on_idle": false,
@@ -80,7 +80,8 @@ HTTP/1.1 200 OK
     "slave_spot_price": null,
     "master_spot_percentage": null,
     "slave_spot_percentage": null,
-    "allow_fallback": true
+    "allow_fallback": true,
+    "url": "https://api.xplenty.com/xplenation/api/clusters/98"
   },
   {
     "id": 97,
@@ -96,7 +97,6 @@ HTTP/1.1 200 OK
     "available_since": "2013-01-25T07:40:02Z",
     "terminated_at": "2013-01-25T07:45:19Z",
     "running_jobs_count": 0,
-    "url": "https://api.xplenty.com/xplenation/api/clusters/97"
     "terminate_on_idle": true,
     "time_to_idle": 3600,
     "terminated_on_idle": true,
@@ -108,7 +108,8 @@ HTTP/1.1 200 OK
     "slave_spot_price": null,
     "master_spot_percentage": null,
     "slave_spot_percentage": null,
-    "allow_fallback": true
+    "allow_fallback": true,
+    "url": "https://api.xplenty.com/xplenation/api/clusters/97"
   }
 ]
 ```
