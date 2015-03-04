@@ -1,7 +1,7 @@
 ## Delete Schedule
 
 ### Description
-This call deletes the given [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md).
+Delete an existing [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md).
 
 Use this call when the schedule is no longer needed.
 

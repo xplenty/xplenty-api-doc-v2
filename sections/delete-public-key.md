@@ -1,7 +1,7 @@
 ## Delete Public Key
 
 ### Description
-This call deletes the given [public key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/public-key.md). Use this action when the key is no longer needed.
+Delete an existing [public key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/public-key.md). Use this action when the key is no longer needed.
 
 ### Input Parameters
 The **key ID** must be supplied at the end of the request URL.

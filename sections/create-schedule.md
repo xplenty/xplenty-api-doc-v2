@@ -1,7 +1,7 @@
 ## Create Schedule
 
 ### Description
-This call creates a new [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md). A schedule executes packages periodically starting at a specified date and time. The packages will be executed as scheduled, using an existing cluster that fits the scheduled cluster size or if one doesn't exist, a cluster will be provisioned automatically with the number of specified nodes. 
+Create a new [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md).
 
 ### Notes
 * This call only triggers schedule creation, and therefore it returns the "disabled" status. To enable a schedule you need to change its status to "enabled" using [update schedule's information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-schedule-information.md)

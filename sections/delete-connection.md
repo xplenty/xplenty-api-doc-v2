@@ -1,7 +1,7 @@
 ## Delete Account Connection
 
 ### Description
-This call deletes the given [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md) .
+Delete an existing [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md).
 
 Use this call when the connection is no longer needed.
 

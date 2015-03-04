@@ -1,7 +1,7 @@
 ## Create Public Key
 
 ### Description
-This call creates a new [public key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/public-key.md) associated with the authenticated user.
+Creates a new [public key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/public-key.md).
 
 ### Input Parameters
 |Name|Required?|Default|Description|

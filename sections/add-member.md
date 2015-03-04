@@ -1,7 +1,7 @@
 ## Add Account Member
 
 ### Description
-This call adds a new [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) membership to an account. The call sends an invitation to join Xplenty in case the user is not yet a member of Xplenty. 
+Creates a new [member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/member.md) on an account. The call sends an invitation to join Xplenty in case the user is not yet a user of Xplenty. 
 
 ### Input Parameters
 

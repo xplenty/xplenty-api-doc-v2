@@ -1,7 +1,7 @@
 ## Clone schedule
 
 ### Description
-This call clones the given [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md).
+Clone a an existing [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md).
 
 ### Input Parameters
 
