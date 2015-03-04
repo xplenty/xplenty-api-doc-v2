@@ -11,7 +11,8 @@ The **account ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X DELETE -H "Accept: application/vnd.xplenty+json, version=2" -u <APIkey>: "https://api.xplenty.com/accounts/<accountID>"
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/accounts/:account_id" \
+  -H "Accept: application/vnd.xplenty+json, version=2"
 ```
 
 ### Response Example
@@ -21,7 +22,8 @@ HTTP/1.1 200 OK
 
 ```json
 {
-  "id":"xplenty-admin",
+  "id":1,
+  "account_id":"xplenty-admin",
   "name":"Xplenty Admin",
   "region":"amazon-web-services::us-east-1",
   "location":null,
@@ -37,6 +39,7 @@ HTTP/1.1 200 OK
   "jobs_count":0,
   "running_jobs_count":0,
   "created_at":"2015-02-04T12:51:04Z",
-  "updated_at":"2015-02-04T12:51:04Z"
+  "updated_at":"2015-02-04T12:51:04Z",
+  "url":"https://api.xplenty.com/accounts/xplenty-admin"
 }
 ```

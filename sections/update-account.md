@@ -16,16 +16,17 @@ gravatar_email|N| |The account's gravatar email
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X PUT -H "Content-Type: application/json" -H "Accept: application/vnd.xplenty+json, version=2" \
-    -u <APIkey>: "https://api.xplenty.com/accounts/<accountID>" \
-    -d '{
-      "account_id": "<accountID>",
-      "name": "<name>",
-      "location": "<location>",
-      "region": "<region>",
-      "billing_email": "<billingEmail>",
-      "gravatar_email": "<gravatarEmail>"
-    }'
+$ curl -X PUT -u api_key: "https://api.xplenty.com/accounts/:account_id" \
+  -H "Accept: application/vnd.xplenty+json, version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "account_id": "sample-admin",
+    "name": "Sample Admin",
+    "location": "California",
+    "region": "amazon-web-services::us-east-1",
+    "billing_email": "billing@example.com",
+    "gravatar_email": "gravater@example.com"
+  }'
 ```
 
 ### Response Example
@@ -38,9 +39,9 @@ HTTP/1.1 200 OK
   "id":"sample-admin",
   "name":"Sample Admin",
   "region":"amazon-web-services::us-east-1",
-  "location":null,
-  "billing_email":"admin@example.com",
-  "gravatar_email":"admin@example.com",
+  "location":"California",
+  "billing_email":"billing@example.com",
+  "gravatar_email":"gravater@example.com",
   "avatar_url":"http://gravatar.com/avatar/d24d8cd923f00b204e9800998ecf8427e.png?d=retro&s=140",
   "created_at":"2015-02-04T12:51:04Z",
   "updated_at":"2015-02-04T12:51:04Z",
@@ -51,6 +52,7 @@ HTTP/1.1 200 OK
   "members_count":3,
   "packages_count":0,
   "jobs_count":1,
-  "running_jobs_count":0
+  "running_jobs_count":0,
+  "url":"https://api.xplenty.com/accounts/sample-admin"
 }
 ```

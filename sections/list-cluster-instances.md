@@ -5,10 +5,15 @@ This call returns information for a list of [cluster instance](https://github.co
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/<clusterID>/instances"
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:cluster_id/instances" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
 [
   {
@@ -17,7 +22,8 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
     "public_dns": "ec2-55-27-210-201.compute-1.amazonaws.com",
     "status": "available",
     "master": true,
-    "spot": false
+    "spot": false,
+    "url":"https://api.xplenty.com/xplenation/api/clusters/5/instances/i-4d1b39a7"
   },
   {
     "instance_id": "i-4d1b39a8",
@@ -25,7 +31,8 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
     "public_dns": "ec2-52-27-210-201.compute-1.amazonaws.com",
     "status": "available",
     "master": false,
-    "spot": false
+    "spot": false,
+    "url":"https://api.xplenty.com/xplenation/api/clusters/5/instances/i-4d1b39a8"
   },
   {
     "instance_id": "i-4d1b39a9",
@@ -33,7 +40,8 @@ curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.
     "public_dns": "ec2-59-23-93-132.compute-1.amazonaws.com",
     "status": "available",
     "master": false,
-    "spot": true
+    "spot": true,
+    "url":"https://api.xplenty.com/xplenation/api/clusters/5/instances/i-4d1b39a9"
   }
 ]
 ```

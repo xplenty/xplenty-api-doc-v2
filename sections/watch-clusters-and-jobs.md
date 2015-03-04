@@ -26,12 +26,20 @@ This call adds the calling user as a watcher of the specified cluster.
 
 ### Request (Curl Call)
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/<accountID>/api/clusters/{cluster_id}/watchers'
+$ curl -X POST -u api_key: 'https://api.xplenty.com/:account_id/api/clusters/:cluster_id/watchers' \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
-{"created_at":"2013-04-09T11:19:20+03:00","cluster_url":"https://api.xplenty.com/xplenation/api/clusters/370"}
+{
+  "created_at":"2013-04-09T11:19:20+03:00",
+  "cluster_url":"https://api.xplenty.com/xplenation/api/clusters/370"
+}
 ```
 
 ## Stop Watching Cluster
@@ -42,11 +50,14 @@ This call removes the calling user from the watcher list of the specified cluste
 
 ### Request (Curl Call)
 ```shell
-curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/clusters/{cluster_id}/watchers"
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:cluster_id/watchers" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response
-Header 204.
+```HTTP
+HTTP/1.1 204 No Content
+```
 
 ## Get Cluster Watchers
 This call retrieves the list of users watching the specified cluster.
@@ -56,12 +67,22 @@ This call retrieves the list of users watching the specified cluster.
 
 ### Request (Curl Call)
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/<accountID>/api/clusters/{cluster_id}/watchers'
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:cluster_id/watchers" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
-[{"id":1,"display_name":"Xplenty"}]
+[
+  {
+    "id":1,
+    "display_name":"Xplenty"
+  }
+]
 ```
 
 ## Watch Job
@@ -72,12 +93,19 @@ This call adds the calling user as a watcher of the specified job.
 
 ### Request (Curl Call)
 ```shell
-curl -X POST -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/<accountID>/api/jobs/{job_id}/watchers'
+curl -X POST -H "Accept: application/vnd.xplenty+json" -u api_key: 'https://api.xplenty.com/:account_id/api/jobs/:job_id/watchers'
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 201 Created
+```
+
 ```json
-{"created_at":"2013-04-09T11:28:27+03:00","job_url":"https://api.xplenty.com/xplenation/api/jobs/492"}
+{
+  "created_at":"2013-04-09T11:28:27+03:00",
+  "job_url":"https://api.xplenty.com/xplenation/api/jobs/492"
+}
 ```
 
 ## Stop Watching Job
@@ -88,11 +116,14 @@ This call removes the calling user from the watcher list of the specified job.
 
 ### Request (Curl Call)
 ```shell
-curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: 'https://api.xplenty.com/<accountID>/api/jobs/{job_id}/watchers'
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/jobs/:job_id/watchers" \
+  -H "Accept: application/vnd.xplenty+json" 
 ```
 
 ### Response
-Header 204.
+```HTTP
+HTTP/1.1 204 No Content
+```
 
 ## Get Job Watchers
 This call retrieves the list of users watching the specified job.
@@ -102,10 +133,20 @@ This call retrieves the list of users watching the specified job.
 
 ### Request (Curl Call)
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json" -u api_key: "https://api.xplenty.com/xplenation/api/jobs/{job_id}/watchers"
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/jobs/:job_id/watchers" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
 ```json
-[{"id":1,"display_name":"Xplenty"}]
+[
+  {
+    "id":1,
+    "display_name":"Xplenty"
+  }
+]
 ```

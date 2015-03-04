@@ -14,7 +14,8 @@ The **schedule resource ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X DELETE -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/schedules/<scheduleID>"
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/schedules/:schedule_id" \
+  -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
 
 ### Response Example

@@ -4,14 +4,15 @@
 The calls returns information for a [job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md) with the given job ID.
 
 You can preview the output, which will display up to 100 lines, using the preview_url listed in the outputs of the response. 
-View [Preview Job Output] (https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/preview-output.md) for details.
+View [Preview Job Output](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/preview-output.md) for details.
 
 ### Input Parameters
 The **job resource ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-curl -X GET -H "Accept: application/vnd.xplenty+json" -u <APIkey>: "https://api.xplenty.com/<accountID>/api/jobs/<jobID>"
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/jobs/:job_id" \
+  -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
 ### Response Example
@@ -56,8 +57,8 @@ HTTP/1.1 200 OK
   "cluster_id": 52,
   "package_id": 434,
   "errors": "",
-  "url": "https://api.xplenty.com/xplenation/api/jobs/157",
   "runtime_in_seconds": 417,
-  "completed_at": null
+  "completed_at": null,
+  "url": "https://api.xplenty.com/xplenation/api/jobs/157"
 }
 ```
