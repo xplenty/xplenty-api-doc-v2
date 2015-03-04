@@ -1,7 +1,7 @@
 ## Delete Package
 
 ### Description
-This call deletes the given [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md).
+Delete an existing [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md).
 
 Use this call when the package is no longer needed.
 

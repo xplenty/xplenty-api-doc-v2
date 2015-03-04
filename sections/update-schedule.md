@@ -1,7 +1,7 @@
 ## Update schedule
 
 ### Description
-This call updates the given [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md).
+Update an existing [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md).
 Note that you cannot edit start_at date if schedule's execution count is greater than zero.
 
 If you want to use a similar schedule you can clone it using the [clone schedule method](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/clone-schedule.md)

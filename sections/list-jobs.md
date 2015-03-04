@@ -1,7 +1,7 @@
 ## List Jobs
 
 ### Description
-This call returns information for the list of [jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md) that were created by users in your account.
+List [jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md) that are accessible by the authenticated user.
 You can use this information to monitor your jobs and their status.
 Optionally, you can supply the input parameters to filter the job list so that it contains only jobs with a specific status, and to determine the order by which the list will be sorted.
 

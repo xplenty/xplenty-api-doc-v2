@@ -1,7 +1,7 @@
 ## List Schedules
 
 ### Description
-This call returns information for the list of [schedules](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md) that were created by users in your account.
+List [schedules](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md) that are accessible by authenticated user.
 You can use this information to monitor your schedules and their status.
 Optionally, you can supply the input parameters to filter the schedule list so that it contains only schedules with a specific status, and to determine the order by which the list will be sorted.
 

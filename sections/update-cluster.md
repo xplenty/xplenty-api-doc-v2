@@ -1,7 +1,7 @@
 ## Update Cluster
 
 ### Description
-This call updates the given [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md), including scaling a running cluster of type "production".
+Update an existing [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md), including scaling a running cluster of type "production".
 
 ### Input Parameters
 |Name|Required?|    Default|Description|

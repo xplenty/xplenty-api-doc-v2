@@ -1,7 +1,7 @@
 ## Get Schedule Information
 
 ### Description
-The call returns information for a [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md) with the given schedule ID.
+Info for an existing [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md).
 
 ### Input Parameters
 The **schedule ID** must be supplied at the end of the request URL.

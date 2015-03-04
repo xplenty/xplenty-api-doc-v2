@@ -1,7 +1,7 @@
 ## List User's Accounts 
 
 ### Description
-This call returns information for a list of active [accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md) in which the authenticated user is a member of (with either admin or  member role). Optionally, you can supply the input parameters to filter the account list so that it contains only accounts with a specific role or id, and to determine the order by which the list will be sorted.
+List active [accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md) in which the authenticated user is a member of (with either admin or member role). Optionally, you can supply the input parameters to filter the account list so that it contains only accounts with a specific role or id, and to determine the order by which the list will be sorted.
 
 ### Input Parameters
 

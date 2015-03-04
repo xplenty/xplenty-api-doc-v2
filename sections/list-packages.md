@@ -1,7 +1,7 @@
 ## List Packages
 
 ### Description
-This call returns information for the list of [packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md) that were created by users in your account.
+List [packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md) that are accessible by authenticated user.
 You can use this information to monitor your packages.
 
 ### Input Parameters

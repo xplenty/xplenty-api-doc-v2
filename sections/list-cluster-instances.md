@@ -1,7 +1,7 @@
 ## List Cluster Instances
 
 ### Description
-This call returns information for a list of [cluster instance](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster-instance.md) that were allocated for the specified cluster.
+List existing cluster [instances](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster-instance.md).
 
 ### Request (Curl Call) Syntax
 ```shell
