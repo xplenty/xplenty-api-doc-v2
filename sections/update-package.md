@@ -21,7 +21,6 @@ $ curl -X PUT  -u api_key: "https://api.xplenty.com/:account_id/packages/:packag
   -d '{
     "name": "Test package 1",
     "description": "Sample description",
-    "data_flow_json": { "step1" : "value" },
     "variables": { 
       "variable1": "123", 
       "variable2": "456" 
