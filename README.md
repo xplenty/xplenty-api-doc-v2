@@ -257,6 +257,7 @@ These are the methods supported by the Xplenty API:
 * [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
+* [Get Account Payment Method](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-payment-method.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
