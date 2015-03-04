@@ -1,17 +1,7 @@
 ## Get Public Key
 
 ### Description
-This call returns the details of the user's public key.
-
-The details returned for the key are:
-
-* **id** - the key's numeric identifier
-* **comment** - the comment given upon creation. It is last item of the passed key (e.g. email)
-* **fingerprint** - fingerprint of the key
-* **name** - name of the key
-* **url** - API url for key
-* **created_at** - the date and time the key was created
-* **updated_at** - the date and time the key was last updated
+This call returns information of user's [public key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/public-key.md).
 
 ### Input Parameters
 The **key ID** must be supplied at the end of the request URL.

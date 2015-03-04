@@ -273,6 +273,7 @@ These are the methods supported by the Xplenty API:
 * [List User Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-accounts.md)
 * [Update Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-account.md)
 * [Delete Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-account.md)
+* [Get Account Payment Method](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-payment-method.md)
 * [Add Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/add-member.md)
 * [List Account Members](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-members.md)
 * [Delete Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-member.md)
@@ -280,7 +281,8 @@ These are the methods supported by the Xplenty API:
 * [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
-* [Get Account Payment Method](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-payment-method.md)
+* [Create Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-public-key.md)
+* [Get Public Key Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-public-key-information.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
