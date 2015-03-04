@@ -242,6 +242,7 @@ These are the methods supported by the Xplenty API:
 * [List Packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-packages.md)
 * [Delete Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-package.md)
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-information.md)
+* [Update Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-package.md)
 * [Create schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-schedule.md)
 * [List schedules](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-schedules.md)
 * [Update schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-schedule.md)
