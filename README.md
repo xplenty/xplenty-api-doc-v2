@@ -264,6 +264,7 @@ These are the methods supported by the Xplenty API:
 * [List Packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-packages.md)
 * [Delete Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-package.md)
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-information.md)
+* [Update Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-package.md)
 * [Create schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-schedule.md)
 * [List schedules](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-schedules.md)
 * [Update schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-schedule.md)
@@ -279,6 +280,7 @@ These are the methods supported by the Xplenty API:
 * [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
+* [Get Account Payment Method](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-payment-method.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
