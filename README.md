@@ -282,6 +282,7 @@ These are the methods supported by the Xplenty API:
 * [Create Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-public-key.md)
 * [Get Public Key Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-public-key-information.md)
 * [Delete Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-public-key.md)
+* [List Public Keys](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-public-keys.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
 
