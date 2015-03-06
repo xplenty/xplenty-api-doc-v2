@@ -284,6 +284,7 @@ These are the methods supported by the Xplenty API:
 * [Delete Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-public-key.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
+* [Update Authenticated User](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-authenticated-user.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
