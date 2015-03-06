@@ -19,7 +19,7 @@ new_password|N| |New password for authenticated user.
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X PUT -u api_key: "https://api.xplenty.com/user" \
-  -H "Accept: application/vnd.xplenty+json, version=2" \
+  -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
     "current_password": "password",
