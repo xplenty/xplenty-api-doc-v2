@@ -15,7 +15,7 @@ since|N| |The notifications list will only contain objects updated at the given 
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "https://api.xplenty.com/notifications" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/user/notifications" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
@@ -36,13 +36,17 @@ HTTP/1.1 200 OK
     "id":2,
     "last_read_at":null,
     "title":"Cluster error",
-    "message":"Something went wrong with cluster <a href=\"/test-account-2/clusters/2\">test-account-2/Test Cluster 2</a>. Our team is looking into it. We recommend you terminate it."
+    "message":"Something went wrong with cluster <a href=\"https://api.xplenty.com/test-account-2/clusters/2\">test-account-2/Test Cluster 2</a>. Our team is looking into it. We recommend you terminate it.",
+    "created_at":"2013-01-17T22:41:21Z",
+    "updated_at":"2013-01-17T22:41:21Z"
   },
   {
     "id":3,
     "last_read_at":null,
     "title":"Cluster available",
-    "message":"Cluster <a href=\"/test-account-2/clusters/2\">test-account-2/Test Cluster 2</a> is available."
+    "message":"Cluster <a href=\"https://api.xplenty.com/test-account-2/clusters/2\">test-account-2/Test Cluster 2</a> is available.",
+    "created_at":"2013-01-18T22:41:21Z",
+    "updated_at":"2013-01-18T22:41:21Z"
   }
 ]
 ```
