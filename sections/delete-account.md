@@ -1,7 +1,7 @@
 ## Delete Account
 
 ### Description
-This call deletes the given [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md). The operation can be executed only by the account owner.
+Delete an existing [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md). The operation can be executed only by the account owner.
 
 ### Notes
 * Please note that this action is **irreversible**.

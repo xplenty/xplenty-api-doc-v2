@@ -1,7 +1,7 @@
 ## Delete Account Member
 
 ### Description
-This call deletes the [member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) from the account. It does not remove the user, just the account membership.
+Delete an existing [member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/member.md) from an account. This call does not delete the user, just the account membership.
 
 ### Input Parameters
 The **user ID** must be supplied at the end of the request URL.

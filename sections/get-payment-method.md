@@ -1,7 +1,7 @@
 ## Get Payment Method
 
 ### Description
-This call returns the details of the payment method on file, for the given account. If there is no payment method defined, returns Resource not found (404) message.
+Get payment method on file, for an existing account. If there is no payment method on file, returns `Resource not found (404)`.
 
 The details returned for the method are:
 

@@ -1,7 +1,7 @@
 ## Create Cluster
 
 ### Description
-This call creates a new [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md).
+Create a new [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md).
 
 ### Notes
 * This call only triggers cluster creation, and therefore it returns the "pending" status. You can run a job on a pending cluster, but if for any reason the cluster failed to initialize, the job will fail to run.

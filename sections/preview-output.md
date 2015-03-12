@@ -1,7 +1,7 @@
 ## Preview Job Output
 
 ### Description
-The calls returns up to 100 lines raw preview of the output.
+The calls returns up to 100 lines raw preview of a job output.
 
 The details returned for the job are as:
 

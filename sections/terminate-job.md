@@ -1,7 +1,7 @@
 ## Terminate Job
 
 ### Description
-This call terminates an active [job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md). Usually it's not necessary to request to terminate a job, because the job will end when its tasks are completed. You may want to actively terminate a job if you need its cluster resources for a more urgent job, or if the job is taking too long to complete.
+Stop an active [job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md). Usually it's not necessary to request to terminate a job, because the job will end when its tasks are completed. You may want to actively terminate a job if you need its cluster resources for a more urgent job, or if the job is taking too long to complete.
 
 ### Notes
 * This call only triggers the job's termination, which is why a status of "pending_stoppage" is returned. To verify stoppage, [get the job's information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-job-information.md) and check for a status of "stopped".

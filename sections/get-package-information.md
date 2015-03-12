@@ -1,7 +1,7 @@
 ## Get Package Information
 
 ### Description
-The calls returns information for a [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md) with the given package ID.
+Info for an existing [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md).
 
 ### Input Parameters
 The **package ID** must be supplied at the end of the request URL.

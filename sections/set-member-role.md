@@ -1,7 +1,7 @@
 ## Set Member's Role
 
 ### Description
-This call sets the Account [member's](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) role to either: `member` or `admin`. 
+Set existing account [member's](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) role to either: `member` or `admin`. 
 
 ### Input Parameters
 

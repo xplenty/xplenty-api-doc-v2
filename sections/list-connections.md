@@ -1,7 +1,8 @@
 ## List Account Connections
 
 ### Description
-This call returns list of account [connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md) that were created by users in your account. Optionally, you can supply the input parameters to filter the connection list so that it contains only connections with specific types and to determine the order by which the list will be sorted.
+List [connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md) that are accessible by the authenticated user. 
+Optionally, you can supply the input parameters to filter the connection list so that it contains only connections with specific types and to determine the order by which the list will be sorted.
 
 ### Input Parameters
 
