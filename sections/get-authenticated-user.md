@@ -14,6 +14,7 @@ The details returned for user are:
 * **confirmed_at** - confirmation date and time
 * **notifications_count** - number of the user's notifications
 * **unread_notifications_count** - number of the user's unread notifications
+* **notification_settings** - the user's notification settings
 * **receive_newsletter** - value specifies if user subscribed newsletter or not
 * **avatar_url** - URL for the user's avatar
 * **url** - API url for user
@@ -51,6 +52,7 @@ HTTP/1.1 200 OK
   "time_zone":"UTC",
   "notifications_count":0,
   "unread_notifications_count":0,
+  "notification_settings": { "email": true, "web": true },
   "gravatar_email":"user.1@example.com",
   "created_at":"2015-03-04T10:38:05Z",
   "updated_at":"2015-03-04T10:38:05Z",
