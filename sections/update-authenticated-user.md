@@ -14,6 +14,7 @@ location|N| |The user's location.
 time_zone|N| |The user's time zone.
 gravatar_email|N| |The user's gravatar email.
 receive_newsletter|N| |Indicates if user subscribed to recieve newsletter
+notification_settings|N| |The user's notification settings in the following format: { "email": true, "web": true }
 new_password|N| |New password for authenticated user.
 
 ### Request (Curl Call) Syntax
@@ -26,6 +27,7 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/user" \
     "name": "Sample User",
     "location": "California",
     "email": "test@example.com",
+    "notification_settings": { "email": true, "web": true },
     "gravatar_email": "gravater@example.com",
     "time_zone": "UTC",
     "receive_newsletter":true,
@@ -50,6 +52,7 @@ HTTP/1.1 200 OK
   "time_zone":"UTC",
   "notifications_count":0,
   "unread_notifications_count":0,
+  "notification_settings": { "email": true, "web": true },
   "gravatar_email":"gravatar@example.com",
   "created_at":"2015-03-04T10:38:05Z",
   "updated_at":"2015-03-04T10:38:05Z",
