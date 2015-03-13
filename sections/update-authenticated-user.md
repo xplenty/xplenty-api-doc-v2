@@ -28,7 +28,10 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/user" \
     "name": "Sample User",
     "location": "California",
     "email": "test@example.com",
-    "notification_settings": { "email": true, "web": true },
+    "notification_settings": { 
+      "email": true, 
+      "web": true 
+    },
     "gravatar_email": "gravater@example.com",
     "time_zone": "UTC",
     "receive_newsletter":true,
