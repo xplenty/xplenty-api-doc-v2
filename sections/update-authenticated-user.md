@@ -3,6 +3,12 @@
 ### Description
 This call updates authenticated [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md).
 
+### Notification settings
+Notification settings can be updated using the following parameters:
+
+* **email** - indicates if user will get notification on email or not. Possible values: true, false;
+* **web** - indicates if user will get notification in web application or not. Possible values: true, false.
+
 ### Input Parameters
 
 |Name|Required?|Default|Description|
@@ -14,7 +20,7 @@ location|N| |The user's location.
 time_zone|N| |The user's time zone.
 gravatar_email|N| |The user's gravatar email.
 receive_newsletter|N| |Indicates if user subscribed to recieve newsletter
-notification_settings|N| |The user's notification settings in the following format: { "email": true, "web": true }
+notification_settings|N| |The user's notification settings.
 new_password|N| |New password for authenticated user.
 
 ### Request (Curl Call) Syntax
