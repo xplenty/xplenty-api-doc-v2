@@ -1,22 +1,22 @@
 ## Update Authenticated User
 
 ### Description
-This call updates authenticated [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md).
+This call updates information for the authenticated [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md).
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-current_password|Y| |Current password is required to make any changes.
+current_password|Y| |The user's current password, which is required to make any changes.
 name|N| |The user's name.
-email|N| |The user's email. Change of this field requires confirmation.
+email|N| |The user's email.
 location|N| |The user's location.
 time_zone|N| |The user's time zone.
 gravatar_email|N| |The user's gravatar email.
-receive_newsletter|N| |Indicates if user subscribed to recieve newsletter
-notification_settings:web|N| |Indicates whether web notifications are enabled or not.
-notification_settings:email|N| |Indicates whether email notifications are enabled or not.
-new_password|N| |New password for authenticated user.
+receive_newsletter|N| |Indicates whether the user is subscribed to receive the newsletter.
+notification_settings:web|N| |Indicates whether web notifications are enabled.
+notification_settings:email|N| |Indicates whether email notifications are enabled.
+new_password|N| |The user's new password.
 
 ### Request (Curl Call) Syntax
 ```shell
