@@ -2,6 +2,14 @@
 
 ### Description
 List authenticated user's [public keys](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/public-key.md).
+Optionally, you can supply the input parameters to determine the order by which the list will be sorted.
+
+### Input Parameters
+
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
+sort|N|"created"|Possible values are  ```updated```, ```created```, ```name```.
+direction|N|"asc"|Possible values are: ```asc```, ```desc```. The keys will be sorted in ascending or descending order of the "sort" attribute.
 
 ### Request (Curl Call) Syntax
 ```shell
