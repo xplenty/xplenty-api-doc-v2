@@ -34,6 +34,7 @@ HTTP/1.1 200 OK
   "time_zone":"UTC",
   "notifications_count":0,
   "unread_notifications_count":0,
+  "notification_settings": { "email": true, "web": true },
   "gravatar_email":"gravatar@example.com",
   "created_at":"2015-03-04T10:38:05Z",
   "updated_at":"2015-03-04T10:38:05Z",
