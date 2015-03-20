@@ -1,7 +1,7 @@
 ## Create Account
 
 ### Description
-Creates a new [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md) for the user.
+Creates a new [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md). This operation is possible only for confirmed users.
 
 ### Input Parameters
 |Name|Required?|Default|Description|
