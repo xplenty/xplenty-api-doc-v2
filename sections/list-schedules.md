@@ -18,7 +18,8 @@ since|N| |The schedule list will only contain schedules updated at the given tim
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/schedules" \
-  -H "Accept: application/vnd.xplenty+json; version=2"  
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json"
 ```
 ### Response Example
 ```HTTP
