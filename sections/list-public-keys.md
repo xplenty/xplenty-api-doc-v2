@@ -14,7 +14,7 @@ direction|N|"asc"|Possible values are: ```asc```, ```desc```. The keys will be s
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X GET -u api_key: "https://api.xplenty.com/user/keys" \
-  -H "Accept: application/vnd.xplenty+json"
+  -H "Accept: application/vnd.xplenty+json, version=2"
 ```
 
 ### Response Example
