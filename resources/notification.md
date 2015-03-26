@@ -1,8 +1,8 @@
-A **notification** contains information about important event in system.
+A **notification** contains information about an important event in the system.
 
 ### Notification Attributes
 
 * **id** - the notification's numeric identifier
-* **title** - the title of notification
-* **message** - the description of event
-* **last_read_at** - describes the last point that notification was checked
+* **title** - the notification's title
+* **message** - the description of the event
+* **last_read_at** - the last point that the notification was checked
