@@ -9,13 +9,13 @@ This call updates information for the authenticated [user](https://github.com/xp
 |----|---------|-------|-----------|
 current_password|Y| |The user's current password, which is required to make any changes.
 name|N| |The user's name.
-email|N| |The user's email.
 location|N| |The user's location.
-time_zone|N| |The user's time zone.
-gravatar_email|N| |The user's gravatar email.
-receive_newsletter|N| |Indicates whether the user is subscribed to receive the newsletter.
+email|N| |The user's email.
 notification_settings:web|N| |Indicates whether web notifications are enabled.
-notification_settings:email|N| |Indicates whether email notifications are enabled.
+notification_settings:email|N| |Indicates whether email notifications are enabled,
+gravatar_email|N| |The user's gravatar email.
+time_zone|N| |The user's time zone.
+receive_newsletter|N| |Indicates whether the user is subscribed to receive the newsletter.
 new_password|N| |The user's new password.
 
 ### Request (Curl Call) Syntax
