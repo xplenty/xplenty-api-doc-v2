@@ -1,13 +1,13 @@
 ## Create Account
 
 ### Description
-Creates a new [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md). This operation is possible only for confirmed users.
+Creates a new [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md). This operation is possible only by confirmed users.
 
 ### Input Parameters
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-|account_id|N| |Unique identifier of the account.
 |name|Y| |The name of the account.
+|account_id|N| |Unique identifier of the account.
 |region|Y| |The default region for the account.
 
 
