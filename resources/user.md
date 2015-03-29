@@ -13,6 +13,7 @@ An Xplenty **user** represents an individual signed up to use the Xplenty platfo
 * **confirmed_at** - confirmation date and time
 * **notifications_count** - user's notifications count
 * **unread_notifications_count** - user's unread notifications count
+* **notification_settings** - user's notification settings
 * **receive_newsletter** - indicates if user subscribed to recieve newsletter
 * **created_at** - the date and time the user was created
 * **updated_at** - the date and time the user was last updated

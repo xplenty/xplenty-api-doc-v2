@@ -271,6 +271,7 @@ These are the methods supported by the Xplenty API:
 * [Get schedule Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-schedule-information.md)
 * [Delete schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-schedule.md)
 * [List User Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-accounts.md)
+* [Create Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-account.md)
 * [Update Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-account.md)
 * [Delete Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-account.md)
 * [Get Account Payment Method](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-payment-method.md)
@@ -279,12 +280,13 @@ These are the methods supported by the Xplenty API:
 * [Delete Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-member.md)
 * [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
 * [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
+* [List User Notifications](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-notifications.md)
 * [Create Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-public-key.md)
 * [Get Public Key Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-public-key-information.md)
 * [Delete Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-public-key.md)
+* [List Public Keys](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-public-keys.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
-* [List Notifications](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-notifications.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
