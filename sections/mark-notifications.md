@@ -7,7 +7,7 @@ This call returns empty response.
 ### Request (Curl Call) Example
 ```shell
 $ curl -X POST -u api_key: "https://api.xplenty.com/user/notifications/mark" \
-  -H "Accept: application/vnd.xplenty+json, version=2"
+  -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
 ### Response Example
