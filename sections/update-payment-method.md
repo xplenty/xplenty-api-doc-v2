@@ -1,13 +1,13 @@
 ## Update Payment Method and Plan
 
 ### Description
-This call updates payment method and [plan](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/plan.md). Both of them could be updated or only one.
+This call updates the payment method or [plan](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/plan.md) or both.
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-billing_payment_token|N| |The valid payment token created through billing provider (Paymill).
+billing_payment_token|N| |The valid payment token created through the billing provider (Paymill).
 plan_id|N| |ID of the plan.
 
 ### Request (Curl Call) Syntax
