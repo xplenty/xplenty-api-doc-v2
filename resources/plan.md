@@ -3,11 +3,11 @@ An account **plan** defines price and limits for members, clusters, etc.
 ## Plan Attributes
 
 * **id** - the plan's string identifier
-* **name** - the descriptive name of the plan
+* **name** - the name given to the plan
 * **description** - the description of the plan
 * **price_cents**
 * **price_currency** - the currency of the plan
-* **price_unit** - possible values:
+* **price_unit** - the price's unit of time. Possible values:
   * **year**
   * **month**
   * **day**
