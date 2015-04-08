@@ -20,7 +20,7 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:clu
   -H "Content-Type: application/json" \
   -d '{
     "nodes":4,
-    "name:"cluster name",
+    "name":"cluster name",
     "description":"cluster description",
     "terminate_on_idle":1,
     "time_to_idle":7200
