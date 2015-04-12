@@ -287,6 +287,7 @@ These are the methods supported by the Xplenty API:
 * [List Public Keys](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-public-keys.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
+* [Mark Notification as read](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/mark-notifications.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
