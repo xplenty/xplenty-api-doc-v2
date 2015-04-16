@@ -271,6 +271,7 @@ These are the methods supported by the Xplenty API:
 * [Get schedule Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-schedule-information.md)
 * [Delete schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-schedule.md)
 * [List User Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-accounts.md)
+* [Get Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-account.md)
 * [Create Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-account.md)
 * [Update Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-account.md)
 * [Delete Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-account.md)
