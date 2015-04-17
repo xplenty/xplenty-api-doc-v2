@@ -46,7 +46,13 @@ HTTP/1.1 200 OK
     "errors": "Package failed to execute.",
     "runtime_in_seconds": 40,
     "completed_at": "2013-03-04T08:03:01Z",
-    "url": "https://api.xplenty.com/xplenation/api/jobs/304"
+    "url": "https://api.xplenty.com/xplenation/api/jobs/304",
+    "creator":
+    {
+        "type":"Schedule",
+        "id":1,
+        "url":"http://api.xplenty.com/xplenation/api/schedules/1"
+    }
   },
   {
     "id": 303,

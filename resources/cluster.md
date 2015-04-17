@@ -30,3 +30,7 @@ You will need to provide an active cluster when [starting a new job](https://git
 * **slave_spot_percentage** - the percentage of slave instances requested as spot (value between 0 and 1)
 * **allow_fallback** - indicates whether instances will be created as on-demand instances if spot requests are not fulfilled
 * **url** - the cluster resource URL
+* **creator** - information about resource which created the job. It contains the following values:
+  * **type** - the type of the resource (e.g. Schedule)
+  * **id** - the numeric resource ID
+  * **url** - the resource URL

@@ -54,6 +54,12 @@ HTTP/1.1 200 OK
     "slave_spot_percentage": null,
     "allow_fallback": true,
     "url": "https://api.xplenty.com/xplenation/api/clusters/99",
+    "creator":
+    {
+        "type":"Schedule",
+        "id":1,
+        "url":"http://api.xplenty.com/xplenation/api/schedules/1"
+    }
   },
   {
     "id": 98,

@@ -59,6 +59,12 @@ HTTP/1.1 200 OK
   "errors": "",
   "runtime_in_seconds": 417,
   "completed_at": null,
-  "url": "https://api.xplenty.com/xplenation/api/jobs/157"
+  "url": "https://api.xplenty.com/xplenation/api/jobs/157",
+  "creator":
+  {
+      "type":"Schedule",
+      "id":1,
+      "url":"http://api.xplenty.com/xplenation/api/schedules/1"
+  }
 }
 ```
