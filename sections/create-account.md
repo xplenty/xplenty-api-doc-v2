@@ -33,6 +33,7 @@ HTTP/1.1 201 Created
   "id":1,
   "account_id":"sample-account-1",
   "name":"Sample Account",
+  "uname": "u_1",
   "region":"amazon-web-services::us-east-1",
   "location":null,
   "billing_email":"",

@@ -4,6 +4,7 @@ An Xplenty **account** represents a related group (usually a company) of Xplenty
 
 * **id** - the account's numeric identifier
 * **account_id** - the account's unique identifier
+* **uname** - the account's numeri identifier with `u_` prefix
 * **name** - the name given to the account upon creation
 * **region** - the account's region
 * **location** - the account's location
