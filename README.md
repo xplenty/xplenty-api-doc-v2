@@ -266,7 +266,7 @@ These are the methods supported by the Xplenty API:
 * [Get Package Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-information.md)
 * [Update Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-package.md)
 * [Run Package Validation](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/run-package-validation.md)
-* [Get Package Validation](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-validation.md)
+* [Get Package Validation Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-validation-information.md)
 * [List Package Validation](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-package-validations.md)
 * [Create schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-schedule.md)
 * [List schedules](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-schedules.md)
