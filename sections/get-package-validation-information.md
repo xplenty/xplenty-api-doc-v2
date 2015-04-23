@@ -1,7 +1,7 @@
 ## Get Package Validation Information
 
 ### Description
-Returns information about progress of the [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md) validation process.
+Returns information about progress of the [package validation](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package-validation.md) process.
 
 ### Input Parameters
 The **package ID** and **validation ID** must be supplied at the end of the request URL.

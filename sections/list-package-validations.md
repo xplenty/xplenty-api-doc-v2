@@ -1,7 +1,7 @@
 ## List Package Validations
 
 ### Description
-List validations for specific [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md).
+List [validations](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package-validation.md) for specific package.
 Optionally, you can supply the input parameters to filter the validation list so that it contains only validations with a specific status, and to determine the order by which the list will be sorted.
 
 ### Input Parameters

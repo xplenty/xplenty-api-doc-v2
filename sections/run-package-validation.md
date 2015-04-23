@@ -1,7 +1,7 @@
 ## Run Package Validation
 
 ### Description
-Runs new validation process for the [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md) and returns information about status and tracking url.
+Runs new [validation](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package-validation.md) process for the package and returns information about status and tracking url.
 
 ### Notes
 * You must save the validation ID value returned in the response "id" field. You will use the value to refer to this validation in subsequent API calls. You can also use the generated tracking URL which contains the validation ID.
