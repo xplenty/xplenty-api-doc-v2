@@ -27,6 +27,6 @@ HTTP/1.1 200 OK
   "created_at":"2015-02-16T07:58:52Z",
   "updated_at":"2015-02-16T07:58:52Z",
   "type":"s3",
-  "url":"https://api.xplenty.com/:account_id/api/connections/:type/:connection_id
+  "url":"https://api.xplenty.com/:account_id/api/connections/s3/234"
 }
 ```
