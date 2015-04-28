@@ -59,6 +59,7 @@ HTTP/1.1 200 OK
   "master_spot_percentage": null,
   "slave_spot_percentage": null,
   "allow_fallback": true,
+  "stack": "white-everest",
   "url": "https://api.xplenty.com/xplenation/api/clusters/167"
 }
 ```
