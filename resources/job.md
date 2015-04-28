@@ -28,3 +28,4 @@ When you call the Xplenty API to run a new job, you supply the name of the packa
 * **runtime_in_seconds** - the time in seconds that the job has run up to the current time
 * **completed_at** - the date and time at which the job completed (stopped, failed or completed)
 * **url** - the job resource URL
+* **log_url** - the URL to log summary

@@ -41,6 +41,7 @@ HTTP/1.1 200 OK
   "errors": null,
   "runtime_in_seconds": 40,
   "completed_at": null,
-  "url": "https://api.xplenty.com/xplenation/api/jobs/305"
+  "url": "https://api.xplenty.com/xplenation/api/jobs/305",
+  "log_url": "https://api.xplenty.com/xplenation/api/jobs/305/log"
 }
 ```

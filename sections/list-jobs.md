@@ -46,7 +46,8 @@ HTTP/1.1 200 OK
     "errors": "Package failed to execute.",
     "runtime_in_seconds": 40,
     "completed_at": "2013-03-04T08:03:01Z",
-    "url": "https://api.xplenty.com/xplenation/api/jobs/304"
+    "url": "https://api.xplenty.com/xplenation/api/jobs/304",
+    "log_url": "https://api.xplenty.com/xplenation/api/jobs/304/log"
   },
   {
     "id": 303,
@@ -65,7 +66,8 @@ HTTP/1.1 200 OK
     "errors": "Package failed to execute.",
     "runtime_in_seconds": 38,
     "completed_at": "2013-03-04T07:39:11Z",
-    "url": "https://api.xplenty.com/xplenation/api/jobs/303"
+    "url": "https://api.xplenty.com/xplenation/api/jobs/303",
+    "log_url": "https://api.xplenty.com/xplenation/api/jobs/303/log"
   },
   {
     "id": 299,
@@ -84,7 +86,8 @@ HTTP/1.1 200 OK
     "errors": "Package failed to execute.",
     "runtime_in_seconds": 0,
     "completed_at": "2013-03-04T07:17:51Z",
-    "url": "https://api.xplenty.com/xplenation/api/jobs/299"
+    "url": "https://api.xplenty.com/xplenation/api/jobs/299",
+    "log_url": "https://api.xplenty.com/xplenation/api/jobs/299/log"
   },
   {
     "id": 157,
@@ -123,7 +126,8 @@ HTTP/1.1 200 OK
     "errors": "",
     "runtime_in_seconds": 417,
     "completed_at": "2012-12-30T14:29:29Z",
-    "url": "https://api.xplenty.com/xplenation/api/jobs/157"
+    "url": "https://api.xplenty.com/xplenation/api/jobs/157",
+    "log_url": "https://api.xplenty.com/xplenation/api/jobs/157/log"
   }
 ]
 ```
