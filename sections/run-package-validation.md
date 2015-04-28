@@ -11,7 +11,7 @@ The **package ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/packages/:package_id" \
+$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/packages/:package_id/validations" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json"
 ```
