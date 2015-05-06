@@ -35,7 +35,7 @@ HTTP/1.1 200 OK
   "created_at": "2013-03-03T13:06:51Z",
   "updated_at": "2013-03-03T14:16:18Z",
   "available_since": "2013-03-03T13:09:22Z",
-  "terminated_at": null,        
+  "terminated_at": null,
   "running_jobs_count": 0,
   "terminate_on_idle": false,
   "time_to_idle": 3600,
@@ -49,6 +49,13 @@ HTTP/1.1 200 OK
   "master_spot_percentage": null,
   "slave_spot_percentage": null,
   "allow_fallback": true,
-  "url": "https://api.xplenty.com/xplenation/api/clusters/167"
+  "url": "https://api.xplenty.com/xplenation/api/clusters/167",
+  "bootstrap_actions": [{
+    "script_path": "http://xplenty.s3.amazonaws.com/bootstrap-actions/file1.tar.gz",
+    "args": ["arg1", "arg2"]
+  }, {
+    "script_path": "http://xplenty.s3.amazonaws.com/bootstrap-actions/file1.tar.gz",
+    "args": ["arg1"]
+  }]
 }
 ```
