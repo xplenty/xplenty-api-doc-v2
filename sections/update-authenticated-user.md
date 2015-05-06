@@ -1,22 +1,22 @@
 ## Update Authenticated User
 
 ### Description
-This call updates authenticated [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md).
+This call updates information for the authenticated [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md).
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-current_password|Y| |Current password is required to make any changes.
+current_password|Y| |The user's current password, which is required to make any changes.
 name|N| |The user's name.
-email|N| |The user's email. Change of this field requires confirmation.
 location|N| |The user's location.
-time_zone|N| |The user's time zone.
+email|N| |The user's email.
+notification_settings:web|N| |Indicates whether web notifications are enabled.
+notification_settings:email|N| |Indicates whether email notifications are enabled,
 gravatar_email|N| |The user's gravatar email.
-receive_newsletter|N| |Indicates if user subscribed to recieve newsletter
-notification_settings:web|N| |Indicates whether web notifications are enabled or not.
-notification_settings:email|N| |Indicates whether email notifications are enabled or not.
-new_password|N| |New password for authenticated user.
+time_zone|N| |The user's time zone.
+receive_newsletter|N| |Indicates whether the user is subscribed to receive the newsletter.
+new_password|N| |The user's new password.
 
 ### Request (Curl Call) Syntax
 ```shell
@@ -28,7 +28,10 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/user" \
     "name": "Sample User",
     "location": "California",
     "email": "test@example.com",
-    "notification_settings": { "email": true, "web": true },
+    "notification_settings": { 
+      "email": true, 
+      "web": true 
+    },
     "gravatar_email": "gravater@example.com",
     "time_zone": "UTC",
     "receive_newsletter":true,
@@ -53,7 +56,10 @@ HTTP/1.1 200 OK
   "time_zone":"UTC",
   "notifications_count":0,
   "unread_notifications_count":0,
-  "notification_settings": { "email": true, "web": true },
+  "notification_settings": { 
+    "email": true, 
+    "web": true 
+  },
   "gravatar_email":"gravatar@example.com",
   "created_at":"2015-03-04T10:38:05Z",
   "updated_at":"2015-03-04T10:38:05Z",
