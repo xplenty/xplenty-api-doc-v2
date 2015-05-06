@@ -27,7 +27,7 @@ master_spot_percentage|N||The percentage of master instances requested as spot (
 slave_spot_percentage|N||The percentage of slave instances requested as spot (value between 0 and 1)|
 allow_fallback|N||If the value is set to either true, t or 1 instances will be created as on-demand instances if spot requests are not fulfilled|
 stack|N|"white-everest"|The stack of the cluster|
-bootstrap_actions|N| |The array of the custom bootstrap actions.
+bootstrap_actions|N| |The array of the custom bootstrap actions|
 
 ### Request (Curl Call) Example
 ```shell
