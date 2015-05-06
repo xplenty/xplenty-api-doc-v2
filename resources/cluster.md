@@ -29,4 +29,11 @@ You will need to provide an active cluster when [starting a new job](https://git
 * **master_spot_percentage** - the percentage of master instances requested as spot (value between 0 and 1)
 * **slave_spot_percentage** - the percentage of slave instances requested as spot (value between 0 and 1)
 * **allow_fallback** - indicates whether instances will be created as on-demand instances if spot requests are not fulfilled
+* **stack** - the stack of the cluster. Possible values are:
+  * **mint-everest**
+  * **white-everest**
+  * **lime-everest**
+  * **blue-everest**
+  * **white-logan**
+  * **blue-logan**
 * **url** - the cluster resource URL

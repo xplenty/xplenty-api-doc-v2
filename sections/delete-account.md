@@ -25,6 +25,7 @@ HTTP/1.1 200 OK
   "id":1,
   "account_id":"xplenty-admin",
   "name":"Xplenty Admin",
+  "uname": "u_1",
   "region":"amazon-web-services::us-east-1",
   "location":null,
   "billing_email":"admin@xplenty.com",
