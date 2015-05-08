@@ -38,5 +38,5 @@ You will need to provide an active cluster when [starting a new job](https://git
   * **blue-logan**
 * **url** - the cluster resource URL
 * **bootstrap_actions** - the array of the custom bootstrap actions. Each of elements contains the following attributes:
-  * **script_path**
-  * **args** - the array of the parameters. It is optional field.
+  * **script_path** - the path of the bootstrap action script
+  * **args** - the array of script parameters. It is an optional field.
