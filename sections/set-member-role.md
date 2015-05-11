@@ -13,7 +13,8 @@ role|Y| |Possible values are `member` or `admin`.
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/members/:user_id" \
-  -H "Accept: application/vnd.xplenty+json, version=2"
+  -H "Accept: application/vnd.xplenty+json, version=2" \
+  -H "Content-Type: application/json" \
   -d '{
     "role":"admin"
   }'
