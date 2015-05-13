@@ -26,6 +26,8 @@ slave_spot_price|N||The maximum bid price (in USD) requested for slave spot inst
 master_spot_percentage|N||The percentage of master instances requested as spot (value between 0 and 1)|
 slave_spot_percentage|N||The percentage of slave instances requested as spot (value between 0 and 1)|
 allow_fallback|N||If the value is set to either true, t or 1 instances will be created as on-demand instances if spot requests are not fulfilled|
+stack|N|"white-everest"|The stack of the cluster|
+bootstrap_actions|N| |The array of the custom bootstrap actions|
 
 ### Request (Curl Call) Example
 ```shell
@@ -36,7 +38,14 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/clusters" \
     "nodes":4,
     "type":"production",
     "name":"New Cluster",
-    "description":"New Cluster Description"
+    "description":"New Cluster Description",
+    "bootstrap_actions": [{
+      "script_path": "http://xplenty.s3.amazonaws.com/bootstrap-actions/file1.tar.gz",
+      "args": ["arg1", "arg2"]
+    }, {
+      "script_path": "http://xplenty.s3.amazonaws.com/bootstrap-actions/file1.tar.gz",
+      "args": ["arg1"]
+    }]
   }'
 ```
 
@@ -72,6 +81,14 @@ HTTP/1.1 201 Created
   "master_spot_percentage": null,
   "slave_spot_percentage": 0.5,
   "allow_fallback": true,
-  "url": "https://api.xplenty.com/xplenation/api/clusters/167"
+  "stack": "white-everest",
+  "url": "https://api.xplenty.com/xplenation/api/clusters/167",
+  "bootstrap_actions": [{
+    "script_path": "http://xplenty.s3.amazonaws.com/bootstrap-actions/file1.tar.gz",
+    "args": ["arg1", "arg2"]
+  }, {
+    "script_path": "http://xplenty.s3.amazonaws.com/bootstrap-actions/file1.tar.gz",
+    "args": ["arg1"]
+  }]
 }
 ```

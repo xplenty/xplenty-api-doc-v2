@@ -31,4 +31,4 @@ When you call the Xplenty API to run a new job, you supply the name of the packa
 * **creator** - information about resource which created the job. It contains the following values:
   * **type** - the type of the resource (e.g. Schedule)
   * **id** - the numeric resource ID
-  * **url** - the resource URL
+* **log_url** - the URL to log summary

@@ -33,4 +33,14 @@ You will need to provide an active cluster when [starting a new job](https://git
 * **creator** - information about resource which created the job. It contains the following values:
   * **type** - the type of the resource (e.g. Schedule)
   * **id** - the numeric resource ID
-  * **url** - the resource URL
+* **stack** - the stack of the cluster. Possible values are:
+  * **mint-everest**
+  * **white-everest**
+  * **lime-everest**
+  * **blue-everest**
+  * **white-logan**
+  * **blue-logan**
+* **url** - the cluster resource URL
+* **bootstrap_actions** - the array of the custom bootstrap actions. Each of elements contains the following attributes:
+  * **script_path** - the path of the bootstrap action script
+  * **args** - the array of script parameters. It is an optional field.
