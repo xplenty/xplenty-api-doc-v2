@@ -294,6 +294,7 @@ These are the methods supported by the Xplenty API:
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
 * [Mark Notification as read](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/mark-notifications.md)
+* [List supported Time Zones](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-timezones.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
