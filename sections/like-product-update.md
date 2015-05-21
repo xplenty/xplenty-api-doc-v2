@@ -1,4 +1,4 @@
-## Create Public Key
+## Like Product Update
 
 ### Description
 This action allows to like product update by authenticated user.
