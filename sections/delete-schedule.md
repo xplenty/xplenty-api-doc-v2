@@ -36,6 +36,7 @@ HTTP/1.1 200 OK
   "owner_id": 1,
   "start_at": "2014-09-25T08:33:00Z",
   "status": "enabled",
+  "reuse_cluster_strategy":"any",
   "task": {
     "nodes": 3,
     "packages": [
