@@ -104,7 +104,7 @@ HTTP/1.1 200 OK
     "owner_id": 1,
     "start_at": "2014-09-25T08:48:00Z",
     "status": "enabled",
-    "reuse_cluster_strategy":"from_master",
+    "reuse_cluster_strategy":"self",
     "task": {
       "nodes": 3,
       "packages": [
