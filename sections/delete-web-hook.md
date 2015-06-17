@@ -2,7 +2,7 @@
 
 ### Description
 Delete an existing [web hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/web-hook.md).
-You can deactivate ([update hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-web-hook.md) with **active** set to `false`) hook instead of removing it, if you need to disable it temporarly.
+You can deactivate hook ([update hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-web-hook.md) with **active** field set to `false`) instead of removing it, if you need to disable it temporarly.
 
 ### Input Parameters
 |Name|Required?|Default|Description|
