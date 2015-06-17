@@ -1,7 +1,8 @@
-## Create Web Hook
+## Delete Web Hook
 
 ### Description
-Create a new [web hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/web-hook.md).
+Delete an existing [web hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/web-hook.md).
+You can deactivate ([update hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-web-hook.md) with **active** set to `false`) hook instead of removing it, if you need to disable it temporarly.
 
 ### Input Parameters
 |Name|Required?|Default|Description|
@@ -14,22 +15,13 @@ insecure_ssl|N|false|If SSL certificate of the target server is verified.
 
 ### Request (Curl Call) Example
 ```shell
-$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/web_hooks" \
-  -H "Accept: application/vnd.xplenty+json; version=2" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "active": true,
-    "url": "http://my.service.com",
-    "basic_auth": true,
-    "basic_auth_data": "YWRtaW46cGFzc3dvcmQ=",
-    "insecure_ssl": true,
-    "events": ["job.created", "cluster.terminated"]
-  }'
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/web_hooks" \
+  -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
 ### Response Example
 ```HTTP
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 ```
 
 ```json

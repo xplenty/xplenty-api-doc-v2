@@ -301,6 +301,7 @@ These are the methods supported by the Xplenty API:
 * [Update Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-web-hook.md)
 * [Ping Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/ping-web-hook.md)
 * [Regenerate Web Hook Salt](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/regenerate-web-hook-salt.md)
+* [Delete Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-web-hook.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
