@@ -8,7 +8,7 @@ The **web hook ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/web_hooks/:web_hook_id" \
+$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/web_hooks/:web_hook_id/regenerate_salt" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" -d ''
 ```
