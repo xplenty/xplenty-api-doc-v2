@@ -26,7 +26,7 @@ HTTP/1.1 200 OK
   "type": "web_hook",
   "url": "http://my.service.com/notifications",
   "insecure_ssl": false,
-  "basic_auth": true
+  "basic_auth": true,
   "events": [
     {
       "id": 2,

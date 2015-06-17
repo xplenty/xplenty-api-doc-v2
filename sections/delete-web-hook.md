@@ -32,22 +32,6 @@ HTTP/1.1 200 OK
   "type": "web_hook",
   "url": "http://my.service.com/notifications",
   "insecure_ssl": false,
-  "basic_auth": true,
-  "events": [
-    {
-      "id": 2,
-      "name": "job.created",
-      "last_response": {},
-      "last_trigger_status": "none",
-      "last_trigger_time": null
-    },
-    {
-      "id": 3,
-      "name": "cluster.terminated",
-      "last_response": {},
-      "last_trigger_status": "none",
-      "last_trigger_time": null
-    }
-  ]
+  "basic_auth": true
 }
 ```
