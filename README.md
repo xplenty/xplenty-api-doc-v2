@@ -295,6 +295,12 @@ These are the methods supported by the Xplenty API:
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
 * [Mark Notification as read](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/mark-notifications.md)
 * [List Product Updates](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-product-updates.md)
+* [List Web Hooks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-web-hooks.md)
+* [Get Web Hook Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-web-hook-information.md)
+* [Create Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-web-hook.md)
+* [Update Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-web-hook.md)
+* [Ping Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/ping-web-hook.md)
+* [Regenerate Web Hook Salt](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/regenerate-web-hook-salt.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
