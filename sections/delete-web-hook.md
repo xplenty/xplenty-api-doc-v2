@@ -5,17 +5,11 @@ Delete an existing [web hook](https://github.com/xplenty/xplenty-api-doc-v2/blob
 You can deactivate hook ([update hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-web-hook.md) with **active** field set to `false`) instead of removing it, if you need to disable it temporarly.
 
 ### Input Parameters
-|Name|Required?|Default|Description|
-|----|---------|-------|-----------|
-events|Y| |List of events.
-active|N|true|If hook is active.
-basic_auth|N|false|if basic authentication is required.
-basic_auth_data|N| |Encoded (base64) data for basic auth (including user and password).
-insecure_ssl|N|false|If SSL certificate of the target server is verified.
+The **web hook ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Example
 ```shell
-$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/web_hooks" \
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/web_hooks/:web_hook_id" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
