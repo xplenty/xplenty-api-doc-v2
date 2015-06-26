@@ -287,15 +287,16 @@ These are the methods supported by the Xplenty API:
 * [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
 * [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
 * [List User Notifications](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-notifications.md)
+* [Mark User Notifications as read](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/mark-notifications.md)
 * [Create Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-public-key.md)
 * [Get Public Key Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-public-key-information.md)
 * [Delete Public Key](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-public-key.md)
 * [List Public Keys](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-public-keys.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
-* [Mark Notification as read](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/mark-notifications.md)
+* [List System Variables](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-system-variables.md)
 * [List Product Updates](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-product-updates.md)
-* [List supported Time Zones](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-timezones.md)
+* [List Supported Time Zones](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-timezones.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service
