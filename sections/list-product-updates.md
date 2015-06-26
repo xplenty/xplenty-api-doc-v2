@@ -24,7 +24,8 @@ HTTP/1.1 200 OK
     "body": "## Cross Join Between Dataflows!\n Xplenty now supports the capability to join dataflows using non-equality conditions to compare values between the dataflows. This is done using the new cross join component to define the data sources to join and then applying a filter to the joined dataflow.\n\nFor example, to match people in dataflow1 with younger people in dataflow2 you simply:\n\nCross join dataflow1 with dataflow2\nFilter the resulting dataflow with a condition that age from dataflow1 is greater than age from dataflow2\nThere you have a new feature to make your data processing that much smoother.",
     "body_html": "<p>Xplenty now supports the capability to join dataflows using non-equality conditions to compare values between the dataflows. This is done using the new cross join component to define the data sources to join and then applying a filter to the joined dataflow.</p>\n\n<p>For example, to match people in dataflow1 with younger people in dataflow2 you simply:</p>\n\n<p>Cross join dataflow1 with dataflow2\nFilter the resulting dataflow with a condition that age from dataflow1 is greater than age from dataflow2\nThere you have a new feature to make your data processing that much smoother.</p>\n",
     "body_text": "Cross Join Between Dataflows!\nXplenty now supports the capability to join dataflows using non-equality conditions to compare values between the dataflows. This is done using the new cross join component to define the data sources to join and then applying a filter to the joined dataflow.\nFor example, to match people in dataflow1 with younger people in dataflow2 you simply:\nCross join dataflow1 with dataflow2\nFilter the resulting dataflow with a condition that age from dataflow1 is greater than age from dataflow2\nThere you have a new feature to make your data processing that much smoother.\n",
-    "likes": 0
+    "likes": 0,
+    "liked_by_user": false
   },
   {
     "id": 2,
