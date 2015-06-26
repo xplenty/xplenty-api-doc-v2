@@ -17,6 +17,7 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 | description             | N         | blank        | Description to assign to the new schedule                            |
 | interval_amount         | Y         | 1            | Number of interval units between schedule's task executions          |
 | interval_unit           | Y         | hours        | Schedule's interval unit. Possible values are: `minutes`, `hours`, `days`, `weeks`, `years`.|
+| reuse_cluster_strategy  | N         | any          | Strategy of re-using cluster. Possible values are: `none`, `self`, `any`|
 | task[nodes]             | N         | 2            | The number of compute nodes for the task to execute on             |
 | task[terminate_on_idle] | N         | true         | Indicates if the cluster will terminate automatically                 |
 | task[time_to_idle]      | N         | 60           | Time after which the cluster will terminate                          |
@@ -34,6 +35,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/schedules" \
     "description":"My daily schedule",
     "interval_amount":34,
     "interval_unit":"days",
+    "reuse_cluster_strategy":"any",
     "task": {
       "nodes":4,
       "terminate_on_idle":true,
@@ -79,6 +81,7 @@ HTTP/1.1 201 Created
   "owner_id": 1,
   "start_at": "2014-09-25T08:33:00Z",
   "status": "enabled",
+  "reuse_cluster_strategy": "any",
   "task": {
     "nodes": 4,
     "terminate_on_idle": true,
