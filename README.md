@@ -283,6 +283,7 @@ These are the methods supported by the Xplenty API:
 * [Delete Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-account.md)
 * [Get Account Payment Method](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-payment-method.md)
 * [Add Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/add-member.md)
+* [Get Account Member Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-member-information.md)
 * [List Account Members](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-members.md)
 * [Delete Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-member.md)
 * [List Connection Types](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connection-types.md)
