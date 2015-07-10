@@ -27,7 +27,6 @@ HTTP/1.1 200 OK
   "created_at": "2013-01-17T22:41:21Z",
   "updated_at": "2013-01-17T22:41:21Z",
   "role":"admin",
-  "owner":true,
-  "url":"https://api.xplenty.com/xplenation/api/members/1"
+  "owner":true
 }
 ```
