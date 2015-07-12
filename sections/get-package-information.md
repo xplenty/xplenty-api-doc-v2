@@ -26,6 +26,7 @@ HTTP/1.1 200 OK
   "owner_id": 8,
   "created_at": "2014-03-12T07:09:18Z",
   "updated_at": "2014-04-13T19:38:04Z",
-  "url": "https://api.xplenty.com/xplenation/api/packages/2373"
+  "url": "https://api.xplenty.com/xplenation/api/packages/2373",
+  "status":"active"
 }
 ```

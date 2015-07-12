@@ -44,6 +44,7 @@ HTTP/1.1 201 Created
   "owner_id":5,
   "created_at":"2015-02-26T11:46:05Z",
   "updated_at":"2015-02-26T11:46:05Z",
-  "url":"https://api.xplenty.com/xplenation/api/packages/3"
+  "url":"https://api.xplenty.com/xplenation/api/packages/3",
+  "status":"active"
 }
 ```
