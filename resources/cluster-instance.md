@@ -10,3 +10,6 @@ An Xplenty **cluster instance** is a machine (node) that were allocated for a gi
     * **terminated** - the instance is no longer accessible
 * **master** - indicates whether the instance is the master of the cluster
 * **spot** - indicates whether the instance is a spot instance
+* **vpc** - indicates whether the instance is part of a vpc
+* **zone** - the provider specific zone the instance was provisioned at. Returns 'Unsupported' for regions with no support for zones.
+* **instance_type** - the instance type
