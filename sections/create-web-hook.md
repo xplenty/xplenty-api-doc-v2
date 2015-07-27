@@ -19,10 +19,12 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/hooks/web" \
   -H "Content-Type: application/json" \
   -d '{
     "active": true,
-    "url": "http://my.service.com",
-    "basic_auth": true,
-    "basic_auth_data": "YWRtaW46cGFzc3dvcmQ=",
-    "insecure_ssl": true,
+    "setting": {
+      "url": "http://my.service.com",
+      "basic_auth": true,
+      "basic_auth_data": "YWRtaW46cGFzc3dvcmQ=",
+      "insecure_ssl": true,
+    }
     "events": ["job.created", "cluster.terminated"]
   }'
 ```
@@ -38,9 +40,11 @@ HTTP/1.1 201 Created
   "salt": "2db5b8725e2d86aba40d43f6e403bdf483b8535a3d0011d34b3687140b52bc8c",
   "active": true,
   "type": "web",
-  "url": "http://my.service.com/notifications",
-  "insecure_ssl": false,
-  "basic_auth": true,
+  "settings": {
+    "url": "http://my.service.com/notifications",
+    "insecure_ssl": false,
+    "basic_auth": true
+  },
   "events": [
     {
       "id": 2,

@@ -29,9 +29,11 @@ HTTP/1.1 200 OK
     "salt": "2db5b8725e2d86aba40d43f6e403bdf483b8535a3d0011d34b3687140b52bc8c",
     "active": true,
     "type": "web",
-    "url": "http://my.service.com/notifications",
-    "insecure_ssl": false,
-    "basic_auth": true,
+    "settings": {
+      "url": "http://my.service.com/notifications",
+      "insecure_ssl": false,
+      "basic_auth": true
+    },
     "events": [
       {
         "id": 1,
@@ -54,9 +56,11 @@ HTTP/1.1 200 OK
     "salt": "56f07c3f04d37c097d6a2c22dcefa6f0fc1610cba08beb7c293988f42cb8ed14",
     "active": true,
     "type": "web",
-    "url": "http://my.service.com/notifications",
-    "insecure_ssl": false,
-    "basic_auth": true,
+    "settings": {
+      "url": "http://my.service.com/notifications",
+      "insecure_ssl": false,
+      "basic_auth": true
+    },
     "events": [
       {
         "id": 3,

@@ -22,10 +22,11 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/hooks/web/:we
   -H "Content-Type: application/json" \
   -d '{
     "active": true,
-    "url": "http://my.service.com",
-    "basic_auth": true,
-    "basic_auth_data": "YWRtaW46cGFzc3dvcmQ=",
-    "insecure_ssl": true,
+    "settings": {
+      "url": "http://my.service.com/notifications",
+      "insecure_ssl": false,
+      "basic_auth": true
+    },
     "add_events": ["job.created", "cluster.terminated"],
     "remove_events": ["cluster.created"]
   }'
