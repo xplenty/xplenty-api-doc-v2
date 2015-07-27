@@ -52,6 +52,11 @@ HTTP/1.1 200 OK
   }, {
     "script_path": "http://xplenty.s3.amazonaws.com/bootstrap-actions/file1.tar.gz",
     "args": ["arg1"]
-  }]
+  }],
+  "creator":
+  {
+      "type":"Schedule",
+      "id":1
+  }
 }
 ```

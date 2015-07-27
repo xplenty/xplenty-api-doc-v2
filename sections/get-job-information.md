@@ -60,6 +60,11 @@ HTTP/1.1 200 OK
   "runtime_in_seconds": 417,
   "completed_at": null,
   "url": "https://api.xplenty.com/xplenation/api/jobs/157",
-  "log_url": "https://api.xplenty.com/xplenation/api/jobs/157/log"
+  "log_url": "https://api.xplenty.com/xplenation/api/jobs/157/log",
+  "creator":
+  {
+      "type":"Schedule",
+      "id":1
+  }
 }
 ```

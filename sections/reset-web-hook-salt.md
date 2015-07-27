@@ -1,14 +1,14 @@
-## Regenerate Web Hook Salt
+## Reset Web Hook Salt
 
 ### Description
-Re-generate salt of the [web hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/web-hook.md).
+Reset salt of the [web hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/web-hook.md).
 
 ### Input Parameters
 The **web hook ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/web_hooks/:web_hook_id" \
+$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/hooks/web/:web_hook_id/reset_salt" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" -d ''
 ```

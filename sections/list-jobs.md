@@ -47,7 +47,12 @@ HTTP/1.1 200 OK
     "runtime_in_seconds": 40,
     "completed_at": "2013-03-04T08:03:01Z",
     "url": "https://api.xplenty.com/xplenation/api/jobs/304",
-    "log_url": "https://api.xplenty.com/xplenation/api/jobs/304/log"
+    "log_url": "https://api.xplenty.com/xplenation/api/jobs/304/log",
+    "creator":
+    {
+        "type":"Schedule",
+        "id":1
+    }
   },
   {
     "id": 303,
@@ -67,7 +72,12 @@ HTTP/1.1 200 OK
     "runtime_in_seconds": 38,
     "completed_at": "2013-03-04T07:39:11Z",
     "url": "https://api.xplenty.com/xplenation/api/jobs/303",
-    "log_url": "https://api.xplenty.com/xplenation/api/jobs/303/log"
+    "log_url": "https://api.xplenty.com/xplenation/api/jobs/303/log",
+    "creator":
+    {
+        "type":"Schedule",
+        "id":1
+    }
   },
   {
     "id": 299,
@@ -87,7 +97,12 @@ HTTP/1.1 200 OK
     "runtime_in_seconds": 0,
     "completed_at": "2013-03-04T07:17:51Z",
     "url": "https://api.xplenty.com/xplenation/api/jobs/299",
-    "log_url": "https://api.xplenty.com/xplenation/api/jobs/299/log"
+    "log_url": "https://api.xplenty.com/xplenation/api/jobs/299/log",
+    "creator":
+    {
+        "type":"User",
+        "id":1
+    }
   },
   {
     "id": 157,
@@ -127,7 +142,12 @@ HTTP/1.1 200 OK
     "runtime_in_seconds": 417,
     "completed_at": "2012-12-30T14:29:29Z",
     "url": "https://api.xplenty.com/xplenation/api/jobs/157",
-    "log_url": "https://api.xplenty.com/xplenation/api/jobs/157/log"
+    "log_url": "https://api.xplenty.com/xplenation/api/jobs/157/log",
+    "creator":
+    {
+        "type":"Schedule",
+        "id":2
+    }
   }
 ]
 ```

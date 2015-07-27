@@ -55,6 +55,11 @@ HTTP/1.1 200 OK
     "allow_fallback": true,
     "stack": "white-everest",
     "url": "https://api.xplenty.com/xplenation/api/clusters/99",
+    "creator":
+    {
+        "type":"Schedule",
+        "id":1
+    }
   },
   {
     "id": 98,

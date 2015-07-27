@@ -13,7 +13,7 @@ since|N| |The account list will only contain web hooks updated at the given time
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET-u api_key: "https://api.xplenty.com/:account_id/api/web_hooks" \
+$ curl -X GET-u api_key: "https://api.xplenty.com/:account_id/api/hooks/web" \
   -H "Accept: application/vnd.xplenty+json, version=2"
 ```
 
@@ -28,7 +28,7 @@ HTTP/1.1 200 OK
     "id": 1,
     "salt": "2db5b8725e2d86aba40d43f6e403bdf483b8535a3d0011d34b3687140b52bc8c",
     "active": true,
-    "type": "web_hook",
+    "type": "web",
     "url": "http://my.service.com/notifications",
     "insecure_ssl": false,
     "basic_auth": true,
@@ -53,7 +53,7 @@ HTTP/1.1 200 OK
     "id": 2,
     "salt": "56f07c3f04d37c097d6a2c22dcefa6f0fc1610cba08beb7c293988f42cb8ed14",
     "active": true,
-    "type": "web_hook",
+    "type": "web",
     "url": "http://my.service.com/notifications",
     "insecure_ssl": false,
     "basic_auth": true,

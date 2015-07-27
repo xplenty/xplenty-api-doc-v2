@@ -30,7 +30,6 @@ HTTP/1.1 200 OK
   "card_last_4": "1234",
   "card_number":"xxxx-xxxx-xxxx-1234",
   "expiration_date":"12/2015",
-  "card_type":"Visa",
-  "url":"https://api.xplenty.com/xplenation/api/payment_method"
+  "card_type":"Visa"
 }
 ```

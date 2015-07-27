@@ -15,7 +15,7 @@ insecure_ssl|N|false|If SSL certificate of the target server is verified.
 
 ### Request (Curl Call) Example
 ```shell
-$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/web_hooks" \
+$ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/hooks/web" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
@@ -29,7 +29,7 @@ HTTP/1.1 200 OK
   "id": 1,
   "salt": "2db5b8725e2d86aba40d43f6e403bdf483b8535a3d0011d34b3687140b52bc8c",
   "active": true,
-  "type": "web_hook",
+  "type": "web",
   "url": "http://my.service.com/notifications",
   "insecure_ssl": false,
   "basic_auth": true
