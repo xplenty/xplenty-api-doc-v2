@@ -14,7 +14,7 @@ Notified application can verify with **salt** if request was sent by Xplenty.
 * **active** - indicates whether the web hook is active
 * **basic_auth** - indicates whether the basic authentication is required
 * **basic_auth_data** - data needed for basic authentication (user:password encoded with base64)
-* **insecure_ssl** - indicated whether SSL certificate is verified
+* **insecure_ssl** - indicates whether SSL certificate is verified
 * **salt** - salt needed for verification
 * **events** - list of notification events. Possible values:
   * **job** - all job events
