@@ -20,13 +20,13 @@ Notified application can verify with **salt** if request was sent by Xplenty.
 * **salt** - salt needed for verification
 * **events** - list of notification events. Possible values:
   * **job** - all job events
-  * **job.created**
+  * **job.submitted**
   * **job.started**
   * **job.stopped**
   * **job.completed**
   * **job.failed**
   * **cluster** - all cluster events
-  * **cluster.created**
+  * **cluster.requested**
   * **cluster.available**
   * **cluster.terminated**
   * **cluster.idled**
