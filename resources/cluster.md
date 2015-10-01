@@ -1,4 +1,4 @@
-An Xplenty **cluster** is a Hadoop cluster - a group of machines (nodes) that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until it's terminated.
+An Xplenty **cluster** is a group of machines (nodes) that is allocated exclusively to your account's users. You can create one or more clusters, and you can run one or more jobs on each cluster. A cluster that you've created remains allocated to your account until it's terminated.
 
 You will need to provide an active cluster when [starting a new job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/run-job.md).
 
@@ -8,7 +8,14 @@ You will need to provide an active cluster when [starting a new job](https://git
 * **name** - the name given to the cluster upon creation
 * **description** - the description given to the cluster upon creation
 * **status** - the cluster's status. Possible values are:
-    * **pending** - the user sent a request to create the cluster
+    * **pending** - the cluster is pending creation
+    * **creating** - the cluster is being created
+    * **available** - the cluster is available
+    * **idle** - the cluster is idle
+    * **error** - the cluster is in erroneous state
+    * **pending_terminate** - the cluster is pending termination
+    * **terminating** - the cluster is being terminated
+    * **terminated** - the cluster is terminated
 * **owner_id** - the numeric user ID of the cluster's owner
 * **plan_id** - the ID of the cluster's plan
 * **nodes** - the number of compute nodes for the cluster
