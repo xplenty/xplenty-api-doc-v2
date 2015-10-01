@@ -3,6 +3,8 @@
 ### Description
 List existing cluster [instances](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster-instance.md).
 
+Note: This endpoint is only available for selected plans.
+
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/clusters/:cluster_id/instances" \
