@@ -13,6 +13,7 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 | ----                    | --------- | -------      | -----------                                                          |
 | name                    | Y         | Untitled     | Name to assign to the new schedule                                   |
 | status                  | N         | disabled     | Initial status of the schedule                                       |
+| overlap                 | N         | true         | Allows execution overlapping                                         |
 | start_at                | Y         | Current time | Time when the task will first trigger                                |
 | description             | N         | blank        | Description to assign to the new schedule                            |
 | interval_amount         | Y         | 1            | Number of interval units between schedule's task executions          |
@@ -35,6 +36,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/schedules" \
     "description":"My daily schedule",
     "interval_amount":34,
     "interval_unit":"days",
+    "overlap":false,
     "reuse_cluster_strategy":"any",
     "task": {
       "nodes":4,
@@ -81,6 +83,7 @@ HTTP/1.1 201 Created
   "owner_id": 1,
   "start_at": "2014-09-25T08:33:00Z",
   "status": "enabled",
+  "overlap":false,
   "reuse_cluster_strategy": "any",
   "task": {
     "nodes": 4,

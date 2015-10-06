@@ -32,6 +32,7 @@ HTTP/1.1 200 OK
   "owner_id": 1,
   "start_at": "2014-09-25T08:48:00Z",
   "status": "enabled",
+  "overlap":true,
   "reuse_cluster_strategy":"any",
   "task": {
     "nodes": 3,
