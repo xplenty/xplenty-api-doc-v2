@@ -23,6 +23,7 @@ An Xplenty **schedule** executes packages periodically starting at a specified d
 * **last_run_at** the date and time that schedule's task ran last
 * **last_run_status** status of the last execution of the schedule's task
 * **execution_count** number of times the schedule has run
+* **overlap** allows execution overlapping
 * **created_at** the date and time the schedule was created
 * **updated_at** the date and time the schedule was updated
 * **url** the schedule resource URL
