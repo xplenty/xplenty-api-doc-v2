@@ -23,11 +23,14 @@ When you call the Xplenty API to run a new job, you supply the name of the packa
 * **failed_at** - the date and time the job failed (if it failed)
 * **updated_at** - the date and time the job was last updated (occurs when package tasks are completed)
 * **cluster_id** - the ID of the cluster in which the job was run
+* **cluster** - the [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md) in which the job was run. Includes all attributes.
 * **package_id** - the ID of the package that the job ran (or is running)
+* **package** - the [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md) that the job ran (or is running). Includes all attributes.
 * **errors** - a textual message describing errors encountered while the job was run
 * **runtime_in_seconds** - the time in seconds that the job has run up to the current time
 * **completed_at** - the date and time at which the job completed (stopped, failed or completed)
-* **url** - the job resource URL
+* **url** - the job resource URL (API)
+* **html_url** - the job resource URL (Web UI)
 * **creator** - information about resource which created the job. It contains the following values:
   * **type** - the type of the resource (e.g. Schedule)
   * **id** - the numeric resource ID

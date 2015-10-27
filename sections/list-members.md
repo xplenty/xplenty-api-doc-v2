@@ -37,7 +37,8 @@ HTTP/1.1 200 OK
     "updated_at": "2013-01-17T22:41:21Z",
     "role":"admin",
     "owner":true,
-    "url": "https://api.xplenty.com/xplenation/api/members/1"
+    "url": "https://api.xplenty.com/xplenation/api/members/1",
+    "html_url": "https://xplenty.com/xplenation/members/1"
   },
   {
     "id":2,
@@ -49,7 +50,8 @@ HTTP/1.1 200 OK
     "updated_at": "2013-01-17T22:41:21Z",
     "role":"member",
     "owner":false,
-    "url": "https://api.xplenty.com/xplenation/api/members/2"
+    "url": "https://api.xplenty.com/xplenation/api/members/2",
+    "html_url": "https://xplenty.com/xplenation/members/2"
   }
 ]
 ```

@@ -11,4 +11,5 @@ A **member** represents a user that has been given access to an Xplenty account.
 * **updated_at** - the date and time the account was last updated
 * **role** - the user's role in the sepcified account ("admin" or "member")
 * **owner** - indicator if the user is the owner of the specified account
-* **url** the member resource url
+* **url** the member resource url (API)
+* **html_url** the member resource url (Web UI)

@@ -83,6 +83,7 @@ HTTP/1.1 201 Created
   "allow_fallback": true,
   "stack": "white-everest",
   "url": "https://api.xplenty.com/xplenation/api/clusters/167",
+  "html_url": "https://xplenty.com/xplenation/clusters/167",
   "bootstrap_actions": [{
     "script_path": "http://xplenty.s3.amazonaws.com/bootstrap-actions/file1.tar.gz",
     "args": ["arg1", "arg2"]
