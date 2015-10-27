@@ -36,10 +36,13 @@ You will need to provide an active cluster when [starting a new job](https://git
 * **master_spot_percentage** - the percentage of master instances requested as spot (value between 0 and 1)
 * **slave_spot_percentage** - the percentage of slave instances requested as spot (value between 0 and 1)
 * **allow_fallback** - indicates whether instances will be created as on-demand instances if spot requests are not fulfilled
-* **url** - the cluster resource URL
+* **url** - the cluster resource URL (API)
+* **html_url** - the cluster resource URL (Web UI)
 * **creator** - information about resource which created the job. It contains the following values:
   * **type** - the type of the resource (e.g. Schedule)
   * **id** - the numeric resource ID
+  * **url** - the resource URL (API)
+  * **html_url** - the resource URL (Web UI)
 * **stack** - the stack of the cluster. Possible values are:
   * **mint-everest**
   * **white-everest**
@@ -47,7 +50,6 @@ You will need to provide an active cluster when [starting a new job](https://git
   * **blue-everest**
   * **white-logan**
   * **blue-logan**
-* **url** - the cluster resource URL
 * **bootstrap_actions** - the array of the custom bootstrap actions. Each of elements contains the following attributes:
   * **script_path** - the path of the bootstrap action script
   * **args** - the array of script parameters. It is an optional field.
