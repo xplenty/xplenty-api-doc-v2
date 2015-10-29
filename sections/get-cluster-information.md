@@ -58,6 +58,7 @@ HTTP/1.1 200 OK
   "creator":
   {
       "type":"Schedule",
+      "display_name": "Schedule 1",
       "id":1,
       "url": "https://api.xplenty.com/xplenation/api/schedules/1",
       "html_url": "https://xplenty.com/xplenation/schedules/1"
