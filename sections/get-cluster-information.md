@@ -45,6 +45,7 @@ HTTP/1.1 200 OK
   "slave_spot_percentage": null,
   "allow_fallback": true,
   "stack": "white-everest",
+  "idle_since": "2013-03-03T13:06:51Z",
   "url": "https://api.xplenty.com/xplenation/api/clusters/99",
   "html_url": "https://xplenty.com/xplenation/clusters/99",
   "bootstrap_actions": [{

@@ -26,7 +26,8 @@ An Xplenty **schedule** executes packages periodically starting at a specified d
 * **overlap** allows execution overlapping
 * **created_at** the date and time the schedule was created
 * **updated_at** the date and time the schedule was updated
-* **url** the schedule resource URL
+* **url** the schedule resource URL (API)
+* **html_url** the schedule resource URL (Web UI)
 * **reuse_cluster_strategy** the strategy of re-using cluster. Possible values are:
   * **none** do not re-use. It means a new cluster will always be created
   * **self** re-use cluster created by this schedule or create a new one if none was found

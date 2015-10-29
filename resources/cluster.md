@@ -27,6 +27,7 @@ You will need to provide an active cluster when [starting a new job](https://git
 * **running_jobs_count** - the number of jobs currently running on the cluster
 * **terminate_on_idle** - indicates whether the cluster will be terminated after it becomes idle
 * **time_to_idle** - the time interval (in seconds) in which the cluster will become idle
+* **idle_since** - the time since cluster changed status to idle
 * **terminated_on_idle** - indicates whether the cluster terminated because it became idle
 * **region** - the region in which the cluster was created
 * **master_instance_type** - the type of the master instance
