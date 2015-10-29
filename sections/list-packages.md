@@ -39,6 +39,7 @@ HTTP/1.1 200 OK
     "created_at": "2014-03-12T07:09:18Z",
     "updated_at": "2014-04-13T19:38:04Z",
     "url": "https://api.xplenty.com/xplenation/api/packages/2373",
+    "html_url":"https://xplenty.com/xplenation/packages/2373",
     "status":"active"
   },
   {
@@ -50,6 +51,7 @@ HTTP/1.1 200 OK
     "created_at": "2014-03-12T08:09:18Z",
     "updated_at": "2014-04-13T20:38:04Z",
     "url": "https://api.xplenty.com/xplenation/api/packages/2374",
+    "html_url":"https://xplenty.com/xplenation/packages/2374",
     "status":"active"
   }
 ]

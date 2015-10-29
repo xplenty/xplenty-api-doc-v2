@@ -105,6 +105,7 @@ HTTP/1.1 200 OK
     ]
   },
   "updated_at": "2014-10-29T14:22:05Z",
-  "url": "https://api.xplenty.com/xplenation/api/schedules/2"
+  "url": "https://api.xplenty.com/xplenation/api/schedules/2",
+  "html_url": "https://xplenty.com/xplenation/schedules/2"
 }
 ```
