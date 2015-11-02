@@ -280,6 +280,7 @@ These are the methods supported by the Xplenty API:
 * [Create Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-account.md)
 * [List Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-accounts.md)
 * [Update Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-account.md)
+* [Change Account Owner](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/change-account-owner.md)
 * [Delete Account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-account.md)
 * [Get Account Payment Method](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-payment-method.md)
 * [Add Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/add-member.md)
