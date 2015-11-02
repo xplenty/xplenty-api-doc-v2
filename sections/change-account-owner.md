@@ -28,7 +28,7 @@ HTTP/1.1 200 OK
   "id":"1",
   "name":"Sample Admin",
   "uname": "u_1",
-  "account_id":"sample-admin"
+  "account_id":"sample-admin",
   "region":"amazon-web-services::us-east-1",
   "location":"California",
   "billing_email":"billing@example.com",
