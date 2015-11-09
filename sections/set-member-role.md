@@ -1,14 +1,14 @@
 ## Set Member's Role
 
 ### Description
-Set existing account [member's](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) role to either: `member` or `admin`. 
+Set existing account [member's](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) role to either: `member`, `admin` or `owner` (only current owner can transfer ownership to another member).
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 user_id|Y| |ID of user, must be supplied at the end of the request URL.
-role|Y| |Possible values are `member` or `admin`.
+role|Y| |Possible values are `member`, `admin`, `owner`.
 
 ### Request (Curl Call) Syntax
 ```shell
