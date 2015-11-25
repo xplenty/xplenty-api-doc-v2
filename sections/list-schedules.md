@@ -58,7 +58,8 @@ HTTP/1.1 200 OK
       "time_to_idle": 60
     },
     "updated_at": "2014-10-29T14:22:05Z",
-    "url": "https://api.xplenty.com/xplenation/api/schedules/2"
+    "url": "https://api.xplenty.com/xplenation/api/schedules/2",
+    "html_url": "https://xplenty.com/xplenation/schedules/2"
   },
   {
     "created_at": "2014-09-25T08:48:51Z",
@@ -90,7 +91,8 @@ HTTP/1.1 200 OK
       "time_to_idle": 60
     },
     "updated_at": "2014-10-29T14:22:05Z",
-    "url": "https://api.xplenty.com/xplenation/api/schedules/2"
+    "url": "https://api.xplenty.com/xplenation/api/schedules/2",
+    "html_url": "https://xplenty.com/xplenation/schedules/2"
   },
   {
     "created_at": "2014-09-25T08:48:51Z",
@@ -122,7 +124,8 @@ HTTP/1.1 200 OK
       "time_to_idle": 60
     },
     "updated_at": "2014-10-29T14:22:05Z",
-    "url": "https://api.xplenty.com/xplenation/api/schedules/2"
+    "url": "https://api.xplenty.com/xplenation/api/schedules/2",
+    "html_url": "https://xplenty.com/xplenation/schedules/2"
   }
 ]
 ```

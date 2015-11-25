@@ -53,6 +53,7 @@ HTTP/1.1 200 OK
     {
         "type":"Schedule",
         "id":1,
+        "display_name": "Schedule 1",
         "url": "https://api.xplenty.com/xplenation/api/schedules/1",
         "html_url": "https://xplenty.com/xplenation/schedules/1"
     },
@@ -107,6 +108,7 @@ HTTP/1.1 200 OK
       {
           "type":"Schedule",
           "id":1,
+          "display_name": "Schedule 1",
           "url": "https://api.xplenty.com/xplenation/api/schedules/1",
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
@@ -136,6 +138,7 @@ HTTP/1.1 200 OK
     {
         "type":"Schedule",
         "id":1,
+        "display_name": "Schedule 1",
         "url": "https://api.xplenty.com/xplenation/api/schedules/1",
         "html_url": "https://xplenty.com/xplenation/schedules/1"
     },
@@ -190,6 +193,7 @@ HTTP/1.1 200 OK
       {
           "type":"Schedule",
           "id":1,
+          "display_name": "Schedule 1",
           "url": "https://api.xplenty.com/xplenation/api/schedules/1",
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
@@ -219,6 +223,7 @@ HTTP/1.1 200 OK
     {
         "type":"User",
         "id":1,
+        "display_name": "Schedule 1",
         "url": "https://api.xplenty.com/xplenation/api/schedules/1",
         "html_url": "https://xplenty.com/xplenation/schedules/1"
     },
@@ -273,6 +278,7 @@ HTTP/1.1 200 OK
       {
           "type":"Schedule",
           "id":1,
+          "display_name": "Schedule 1",
           "url": "https://api.xplenty.com/xplenation/api/schedules/1",
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
@@ -322,6 +328,7 @@ HTTP/1.1 200 OK
     {
         "type":"Schedule",
         "id":2,
+        "display_name": "Schedule 2",
         "url": "https://api.xplenty.com/xplenation/api/schedules/2",
         "html_url": "https://xplenty.com/xplenation/schedules/2"
     },
@@ -376,6 +383,7 @@ HTTP/1.1 200 OK
       {
           "type":"Schedule",
           "id":1,
+          "display_name": "Schedule 1",
           "url": "https://api.xplenty.com/xplenation/api/schedules/1",
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }

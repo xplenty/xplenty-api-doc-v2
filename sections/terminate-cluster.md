@@ -49,6 +49,7 @@ HTTP/1.1 200 OK
   "master_spot_percentage": null,
   "slave_spot_percentage": null,
   "allow_fallback": true,
+  "idle_since": "2013-03-03T13:06:51Z",
   "url": "https://api.xplenty.com/xplenation/api/clusters/167",
   "html_url": "https://xplenty.com/xplenation/clusters/167",
   "bootstrap_actions": [{

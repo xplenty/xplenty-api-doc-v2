@@ -45,6 +45,7 @@ HTTP/1.1 201 Created
   "created_at":"2015-02-26T11:46:05Z",
   "updated_at":"2015-02-26T11:46:05Z",
   "url":"https://api.xplenty.com/xplenation/api/packages/3",
+  "html_url":"https://xplenty.com/xplenation/packages/3",
   "status":"active"
 }
 ```

@@ -82,6 +82,7 @@ HTTP/1.1 201 Created
   "slave_spot_percentage": 0.5,
   "allow_fallback": true,
   "stack": "white-everest",
+  "idle_since": "2013-03-03T13:06:51Z",
   "url": "https://api.xplenty.com/xplenation/api/clusters/167",
   "html_url": "https://xplenty.com/xplenation/clusters/167",
   "bootstrap_actions": [{
