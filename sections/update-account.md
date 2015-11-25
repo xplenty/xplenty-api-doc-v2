@@ -50,7 +50,7 @@ HTTP/1.1 200 OK
   "schedules_count":0,
   "connections_count":2,
   "role":"member",
-  "owner":false,
+  "owner_id":1,
   "members_count":3,
   "packages_count":0,
   "jobs_count":1,

@@ -34,7 +34,7 @@ HTTP/1.1 200 OK
   "schedules_count":0,
   "connections_count":2,
   "role":"admin",
-  "owner":true,
+  "owner_id":1,
   "members_count":2,
   "packages_count":51,
   "jobs_count":0,
