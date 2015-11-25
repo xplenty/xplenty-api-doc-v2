@@ -22,3 +22,4 @@ An Xplenty **account** represents a related group (usually a company) of Xplenty
 * **jobs_count** - the number of jobs for the account
 * **running_jobs_count** - the number of running jobs for the account
 * **url** - the account resource URL
+* **public_key** - the account ssh public key generated upon creation
