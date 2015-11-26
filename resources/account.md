@@ -16,7 +16,7 @@ An Xplenty **account** represents a related group (usually a company) of Xplenty
 * **schedules_count** - the number of schedules for the account
 * **connections_count** - the number of connections for the account
 * **role** - the member's role in the account ("admin" or "member")
-* **owner** - indicator if the member is the account owner
+* **owner_id** - the numeric identifier of the account's owner
 * **members_count** - the number of members in the account
 * **packages_count** - the number of packages for the account
 * **jobs_count** - the number of jobs for the account
