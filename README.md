@@ -261,6 +261,7 @@ These are the methods supported by the Xplenty API:
 * [Get Job Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-job-information.md)
 * [Terminate Job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-job.md)
 * [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/watch-clusters-and-jobs.md)
+* [Get Job Execution Variables](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-job-execution-variables.md)
 * [List Packages](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-packages.md)
 * [Update Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-package.md)
 * [Run Package Validation](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/run-package-validation.md)
