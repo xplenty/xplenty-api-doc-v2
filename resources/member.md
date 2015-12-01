@@ -9,6 +9,9 @@ A **member** represents a user that has been given access to an Xplenty account.
 * **avatar_url** - the url for the user's avatar
 * **created_at** - the date and time the account was created
 * **updated_at** - the date and time the account was last updated
+* **location** - the user's location
+* **confirmed** - indicates if the user is confirmed
+* **confirmed_at** - confirmation date and time
 * **role** - the user's role in the sepcified account ("admin" or "member")
 * **owner** - indicator if the user is the owner of the specified account
 * **url** the member resource url (API)
