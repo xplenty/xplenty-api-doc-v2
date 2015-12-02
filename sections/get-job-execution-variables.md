@@ -19,10 +19,7 @@ HTTP/1.1 200 OK
 
 ```json
 {
-  "variables": {
-    "some_variable": 32,
-    "other_variable": "test"
-  },
-  "url": "https://api.xplenty.com/sample-account/api/jobs/1/variables"
+  "some_variable": 32,
+  "other_variable": "test"
 }
 ```
