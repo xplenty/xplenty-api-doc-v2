@@ -1,18 +1,12 @@
-## List available Regions
+## List available Account Regions
 
 ### Description
-This call returns information for the list of regions supported by Xplenty. You can also select regions for particular Brand.
+This call returns information for the list of regions that are available for your account.
 You can use this information to verify the regions in which you can create a cluster.
-
-### Input Parameters
-
-|Name|Required?|Default|Description|
-|----|---------|-------|-----------|
-brand_id|N| |The Brand's numeric identifier for which you want to list regions.
 
 ### Request (Curl Call) Syntax
 ```shell
-$curl -X GET -u api_key: "https://api.xplenty.com/regions?brand_id=1" \
+$curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/regions" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
