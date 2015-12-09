@@ -592,39 +592,5 @@ HTTP/1.1 200 OK
     "name": "(GMT+13:00) Tokelau Is.",
     "id": "Tokelau Is."
   }
-],
-"priority_timezones": [
-  {
-    "name": "(GMT-10:00) Hawaii",
-    "id": "Hawaii"
-  },
-  {
-    "name": "(GMT-09:00) Alaska",
-    "id": "Alaska"
-  },
-  {
-    "name": "(GMT-08:00) Pacific Time (US & Canada)",
-    "id": "Pacific Time (US & Canada)"
-  },
-  {
-    "name": "(GMT-07:00) Arizona",
-    "id": "Arizona"
-  },
-  {
-    "name": "(GMT-07:00) Mountain Time (US & Canada)",
-    "id": "Mountain Time (US & Canada)"
-  },
-  {
-    "name": "(GMT-06:00) Central Time (US & Canada)",
-    "id": "Central Time (US & Canada)"
-  },
-  {
-    "name": "(GMT-05:00) Eastern Time (US & Canada)",
-    "id": "Eastern Time (US & Canada)"
-  },
-  {
-    "name": "(GMT-05:00) Indiana (East)",
-    "id": "Indiana (East)"
-  }
 ]
 ```
