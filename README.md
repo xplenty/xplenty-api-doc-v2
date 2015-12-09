@@ -301,6 +301,7 @@ These are the methods supported by the Xplenty API:
 * [Mark User Notifications as read](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/mark-notifications.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
+* [List Available Account Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-account-regions.md)
 * [List System Variables](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-system-variables.md)
 * [List Product Updates](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-product-updates.md)
 * [List Web Hooks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-web-hooks.md)
