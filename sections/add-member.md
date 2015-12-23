@@ -8,6 +8,7 @@ Creates a new [member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 email|Y| |The user's email.
+name|N| |The user's name. This attribute is considered only when user with specified email does not exist.
 role|N|member|The role to assign to the member. Possible values are `member` or `admin`.
 
 ### Request (Curl Call) Syntax
@@ -17,7 +18,8 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/members" \
   -H "Content-Type: application/json" \
   -d '{
     "email": "sample@example.com",
-    "role": "admin"
+    "role": "admin",
+    "name": "Sample user"
   }'
 ```
 
