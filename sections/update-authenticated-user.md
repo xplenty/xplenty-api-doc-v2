@@ -7,7 +7,7 @@ This call updates information for the authenticated [user](https://github.com/xp
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-current_password|Y| |The user's current password, which is required to make any changes.
+current_password|Y| |The user's current password, which is required to set new password.
 name|N| |The user's name.
 location|N| |The user's location.
 email|N| |The user's email.
