@@ -301,6 +301,7 @@ These are the methods supported by the Xplenty API:
 * [Get User Public Key Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-public-key-information.md)
 * [List User Notifications](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-notifications.md)
 * [Mark User Notifications as read](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/mark-notifications.md)
+* [Reset User Password](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/reset-user-password.md)
 * [List Supported Stacks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-stacks.md)
 * [List Available Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-regions.md)
 * [List Available Account Regions](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-account-regions.md)
