@@ -1,7 +1,7 @@
 ## Reset User Password
 
 ### Description
-Resets [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) password.
+Sends [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) password reset instructions
 
 ### Input Parameters
 |Name|Required?|Default|Description|
