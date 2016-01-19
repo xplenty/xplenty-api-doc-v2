@@ -31,6 +31,8 @@ HTTP/1.1 200 OK
   "billing_email":"admin@xplenty.com",
   "gravatar_email":"admin@xplenty.com",
   "avatar_url":"http://gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e.png?d=retro&s=140",
+  "created_at":"2015-02-04T12:51:04Z",
+  "updated_at":"2015-02-04T12:51:04Z",
   "schedules_count":0,
   "connections_count":0,
   "role":"admin",
@@ -39,8 +41,8 @@ HTTP/1.1 200 OK
   "packages_count":0,
   "jobs_count":0,
   "running_jobs_count":0,
-  "created_at":"2015-02-04T12:51:04Z",
-  "updated_at":"2015-02-04T12:51:04Z",
-  "url":"https://api.xplenty.com/accounts/xplenty-admin"
+  "hooks_count":0,
+  "url":"https://api.xplenty.com/accounts/xplenty-admin",
+  "public_key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCoBCkf9FTqBktQlAVLPAC7eMftuaAcxKtPwPPK/mwEAF0Xx7s0AgbsYws8MTsZyMic3aQxDMDn0gZYPOO6ws9+Fk51dBXCWVTgJMB7a01RdmHOV6nX4VNKnc5NRfB8bM8hvWm1UoeIUW6EAsFFiXlwnkLHcodjTjt/LxCXGZftjw== xplenty2@example.com"
 }
 ```
