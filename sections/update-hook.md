@@ -1,27 +1,34 @@
 ## Update Web Hook
 
 ### Description
-Update an existing [web hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/web-hook.md), including adding and removing types of event notifications.
+Update an existing hook, including adding and removing types of event notifications.
+
+Xplenty provides tha following types of hooks:
+
+* [Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/web-hook.md)
+* [Slack Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/slack-hook.md)
+* [Hip Chat Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/hip-chat-hook.md)
+* [Email Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/email-hook.md)
+* [Pager Duty Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/pager-duty-hook.md)
 
 ### Input Parameters
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-web_hook_id|Y| |The numeric web hook ID
+hook_id|Y| |The numeric hook ID
 events|N| |List of events. All existing events will be replaced with new.
 add_events|N| |List of events to add. This parameter is consider only if **events** input is not passed
 remove_events|N| |List of events to remove. This parameter is consider only if **events** input is not passed
 active|N| |If hook is active.
-basic_auth|N| |if basic authentication is required.
-basic_auth_data|N| |Encoded (base64) data for basic auth (including user and password).
-insecure_ssl|N| |If SSL certificate of the target server is verified.
+settings|Y| |Settings specific for the type of hook.
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/hooks/web/:web_hook_id" \
+$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/hooks/:hook_id" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
     "active": true,
+    "type": "web",
     "settings": {
       "url": "http://my.service.com/notifications",
       "insecure_ssl": false,

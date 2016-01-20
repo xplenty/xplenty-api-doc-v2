@@ -1,20 +1,32 @@
-## List Web Hooks
+## List Hooks
 
 ### Description
-List all [web hooks](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/web-hook.md) for specific account. Optionally, you can determine the order by which the list will be sorted.
+List all hooks for specific account. Optionally, you can determine the order by which the list will be sorted.
+
+Xplenty provides tha following types of hooks:
+
+* [Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/web-hook.md)
+* [Slack Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/slack-hook.md)
+* [Hip Chat Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/hip-chat-hook.md)
+* [Email Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/email-hook.md)
+* [Pager Duty Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/pager-duty-hook.md)
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 sort|N|"created"|Possible values are  ```updated```, ```created```.
-direction|N|"desc"|Possible values are: ```asc```, ```desc```. The web hooks will be sorted in ascending or descending order of the "sort" attribute.
-since|N| |The account list will only contain web hooks updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
+type|N| |Type of hook
+direction|N|"desc"|Possible values are: ```asc```, ```desc```. The hooks will be sorted in ascending or descending order of the "sort" attribute.
+since|N| |The account list will only contain hooks updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET-u api_key: "https://api.xplenty.com/:account_id/api/hooks/web" \
-  -H "Accept: application/vnd.xplenty+json, version=2"
+$ curl -X GET-u api_key: "https://api.xplenty.com/:account_id/api/hooks" \
+  -H "Accept: application/vnd.xplenty+json, version=2" \
+  -H "Content-Type: application/json" -d '{
+    "type": "web"
+  }'
 ```
 
 ### Response Example

@@ -11,6 +11,7 @@ Notified application can verify with **salt** if request was sent by Xplenty.
 ### Web Hook Attributes
 
 * **id** - the numeric hook ID
+* **type** - `web`
 * **active** - indicates whether the web hook is active
 * **settings** - settings specific for the web hook. It contains the following attributes:
   * **url** - URL of the target server

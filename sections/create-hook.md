@@ -1,24 +1,30 @@
 ## Create Web Hook
 
 ### Description
-Create a new [web hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/web-hook.md).
+Create a new hook. Xplenty provides tha following types of hooks:
+
+* [Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/web-hook.md)
+* [Slack Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/slack-hook.md)
+* [Hip Chat Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/hip-chat-hook.md)
+* [Email Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/email-hook.md)
+* [Pager Duty Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/pager-duty-hook.md)
 
 ### Input Parameters
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
+type|Y| |Type of the hook.
 events|Y| |List of events.
 active|N|true|If hook is active.
-basic_auth|N|false|if basic authentication is required.
-basic_auth_data|N| |Encoded (base64) data for basic auth (including user and password).
-insecure_ssl|N|false|If SSL certificate of the target server is verified.
+settings|Y| |Settings specific for the type of hook.
 
 ### Request (Curl Call) Example
 ```shell
-$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/hooks/web" \
+$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/hooks" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
     "active": true,
+    "type": "web",
     "setting": {
       "url": "http://my.service.com",
       "basic_auth": true,
