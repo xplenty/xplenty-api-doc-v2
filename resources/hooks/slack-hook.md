@@ -4,6 +4,7 @@ An Xplenty **Slack hook** is kind of notification that will be fired as a Slack 
 
 * **id** - the numeric hook ID
 * **type** - `slack`
+* **name** - name of the hook, default: concatenation of `team` and `channel` fields (from `settings`) or value of `url` fields if `team` and `channel` are empty
 * **active** - indicates whether the Slack hook is active
 * **settings** - settings specific for the Slack hook. It contains the following attributes:
   * **url** - URL containing unique token which allows to send messages on the Slack channel.

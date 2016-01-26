@@ -4,6 +4,7 @@ An Xplenty **PagerDuty hook** is kind of notification that will be fired as a Pa
 
 * **id** - the numeric hook ID
 * **type** - `pagerduty`
+* **name** - name of the hook, default: value of `service_name` field (from `settings`)
 * **active** - indicates whether the PagerDuty hook is active
 * **settings** - settings specific for the PagerDuty hook. It contains the following attributes:
   * **pd_account** - PagerDuty account

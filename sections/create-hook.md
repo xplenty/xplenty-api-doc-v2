@@ -14,6 +14,7 @@ Create a new hook. Xplenty provides tha following types of hooks:
 |----|---------|-------|-----------|
 type|Y| |Type of the hook.
 events|Y| |List of events.
+name|N| |Name of the hook. Please check detailed hook description for default value.
 active|N|true|If hook is active.
 settings|Y| |Settings specific for the type of hook.
 

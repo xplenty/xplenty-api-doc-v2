@@ -15,6 +15,7 @@ Xplenty provides tha following types of hooks:
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 hook_id|Y| |The numeric hook ID
+name|N| |Name of the hook. Please check detailed hook description for default value.
 events|N| |List of events. All existing events will be replaced with new.
 add_events|N| |List of events to add. This parameter is consider only if **events** input is not passed
 remove_events|N| |List of events to remove. This parameter is consider only if **events** input is not passed

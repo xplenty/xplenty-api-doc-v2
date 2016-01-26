@@ -4,6 +4,7 @@ An Xplenty **Hip Chat hook** is kind of notification that will be fired as a Hip
 
 * **id** - the numeric hook ID
 * **type** - `hipchat`
+* **name** - name of the hook, default: value of `room` field (from `settings`)
 * **active** - indicates whether the Hip Chat hook is active
 * **settings** - settings specific for the Hip Chat hook. It contains the following attributes:
   * **room** - ID of the Hip Chat room
