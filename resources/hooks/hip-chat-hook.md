@@ -21,3 +21,8 @@ An Xplenty **Hip Chat hook** is kind of notification that will be fired as a Hip
   * **cluster.terminated**
   * **cluster.idled**
   * **cluster.error**
+* **salt** - hash generated using SHA-1 from string created by concatenation of the following fields:
+  * **id**
+  * **event name**
+  * **url**
+  * **salt**
