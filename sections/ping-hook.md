@@ -12,15 +12,13 @@ Xplenty provides tha following types of hooks:
 * [Pager Duty Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/pager-duty-hook.md)
 
 ### Input Parameters
-The **hook ID** must be supplied at the end of the request URL. You have to also specify the type of hook.
+The **hook ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/hooks/:hook_id/ping" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
-  -H "Content-Type: application/json" -d '{
-    "type": "web"
-  }'
+  -H "Content-Type: application/json"
 ```
 
 ### Response Example

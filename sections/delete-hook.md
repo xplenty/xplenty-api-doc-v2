@@ -13,15 +13,12 @@ Xplenty provides tha following types of hooks:
 
 
 ### Input Parameters
-The **hook ID** must be supplied at the end of the request URL. You have to also specify the type of hook.
+The **hook ID** must be supplied at the end of the request URL.
 
 ### Request (Curl Call) Example
 ```shell
 $ curl -X DELETE -u api_key: "https://api.xplenty.com/:account_id/api/hooks/:hook_id" \
-  -H "Accept: application/vnd.xplenty+json; version=2" -H "Content-Type: application/json" \
-  -d '{
-    "type": "web"
-  }'
+  -H "Accept: application/vnd.xplenty+json; version=2" -H "Content-Type: application/json"
 ```
 
 ### Response Example

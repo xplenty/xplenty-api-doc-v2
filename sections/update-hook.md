@@ -27,7 +27,6 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/hooks/:hook_i
   -H "Content-Type: application/json" \
   -d '{
     "active": true,
-    "type": "web",
     "settings": {
       "url": "http://my.service.com/notifications",
       "insecure_ssl": false,

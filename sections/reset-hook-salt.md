@@ -1,7 +1,9 @@
-## Get Hook Information
+## Reset Hook Salt
 
 ### Description
-Information about an existing hook. Xplenty provides tha following types of hooks:
+Reset salt of the hook.
+
+Xplenty provides tha following types of hooks:
 
 * [Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/web-hook.md)
 * [Slack Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/slack-hook.md)
@@ -12,11 +14,10 @@ Information about an existing hook. Xplenty provides tha following types of hook
 ### Input Parameters
 The **hook ID** must be supplied at the end of the request URL.
 
-### Request (Curl Call) Example
+### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/hooks/:hook_id" \
-  -H "Accept: application/vnd.xplenty+json; version=2" \
-  -H "Content-Type: application/json"
+$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/hooks/:web_hook_id/reset_salt" \
+  -H "Accept: application/vnd.xplenty+json; version=2" -H "Content-Type: application/json"
 ```
 
 ### Response Example
@@ -26,15 +27,6 @@ HTTP/1.1 200 OK
 
 ```json
 {
-  "id": 1,
-  "salt": "2db5b8725e2d86aba40d43f6e403bdf483b8535a3d0011d34b3687140b52bc8c",
-  "active": true,
-  "type": "web",
-  "settings": {
-    "url": "http://my.service.com/notifications",
-    "insecure_ssl": false,
-    "basic_auth": false
-  },
-  "events": ["job.submitted", "cluster.terminated"]
+  "salt": "2db5b8725e2d86aba40d43f6e403bdf483b8535a3d0011d34b3687140b52bc8c"
 }
 ```
