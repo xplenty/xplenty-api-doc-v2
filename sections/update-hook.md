@@ -17,8 +17,6 @@ Xplenty provides tha following types of hooks:
 hook_id|Y| |The numeric hook ID
 name|N| |Name of the hook. Please check detailed hook description for default value.
 events|N| |List of events. All existing events will be replaced with new.
-add_events|N| |List of events to add. This parameter is consider only if **events** input is not passed
-remove_events|N| |List of events to remove. This parameter is consider only if **events** input is not passed
 active|N| |If hook is active.
 settings|Y| |Settings specific for the type of hook.
 
@@ -35,8 +33,7 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/hooks/:hook_i
       "insecure_ssl": false,
       "basic_auth": true
     },
-    "add_events": ["job.created", "cluster.terminated"],
-    "remove_events": ["cluster.created"]
+    "events": ["job.submitted", "cluster.terminated"]
   }'
 ```
 
@@ -56,21 +53,6 @@ HTTP/1.1 200 OK
     "insecure_ssl": false,
     "basic_auth": true
   },
-  "events": [
-    {
-      "id": 2,
-      "name": "job.created",
-      "last_response": {},
-      "last_trigger_status": "none",
-      "last_trigger_time": null
-    },
-    {
-      "id": 3,
-      "name": "cluster.terminated",
-      "last_response": {},
-      "last_trigger_status": "none",
-      "last_trigger_time": null
-    }
-  ]
+  "events": ["job.submitted", "cluster.terminated"]
 }
 ```

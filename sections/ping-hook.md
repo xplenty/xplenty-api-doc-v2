@@ -42,7 +42,7 @@ HTTP/1.1 200 OK
   "events": [
     {
       "id": 2,
-      "name": "job.created",
+      "name": "job.submitted",
       "last_response": {},
       "last_trigger_status": "none",
       "last_trigger_time": null

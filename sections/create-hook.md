@@ -32,7 +32,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/hooks" \
       "basic_auth_data": "YWRtaW46cGFzc3dvcmQ=",
       "insecure_ssl": true,
     }
-    "events": ["job.created", "cluster.terminated"]
+    "events": ["job.submitted", "cluster.terminated"]
   }'
 ```
 
@@ -52,21 +52,6 @@ HTTP/1.1 201 Created
     "insecure_ssl": false,
     "basic_auth": true
   },
-  "events": [
-    {
-      "id": 2,
-      "name": "job.created",
-      "last_response": {},
-      "last_trigger_status": "none",
-      "last_trigger_time": null
-    },
-    {
-      "id": 3,
-      "name": "cluster.terminated",
-      "last_response": {},
-      "last_trigger_status": "none",
-      "last_trigger_time": null
-    }
-  ]
+  "events": ["job.submitted", "cluster.terminated"]
 }
 ```

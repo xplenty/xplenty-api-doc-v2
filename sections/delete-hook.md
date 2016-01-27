@@ -39,6 +39,7 @@ HTTP/1.1 200 OK
     "url": "http://my.service.com/notifications",
     "insecure_ssl": false,
     "basic_auth": true
-  }
+  },
+  "events": ["job.submitted", "cluster.terminated"]
 }
 ```

@@ -46,22 +46,7 @@ HTTP/1.1 200 OK
       "insecure_ssl": false,
       "basic_auth": true
     },
-    "events": [
-      {
-        "id": 1,
-        "name": "job.stopped",
-        "last_response": {},
-        "last_trigger_status": "none",
-        "last_trigger_time": null
-      },
-      {
-        "id": 2,
-        "name": "cluster",
-        "last_response": {},
-        "last_trigger_status": "none",
-        "last_trigger_time": null
-      }
-    ]
+    "events": ["job.submitted", "cluster.terminated"]
   },
   {
     "id": 2,
@@ -73,25 +58,7 @@ HTTP/1.1 200 OK
       "insecure_ssl": false,
       "basic_auth": true
     },
-    "events": [
-      {
-        "id": 3,
-        "name": "job.created",
-        "last_response": {},
-        "last_trigger_status": "none",
-        "last_trigger_time": null
-      },
-      {
-        "id": 4,
-        "name": "cluster.terminated",
-        "last_response": {
-          "code": "200",
-          "body": "OK"
-        },
-        "last_trigger_status": "none",
-        "last_trigger_time": null
-      }
-    ]
+    "events": ["job.submitted", "cluster.terminated"]
   }
 ]
 ```

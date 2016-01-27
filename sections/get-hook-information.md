@@ -37,21 +37,6 @@ HTTP/1.1 200 OK
     "insecure_ssl": false,
     "basic_auth": false
   },
-  "events": [
-    {
-      "id": 2,
-      "name": "job.created",
-      "last_response": {},
-      "last_trigger_status": "none",
-      "last_trigger_time": null
-    },
-    {
-      "id": 3,
-      "name": "cluster.terminated",
-      "last_response": {},
-      "last_trigger_status": "none",
-      "last_trigger_time": null
-    }
-  ]
+  "events": ["job.submitted", "cluster.terminated"]
 }
 ```
