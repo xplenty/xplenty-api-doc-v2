@@ -5,7 +5,7 @@ List all hook types that are available with related groups.
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/hook/types" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/hooks/types" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
