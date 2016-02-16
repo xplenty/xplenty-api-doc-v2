@@ -55,6 +55,8 @@ HTTP/1.1 200 OK
   "packages_count":0,
   "jobs_count":1,
   "running_jobs_count":0,
-  "url":"https://api.xplenty.com/accounts/sample-admin"
+  "hooks_count":0,
+  "url":"https://api.xplenty.com/accounts/sample-admin",
+  "public_key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCoBCkf9FTqAktQlAVLPAC7eMftuaAcxKtPwPPK/mwEAF0Xx7s0AgbsYws8MTsZyMic3aQxDMDn0gZYPOO6ws9+Fk51dBXCWVTgJMB7a01RdmHOV6nX4VNKnc5NRfB8bM8hvWm1UoeIUW6EAsFFiXlwnkLHcodjTjt/LxCXGZftjw== admin@example.com"
 }
 ```

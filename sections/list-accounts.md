@@ -45,7 +45,9 @@ HTTP/1.1 200 OK
     "packages_count":51,
     "jobs_count":0,
     "running_jobs_count":0,
-    "url":"https://api.xplenty.com/accounts/sample-account-1"
+    "hooks_count":0,
+    "url":"https://api.xplenty.com/accounts/sample-account-1",
+    "public_key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCoBCkf9FTqAktQlAVLPAC7eMftuaAcxKtPwPPK/mwEAF0Xx7s0AgbsYws8MTsZyMic3aQxDMDn0gZYPOO6ws9+Fk51dBXCWVTgJMB7a01RdmHOV6nX4VNKnc5NRfB8bM8hvWm1UoeIUW6EAsFFiXlwnkLHcodjTjt/LxCXGZftjw== xplenty@example.com"
   },
   {
     "id":2,
@@ -67,7 +69,9 @@ HTTP/1.1 200 OK
     "packages_count":35,
     "jobs_count":1,
     "running_jobs_count":0,
-    "url":"https://api.xplenty.com/accounts/sample-account-2"
+    "hooks_count":0,
+    "url":"https://api.xplenty.com/accounts/sample-account-2",
+    "public_key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCoBCkf9FTqBktQlAVLPAC7eMftuaAcxKtPwPPK/mwEAF0Xx7s0AgbsYws8MTsZyMic3aQxDMDn0gZYPOO6ws9+Fk51dBXCWVTgJMB7a01RdmHOV6nX4VNKnc5NRfB8bM8hvWm1UoeIUW6EAsFFiXlwnkLHcodjTjt/LxCXGZftjw== xplenty2@example.com"
   }
 ]
 ```
