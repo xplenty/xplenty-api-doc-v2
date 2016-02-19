@@ -46,6 +46,19 @@ HTTP/1.1 201 Created
   "updated_at":"2015-02-26T11:46:05Z",
   "url":"https://api.xplenty.com/xplenation/api/packages/3",
   "html_url":"https://xplenty.com/xplenation/packages/3",
-  "status":"active"
+  "status":"active",
+  "data_processes_count":0,
+  "running_data_processes_count":0,
+  "idle_data_processes_count":0,
+  "completed_data_processes_count":0,
+  "pending_data_processes_count":0,
+  "stopped_data_processes_count":0,
+  "failed_data_processes_count":0,
+  "pending_stoppage_data_processes_count":0,
+  "stopping_data_processes_count":0,
+  "job_validations_count":0,
+  "running_job_validations_count":0,
+  "completed_job_validations_count":0,
+  "failed_job_validations_count":0
 }
 ```
