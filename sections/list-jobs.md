@@ -292,8 +292,15 @@ HTTP/1.1 200 OK
     "progress": 1,
     "outputs_count": 2,
     "outputs": [
-      {
-        "component_name": "destination1",
+        {
+          "component": {
+          "name": "destination7",
+          "type": "cloud_storage_destination_component",
+          "fields": [
+            "id",
+            "account_name"
+          ]
+        },
         "created_at": "2013-03-04T07:17:51Z",
         "id": 521,
         "name": "projected_results",
@@ -303,7 +310,15 @@ HTTP/1.1 200 OK
         "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/521"
       },
       {
-        "component_name": "destination2",
+        {
+          "component": {
+          "name": "destination7",
+          "type": "cloud_storage_destination_component",
+          "fields": [
+            "id",
+            "account_name"
+          ]
+        },
         "created_at": "2013-03-04T07:14:44Z",
         "id": 522,
         "name": "projected_results2",
