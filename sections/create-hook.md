@@ -26,7 +26,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/hooks" \
   -d '{
     "active": true,
     "type": "web",
-    "setting": {
+    "settings": {
       "url": "http://my.service.com",
       "basic_auth": true,
       "basic_auth_data": "YWRtaW46cGFzc3dvcmQ=",
