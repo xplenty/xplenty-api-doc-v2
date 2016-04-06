@@ -18,6 +18,19 @@ When you call the Xplenty API to run a new job, you supply the name of the packa
 * **progress** - the job progress in percentages (a value between 0.0 and 1.0)
 * **outputs_count** - the number of output targets defined in the job's package
 * **outputs** -  list of the output targets defined in the job's package
+  * **id** - the numeric job output ID
+  * **name** -  the job output name (filename, link, etc)
+  * **records_count** - the number of records in this output
+  * **progress** - the progress of storing job output
+  * **created_at** - the date and time the store of this output started
+  * **updated_at** - the date and time this job output was last updated
+  * **preview_url** - the job output preview resource URL
+  * **preview_type** - the type of the preview e.g. json, csv etc
+  * **url** - the job output resource URL
+  * **component** - the component for which this output was created
+    * **name** - the name of the component
+    * **type** - the type of the component
+    * **fields** - the fields of the component
 * **started_at** - the date and time the job started running
 * **created_at** - the date and time the "run" request was made
 * **failed_at** - the date and time the job failed (if it failed)
