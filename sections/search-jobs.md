@@ -7,11 +7,9 @@ Format of the query string is the following:
 Here are a few important rules:
 
 1. For comparable attributes like integer or date, you can use the following operators:
-
-* `:` - equal
-* `:>` - greater than or equal
-* `:<` - less than or equal
-
+..* `:` - equal
+..* `:>` - greater than or equal
+..* `:<` - less than or equal
 2. Negation is represented by `-` sign at the beginning of the attribute like: `-name:John`. It means we do not want to have results where value of the `name` attribute contains `John` phrase.
 3. Negation cannot be used for comparable types like integer or date.
 3. When an attribute with the same sign is used twice in a search query - the two instances are joined with OR, in case of different sign, phrases are joined with AND.
