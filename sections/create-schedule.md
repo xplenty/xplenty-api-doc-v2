@@ -22,7 +22,7 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 | task[nodes]             | N         | 2            | The number of compute nodes for the task to execute on             |
 | task[terminate_on_idle] | N         | true         | Indicates if the cluster will terminate automatically                 |
 | task[time_to_idle]      | N         | 60           | Time after which the cluster will terminate                          |
-| task[packages]  |  N         | blank        | Array of package ids with variables                                        |
+| task[packages]  |  Y         | blank        | Array of package ids with variables                                        |
 
 ### Request (Curl Call) Example
 ```shell
