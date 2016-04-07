@@ -4,7 +4,8 @@
 Info for the authenticated user.
 
 ### Input Parameters
-Name|Required?|Default|Description|
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
 current_password|N| |The user's current password. It allows to retrieve information about API key.
 
 ### Request (Curl Call) Syntax
