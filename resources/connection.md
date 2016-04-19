@@ -5,6 +5,7 @@ The access information is stored securely and can only be used by your account's
 
 * **id** - the connection's numeric identifier
 * **name** - the descriptive name given to the connection
+* **unique_id** - the unique connection's identifier
 * **created_at** - the date and time the connection was created
 * **updated_at** - the date and time the connection was last updated
 * **type** - the type of the connection. Possible values are:
