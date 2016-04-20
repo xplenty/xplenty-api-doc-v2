@@ -1,7 +1,7 @@
 ## List Package Templates
 
 ### Description
-List [package templates](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/packate-template.md) that are available for the authenticated user.
+List [package templates](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/packate_template.md) that are available for the authenticated user.
 You can use template to create new package with predefined settings.
 
 ### Request (Curl Call) Syntax
