@@ -32,26 +32,26 @@ The **connection type** and **connection ID** must be supplied at the end of the
 
 For **Database** type:
 
-|Name|Required?|Description|
-|----|---------|-----------|
-name|Y|Name of the connection.
-Username|Y|User name of the database.
-Password|Y|Passwofd to the database.
-host|Y|Hostname to the database.
-port|N|Port for the databse
-database|N|Name of the database.
-properties|Y|Properites specified for a connection type.
-direct|N|Determines if connection is direct
-tunnel_type|N|Defines type of the tunnel
+|Name|Description|
+|----|-----------|
+name|Name of the connection.
+Username|User name of the database.
+Password|Passwofd to the database.
+host|Hostname to the database.
+port|Port for the databse
+database|Name of the database.
+properties|Properites specified for a connection type.
+direct|Determines if connection is direct
+tunnel_type|Defines type of the tunnel
 
 For **Cloud storage** type:
 
-|Name|Required?|Description|
-|----|---------|-----------|
-name|Y|Name of the connection
-username|Y|Username for cloud.
-password|Y|Password for cloud.
-properties|Y|Properites specified for a connection type.
+|Name|Description|
+|----|-----------|
+name|Name of the connection
+username|Username for cloud.
+password|Password for cloud.
+properties|Properites specified for a connection type.
 
 
 ### Request (Curl Call) Syntax
