@@ -45,6 +45,7 @@ direct|N|Determines if connection is direct
 tunnel_type|N|Defines type of the tunnel
 
 For **Cloud storage** type:
+
 |Name|Required?|Description|
 |----|---------|-----------|
 name|Y|Name of the connection
