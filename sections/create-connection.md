@@ -35,22 +35,22 @@ For **Database** type:
 |Name|Required?|Description|
 |----|---------|-----------|
 name|Y|Name of the connection.
-Username|Y| User name of the database.
-Password|Y| Passwofd to the database.
-host|Y| Hostname to the database.
-port|N| Port for the databse
-database|N| Name of the database.
-properties|Y| Properites specified for a connection type.
-direct|N| Determines if connection is direct
-tunnel_type|N| Defines type of the tunnel
+Username|Y|User name of the database.
+Password|Y|Passwofd to the database.
+host|Y|Hostname to the database.
+port|N|Port for the databse
+database|N|Name of the database.
+properties|Y|Properites specified for a connection type.
+direct|N|Determines if connection is direct
+tunnel_type|N|Defines type of the tunnel
 
 For **Cloud storage** type:
 |Name|Required?|Description|
 |----|---------|-----------|
-name|Y| Name of the connection
-username|Y| Username for cloud.
-password|Y| Password for cloud.
-properties|Y| Properites specified for a connection type.
+name|Y|Name of the connection
+username|Y|Username for cloud.
+password|Y|Password for cloud.
+properties|Y|Properites specified for a connection type.
 
 
 ### Request (Curl Call) Syntax
