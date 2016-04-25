@@ -11,8 +11,8 @@ Delete an existing Collection. Xplenty provides tha following types of connectio
   * [MongoDB](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/mongo-connection.md)
   * [MySQL](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/mysql-connection.md)
   * [PostgreSQL](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/postgres-connection.md)
-  * [Redfish](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/redfish-connection.md)
-  * [Reds](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/reds-connection.md)
+  * [Redshift](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/redshift-connection.md)
+  * [Redis](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/redis-connection.md)
   * [Segment](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/segment-connection.md)
   * [SQL Server](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/sqlserver-connection.md)
 * **Cloud Storage**:
