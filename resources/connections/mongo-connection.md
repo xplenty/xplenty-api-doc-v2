@@ -8,7 +8,6 @@
 * **unique_id** - the unique connection's identifier
 * **created_at** - the date and time the connection was created
 * **updated_at** - the date and time the connection was last updated
-* **url** - the connection resource URL
 * **database** - the name of database to use
 * **host** - the name of the host to connect to
 * **port** - the TCP Port to connect to. The default is 27017

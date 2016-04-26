@@ -8,7 +8,6 @@
 * **unique_id** - the unique connection's identifier
 * **created_at** - the date and time the connection was created
 * **updated_at** - the date and time the connection was last updated
-* **url** - the connection resource URL
 * **refresh_token** - token used for refreshing
 * **uuid** - the unique user id
 * **expires** - determines if connection should expire

@@ -6,7 +6,6 @@
 * **unique_id** - the unique connection's identifier
 * **created_at** - the date and time the connection was created
 * **updated_at** - the date and time the connection was last updated
-* **url** - the connection resource URL
 * **database** - the ID of the dataset to connect to
 * **host** - the ID of the project that contains the dataset to connect to
 * **region** - the geographical location of the dataset to connect to.
