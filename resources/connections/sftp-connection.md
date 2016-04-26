@@ -11,3 +11,4 @@
 * **host** - the name of the SFTP server to connect to
 * **port** - the TCP Port to connect to. Default is 22
 * **auth_method** - the authentication method to use. Possible values: **password**, **key**
+* **url** - the connection resource URL (API)

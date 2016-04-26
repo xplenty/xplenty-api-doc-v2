@@ -11,8 +11,8 @@
 * **database** - the name of database to use
 * **host** - the name of the host to connect to
 * **port** - the TCP Port to connect to. The default is 27017
-* **direct** - determines if connection is direct
-* **tunnel_type** - defines type of the tunnel
+* **tunnel_type** - defines type of the tunnel. Possible values: **direct**, **reverse**
 * **ssl** - determines whether to connect to the database using SSL
 * **read_preference** - determines how the connection should route read operations to members of a replica set
 * **authentication_database** - the name of the database to use for authentication. Leave empty to use default database
+* **url** - the connection resource URL (API)

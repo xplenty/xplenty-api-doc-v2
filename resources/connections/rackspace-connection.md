@@ -9,3 +9,4 @@
 * **created_at** - the date and time the connection was created
 * **updated_at** - the date and time the connection was last updated
 * **region** - name of the region
+* **url** - the connection resource URL (API)

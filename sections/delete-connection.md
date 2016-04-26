@@ -46,12 +46,13 @@ HTTP/1.1 200 OK
 
 ```json
 {
-  "id":234,
+  "id":53,
   "name":"Amazon S3 sample connection",
+  "username": "xplentyxplentyxplent",
   "unique_id":"S3_CONNECTION_53",
-  "created_at":"2015-02-16T07:58:52Z",
-  "updated_at":"2015-02-16T07:58:52Z",
+  "created_at":"2016-04-21T13:55:43Z",
+  "updated_at":"2016-04-21T13:55:43Z",
   "type":"s3",
-  "url":"https://api.xplenty.com/:account_id/api/connections/:type/:connection_id
+  "url":"https://api.xplenty.com/test-account/api/connections/s3/53
 }
 ```

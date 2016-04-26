@@ -27,44 +27,34 @@ HTTP/1.1 200 OK
 ```json
 [
   {
-    "id": 323,
-    "name": "App Logs (MongoDB)",
-    "type": "mongo",
-    "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z",
-    "url": "https://api.xplenty.com/xplenation/api/connections/323"
-  }, 
+    "id":53,
+    "name":"Amazon S3 sample connection",
+    "username": "xplentyxplentyxplent",
+    "unique_id":"S3_CONNECTION_53",
+    "created_at":"2016-04-21T13:55:43Z",
+    "updated_at":"2016-04-21T13:55:43Z",
+    "type":"s3",
+    "url":"https://api.xplenty.com/test-account/api/connections/s3/53
+  },
   {
-    "id": 324,
-    "name": "Website Logs (MongoDB)",
-    "type": "mongo",
-    "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z",
-    "url": "https://api.xplenty.com/xplenation/api/connections/324"
-  }, 
+    "id":54,
+    "name":"Amazon S3 sample connection 2",
+    "username": "xplentyxplentyxplent",
+    "unique_id":"S3_CONNECTION_53",
+    "created_at":"2016-04-21T13:55:43Z",
+    "updated_at":"2016-04-21T13:55:43Z",
+    "type":"s3",
+    "url":"https://api.xplenty.com/test-account/api/connections/s3/54
+  },
   {
-    "id": 325,
-    "name": "Website Logs (S3)",
-    "type": "s3",
-    "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z",
-    "url": "https://api.xplenty.com/xplenation/api/connections/325"
-  }, 
-  {
-    "id": 326,
-    "name": "My Google Adwords",
-    "type": "adwords",
-    "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z",
-    "url": "https://api.xplenty.com/xplenation/api/connections/326"
-  }, 
-  {
-    "id": 318,
-    "name": "Data Warehouse (Redshift)",
-    "type": "redshift",
-    "created_at":"2015-02-04T12:51:04Z",
-    "updated_at":"2015-02-04T12:51:04Z",
-    "url": "https://api.xplenty.com/xplenation/api/connections/318"
-  }
+    "id":55,
+    "name":"Amazon S3 sample connection 3",
+    "username": "xplentyxplentyxplent",
+    "unique_id":"S3_CONNECTION_53",
+    "created_at":"2016-04-21T13:55:43Z",
+    "updated_at":"2016-04-21T13:55:43Z",
+    "type":"s3",
+    "url":"https://api.xplenty.com/test-account/api/connections/s3/55
+  },
 ]
 ```

@@ -12,3 +12,4 @@
 * **uuid** - the unique user id
 * **expires** - determines if connection should expire
 * **expires_at** - date of expiration
+* **url** - the connection resource URL (API)

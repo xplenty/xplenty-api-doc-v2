@@ -12,3 +12,4 @@
 * **uuid** - the unique user id
 * **expires** - determines if connection should expire
 * **expires_at** - expiration time for oauth key
+* **url** - the connection resource URL (API)

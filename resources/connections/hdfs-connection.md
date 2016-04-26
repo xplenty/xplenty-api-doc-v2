@@ -11,3 +11,4 @@
 * **name_node_port** - the TCP Port of the NameNode to connect to. Leave blank if cluster HDFS High Availability (HA) is enabled. Common values are 8020 or 9000
 * **httpfs_host** - the name of the Hadoop HDFS gatweay node to connect to
 * **httpfs_port** - The TCP Port of the Hadoop HDFS gatweay node to connect to. Default is 14000
+* **url** - the connection resource URL (API)

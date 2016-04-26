@@ -9,4 +9,4 @@
 * **database** - the ID of the dataset to connect to
 * **host** - the ID of the project that contains the dataset to connect to
 * **region** - the geographical location of the dataset to connect to.
-
+* **url** - the connection resource URL (API)

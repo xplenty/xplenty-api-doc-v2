@@ -12,3 +12,4 @@
 * **refresh_token** - token used for refreshing
 * **expires** - determines if oauth key should expire
 * **expires_at** - expiration time for oauth key
+* **url** - the connection resource URL (API)

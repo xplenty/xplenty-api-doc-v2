@@ -11,5 +11,5 @@
 * **database** - the name of database to use
 * **host** - the name of the host to connect to
 * **port** - the TCP Port to connect to. The default is 1433
-* **direct** - determines if connection is direct
-* **tunnel_type** - the method to use for accessing the database
+* **tunnel_type** - the method to use for accessing the database. Possible values: **direct**, **reverse**
+* **url** - the connection resource URL (API)

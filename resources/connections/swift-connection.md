@@ -12,3 +12,4 @@
 * **auth_method** - the authorization system used by the identity service. Possible values: **swauth**, **keystone**
 * **authentication_service** - the url of the authentication service used to authenticate you
 * **private_authentication_service** - name of the private authetication service
+* **url** - the connection resource URL (API)

@@ -11,5 +11,5 @@
 * **database** - the database's name
 * **host** - host for the database
 * **port** - port for the database
-* **direct** - determines if connection is direct
-* **tunnel_type** - defines type of the tunnel
+* **tunnel_type** - defines type of the tunnel. Possible values: **direct**, **reverse**
+* **url** - the connection resource URL (API)
