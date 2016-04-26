@@ -9,8 +9,7 @@
 * **created_at** - the date and time the connection was created
 * **updated_at** - the date and time the connection was last updated
 * **url** - the connection resource URL
-* **properties** - Individual connection properties:
-  * **uuid** - the unique user id
-  * **refresh_token** - token used for refreshing
-  * **expires** - determines if oauth key should expire
-  * **expires_at** - expiration time for oauth key
+* **uuid** - the unique user id
+* **refresh_token** - token used for refreshing
+* **expires** - determines if oauth key should expire
+* **expires_at** - expiration time for oauth key

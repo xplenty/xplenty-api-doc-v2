@@ -8,5 +8,4 @@
 * **unique_id** - the unique connection's identifier
 * **created_at** - the date and time the connection was created
 * **updated_at** - the date and time the connection was last updated
-* **properties** - Individual connection properties:
-  * **region** - name of the region
+* **region** - name of the region

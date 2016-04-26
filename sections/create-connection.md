@@ -29,13 +29,7 @@ Create a new Connection. Xplenty provides tha following types of connections:
 ### Input Parameters
 The **connection type** and **connection ID** must be supplied at the end of the request URL.
 
-Common input parameters for connections:
-
-|Name|Description|
-|----|-----------|
-name|Name of the connection.
-properties|Properites specific for connection type.
-
+Every connection has input attributes specific for it's type.
 
 ### Request (Curl Call) Syntax
 ```shell

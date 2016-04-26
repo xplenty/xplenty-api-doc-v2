@@ -14,6 +14,5 @@
 * **port** - the TCP Port to connect to. The default is 5432
 * **direct** - determines if connection is direct
 * **tunnel_type** - defines type of the tunnel
-* **properties** - Individual connection properties:
-  * **ssl** - determines whether to connect to the database using SSL
+* **ssl** - determines whether to connect to the database using SSL
 
