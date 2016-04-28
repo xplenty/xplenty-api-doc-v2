@@ -38,7 +38,6 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/connections/
   -H "Content-Type: application/json" \
   -d '{
     "name": "Amazon S3 sample connection",
-    "type": "s3",
     "host": "sample_host_name"
     "username": "xplentyxplentyxplent",
     "password": "xplenty-passwordxplexplenty-passwordxple"
