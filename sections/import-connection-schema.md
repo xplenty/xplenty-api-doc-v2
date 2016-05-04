@@ -48,7 +48,7 @@ you should use these input attributes:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-where_clause|N| |where clause, syntax can be found at https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_select_conditionexpression.htm
+where_clause|N| |SQL where clause
 table|Y| | name of the table
 row_count|N|20|row limit
 schema_name|N| |
@@ -95,7 +95,7 @@ destination|N|false|
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "/:account_id/api/connections/:connection_type/:connection_id/validate" \
+$ curl -X GET -u api_key: "/:account_id/api/connections/:connection_type/:connection_id/schema" \
   -H "Accept: application/vnd.xplenty+json; version=2"
   -d '{
     "table":"tableName"
