@@ -13,7 +13,7 @@
 |database|N|Y| |the name of database to use
 |host|N|Y| |the name of the host to connect to
 |port|N|N|27017|the TCP Port to connect to
-|tunnel_type|N|N|"direct"|the method to use for accessing the database. Possible values: **direct**, **reverse**
+|tunnel_type|N|N|"direct"|the method to use for accessing the database. Possible values: **direct**, **reverse**. In case of **reverse** type, **host** will be empty and **port** will be set to 1.
 |ssl|N|N|false|determines whether to connect to the database using SSL
 |read_preference|N|N| |determines how the connection should route read operations to members of a replica set
 |authentication_database|N|N| |the name of the database to use for authentication. Leave empty to use default database

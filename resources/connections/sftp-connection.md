@@ -3,7 +3,7 @@
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|
 |id|Y| | |the connection's numeric identifier
-|type|Y| | |`swift`
+|type|Y| | |`sftp`
 |name|N|Y| |the descriptive name given to the connection
 |username|N|Y| |the SFTP server user name
 |password|N|Y| |the SFTP server password. Required only for Password Authentication method

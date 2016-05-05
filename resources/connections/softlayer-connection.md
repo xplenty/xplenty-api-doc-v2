@@ -10,5 +10,5 @@
 |unique_id|Y| | |the unique connection's identifier
 |created_at|Y| | |the date and time the connection was created
 |updated_at|Y| | |the date and time the connection was last updated
-|region|N|N| |name of the region
+|region|N|Y| |name of the region
 |url|Y| | |the connection resource URL (API)

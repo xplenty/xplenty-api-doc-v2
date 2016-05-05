@@ -13,6 +13,6 @@
 |database|N|N|""|the name of database to use
 |host|N|Y| |the name of the host to connect to
 |port|N|N|5432|the TCP Port to connect to
-|tunnel_type|N|N|"direct"|the method to use for accessing the database. Possible values: **direct**, **reverse**
+|tunnel_type|N|N|"direct"|the method to use for accessing the database. Possible values: **direct**, **reverse**. In case of **reverse** type, **host** will be empty and **port** will be set to 1.
 |ssl|N|N|true|determines whether to connect to the database using SSL
 |url|Y| | |the connection resource URL (API)
