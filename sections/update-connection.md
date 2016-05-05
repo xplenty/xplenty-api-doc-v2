@@ -33,7 +33,7 @@ Every connection has input attributes specific for it's type.
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/connections/:type" \
+$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/connections/:type/:connection_id" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
