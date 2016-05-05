@@ -1,8 +1,8 @@
 ### Google AdWords Connection Attributes
 
-|Name|Read-Only|Required?|Default|Description|
+|Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|
-|id|Y| | |The connection's numeric identifier
+|id|Y| | |the connection's numeric identifier
 |type|Y| | |`adwords`
 |name|N|Y| |the descriptive name given to the connection
 |username|N|N| |the username
@@ -13,6 +13,6 @@
 |refresh_token|N|N| |token used for refreshing
 |uid|N|Y| |the unique user id
 |expires|N|N| |determines if connection should expire
-|expires_at|N|N| |date of expiration
+|expires_at|N|N| |expiration time for oauth key
 |url|Y| | |the connection resource URL (API)
 

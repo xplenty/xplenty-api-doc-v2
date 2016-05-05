@@ -1,18 +1,20 @@
 ### Mongo Database Connection Attributes
 
-* **id** - the connection's numeric identifier
-* **type** - `mongo`
-* **name** - the descriptive name given to the connection
-* **username** - the database user name
-* **password** - the database user password
-* **unique_id** - the unique connection's identifier
-* **created_at** - the date and time the connection was created
-* **updated_at** - the date and time the connection was last updated
-* **database** - the name of database to use
-* **host** - the name of the host to connect to
-* **port** - the TCP Port to connect to. The default is 27017
-* **tunnel_type** - defines type of the tunnel. Possible values: **direct**, **reverse**
-* **ssl** - determines whether to connect to the database using SSL
-* **read_preference** - determines how the connection should route read operations to members of a replica set
-* **authentication_database** - the name of the database to use for authentication. Leave empty to use default database
-* **url** - the connection resource URL (API)
+|Name|Read-Only?|Required?|Default|Description|
+|----|---------|---------|-------|-----------|
+|id|Y| | |the connection's numeric identifier
+|type|Y| | |`mongo`
+|name|N|Y| |the descriptive name given to the connection
+|username|N|Y| |the database user name
+|password|N|Y| |the database user password
+|unique_id|Y| | |the unique connection's identifier
+|created_at|Y| | |the date and time the connection was created
+|updated_at|Y| | |the date and time the connection was last updated
+|database|N|Y| |the name of database to use
+|host|N|Y| |the name of the host to connect to
+|port|N|N|27017|the TCP Port to connect to
+|tunnel_type|N|N|"direct"|the method to use for accessing the database. Possible values: **direct**, **reverse**
+|ssl|N|N|false|determines whether to connect to the database using SSL
+|read_preference|N|N| |determines how the connection should route read operations to members of a replica set
+|authentication_database|N|N| |the name of the database to use for authentication. Leave empty to use default database
+|url|Y| | |the connection resource URL (API)
