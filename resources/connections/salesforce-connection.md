@@ -8,6 +8,7 @@
 |username|N|N| |the username
 |password|N|N| |the token
 |unique_id|Y| | |the unique connection's identifier
+|environment|N|Y| |connection environment, ***production*** or ***sandbox***
 |created_at|Y| | |the date and time the connection was created
 |updated_at|Y| | |the date and time the connection was last updated
 |refresh_token|N|N| |token used for refreshing

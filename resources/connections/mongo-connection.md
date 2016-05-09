@@ -5,8 +5,8 @@
 |id|Y| | |the connection's numeric identifier
 |type|Y| | |`mongo`
 |name|N|Y| |the descriptive name given to the connection
-|username|N|Y| |the database user name
-|password|N|Y| |the database user password
+|username|N|N| |the database user name
+|password|N|N| |the database user password
 |unique_id|Y| | |the unique connection's identifier
 |created_at|Y| | |the date and time the connection was created
 |updated_at|Y| | |the date and time the connection was last updated
