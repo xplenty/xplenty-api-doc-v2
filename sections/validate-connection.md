@@ -28,7 +28,6 @@ Checks validation of the Connection. Xplenty provides tha following types of con
 
 ### Input Parameters
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
-There is special case when **connection ID** is not required: when **type** is `curl`.
 
 For the following connection types:
 
@@ -87,11 +86,11 @@ $ curl -X POST -u api_key: "/:account_id/api/connections/:connection_type/:conne
 
 ### Response Example
 ```HTTP
-HTTP/1.1 200 OK
+HTTP/1.1 400 Bad Request
 ```
 
 ```json
 {
-  "true"
+  "error_message": "Specified project/dataset/table do not exist or missing privileges."
 }
 ```

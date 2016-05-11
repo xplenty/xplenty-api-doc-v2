@@ -36,6 +36,18 @@ $ curl -X POST -u api_key: "/:account_id/api/connections/:connection_type/:conne
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
+|url|N| |url for test
+|method|N| |**GET** or **POST**
+|response_type|N|"raw"|possible values **raw**, **json**, **array**, **line_delimited_json**
+|lines|N|20|
+|username|N| |
+|password|N| |
+|headers|N| |
+|body|N| |
+
+
 ```shell
 $ curl -X POST -u api_key: "/:account_id/api/connections/curl/test" \
   -H "Accept: application/vnd.xplenty+json; version=2"
@@ -43,11 +55,11 @@ $ curl -X POST -u api_key: "/:account_id/api/connections/curl/test" \
 
 ### Response Example
 ```HTTP
-HTTP/1.1 200 OK
+HTTP/1.1 400 Bad Request
 ```
 
 ```json
 {
-  "false"
+  "error_message": "Could not make CURL request, please verify connection settings and security/firewall options"
 }
 ```

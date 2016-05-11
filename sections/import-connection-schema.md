@@ -73,7 +73,7 @@ you should use these input attributes:
 |----|---------|-------|-----------|
 bucket|Y| |bucket or container
 path|Y| |path
-file_type|N|file|possible ```file``` or ```service```
+file_type|N|file|possible **file** or **service**
 lines|N|20|lines limit
 delimiter|N|\t|
 skip_header|N|false|in case of fields name in headers
@@ -86,9 +86,14 @@ For curl type:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-bucket|Y| |bucket or container
-path|Y| |path
-destination|N|false|
+|url|N| |url for test
+|method|N| |**GET** or **POST**
+|response_type|N|"raw"|possible values **raw**, **json**, **array**, **line_delimited_json**
+|lines|N|20|
+|username|N| |
+|password|N| |
+|headers|N| |
+|body|N| |
 
 
 
