@@ -82,9 +82,9 @@ For curl type:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-|url|N| |url for test
-|method|N| |**GET** or **POST**
-|response_type|N|"raw"|possible values **raw**, **json**, **array**, **line_delimited_json**
+|url|Y| |url for import
+|method|Y|"GET"|**GET** or **POST**
+|response_type|N|"json"|possible values **raw**, **json**, **array**, **line_delimited_json**
 |lines|N|20|
 |username|N| |
 |password|N| |
