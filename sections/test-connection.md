@@ -1,7 +1,7 @@
-## Create Account Connection
+## Test Connection
 
 ### Description
-Information about an existing connection. Xplenty provides tha following types of connections:
+Checks if it is possible to establish connection. Xplenty provides tha following types of connections:
 
 * [Bigquery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/bigquery-connection.md)
 * [Google Cloud SQL Database](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/googlecloud.md)
@@ -20,34 +20,44 @@ Information about an existing connection. Xplenty provides tha following types o
 * [Rackspace](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/rackspace-connection.md)
 * [Amazon S3](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/s3-connection.md)
 * [Salesforce](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/salfesforce-connection.md)
-* [SSH File Transfer Protocol (SFTP)](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/sftp-connection.md)
+* [SSH File Transfer Protoco](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/sftp-connection.md)
 * [Softlayer](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/softlayer-connection.md)
 * [Swift](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/swift-connection.md)
 
 ### Input Parameters
-The **connection type** and **connection ID** must be supplied at the end of the request URL.
-
+The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
+There is special case when **connection ID** is not required: when **type** is `curl`.
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/:type/:connection_id" \
-  -H "Accept: application/vnd.xplenty+json, version=2"
+$ curl -X POST -u api_key: "/:account_id/api/connections/:connection_type/:connection_id/test" \
+  -H "Accept: application/vnd.xplenty+json; version=2"
+```
+
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
+|url|N| |url for test
+|method|N| |**GET** or **POST**
+|response_type|N|"raw"|possible values **raw**, **json**, **array**, **line_delimited_json**
+|lines|N|20|
+|username|N| |
+|password|N| |
+|headers|N| |
+|body|N| |
+
+
+```shell
+$ curl -X POST -u api_key: "/:account_id/api/connections/curl/test" \
+  -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
 ### Response Example
 ```HTTP
-HTTP/1.1 200 OK
+HTTP/1.1 400 Bad Request
 ```
 
 ```json
 {
-  "id":53,
-  "name":"Amazon S3 sample connection",
-  "username": "xplentyxplentyxplent",
-  "unique_id":"S3_CONNECTION_53",
-  "created_at":"2016-04-21T13:55:43Z",
-  "updated_at":"2016-04-21T13:55:43Z",
-  "type":"s3",
-  "url":"https://api.xplenty.com/test-account/api/connections/s3/53
+  "error_message": "Could not make CURL request, please verify connection settings and security/firewall options"
 }
 ```
