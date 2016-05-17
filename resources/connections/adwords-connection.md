@@ -14,5 +14,6 @@
 |uid|N|N| |the unique user id
 |expires|N|N| |determines if connection should expire
 |expires_at|N|N| |expiration time for oauth key
+|code|N|N| |OAuth code parameter
 |url|Y| | |the connection resource URL (API)
 
