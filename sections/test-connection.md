@@ -43,7 +43,7 @@ There is special case when **connection ID** is not required: when **type** is `
 |lines|N|20|
 |username|N| |
 |password|N| |
-|headers|N| |
+|headers|N| |headers syntax: {"header_name1": "header_value1", "header_name2": "header_value2"}
 |body|N| |
 
 ### Request (Curl Call) Syntax
