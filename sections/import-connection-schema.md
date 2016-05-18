@@ -24,9 +24,8 @@ Imports schema of the connection. Xplenty provides tha following types of connec
 * [Softlayer](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/softlayer-connection.md)
 * [Swift](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/swift-connection.md)
 
-### Input Parameters
+### Input Parameters for connections
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
-There is special case when **connection ID** is not required: when **type** is `curl`.
 
 For the following connection types:
 
@@ -44,8 +43,8 @@ you should use these input attributes:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-where_clause|N| |SQL where clause
 table|Y| | name of the table
+where_clause|N| |SQL where clause
 row_count|N|20|row limit
 schema_name|N| |
 
@@ -78,12 +77,14 @@ record_type|N|Delimited values|
 quote|N|none|quotation marks
 escape|N| |escape marks
 
-For curl type:
+
+### Input Parameters for CURL
+There is special case when **connection ID** is not required: when **type** is `curl`.
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 |url|Y| |url for import
-|method|Y|"GET"|**GET** or **POST**
+|method|N|"GET"|method used for curl **GET** or **POST**
 |response_type|N|"json"|possible values **raw**, **json**, **array**, **line_delimited_json**
 |lines|N|20|
 |username|N| |

@@ -24,20 +24,21 @@ Checks if it is possible to establish connection. Xplenty provides tha following
 * [Softlayer](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/softlayer-connection.md)
 * [Swift](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/swift-connection.md)
 
-### Input Parameters
+### Input Parameters for above connections
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
-There is special case when **connection ID** is not required: when **type** is `curl`.
 
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X POST -u api_key: "/:account_id/api/connections/:connection_type/:connection_id/test" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
+### Input Parameters for CURL
+There is special case when **connection ID** is not required: when **type** is `curl`.
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 |url|Y| |url for test
-|method|Y|"GET"|**GET** or **POST**
+|method|N|"GET"|method used for curl **GET** or **POST**
 |response_type|N|"json"|possible values **raw**, **json**, **array**, **line_delimited_json**
 |lines|N|20|
 |username|N| |
@@ -45,6 +46,7 @@ $ curl -X POST -u api_key: "/:account_id/api/connections/:connection_type/:conne
 |headers|N| |
 |body|N| |
 
+### Request (Curl Call) Syntax
 ```shell
 $ curl -X POST -u api_key: "/:account_id/api/connections/curl/test" \
   -H "Accept: application/vnd.xplenty+json; version=2"
