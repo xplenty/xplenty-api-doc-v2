@@ -6,7 +6,7 @@
 |type|Y| | |`analytics`
 |name|N|Y| |the descriptive name given to the connection
 |username|N|N| |the username
-|password|N|Y| |the token (required unless code is provided)
+|password|N|Y unless code is provided| |the token
 |unique_id|Y| | |the unique connection's identifier
 |created_at|Y| | |the date and time the connection was created
 |updated_at|Y| | |the date and time the connection was last updated
