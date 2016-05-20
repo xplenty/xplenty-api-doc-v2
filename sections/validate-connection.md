@@ -43,8 +43,8 @@ you should use these input attributes:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-table|Y| |name of the table
-schema_name|N| |
+table|N| |name of the table
+schema_name|N| |required if table attribute was passed
 
 
 For the following connection types:

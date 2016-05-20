@@ -44,9 +44,9 @@ you should use these input attributes:
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 table|Y| | name of the table
+schema_name|Y| |
 where_clause|N| |SQL where clause
 row_count|N|20|row limit
-schema_name|N| |
 
 For the following connection types:
 
