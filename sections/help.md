@@ -79,13 +79,15 @@ HTTP/1.1 200 Created
 |/:account_id/api/schedules/help|edit, index, new, show
 |/:account_id/api/members/help|index
 |/:account_id/api/home/help|dashboard
-|/:account_id/api/settings/help|edit_billing, edit_info
+|/:account_id/api/plans/help|edit
+|/:account_id/api/accounts/help|edit
 |/:account_id/api/hooks/help|index, new_index, slack, pagerduty, hipchat, email, web
 
 ### Other actions without account id
 |path|help_action attributes|
 |----|---------|
-/user/registrations/help|edit, edit_password, notifications
+/user/notifications/help|show
+/user/help|edit, edit_password
 /user/keys/help|index, new
 /user/console/help|-
 
