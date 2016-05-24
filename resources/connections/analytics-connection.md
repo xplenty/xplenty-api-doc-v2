@@ -15,4 +15,5 @@
 |expires|N|N| |determines if connection should expire
 |expires_at|N|N| |expiration time for oauth key
 |code|N|N| |OAuth code parameter
+|redirect_uri|N|Y if code is provided| |OAuth redirect URI used for code generation
 |url|Y| | |the connection resource URL (API)
