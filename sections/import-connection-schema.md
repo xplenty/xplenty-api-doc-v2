@@ -68,37 +68,20 @@ you should use these input attributes:
 |----|---------|-------|-----------|
 bucket|Y| |bucket or container
 path|Y| |path
-file_type|N|file|possible **file** or **service**
+file_type|N|file|possible `file` or `service`
 lines|N|20|lines limit
-delimiter|N|\t|
+record_delimiter|N|New line|possible `new_line` or `eof`
+record_type|N|Delimited values|possible `delimited`, `json`, `raw`
 skip_header|N|false|in case of fields name in headers
-record_delimiter|N|New line|
-record_type|N|Delimited values|
-quote|N|none|quotation marks
 escape|N| |escape marks
-
-
-### Input Parameters for CURL
-There is special case when **connection ID** is not required: when **type** is `curl`.
-
-|Name|Required?|Default|Description|
-|----|---------|-------|-----------|
-|url|Y| |url for import
-|method|N|"GET"|method used for curl **GET** or **POST**
-|response_type|N|"json"|possible values **raw**, **json**, **array**, **line_delimited_json**
-|lines|N|20|
-|username|N| |
-|password|N| |
-|headers|N| |headers syntax: {"header_name1": "header_value1", "header_name2": "header_value2"}
-|body|N| |
-
-
-
+quote|N|none|for **delimited** record_type. Quotation marks, possible `none`, `\"`, `quoted_multi_line`
+delimiter|N|\t|for **delimited** record_type. Possible `\t`, `,`, `\u0001`
 
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X GET -u api_key: "/:account_id/api/connections/:connection_type/:connection_id/schema" \
-  -H "Accept: application/vnd.xplenty+json; version=2"
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
   -d '{
     "table":"tableName"
   }'
@@ -124,6 +107,84 @@ HTTP/1.1 200 OK
     },
     {
       "_id": "string"
+    }
+  ]
+}
+```
+
+### Input Parameters for CURL
+There is special case when **connection ID** is not required: when **type** is `curl`.
+
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
+|url|Y| |url for import
+|method|N|"GET"|method used for curl **GET** or **POST**
+|response_type|N|"json"|possible values **raw**, **json**, **array**, **line_delimited_json**
+|lines|N|20|
+|username|N| |
+|password|N| |
+|headers|N| |headers syntax: {"header_name1": "header_value1", "header_name2": "header_value2"}
+|body|N| |
+
+
+### Request (Curl Call) Syntax
+```shell
+$ curl -X GET -u api_key: "/:account_id/api/connections/curl/schema" \
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "url":"https://api.github.com/users/user/path",
+    "usaername":"uname",
+    "password":"pwd1",
+    "response_type":"raw"
+  }'
+```
+
+### Response Example
+```HTTP
+HTTP/1.1 200 OK
+```
+
+```json
+{
+  "data": [
+    [
+      200,
+      "[{\"id\":123,\"name\":\"name\",\"full_name\":\"fullreqname/fullreqname\",\"owner\":{\"login\":\"ownerlogin\",\"id\":123,\"avatar_url\":\"https://avatars.githubusercontent.com/u/id?v=3\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/name\",\"html_url\":\"https://github.com/fullreqname\"}]",
+      {
+        "date": "Wed, 25 May 2016 10:25:41 GMT",
+        "server": "GitHub.com",
+        "transfer-encoding": "chunked",
+        "x-ratelimit-limit": "60",
+        "vary": "Accept",
+        "x-frame-options": "deny",
+        "x-served-by": "139317cebd6caf9cd03889139437f00b",
+        "x-ratelimit-reset": "1464173473",
+        "x-ratelimit-remaining": "57",
+        "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+        "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+        "x-github-request-id": "3656EF24:1271A:135CC22A:57457DA5",
+        "access-control-allow-origin": "*",
+        "x-github-media-type": "github.v3; format=json",
+        "content-security-policy": "default-src 'none'",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "content-type": "application/json; charset=utf-8",
+        "etag": "W/\"a02c212fc5c56f25fcff863aaa999a6a\"",
+        "cache-control": "public, max-age=60, s-maxage=60",
+        "status": "200 OK"
+      }
+    ]
+  ],
+  "fields": [
+    {
+      "status": "int"
+    },
+    {
+      "body": "string"
+    },
+    {
+      "headers": "json"
     }
   ]
 }

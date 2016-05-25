@@ -291,6 +291,7 @@ These are the methods supported by the Xplenty API:
 * [List Connection Types](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connection-types.md)
 * [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
 * [Create Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-connection.md)
+* [Test New Account Connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/test-new-connection.md)
 * [Update Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-connection.md)
 * [Get Account Connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-connection-information.md)
 * [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
