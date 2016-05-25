@@ -75,7 +75,7 @@ record_type|N|Delimited values|possible `delimited`, `json`, `raw`
 skip_header|N|false|in case of fields name in headers
 escape|N| |escape marks
 quote|N|none|for **delimited** record_type. Quotation marks, possible `none`, `\"`, `quoted_multi_line`
-delimiter|N|\t|for **delimited** record_type. Possible `\t`, `,`, `\u0001`
+delimiter|N|\t|for **delimited** record_type
 
 ### Request (Curl Call) Syntax
 ```shell
