@@ -33,7 +33,7 @@ Please read the document describing [cluster](https://github.com/xplenty/xplenty
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 q|Y| |Terms, e.g. `name:"cluster 1" test cluster`
-sort|N|"relevance"|Possible values are `modified`, `created` or `relevance`. The cluster list will be sorted by the clusters' `updated_at`, `created_at` attributes or relevance of the search results.
+sort|N|"relevance"|Possible values are `modified`, `created` or `relevance`. The cluster list will be sorted by the clusters' `terminated_at`, `created_at` attributes or relevance of the search results.
 direction|N|"desc"|Possible values are: `asc`, `desc`. The clusters will be sorted in ascending or descending order of the `sort` attribute.
 
 ### Request (Curl Call) Syntax
