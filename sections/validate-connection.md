@@ -46,17 +46,40 @@ you should use these input attributes:
 table|N| |name of the table
 schema_name|N| |required if table attribute was passed
 
+For the following connection type:
+* [Google Analytics](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/analytics-connection.md)
+
+you should use these input attributes:
+
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
+profile_ids|Y| |
+start_date|Y| |
+end_date|Y| |
+metrics|N| |
+dimensons|N| |
+sort|N| |
+filters|N| |
+segment|N| |
+
+For the following connection type:
+* [Salesforce](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/salfesforce-connection.md)
+
+you should use these input attributes:
+
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
+object_fields|N| |table fields
+object_name|Y| |name of the table
+where_clause|N| |
+row_count|N| limit rows
 
 For the following connection types:
 
-* [Bingads](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/bingads-connection.md)
 * [Google Storage](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/gs-connection.md)
-* [Google AdWords](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/adwords-connection.md)
-* [Google Analytics](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/analytics-connection.md)
 * [Hadoop Distributed File System](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/hdfs-connection.md)
 * [Rackspace](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/rackspace-connection.md)
 * [Amazon S3](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/s3-connection.md)
-* [Salesforce](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/salfesforce-connection.md)
 * [SSH File Transfer Protoco](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/sftp-connection.md)
 * [Softlayer](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/softlayer-connection.md)
 * [Swift](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/swift-connection.md)
