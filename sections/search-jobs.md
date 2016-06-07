@@ -37,8 +37,8 @@ Please read the document describing [job](https://github.com/xplenty/xplenty-api
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 q|Y| |Terms, e.g. `status:pending test package`
-sort|N|"relevance"|Possible values are `modified`, `created` or `relevance`. The job list will be sorted by the jobs' `updated_at`, `created_at` attributes or relevance of the search results.
-direction|N|"desc"|Possible values are: ```asc```, ```desc```. The jobss will be sorted in ascending or descending order of the "sort" attribute.
+sort|N|"relevance"|Possible values are `id`, `updated`, `created`. The job list will be sorted by the jobs' `id`, `updated_at`, `created_at` attributes or relevance if no sort parameter is specified.
+direction|N|"asc"|Possible values are: `asc`, `desc`. The jobs will be sorted in ascending or descending order of the "sort" attribute.
 
 ### Request (Curl Call) Syntax
 ```shell

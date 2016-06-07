@@ -33,8 +33,8 @@ Please read the document describing [schedule](https://github.com/xplenty/xplent
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 q|Y| |Terms, e.g. `name:"schedule 1" test schedule`
-sort|N|"relevance"|Possible values are `modified`, `created` or `relevance`. The schedule list will be sorted by the schedules' `updated_at`, `created_at` attributes or relevance of the search results.
-direction|N|"desc"|Possible values are: `asc`, `desc`. The schedules will be sorted in ascending or descending order of the `sort` attribute.
+sort|N|"relevance"|Possible values are `id`, `updated`, `created` or `name`. The schedule list will be sorted by the schedules' `id`, `updated_at`, `created_at`, `name` attributes or relevance if no sort parameter is specified.
+direction|N|"asc"|Possible values are: `asc`, `desc`. The schedules will be sorted in ascending or descending order of the `sort` attribute.
 
 ### Request (Curl Call) Syntax
 ```shell

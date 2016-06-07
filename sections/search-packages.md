@@ -34,8 +34,8 @@ Please read the document describing [package](https://github.com/xplenty/xplenty
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 q|Y| |Terms, e.g. `name:"package 1" test package`
-sort|N|"relevance"|Possible values are `modified`, `created` or `relevance`. The package list will be sorted by the packages' `updated_at`, `created_at` attributes or relevance of the search results.
-direction|N|"desc"|Possible values are: `asc`, `desc`. The packages will be sorted in ascending or descending order of the `sort` attribute.
+sort|N|"relevance"|Possible values are `id`, `updated`, `created` or `name`. The package list will be sorted by the packages' `id`, `updated_at`, `created_at`, `name` attributes or relevance if no sort parameter is specified.
+direction|N|"asc"|Possible values are: `asc`, `desc`. The packages will be sorted in ascending or descending order of the `sort` attribute.
 
 ### Request (Curl Call) Syntax
 ```shell

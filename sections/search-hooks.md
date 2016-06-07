@@ -36,8 +36,8 @@ Please read the document describing hooks:
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 q|Y| |Terms, e.g. `name:"test hook" type:slack`
-sort|N|"relevance"|Possible values are `modified`, `created` or `relevance`. The hook list will be sorted by the hooks' `updated_at`, `created_at` attributes or relevance of the search results.
-direction|N|"desc"|Possible values are: `asc`, `desc`. The hooks will be sorted in ascending or descending order of the `sort` attribute.
+sort|N|"relevance"|Possible values are `id`, updated`, `created` or `name`. The hook list will be sorted by the hooks' `id`, updated_at`, `created_at`, `name` attributes or relevance if no sort parameter is specified.
+direction|N|"asc"|Possible values are: `asc`, `desc`. The hooks will be sorted in ascending or descending order of the `sort` attribute.
 
 ### Request (Curl Call) Syntax
 ```shell
