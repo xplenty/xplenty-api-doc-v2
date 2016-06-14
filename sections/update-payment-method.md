@@ -17,7 +17,7 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/payment_metho
   -H "Content-Type: application/json" \
   -d '{
     "billing_payment_token": "valid-token",
-    "plan_id": 2
+    "plan_id": "starter"
   }'
 ```
 
