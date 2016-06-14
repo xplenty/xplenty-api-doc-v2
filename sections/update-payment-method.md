@@ -7,7 +7,7 @@ This call updates the payment method or [plan](https://github.com/xplenty/xplent
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-billing_payment_token|N| |The valid payment token created through the billing provider (Paymill).
+billing_payment_token|N| |The valid payment token created through the billing provider (Stripe).
 plan_id|N| |ID of the plan.
 
 ### Request (Curl Call) Syntax
