@@ -1,12 +1,7 @@
-## Get Account Connection Information
+## Update Account Connection
 
 ### Description
-Information about existing account [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md).
-=======
-## Create Account Connection
-
-### Description
-Information about an existing connection. Xplenty provides tha following types of connections:
+Update an existing Connection. Xplenty provides tha following types of connections:
 
 * [BigQuery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/bigquery-connection.md)
 * [Google Cloud SQL Database](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/googlecloud.md)
@@ -32,10 +27,17 @@ Information about an existing connection. Xplenty provides tha following types o
 ### Input Parameters
 The **connection type** and **connection ID** must be supplied at the end of the request URL.
 
+Every connection has input attributes specific for it's type.
+
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/:type/:id" \
-  -H "Accept: application/vnd.xplenty+json; version=2"
+$ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/connections/:type/:connection_id" \
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Amazon S3 sample connection",
+    "host": "sample_host_name"
+  }'
 ```
 
 ### Response Example

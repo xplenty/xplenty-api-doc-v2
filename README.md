@@ -290,7 +290,14 @@ These are the methods supported by the Xplenty API:
 * [Delete Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-member.md)
 * [List Connection Types](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connection-types.md)
 * [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
+* [Create Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-connection.md)
+* [Test New Account Connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/test-new-connection.md)
+* [Update Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-connection.md)
+* [Get Account Connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-connection-information.md)
 * [Delete Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-connection.md)
+* [Test Connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/test-connection.md)
+* [Validate Connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/validate-connection.md)
+* [Import Connection schema](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/import-connection-schema.md)
 * [List User Notifications](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-notifications.md)
 * [Mark User Notifications as read](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/mark-notifications.md)
 * [Get Authenticated User Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-authenticated-user-information.md)
@@ -316,6 +323,7 @@ These are the methods supported by the Xplenty API:
 * [Reset Hook Salt](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/reset-hook-salt.md)
 * [Delete Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-hook.md)
 * [List Supported Time Zones](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-timezones.md)
+* [Help](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/help.md)
 
 <a id="ToS" name="ToS">
 ## Terms of Service

@@ -1,12 +1,7 @@
-## Get Account Connection Information
+## Provides help articles and videos links
 
-### Description
-Information about existing account [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md).
-=======
-## Create Account Connection
-
-### Description
-Information about an existing connection. Xplenty provides tha following types of connections:
+### Connections
+Xplenty provides tha following types of connections:
 
 * [BigQuery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/bigquery-connection.md)
 * [Google Cloud SQL Database](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/googlecloud.md)
@@ -30,28 +25,70 @@ Information about an existing connection. Xplenty provides tha following types o
 * [Swift](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/swift-connection.md)
 
 ### Input Parameters
-The **connection type** and **connection ID** must be supplied at the end of the request URL.
+The **connection type** must be supplied. Possible to specify **help_action** scope as `edit`, `index` or `new`.
+Additional `setup_omniauthable` for omniauthable connections:
+
+* [Google AdWords](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/adwords-connection.md)
+* [Google Analytics](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/analytics-connection.md)
+* [Bing Ads](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/bingads-connection.md)
+* [Salesforce](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/salfesforce-connection.md)
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/:type/:id" \
-  -H "Accept: application/vnd.xplenty+json; version=2"
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/:connection_type/help"
 ```
 
 ### Response Example
 ```HTTP
-HTTP/1.1 200 OK
+HTTP/1.1 200 Created
 ```
 
 ```json
 {
-  "id":53,
-  "name":"Amazon S3 sample connection",
-  "username": "johndoe",
-  "unique_id":"S3_CONNECTION_53",
-  "created_at":"2016-04-21T13:55:43Z",
-  "updated_at":"2016-04-21T13:55:43Z",
-  "type":"s3",
-  "url":"https://api.xplenty.com/xplenation/api/connections/s3/53
+  "edit": [
+    {
+      "title": "Allow Xplenty access to your MongoDB",
+      "type": "article",
+      "url": "http://community.xplenty.com/knowledgebase/articles/429203"
+    }
+  ],
+  "index": [
+    {
+      "title": "Defining connections",
+      "type": "article",
+      "url": "http://community.xplenty.com/knowledgebase/articles/180952"
+    }
+  ],
+  "new": [
+    {
+      "title": "Allow Xplenty access to your MongoDB",
+      "type": "article",
+      "url": "http://community.xplenty.com/knowledgebase/articles/429203"
+    }
+  ]
 }
 ```
+
+### Other actions requiring account id
+
+|path|help_action attributes|
+|----|---------|
+|/:account_id/api/connections/help|index, new
+|/:account_id/api/packages/help|edit,index
+|/:account_id/api/clusters/help|index,show
+|/:account_id/api/schedules/help|edit, index, new, show
+|/:account_id/api/members/help|index
+|/:account_id/api/home/help|dashboard
+|/:account_id/api/plans/help|edit
+|/:account_id/api/accounts/help|edit
+|/:account_id/api/hooks/help|index, new_index, slack, pagerduty, hipchat, email, web
+
+### Other actions without account id
+|path|help_action attributes|
+|----|---------|
+/user/notifications/help|show
+/user/help|edit, edit_password
+/user/keys/help|index, new
+/user/console/help|-
+
+
