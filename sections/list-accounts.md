@@ -14,7 +14,7 @@ since|N| |The account list will only contain accounts updated at the given time 
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET-u api_key: "https://api.xplenty.com/accounts" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/accounts" \
   -H "Accept: application/vnd.xplenty+json, version=2" 
 ```
 
