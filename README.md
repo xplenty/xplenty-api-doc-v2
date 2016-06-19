@@ -258,6 +258,7 @@ These are the methods supported by the Xplenty API:
 * [Terminate Cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-cluster.md)
 * [Run Job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/run-job.md)
 * [List Jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-jobs.md)
+* [List Job Children](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-job-children.md)
 * [Get Job Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-job-information.md)
 * [Terminate Job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-job.md)
 * [Watch Clusters and jobs](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/watch-clusters-and-jobs.md)
