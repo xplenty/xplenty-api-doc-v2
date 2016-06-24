@@ -26,8 +26,8 @@ Possible attributes:
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 q|Y| |Terms, e.g. `name:"key 1"`
-sort|N|"relevance"|Possible values are `id`, `updated`, `created` or `name`. The key list will be sorted by the keys' `id`, `updated_at`, `created_at`, `name` attributes or relevance if no sort parameter is specified.
-direction|N|"asc"|Possible values are: `asc`, `desc`. The keys will be sorted in ascending or descending order of the `sort` attribute.
+sort|N|"relevance"|Possible values are `id`, updated`, `created`, `name` or `relevance`. Keys list will be sorted by the keys' requested attribute or relevance if no sort parameter is specified, or specified parameter is wrong.
+direction|N|"asc"|Possible values are: `asc`, `desc`. Keys will be sorted in ascending or descending order of the `sort` attribute.
 
 ### Request (Curl Call) Syntax
 ```shell

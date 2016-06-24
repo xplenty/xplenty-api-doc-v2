@@ -22,12 +22,12 @@ Possible attributes:
 * **finished** - the date and time the job finished running in ISO8601.
 * **status**
 * **duration**
-* **package** - search in related packages by the **name** attribute
+* **package** - search in related packages by the **name** and **id** attributes
 * **log** - search in related logs by the **body** attribute
 * **schedule** - search in related schedule names by the **name** attribute
 * **user** - search in related users (owners) by the **name** and **email** attributes
 
-Free text (not assigned to any attribute) will search in job ID, package name and description. They will be joined with OR.
+Free text (not assigned to any attribute) will search in job ID and package name. They will be joined with OR.
 
 Please read the document describing [job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md) for other details.
 
@@ -37,8 +37,8 @@ Please read the document describing [job](https://github.com/xplenty/xplenty-api
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 q|Y| |Terms, e.g. `status:pending test package`
-sort|N|"relevance"|Possible values are `id`, `updated`, `created`. The job list will be sorted by the jobs' `id`, `updated_at`, `created_at` attributes or relevance if no sort parameter is specified.
-direction|N|"asc"|Possible values are: `asc`, `desc`. The jobs will be sorted in ascending or descending order of the "sort" attribute.
+sort|N|"relevance"|Possible values are `id`, updated`, `created` or `relevance`. Jobs list will be sorted by the jobs' requested attribute or relevance if no sort parameter is specified, or specified parameter is wrong.
+direction|N|"asc"|Possible values are: `asc`, `desc`. Jobs will be sorted in ascending or descending order of the `sort` attribute.
 
 ### Request (Curl Call) Syntax
 ```shell

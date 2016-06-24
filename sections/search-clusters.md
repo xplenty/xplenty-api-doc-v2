@@ -20,6 +20,7 @@ Possible attributes:
 * **id**
 * **name**
 * **nodes**
+* **status**
 * **created**
 * **terminated**
 
@@ -33,8 +34,8 @@ Please read the document describing [cluster](https://github.com/xplenty/xplenty
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 q|Y| |Terms, e.g. `name:"cluster 1" test cluster`
-sort|N|"relevance"|Possible values are `id`, updated`, `created` or `name`. The cluster list will be sorted by the clusters' `id`, `updated_at`, `created_at` or `name` attributes or relevance if no sort parameter is specified.
-direction|N|"asc"|Possible values are: `asc`, `desc`. The clusters will be sorted in ascending or descending order of the `sort` attribute.
+sort|N|"relevance"|Possible values are `id`, updated`, `created`, `name` or `relevance`. Clusters list will be sorted by the clusters' requested attribute or relevance if no sort parameter is specified, or specified parameter is wrong.
+direction|N|"asc"|Possible values are: `asc`, `desc`. Clusters will be sorted in ascending or descending order of the `sort` attribute.
 
 ### Request (Curl Call) Syntax
 ```shell

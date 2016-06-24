@@ -21,7 +21,7 @@ Possible attributes:
 * **name**
 * **description**
 * **status**
-* **package** - search in related packages by the **name** attribute
+* **package** - search in related packages by the **id** and **name** attributes
 
 Free text (not assigned to any attribute) will search in name and description. They will be joined with OR.
 
@@ -33,8 +33,8 @@ Please read the document describing [schedule](https://github.com/xplenty/xplent
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 q|Y| |Terms, e.g. `name:"schedule 1" test schedule`
-sort|N|"relevance"|Possible values are `id`, `updated`, `created` or `name`. The schedule list will be sorted by the schedules' `id`, `updated_at`, `created_at`, `name` attributes or relevance if no sort parameter is specified.
-direction|N|"asc"|Possible values are: `asc`, `desc`. The schedules will be sorted in ascending or descending order of the `sort` attribute.
+sort|N|"relevance"|Possible values are `id`, updated`, `created`, `name` or `relevance`. Schedules list will be sorted by the schedules' requested attribute or relevance if no sort parameter is specified, or specified parameter is wrong.
+direction|N|"asc"|Possible values are: `asc`, `desc`. Schedules will be sorted in ascending or descending order of the `sort` attribute.
 
 ### Request (Curl Call) Syntax
 ```shell
