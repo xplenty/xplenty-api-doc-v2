@@ -113,7 +113,10 @@ HTTP/1.1 200 OK
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
     },
-  },
+    "component": {
+      "name": "run_my_first_package",
+      "type": "run_package_component"
+    }
   {
     "id": 303,
     "status": "failed",
@@ -198,6 +201,10 @@ HTTP/1.1 200 OK
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
     },
+    "component": {
+      "name": "run_the_package",
+      "type": "run_package_component"
+    }
   },
   {
     "id": 299,
@@ -283,6 +290,10 @@ HTTP/1.1 200 OK
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
     },
+    "component": {
+      "name": "run_my_last_package",
+      "type": "run_package_component"
+    }
   },
   {
     "id": 157,
@@ -402,6 +413,10 @@ HTTP/1.1 200 OK
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
     },
+    "component": {
+      "name": "run_another_package",
+      "type": "run_package_component"
+    }
   }
 ]
 ```
