@@ -26,7 +26,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/jobs" \
     "dynamic_variables":{
       "current_time":"CurrentTime()",
       "MY_CURRENT_TIME":"$CURRENT_TIME_VAR",
-      "MY_STRING_VAR":"'some string'"
+      "MY_STRING_VAR":"\u0027some string\u0027"
     },
     "variables": {
       "MY_STATIC_VAR":"some static variable"
