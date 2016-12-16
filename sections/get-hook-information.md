@@ -35,6 +35,11 @@ HTTP/1.1 200 OK
     "insecure_ssl": false,
     "basic_auth": false
   },
-  "events": ["job.submitted", "cluster.terminated"]
+  "events": ["job.submitted", "cluster.terminated"],
+  "hook_notifications_count":0,
+  "none_hook_notifications_count":0,
+  "request_timeout_hook_notifications_count":0,
+  "success_hook_notifications_count":0,
+  "error_hook_notifications_count":0
 }
 ```
