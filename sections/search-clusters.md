@@ -20,6 +20,7 @@ Possible attributes:
 * **id**
 * **name**
 * **nodes**
+* **status**
 * **created**
 * **terminated**
 
