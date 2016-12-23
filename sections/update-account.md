@@ -3,11 +3,13 @@
 ### Description
 This call updates [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md).
 
+Note: Changing the specified account's string identifier is possible by including a new identifier in the payload as `account_id`.
+
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-account_id|Y| |The account string identifier. Account ID provided in URL identifies account but account_id parameter passed in JSON allows to change ID.
+account_id|Y| |The account string identifier.
 name|N| |The account's name.
 location|N| |The account's location.
 region|N| |The account's region.
@@ -20,7 +22,6 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/accounts/:account_id" \
   -H "Accept: application/vnd.xplenty+json, version=2" \
   -H "Content-Type: application/json" \
   -d '{
-    "account_id": "sample-admin",
     "name": "Sample Admin",
     "location": "California",
     "region": "amazon-web-services::us-east-1",
@@ -50,6 +51,7 @@ HTTP/1.1 200 OK
   "schedules_count":0,
   "connections_count":2,
   "role":"member",
+  "permissions":["viewAccountInfo", "viewAccountUsage", "listMembers", "deleteMember", "viewAccountMember", "listHooks", "viewHook", "createHook", "updateHook", "deleteHook", "listConnections", "viewConnection", "createConnection", "testConnection", "importConnection", "updateConnection", "deleteConnection", "listPackages", "viewPackage", "createPackage", "updatePackage", "deletePackage", "validatePackage", "listPackageTemplates", "listJobs", "viewJob", "createJob", "listClusters", "viewCluster", "createCluster", "updateCluster", "deleteCluster", "listSchedules", "viewSchedule", "createSchedule", "updateSchedule", "deleteSchedule"],
   "owner_id":1,
   "members_count":3,
   "packages_count":0,

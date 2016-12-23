@@ -15,8 +15,10 @@ An Xplenty **account** represents a related group (usually a company) of Xplenty
 * **updated_at** - the date and time the account was last updated
 * **schedules_count** - the number of schedules for the account
 * **connections_count** - the number of connections for the account
-* **role** - the member's role in the account ("admin" or "member")
+* **role** - the authenticated users' role in the account
+* **permissions** - the permissions the authenticated user has on the account
 * **owner_id** - the numeric identifier of the account's owner
+* **is_owner** - indicator if the authenticated user is the owner of the account
 * **members_count** - the number of members in the account
 * **packages_count** - the number of packages for the account
 * **jobs_count** - the number of jobs for the account

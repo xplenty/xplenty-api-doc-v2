@@ -34,6 +34,8 @@ HTTP/1.1 200 OK
   "schedules_count":0,
   "connections_count":2,
   "role":"admin",
+  "permissions":["viewAccountInfo", "updateAccountInfo", "changeAccountOwner", "deleteAccount", "viewAccountBillingInfo", "updateAccountBillingInfo", "viewAccountUsage", "listMembers", "inviteMember", "deleteMember", "updateMemberRole", "viewAccountMember", "listHooks", "viewHook", "createHook", "updateHook", "deleteHook", "listConnections", "viewConnection", "createConnection", "testConnection", "importConnection", "updateConnection", "deleteConnection", "listPackages", "viewPackage", "createPackage", "updatePackage", "deletePackage", "validatePackage", "listPackageTemplates", "listJobs", "viewJob", "createJob", "listClusters", "viewCluster", "createCluster", "updateCluster", "deleteCluster", "listSchedules", "viewSchedule", "createSchedule", "updateSchedule", "deleteSchedule"], 
+  "is_owner":true,
   "owner_id":1,
   "members_count":2,
   "packages_count":51,

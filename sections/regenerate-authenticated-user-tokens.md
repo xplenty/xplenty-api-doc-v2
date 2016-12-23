@@ -1,21 +1,13 @@
-## Get Authenticated User
+## Regenerate user personal authorization tokens
 
 ### Description
-Info for the authenticated user.
+Regenerates authenticated [user](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/user.md) authorization tokens (API key)
 
-### Input Parameters
-|Name|Required?|Default|Description|
-|----|---------|-------|-----------|
-current_password|N| |The user's current password. It allows to retrieve information about API key.
-
-### Request (Curl Call) Syntax
+### Request (Curl Call) Example
 ```shell
-curl -X GET -u api_key: "https://api.xplenty.com/user" \
+$ curl -X POST -u api_key: "https://api.xplenty.com/user/regenerate-tokens" \
   -H "Accept: application/vnd.xplenty+json, version=2" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "current_password":"password"
-  }'
+  -H "Content-Type: application/json"
 ```
 
 ### Response Example
@@ -33,20 +25,18 @@ HTTP/1.1 200 OK
   "receive_newsletter":false,
   "location":null,
   "time_zone":"UTC",
-  "time_zone_info": {
-    "name": "UTC",
-    "identifier": "Etc/UTC",
-    "offset": "+0000"
-  },
   "notifications_count":0,
   "unread_notifications_count":0,
-  "notification_settings": { "email": true, "web": true },
+  "notification_settings": { 
+    "email": true, 
+    "web": true 
+  },
   "gravatar_email":"gravatar@example.com",
   "created_at":"2015-03-04T10:38:05Z",
   "updated_at":"2015-03-04T10:38:05Z",
   "avatar_url":"http://gravatar.com/avatar/675a2c14f074726fc4455ae3bdd1151f.png?d=retro&s=140",
   "last_login":"2015-03-04T10:38:05Z",
-  "api_key":"LI4N5OC8RCc53HVWcgQ2h6Ntv46844sl",
+  "api_key":"TI4L5OC8RCc52HveCgq2h6Ntv46444el",
   "url":"https://api.xplenty.com/user"
 }
 ```
