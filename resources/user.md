@@ -8,6 +8,10 @@ An Xplenty **user** represents an individual signed up to use the Xplenty platfo
 * **gravatar_email** - the user's gravatar email
 * **avatar_url** - the url for the user's avatar
 * **time_zone** - the user's time zone
+* **time_zone_info** - the user's time zone info
+  * **name** - the user's time zone name
+  * **identifier** -  the user's time zone IANA identifier (e.g. Etc/UTC)
+  * **offset** - the user's time zone offset without colon (e.g. +0600)
 * **location** - the user's location
 * **confirmed** - indicates if the user is confirmed
 * **confirmed_at** - confirmation date and time

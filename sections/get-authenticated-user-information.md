@@ -33,6 +33,11 @@ HTTP/1.1 200 OK
   "receive_newsletter":false,
   "location":null,
   "time_zone":"UTC",
+  "time_zone_info": {
+    "name": "UTC",
+    "identifier": "Etc/UTC",
+    "offset": "+0000"
+  },
   "notifications_count":0,
   "unread_notifications_count":0,
   "notification_settings": { "email": true, "web": true },
