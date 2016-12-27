@@ -2,17 +2,17 @@
 
 ### Description
 This call returns information for the list of regions supported by Xplenty. You can also select regions for particular Brand.
-You can use this information to verify the regions in which you can create a cluster.
 
 ### Input Parameters
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 brand_id|N| |The Brand's numeric identifier for which you want to list regions.
+type|N| |The resource type to return the supported regions for. Supported values are `redshift`, `bigquery`, `rackspace`, `softlayer`.
 
 ### Request (Curl Call) Syntax
 ```shell
-$curl -X GET -u api_key: "https://api.xplenty.com/regions?brand_id=1" \
+$curl -X GET -u api_key: "https://api.xplenty.com/regions/:type?brand_id=1" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
@@ -24,19 +24,88 @@ HTTP/1.1 200 OK
 ```json
 [
   {
-    "name": "AWS - Us East (N. Virginia)",
     "group_name": "Amazon Web Services",
-    "id": "amazon-web-services::us-east-1"
+    "id": "amazon-web-services::us-east-1",
+    "name": "AWS - US East (N. Virginia)",
+    "short_name": "US East (Northern Virginia)"
   },
   {
-    "name": "Rackspace - Dallas (DFW)",
-    "group_name": "Rackspace Cloud Servers",
-    "id": "rackspace::dfw"
+    "group_name": "Amazon Web Services",
+    "id": "amazon-web-services::us-west-1",
+    "name": "AWS - US West (N. California)",
+    "short_name": "US West (Northern California)"
   },
   {
-    "name": "Google Cloud",
-    "group_name": "Google Cloud - US (Central)",
-    "id": "us-central1"
+    "group_name": "Amazon Web Services",
+    "id": "amazon-web-services::us-west-2",
+    "name": "AWS - US West (Oregon)",
+    "short_name": "US West (Oregon)"
+  },
+  {
+    "group_name": "Amazon Web Services",
+    "id": "amazon-web-services::eu-west-1",
+    "name": "AWS - EU (Ireland)",
+    "short_name": "EU (Ireland)"
+  },
+  {
+    "group_name": "SoftLayer CloudLayer",
+    "id": "soft-layer::dal05",
+    "name": "SoftLayer - Dallas 5 (DAL05)",
+    "short_name": "Dallas 5 (DAL05)"
+  },
+  {
+    "group_name": "SoftLayer CloudLayer",
+    "id": "soft-layer::ams01",
+    "name": "SoftLayer - Amsterdam 1 (AMS01)",
+    "short_name": "Amsterdam 1 (AMS01)"
+  },
+  {
+    "group_name": "SoftLayer CloudLayer",
+    "id": "soft-layer::sng01",
+    "name": "SoftLayer - Singapore 1 (SNG01)",
+    "short_name": "Singapore 1 (SNG01)"
+  },
+  {
+    "group_name": "Amazon Web Services",
+    "id": "amazon-web-services::ap-southeast-1",
+    "name": "AWS - Asia Pacific (Singapore)",
+    "short_name": "Asia Pacific (Singapore)"
+  },
+  {
+    "group_name": "Amazon Web Services",
+    "id": "amazon-web-services::ap-southeast-2",
+    "name": "AWS - Asia Pacific (Sydney)",
+    "short_name": "Asia Pacific (Sydney)"
+  },
+  {
+    "group_name": "Amazon Web Services",
+    "id": "amazon-web-services::ap-northeast-1",
+    "name": "AWS - Asia Pacific (Tokyo)",
+    "short_name": "Asia Pacific (Tokyo)"
+  },
+  {
+    "group_name": "Amazon Web Services",
+    "id": "amazon-web-services::sa-east-1",
+    "name": "AWS - South America (S\u00e3o Paulo)",
+    "short_name": "South America (S\u00e3o Paulo)"
+  },
+  {
+    "group_name": "Google Cloud",
+    "id": "gcloud::asia-east1",
+    "name": "Google Cloud - East Asia",
+    "short_name": "East Asia"
+  },
+  {
+    "group_name": "Google Cloud",
+    "id": "gcloud::europe-west1",
+    "name": "Google Cloud - Western Europe",
+    "short_name": "Western Europe"
+  },
+  {
+    "group_name": "Google Cloud",
+    "id": "gcloud::us-central1",
+    "name": "Google Cloud - Central US",
+    "short_name": "Central US"
   }
 ]
 ```
