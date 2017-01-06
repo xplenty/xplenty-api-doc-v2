@@ -32,7 +32,7 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/user" \
       "email": true, 
       "web": true 
     },
-    "gravatar_email": "gravater@example.com",
+    "gravatar_email": "gravatar@example.com",
     "time_zone": "UTC",
     "receive_newsletter":true,
     "new_password":"new-password"
@@ -47,12 +47,12 @@ HTTP/1.1 200 OK
 ```json
 {
   "id":1,
-  "name":"Test User 1",
-  "email":"test.user@example.com",
+  "name": "Sample User",
+  "email":"test@example.com",
   "confirmed":true,
   "confirmed_at":"2015-03-04T10:38:03Z",
-  "receive_newsletter":false,
-  "location":null,
+  "receive_newsletter":true,
+  "location": "California",
   "time_zone":"UTC",
   "time_zone_info": {
     "name": "UTC",
