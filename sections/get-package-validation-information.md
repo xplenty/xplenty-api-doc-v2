@@ -8,7 +8,7 @@ The **package ID** and **validation ID** must be supplied at the end of the requ
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/packages/:package_id/validations/:validation_id" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/packages/:package_id/validations/:validation_id" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
