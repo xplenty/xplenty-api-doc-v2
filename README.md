@@ -209,7 +209,7 @@ NOTE: You can also pass in a `page` parameter. By default, page always starts at
 Information about pagination is provided in [the Link header](http://tools.ietf.org/html/rfc5988) of an API call, so that you know how many more requests are needed to retrieve the complete list of collection resources:
 
 ```shell
-$ curl -I "https://api.xplenty.com/:account_id/api/clusters?page=3&limit=10"
+$ curl -I "https://api.xplenty.com/:account_id/api/clusters?offset=3&limit=10"
 ```
 
 The `-I` parameter indicates that we only care about the headers, not the actual content.
@@ -217,11 +217,11 @@ The `-I` parameter indicates that we only care about the headers, not the actual
 In examining the result, you'll notice some information in the Link header that looks like this:
 
 ```
-Link: <https://api.xplenty.com/:account_id/api/clusters?page=4&limit=10>; rel="next", 
-      <https://api.xplenty.com/:account_id/api/clusters?page=2&limit=10>; rel="prev"
+Link: <https://api.xplenty.com/:account_id/api/clusters?offset=4&limit=10>; rel="next", 
+      <https://api.xplenty.com/:account_id/api/clusters?offset=2&limit=10>; rel="prev"
 ```
 
-`rel="next"` says that the next page is `page=4` and `rel="prev"` says that the previous page is `page=2`. Using this information, you could traverse through the list of results in the API call.
+`rel="next"` says that the next offset is `offset=4` and `rel="prev"` says that the previous offset is `offset=2`. Using this information, you could traverse through the list of results in the API call.
 
 <a id="RateLimits" name="RateLimits">
 ## Rate Limits
