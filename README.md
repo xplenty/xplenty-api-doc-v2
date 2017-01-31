@@ -204,8 +204,6 @@ The response to a GET request for collection resources (e.g. clusters) may not r
 * **offset** - the index of the first object to retrieve, starting from 0
 * **limit** - the number of items to return (default is 20, maximum is 100)
 
-NOTE: You can also pass in a `page` parameter. By default, page always starts at 1.
-
 Information about pagination is provided in [the Link header](http://tools.ietf.org/html/rfc5988) of an API call, so that you know how many more requests are needed to retrieve the complete list of collection resources:
 
 ```shell
