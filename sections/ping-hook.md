@@ -3,7 +3,7 @@
 ### Description
 Fire test notification (ping event). You can use this to test if hook was properly configured.
 
-Xplenty provides tha following types of hooks:
+Xplenty provides the following types of hooks:
 
 * [Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/web-hook.md)
 * [Slack Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/slack-hook.md)
