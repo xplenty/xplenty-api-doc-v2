@@ -16,7 +16,7 @@ since|N| |The validation list will only contain validations updated at the given
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/packages/:package_id/validations" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/packages/:package_id/validations" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json"
 ```
