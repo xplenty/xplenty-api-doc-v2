@@ -1,9 +1,6 @@
 ## Get Account Connection Information
 
 ### Description
-Information about existing account [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md).
-
-### Description
 Information about an existing connection. Xplenty provides the following types of connections:
 
 * [BigQuery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/bigquery-connection.md)
