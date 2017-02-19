@@ -1,4 +1,4 @@
-### Google Cloud SQL Database Connection Attributes
+### Google Cloud SQL Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|

@@ -1,4 +1,4 @@
-### Segment database Connection Attributes
+### Segment Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|

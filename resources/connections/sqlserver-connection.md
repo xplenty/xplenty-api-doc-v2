@@ -1,4 +1,4 @@
-### SQL server database Connection Attributes
+### Microsoft SQL Server Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|

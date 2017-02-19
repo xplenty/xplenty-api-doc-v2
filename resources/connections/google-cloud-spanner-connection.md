@@ -1,4 +1,4 @@
-### Google Cloud Spanner Database Connection Attributes
+### Google Cloud Spanner Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|

@@ -1,4 +1,4 @@
-### Amazon Redshift database Connection Attributes
+### Amazon Redshift Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|
