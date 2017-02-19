@@ -1,4 +1,4 @@
-### MySQL database Connection Attributes
+### MySQL Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|

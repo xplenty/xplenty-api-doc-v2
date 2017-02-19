@@ -1,4 +1,4 @@
-### PostgreSQL database Connection Attributes
+### PostgreSQL Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|

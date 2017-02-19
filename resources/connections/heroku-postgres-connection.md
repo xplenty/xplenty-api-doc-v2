@@ -1,4 +1,4 @@
-### Heroku database Connection Attributes
+### Heroku Postgres Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|

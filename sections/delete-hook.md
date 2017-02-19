@@ -3,7 +3,7 @@
 ### Description
 Delete an existing hook. You can deactivate hook ([update hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-hook.md) with **active** field set to `false`) instead of removing it, if you need to disable it temporarly.
 
-Xplenty provides tha following types of hooks:
+Xplenty provides the following types of hooks:
 
 * [Web Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/web-hook.md)
 * [Slack Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/hooks/slack-hook.md)

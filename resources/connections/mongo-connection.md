@@ -1,4 +1,4 @@
-### Mongo Database Connection Attributes
+### MongoDB Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|
