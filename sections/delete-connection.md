@@ -1,7 +1,7 @@
 ## Delete Account Connection
 
 ### Description
-Delete an existing Collection. Xplenty provides tha following types of connections:
+Delete an existing Connection. Xplenty provides tha following types of connections:
 
 * [BigQuery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/bigquery-connection.md)
 * [Google Cloud SQL Database](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/googlecloud.md)
