@@ -11,6 +11,7 @@ Possible to add **force_fetch** which determines if clear cache or not.
 ```shell
 $ curl -X GET -u api_key: "/:account_id/api/connections/metadata/salesforce/:connection_id/fields" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
   -d '{"object_name": "Account"}'
 ```
 
