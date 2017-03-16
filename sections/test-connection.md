@@ -31,7 +31,7 @@ The **connection ID** and **connection type**. Possible values of the type are l
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X POST -u api_key: "/:account_id/api/connections/:connection_type/:connection_id/test" \
+$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/connections/:connection_type/:connection_id/test" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
@@ -60,7 +60,7 @@ There is special case when **connection ID** is not required: when **type** is `
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X POST -u api_key: "/:account_id/api/connections/curl/test" \
+$ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/connections/curl/test" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 

@@ -10,8 +10,9 @@ Information about other report types [Bing documentation](https://msdn.microsoft
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET "/:account_id/api/connections/metadata/bingads/columns" \
-  -H "Accept: application/vnd.xplenty+json; version=2" -H "Content-Type: application/json"
+$ curl -X GET "https://api.xplenty.com/:account_id/api/connections/metadata/bingads/columns" \
+  -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json"
 ```
 
 ### Response Example
