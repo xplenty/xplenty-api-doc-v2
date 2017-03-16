@@ -14,8 +14,9 @@ force_fetch|N|false|determines if get campaigns from all accounts or not
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "/:account_id/api/connections/metadata/bingads/:connection_id/accounts" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/metadata/bingads/:connection_id/accounts" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
+  -H "Content-Type: application/json" \
   -d '{"accounts": ["123"]}'
 ```
 

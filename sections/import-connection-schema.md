@@ -107,7 +107,7 @@ delimiter|N|\t|for **delimited** record_type
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "/:account_id/api/connections/:connection_type/:connection_id/schema" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/:connection_type/:connection_id/schema" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
@@ -157,7 +157,7 @@ There is special case when **connection ID** is not required: when **type** is `
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET -u api_key: "/:account_id/api/connections/curl/schema" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/curl/schema" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
   -d '{
