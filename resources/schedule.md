@@ -19,7 +19,11 @@ An Xplenty **schedule** executes packages periodically starting at a specified d
     * **weeks**
     * **months**
     * **years**
-* **task**
+* **task** a task contains the following fields:
+    * **nodes** the number of compute nodes for the task to execute on.
+    * **terminate_on_idle** indicates if the cluster will terminate automatically. Default is true
+    * **time_to_idle** time after which the cluster will terminate.
+    * **packages** an array of package objects
 * **last_run_at** the date and time that schedule's task ran last
 * **last_run_status** status of the last execution of the schedule's task
 * **execution_count** number of times the schedule has run
