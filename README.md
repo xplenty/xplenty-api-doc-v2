@@ -348,6 +348,8 @@ These are the methods supported by the Xplenty API:
 * [Reset Hook Salt](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/reset-hook-salt.md)
 * [Delete Hook](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-hook.md)
 * [List Supported Time Zones](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-timezones.md)
+* [List Invoices](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-invoices.md)
+* [Get Invoice Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-invoice-information.md)
 * [Help](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/help.md)
 
 <a id="ToS" name="ToS">
