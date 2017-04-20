@@ -8,7 +8,7 @@ You can use this information to monitor your invoices.
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-sort|N|"created"|Possible values are `updated`, `created` or `name`. The invoices list will be sorted by the invoices' `updated_at`, `created_at` or `name` value respectively.
+sort|N|"created"|Possible values are `updated`, `created`, `issued` or `number`. The invoices list will be sorted by the invoices' `updated_at`, `created_at`, `issued` or `number` value respectively.
 direction|N|"desc"|Possible values are: `asc`, `desc`. The invoices will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The invoices list will only contain invoices updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
