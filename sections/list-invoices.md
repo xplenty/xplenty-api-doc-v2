@@ -1,4 +1,4 @@
-## List Packages
+## List Invoices
 
 ### Description
 List [invoices](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/invoice.md) that are accessible by authenticated user.
@@ -44,7 +44,7 @@ HTTP/1.1 200 OK
     "issued_at": "2017-04-12T10:35:26Z",
     "notes": null,
     "number": 312382,
-    "status": "pending",
+    "status": "successful",
     "total_cents": 10000,
     "total_currency": "USD",
     "updated_at": "2017-04-14T15:42:34Z",
