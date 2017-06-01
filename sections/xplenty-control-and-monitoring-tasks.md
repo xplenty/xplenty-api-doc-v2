@@ -4,7 +4,7 @@ These are the main tasks you can perform with the Xplenty control and monitoring
 
 ## Cluster Management
 The most common way to manage clusters is to [create a cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-cluster.md) when you need to run one or more jobs, and [terminate the cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/terminate-cluster.md) when the jobs are completed. 
-When you create a cluster, you either specify it's a sandbox type cluster or specify the number of compute nodes when it's a production type cluster.
+When you create a cluster, you either specify it's a sandbox type cluster with one node or specify the number of compute nodes when it's a production type cluster.
 
 After creating a cluster, poll its status by [retrieving the cluster information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-cluster-information.md) and checking its status value. When the status changes to "available", the cluster has finished initializing and is ready to run jobs.
 

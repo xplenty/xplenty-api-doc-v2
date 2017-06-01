@@ -12,7 +12,7 @@ You can verify that a cluster has initialized successfully by [retrieving the cl
 |Name|Required?|    Default|Description|
 |----|---------|    -------|-----------|
 |nodes|Y| |Determines the number of compute nodes in the cluster. The value range is between 2 and your account's maximum, determined by the chosen pricing plan|
-type|N|production|If the value is set to "sandbox", a sandbox cluster is created and the "nodes" parameter is ignored
+type|N|production|If the value is set to "sandbox", the sandbox cluster must be created with 1 node
 name|N|System generated|Name to assign to the new cluster
 description|N|Blank|Description to assign to the new cluster
 terminate_on_idle|N|false|If the value is set to either true, t or 1 this cluster will be terminated after it becomes idle
