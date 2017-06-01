@@ -30,7 +30,7 @@ Create a new connection. Xplenty provides the following types of connections:
 * [Intercom](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/intercom-connection.md)
 
 ### Input Parameters
-The **connection type** and **connection ID** must be supplied at the end of the request URL.
+The **connection type** must be supplied at the end of the request URL.
 
 Every connection has input attributes specific for it's type.
 
