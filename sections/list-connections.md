@@ -34,7 +34,7 @@ HTTP/1.1 200 OK
     "created_at":"2016-04-21T13:55:43Z",
     "updated_at":"2016-04-21T13:55:43Z",
     "type":"s3",
-    "url":"https://api.xplenty.com/xplenation/api/connections/s3/53
+    "url":"https://api.xplenty.com/xplenation/api/connections/s3/53"
   },
   {
     "id":54,
@@ -44,7 +44,7 @@ HTTP/1.1 200 OK
     "created_at":"2016-04-21T13:55:43Z",
     "updated_at":"2016-04-21T13:55:43Z",
     "type":"s3",
-    "url":"https://api.xplenty.com/xplenation/api/connections/s3/54
+    "url":"https://api.xplenty.com/xplenation/api/connections/s3/54"
   },
   {
     "id":55,
@@ -54,7 +54,7 @@ HTTP/1.1 200 OK
     "created_at":"2016-04-21T13:55:43Z",
     "updated_at":"2016-04-21T13:55:43Z",
     "type":"s3",
-    "url":"https://api.xplenty.com/xplenation/api/connections/s3/55
+    "url":"https://api.xplenty.com/xplenation/api/connections/s3/55"
   }
 ]
 ```
