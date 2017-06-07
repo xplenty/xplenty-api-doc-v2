@@ -37,3 +37,7 @@ The access information is stored securely and can only be used by your account's
 ### Public Key
 
 A **public key** represent public SSH key associated with a user and is used to authorize users with cluster instances.
+
+### Delivery
+
+An Xplenty **delivery** is a blueprint for a set of resources which automates the task of delivering data from one place to another.
