@@ -13,4 +13,6 @@
 |database|N|Y| |the name of database to use
 |host|N|Y| |the ID of the project that contains the instance to connect to
 |instance_id|N|Y| |the ID of the instance to connect to
+|code|N|N| |OAuth code parameter
+|redirect_uri|N|Y if code is provided| |OAuth redirect URI used for code generation
 |url|Y| | |the connection resource URL (API)
