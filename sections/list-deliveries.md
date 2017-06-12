@@ -41,7 +41,7 @@ HTTP/1.1 200 OK
       },
       "properties": {}
     },
-    "destiantion": {
+    "destination": {
       "connection": {
         "type": "redshift",
         "id": 1

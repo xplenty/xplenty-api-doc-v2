@@ -35,7 +35,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/deliveries" 
       },
       "properties": {}
     },
-    "destiantion": {
+    "destination": {
       "connection": {
         "type": "redshift",
         "id": 1
@@ -66,7 +66,7 @@ HTTP/1.1 201 Created
     },
     "properties": {}
   },
-  "destiantion": {
+  "destination": {
     "connection": {
       "type": "redshift",
       "id": 1
