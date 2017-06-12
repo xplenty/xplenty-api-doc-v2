@@ -56,7 +56,7 @@ HTTP/1.1 201 Created
 {
   "id": 2,
   "name": "Salesfore to Redshift",
-  "description": ""Delivery description,
+  "description": "Delivery description",
   "interval": 1,
   "interval_amount": "days",
   "source": {
