@@ -26,8 +26,8 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/deliveries" 
   -d '{
     "name": "Salesfore to Redshift",
     "description": "Delivery description",
-    "interval_unit": 1,
-    "interval_amount": "days",
+    "interval_unit": "days",
+    "interval_amount": 1,
     "source": {
       "connection": {
         "type": "salesforce",
@@ -57,8 +57,8 @@ HTTP/1.1 201 Created
   "id": 2,
   "name": "Salesfore to Redshift",
   "description": "Delivery description",
-  "interval_unit": 1,
-  "interval_amount": "days",
+  "interval_unit": "days",
+  "interval_amount": 1,
   "source": {
     "connection": {
       "type": "salesforce",

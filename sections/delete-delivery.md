@@ -5,7 +5,6 @@ Delete an existing [delivery](https://github.com/xplenty/xplenty-api-doc-v2/blob
 
 ### Notes
 * This call removes the delivery all together - contrary to some other resources this one **won't** be archived / updated.
-You can verify that a delivery has been removed successfully by [retrieving the delivery's information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-delivery-information.md).
 
 ### Input Parameters
 The **delivery resource ID** must be supplied at the end of the request URL.
@@ -26,8 +25,8 @@ HTTP/1.1 200 OK
   "id": 2,
   "name": "Salesfore to Redshift",
   "description": null,
-  "interval_unit": 1,
-  "interval_amount": "days",
+  "interval_unit": "days",
+  "interval_amount": 1,
   "source": {
     "connection": {
       "type": "salesforce",

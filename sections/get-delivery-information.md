@@ -22,8 +22,8 @@ HTTP/1.1 200 OK
   "id": 2,
   "name": "Salesfore to Redshift",
   "description": null,
-  "interval_unit": 1,
-  "interval_amount": "days",
+  "interval_unit": "days",
+  "interval_amount": 1,
   "source": {
     "connection": {
       "type": "salesforce",
