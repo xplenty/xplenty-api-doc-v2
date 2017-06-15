@@ -4,8 +4,7 @@
 Create a new [delivery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/delivery.md).
 
 ### Notes
-* This call only triggers delivery creation, and therefore it returns the "disabled" status. To enable a delivery you need to change its status to "enabled" using [update delivery's information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-delivery-information.md)
-You can verify that a delivery has initialized successfully by [retrieving the delivery's information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-delivery-information.md) and checking for the "enabled" status.
+You can verify that a delivery has initialized successfully by [retrieving the delivery's information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-delivery-information.md) and checking for the "enabled" status. This can take a few minutes to take place.
 * You must save the delivery ID value returned in the response "id" field. You will use the value to refer to this delivery in subsequent API calls.
 
 ### Input Parameters
