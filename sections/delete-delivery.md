@@ -26,7 +26,7 @@ HTTP/1.1 200 OK
   "id": 2,
   "name": "Salesfore to Redshift",
   "description": null,
-  "interval": 1,
+  "interval_unit": 1,
   "interval_amount": "days",
   "source": {
     "connection": {
@@ -44,6 +44,8 @@ HTTP/1.1 200 OK
       "schema": "salesforce_prod"
     }
   },
+  "status": "enabled",
+  "owner_id": 27,
   "created_at": "2014-09-25T08:48:51Z",
   "updated_at": "2014-09-25T08:48:51Z",
   "url": "https://api.xplenty.com/xplenation/api/deliveries/2"
