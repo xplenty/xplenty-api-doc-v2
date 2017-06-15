@@ -16,7 +16,6 @@ An Xplenty **delivery** is a blueprint for a set of resources which automates th
     * **days**
     * **weeks**
     * **months**
-    * **years**
 * **source** a source contains the following fields:
     * **connection** a valid connection to be used as a source
         * **id** the connection's numeric identifier

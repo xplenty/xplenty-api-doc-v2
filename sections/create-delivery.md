@@ -13,7 +13,7 @@ You can verify that a delivery has initialized successfully by [retrieving the d
 | name                    | N         | Auto generated  | Name to assign to the new delivery                                   |
 | description             | N         | blank           | Description to assign to the new delivery                            |
 | interval_amount         | N         | 1               | Number of interval units between delivery's task executions          |
-| interval_unit           | N         | days            | Delivery's interval unit. Possible values are: `minutes`, `hours`, `days`, `weeks`, `years`.|
+| interval_unit           | N         | days            | Delivery's interval unit. Possible values are: `minutes`, `hours`, `days`, `weeks`.|
 | source                  | Y         |                 | Delivery's source properties                                         |
 | destination             | Y         |                 | Delivery's destination properties                                    |
 

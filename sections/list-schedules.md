@@ -9,7 +9,7 @@ Optionally, you can supply the input parameters to filter the schedule list so t
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-status|N|"all"|Possible values are any status listed above or ```all```. The call will return only schedules with the given status, or all the schedules if the "all" value is specified.
+status|N|"all"|Possible values are any status listed in [Schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md) resource or ```all```. The call will return only schedules with the given status, or all the schedules if the "all" value is specified.
 sort|N|"created"|Possible values are ```updated``` or ```created```. The schedule list will be sorted by the schedules' "updated_at" or "created_at" value respectively.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The schedules will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The schedule list will only contain schedules updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.

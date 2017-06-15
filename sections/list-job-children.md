@@ -9,7 +9,7 @@ Optionally, you can supply the input parameters to filter the job list so that i
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-status|N|"all"|Possible values are any status listed above or ```all```. The call will return only jobs with the given status, or all the clusters if the "all" value is specified.
+status|N|"all"|Possible values are any status listed in [Job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md) resource or ```all```. The call will return only jobs with the given status, or all the clusters if the "all" value is specified.
 sort|N|"created"|Possible values are ```updated``` or ```created```. The job list will be sorted by the jobs' "updated_at" or "created_at" value respectively.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The jobs will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The job list will only contain jobs updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.

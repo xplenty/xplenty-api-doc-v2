@@ -355,16 +355,15 @@ These are the methods supported by the Xplenty API:
 * [List Invoices](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-invoices.md)
 * [Get Invoice Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-invoice-information.md)
 * [Help](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/help.md)
+* [List Deliveries](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-deliveries.md)
+* [Create Delivery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-delivery.md)
+* [Delete Delivery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-delivery.md)
 
-<a id="ToS" name="ToS">
 ## Terms of Service
-</a>
 
 Please refer to our [Terms of Service](http://www.xplenty.com/tos) page.
 
-<a id="References" name="References">
 ## References
-</a>
 
 [Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)
 
