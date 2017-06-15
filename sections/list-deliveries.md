@@ -9,7 +9,7 @@ Optionally, you can supply the input parameters to filter the delivery list so t
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-status|N|"all"|Possible values are any status listed above or ```all```. The call will return only deliveries with the given status, or all the deliveries if the "all" value is specified.
+status|N|"all"|Possible values are any status listed in [Delivery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/delivery.md) resource or ```all```. The call will return only deliveries with the given status, or all the deliveries if the "all" value is specified.
 sort|N|"created"|Possible values are ```updated``` or ```created```. The delivery list will be sorted by the deliveries' "updated_at" or "created_at" value respectively.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The deliveries will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The delivery list will only contain deliveries updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
