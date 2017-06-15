@@ -356,6 +356,7 @@ These are the methods supported by the Xplenty API:
 * [Get Invoice Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-invoice-information.md)
 * [Help](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/help.md)
 * [List Deliveries](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-deliveries.md)
+* [Get Delivery Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-delivery-information.md)
 * [Create Delivery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-delivery.md)
 * [Delete Delivery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-delivery.md)
 
