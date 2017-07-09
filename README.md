@@ -54,6 +54,10 @@ An Xplenty **cluster** is a group of machines (nodes) that is allocated exclusiv
 
 An Xplenty **schedule** executes packages periodically starting at a specified date and time. The packages will be executed as scheduled, using an existing cluster that fits the scheduled cluster size or if one doesn't exist, a cluster will be provisioned automatically with the number of specified nodes. By default, the cluster is taken down as soon as package execution is completed.
 
+### Delivery
+
+An Xplenty **delivery** is a blueprint for a set of resources which automates the task of delivering data from one place to another.
+
 ### Account and User
 An Xplenty **account** represents a related group (usually a company) of Xplenty **users**.
 An account is created when the user signs up to use the Xplenty service. An API key is generated for the user, which must be supplied when calling the Xplenty API.
@@ -353,16 +357,16 @@ These are the methods supported by the Xplenty API:
 * [List Invoices](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-invoices.md)
 * [Get Invoice Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-invoice-information.md)
 * [Help](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/help.md)
+* [List Deliveries](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-deliveries.md)
+* [Get Delivery Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-delivery-information.md)
+* [Create Delivery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-delivery.md)
+* [Delete Delivery](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-delivery.md)
 
-<a id="ToS" name="ToS">
 ## Terms of Service
-</a>
 
 Please refer to our [Terms of Service](http://www.xplenty.com/tos) page.
 
-<a id="References" name="References">
 ## References
-</a>
 
 [Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)
 

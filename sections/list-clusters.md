@@ -9,7 +9,7 @@ Optionally, you can supply the input parameters to filter the cluster list so th
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-status|N|"all"|Possible values are any status listed above or ```all```. The call will return only clusters with the given status, or all the clusters if the "all" value is specified.
+status|N|"all"|Possible values are any status listed in [Cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/cluster.md) resource or ```all```. The call will return only clusters with the given status, or all the clusters if the "all" value is specified.
 sort|N|"created"|Possible values are ```updated``` or ```created```. The cluster list will be sorted by the clusters' "updated_at" or "created_at" value respectively.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The clusters will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The cluster list will only contain clusters updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
