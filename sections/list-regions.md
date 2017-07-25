@@ -8,7 +8,7 @@ This call returns information for the list of regions supported by Xplenty. You 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 brand_id|N| |The Brand's numeric identifier for which you want to list regions.
-type|N| |The resource type to return the supported regions for. Supported values are `redshift`, `bigquery`, `rackspace`, `softlayer`.
+type|N| |The resource type to return the supported regions for. Supported values are `redshift`, `bigquery`.
 
 ### Request (Curl Call) Syntax
 ```shell
@@ -46,24 +46,6 @@ HTTP/1.1 200 OK
     "id": "amazon-web-services::eu-west-1",
     "name": "AWS - EU (Ireland)",
     "short_name": "EU (Ireland)"
-  },
-  {
-    "group_name": "SoftLayer CloudLayer",
-    "id": "soft-layer::dal05",
-    "name": "SoftLayer - Dallas 5 (DAL05)",
-    "short_name": "Dallas 5 (DAL05)"
-  },
-  {
-    "group_name": "SoftLayer CloudLayer",
-    "id": "soft-layer::ams01",
-    "name": "SoftLayer - Amsterdam 1 (AMS01)",
-    "short_name": "Amsterdam 1 (AMS01)"
-  },
-  {
-    "group_name": "SoftLayer CloudLayer",
-    "id": "soft-layer::sng01",
-    "name": "SoftLayer - Singapore 1 (SNG01)",
-    "short_name": "Singapore 1 (SNG01)"
   },
   {
     "group_name": "Amazon Web Services",
