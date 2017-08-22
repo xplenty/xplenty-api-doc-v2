@@ -1,7 +1,7 @@
 ## Update Account
 
 ### Description
-This call updates [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md).
+This call updates an [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/account.md).
 
 Note: Changing the specified account's string identifier is possible by including a new identifier in the payload as `account_id`.
 
@@ -40,7 +40,7 @@ HTTP/1.1 200 OK
   "id":"1",
   "name":"Sample Admin",
   "uname": "u_1",
-  "account_id":"sample-admin"
+  "account_id":"sample-admin",
   "region":"amazon-web-services::us-east-1",
   "location":"California",
   "billing_email":"billing@example.com",
@@ -59,6 +59,7 @@ HTTP/1.1 200 OK
   "running_jobs_count":0,
   "hooks_count":0,
   "url":"https://api.xplenty.com/accounts/sample-admin",
-  "public_key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCoBCkf9FTqAktQlAVLPAC7eMftuaAcxKtPwPPK/mwEAF0Xx7s0AgbsYws8MTsZyMic3aQxDMDn0gZYPOO6ws9+Fk51dBXCWVTgJMB7a01RdmHOV6nX4VNKnc5NRfB8bM8hvWm1UoeIUW6EAsFFiXlwnkLHcodjTjt/LxCXGZftjw== admin@example.com"
+  "public_key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCoBCkf9FTqAktQlAVLPAC7eMftuaAcxKtPwPPK/mwEAF0Xx7s0AgbsYws8MTsZyMic3aQxDMDn0gZYPOO6ws9+Fk51dBXCWVTgJMB7a01RdmHOV6nX4VNKnc5NRfB8bM8hvWm1UoeIUW6EAsFFiXlwnkLHcodjTjt/LxCXGZftjw== admin@example.com",
+  "tunnel_host": "tunnel.xplenty.com"
 }
 ```
