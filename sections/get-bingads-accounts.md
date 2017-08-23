@@ -26,7 +26,7 @@ HTTP/1.1 200 OK
 ```
 
 ```json
-  [
+[
   {
     "account_id": "123",
     "account_name": "Account_1",
