@@ -328,6 +328,7 @@ These are the methods supported by the Xplenty API:
 * [List Facebook Ads Insights Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-facebook-ads-insights-accounts.md)
 * [List Facebook Ads Insights Fields](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-facebook-ads-insights-fields.md)
 * [List Google Analytics Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-google-analytics-accounts.md)
+* [List Google AdWords Customers](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-google-adwords-customers.md)
 * [List User Notifications](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-notifications.md)
 * [Mark User Notifications as read](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/mark-notifications.md)
 * [Get Authenticated User Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-authenticated-user-information.md)
