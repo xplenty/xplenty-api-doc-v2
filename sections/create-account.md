@@ -50,6 +50,7 @@ HTTP/1.1 201 Created
   "members_count":1,
   "packages_count":0,
   "jobs_count":0,
+  "deliveries_count":0,
   "running_jobs_count":0,
   "hooks_count":0,
   "url":"https://api.xplenty.com/accounts/sample-account-1",
