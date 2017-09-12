@@ -91,6 +91,13 @@ HTTP/1.1 201 Created
   }, {
     "script_path": "http://xplenty.s3.amazonaws.com/bootstrap-actions/file1.tar.gz",
     "args": ["arg1"]
-  }]
+  }],
+  "creator": {
+    "type":"Schedule",
+    "display_name": "Schedule 1",
+    "id":1,
+    "url": "https://api.xplenty.com/xplenation/api/schedules/1",
+    "html_url": "https://xplenty.com/xplenation/schedules/1"
+  }
 }
 ```
