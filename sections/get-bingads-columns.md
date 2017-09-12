@@ -1,19 +1,32 @@
 ## Get BingAds columns.
 
 ### Description
-Information about possible bingads columns.
+Informations about all columns for specified BingAds report.
+
 
 ### Input Parameters
-Possible to add **report_type** which by default is ```KeywordPerformanceReport```.
+Required parameter is the **connection_id**.
+
+|Name|Required?|Default|Description|
+|----|---------|-------|-----------|
+api_version|N|v9|the BingAds API version to use for fetching the columns for (e.g. `v9`, `v10`)
+report_type|N|KeywordPerformanceReport|the report type to fetch report columns for
+force_fetch|N|false|determines if caching should be bypassed
+
 Information about other report types [Bing documentation](https://msdn.microsoft.com/en-us/library/bing-ads-reporting-report-types.aspx)
 
 
 ### Request (Curl Call) Syntax
 ```shell
-$ curl -X GET "https://api.xplenty.com/:account_id/api/connections/metadata/bingads/columns" \
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/metadata/bingads/:connection_id/columns" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
-  -H "Content-Type: application/json"
+  -H "Content-Type: application/json" \
+  -d '{
+    "report_type": "KeywordPerformanceReport",
+    "api_version": "v10"
+  }'
 ```
+
 
 ### Response Example
 ```HTTP
