@@ -9,6 +9,7 @@ Required parameter is the **connection_id**.
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 api_version|N|v2.9|the Facebook API version to use for fetching the accounts (e.g. `v2.9`)
+force_fetch|N|false|determines if caching should be bypassed
 
 
 ### Request (Curl Call) Syntax

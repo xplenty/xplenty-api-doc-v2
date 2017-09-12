@@ -329,6 +329,8 @@ These are the methods supported by the Xplenty API:
 * [List Salesforce Fields](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-salesforce-fields.md)
 * [List Facebook Ads Insights Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-facebook-ads-insights-accounts.md)
 * [List Facebook Ads Insights Fields](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-facebook-ads-insights-fields.md)
+* [List Google Analytics Accounts](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-google-analytics-accounts.md)
+* [List Google AdWords Customers](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-google-adwords-customers.md)
 * [Get Authenticated User Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-authenticated-user-information.md)
 * [Regenerate Authenticated User Tokens](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/regenerate-authenticated-user-tokens.md)
 * [Update Authenticated User](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-authenticated-user.md)
