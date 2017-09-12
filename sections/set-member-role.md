@@ -28,14 +28,18 @@ HTTP/1.1 200 OK
 ```json
 {
   "id":1,
-  "name":"Xplenty Admin",
-  "email":"admin@example.com",
-  "gravatar_email":"admin@example.com",
+  "name":"Sample user",
+  "email":"sample@example.com",
+  "display_name": "User Display Name",
+  "gravatar_email":"sample@example.com",
   "avatar_url":"http://gravatar.com/avatar/20760f72db6d9c7498dc0ba2f6e95fba.png?d=retro&s=140",
   "created_at": "2013-01-17T22:41:21Z",
   "updated_at": "2013-01-17T22:41:21Z",
+  "confirmed_at": "2013-01-17T22:46:21Z",
+  "confirmed" : true,
   "role":"admin",
   "owner":false,
   "url": "https://api.xplenty.com/xplenation/api/members/1",
+  "html_url": "https://api.xplenty.com/xplenation/settings/members/1"
 }
 ```
