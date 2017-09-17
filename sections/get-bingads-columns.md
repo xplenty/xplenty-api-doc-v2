@@ -9,7 +9,7 @@ Required parameter is the **connection_id**.
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-api_version|N|v9|the BingAds API version to use for fetching the columns for (e.g. `v9`, `v10`)
+api_version|N|v9|the BingAds API version to use for fetching the columns for (e.g. `v9`, `v11`)
 report_type|N|KeywordPerformanceReport|the report type to fetch report columns for
 force_fetch|N|false|determines if caching should be bypassed
 
@@ -23,7 +23,7 @@ $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/m
   -H "Content-Type: application/json" \
   -d '{
     "report_type": "KeywordPerformanceReport",
-    "api_version": "v10"
+    "api_version": "v11"
   }'
 ```
 

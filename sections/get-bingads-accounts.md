@@ -8,7 +8,7 @@ Required parameter is the **connection_id**.
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-api_version|N|v9|the BingAds API version to use for fetching the accounts (e.g. `v9`, `v10`)
+api_version|N|v9|the BingAds API version to use for fetching the accounts (e.g. `v9`, `v11`)
 accounts|N| |Accounts IDs to get campaings from
 force_fetch|N|false|determines if caching should be bypassed
 
@@ -20,7 +20,7 @@ $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/connections/m
   -H "Content-Type: application/json" \
   -d '{
     "accounts": ["123"],
-    "api_version": "v10"
+    "api_version": "v11"
   }'
 ```
 
