@@ -7,12 +7,11 @@ This call returns information for the list of regions supported by Xplenty. You 
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-brand_id|N| |The Brand's numeric identifier for which you want to list regions.
-type|N| |The resource type to return the supported regions for. Supported values are `redshift`, `bigquery`.
+type|N| |The resource type to return the supported regions for. Supported values are `redshift`, `bigquery`, `s3`.
 
 ### Request (Curl Call) Syntax
 ```shell
-$curl -X GET -u api_key: "https://api.xplenty.com/regions/:type?brand_id=1" \
+$curl -X GET -u api_key: "https://api.xplenty.com/regions/:type" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
