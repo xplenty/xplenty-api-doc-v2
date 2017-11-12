@@ -7,6 +7,7 @@
 |name|N|Y| |the descriptive name given to the connection
 |username|N|Y| |Amazon S3 Access Key ID
 |password|N|Y| |Amazon S3 Secret Access Key
+|region|N|N| |the geographical location of your Amazon S3 bucket
 |unique_id|Y| | |the unique connection's identifier
 |created_at|Y| | |the date and time the connection was created
 |updated_at|Y| | |the date and time the connection was last updated
