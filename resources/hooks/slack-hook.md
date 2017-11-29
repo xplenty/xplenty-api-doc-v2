@@ -10,7 +10,6 @@ An Xplenty **Slack hook** is kind of notification that will be fired as a Slack 
   * **url** - URL containing unique token which allows to send messages on the Slack channel.
   * **team** - Slack team
   * **channel** - Slack channel
-  * **username** - Slack username
 * **events** - list of notification events. Possible values:
   * **job** - all job events
   * **job.submitted**

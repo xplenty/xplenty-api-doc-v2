@@ -58,7 +58,7 @@ HTTP/1.1 201 Created
   "created_at":"2016-04-21T13:55:43Z",
   "updated_at":"2016-04-21T13:55:43Z",
   "type":"s3",
-  "url":"https://api.xplenty.com/xplenation/api/connections/s3/53
+  "url":"https://api.xplenty.com/xplenation/api/connections/s3/53"
 }
 
 ```

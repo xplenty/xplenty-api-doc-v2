@@ -16,7 +16,7 @@ Xplenty provides the following types of hooks:
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 sort|N|"created"|Possible values are  ```name```, ```updated```, ```created```.
-type|N|"all" |Type of the hook (every article about particular hook contains information about type) or ```all```. The call will return only hooks with the given types, or all the hooks if the "all" value is specified. Values can be joined with commas, e.g. 'web,email,slack'.
+type|N|"all" |Type of the hook (every article about particular hook contains information about type). The call will return only hooks with the given types, or all the hooks if the no value is specified. Values can be joined with commas, e.g. 'web,email,slack'.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The hooks will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The account list will only contain hooks updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
