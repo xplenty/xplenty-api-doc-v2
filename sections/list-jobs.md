@@ -112,7 +112,7 @@ HTTP/1.1 200 OK
           "url": "https://api.xplenty.com/xplenation/api/schedules/1",
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
-    },
+    }
   },
   {
     "id": 303,
@@ -197,7 +197,7 @@ HTTP/1.1 200 OK
           "url": "https://api.xplenty.com/xplenation/api/schedules/1",
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
-    },
+    }
   },
   {
     "id": 299,
@@ -282,7 +282,7 @@ HTTP/1.1 200 OK
           "url": "https://api.xplenty.com/xplenation/api/schedules/1",
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
-    },
+    }
   },
   {
     "id": 157,
@@ -325,7 +325,7 @@ HTTP/1.1 200 OK
         "records_count": 423,
         "updated_at": "2013-03-04T07:14:44Z",
         "url": "https://api.xplenty.com/xplenation/api/jobs/157/outputs/522"
-      },
+      }
     ],
     "started_at": "2012-12-30T14:21:29Z",
     "created_at": "2012-12-30T14:21:18Z",
@@ -401,7 +401,7 @@ HTTP/1.1 200 OK
           "url": "https://api.xplenty.com/xplenation/api/schedules/1",
           "html_url": "https://xplenty.com/xplenation/schedules/1"
       }
-    },
+    }
   }
 ]
 ```
