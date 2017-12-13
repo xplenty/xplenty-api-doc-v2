@@ -25,6 +25,7 @@ Imports schema of the connection. Xplenty provides the following types of connec
 * [Oracle Database](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/oracle-connection.md)
 * [Intercom](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/intercom-connection.md)
 * [Facebook Ads Insights](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/facebook-ads-insights-connection.md)
+* [Xero](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/xero-connection.md)
 
 ### Input Parameters for connections
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
