@@ -52,7 +52,7 @@ you should use these input attributes:
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 table|Y| | name of the table
-schema_name|Y| |
+schema_name|N| |
 where_clause|N| |SQL where clause
 lines|N|20|row limit
 
