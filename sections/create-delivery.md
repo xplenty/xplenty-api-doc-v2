@@ -40,7 +40,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/deliveries" 
         "id": 1
       },
       "properties": {
-        "schema": "salesforce_prod"
+        "schema_name": "salesforce_prod"
       }
     }
   }'
@@ -71,7 +71,7 @@ HTTP/1.1 201 Created
       "id": 1
     },
     "properties": {
-      "schema": "salesforce_prod"
+      "schema_name": "salesforce_prod"
     }
   },
   "status": "idle",
