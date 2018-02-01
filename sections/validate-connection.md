@@ -27,6 +27,7 @@ Checks validation of the Connection. Xplenty provides the following types of con
 * [Facebook Ads Insights](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/facebook-ads-insights-connection.md)
 * [Xero](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/xero-connection.md)
 * [Snowflake](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/snowflake-connection.md)
+* [Azure Blob Storage](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/azure-blob-storage-connection.md)
 
 ### Input Parameters
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
@@ -88,6 +89,7 @@ For the following connection types:
 * [Hadoop Distributed File System](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/hdfs-connection.md)
 * [Amazon S3](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/s3-connection.md)
 * [SSH File Transfer Protoco](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/sftp-connection.md)
+* [Azure Blob Storage](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/azure-blob-storage-connection.md)
 
 you should use these input attributes:
 
