@@ -28,6 +28,7 @@ Xplenty provides the following types of connections:
 * [Xero](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/xero-connection.md)
 * [Snowflake](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/snowflake-connection.md)
 * [Azure Blob Storage](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/azure-blob-storage-connection.md)
+* [LinkedIn](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/linkedin-connection.md)
 
 ### Input Parameters
 The **connection type** must be supplied. Possible to specify **help_action** scope as `edit`, `index` or `new`.
@@ -40,6 +41,7 @@ Additional `setup_omniauthable` for omniauthable connections:
 * [Intercom](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/intercom-connection.md)
 * [Facebook Ads Insights](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/facebook-ads-insights-connection.md)
 * [Xero](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/xero-connection.md)
+* [LinkedIn](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/linkedin-connection.md)
 
 ### Request (Curl Call) Syntax
 ```shell
