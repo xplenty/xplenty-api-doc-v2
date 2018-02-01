@@ -6,9 +6,9 @@ Creates a new [account](https://github.com/xplenty/xplenty-api-doc-v2/blob/maste
 ### Input Parameters
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-|name|Y| |The name of the account.
-|account_id|N| |Unique identifier of the account.
-|region|Y| |The default region for the account.
+|name|Y| |the name of the account.
+|account_id|N| |unique identifier of the account.
+|region|Y| |the default region for the account.
 
 
 ### Request (Curl Call) Example

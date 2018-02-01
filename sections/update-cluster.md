@@ -8,10 +8,10 @@ Update an existing [cluster](https://github.com/xplenty/xplenty-api-doc-v2/blob/
 |----|---------|    -------|-----------|
 |cluster_id|Y| |The id of the cluster to update
 |nodes|N| |Determines the number of compute nodes in the cluster. The value range is between 2 and your account's maximum, determined by the chosen pricing plan|
-name|N| |The name given to the cluster upon creation
-description|N| |The description given to the cluster upon creation
-terminate_on_idle|N| |If the value is set to either true, t or 1 this cluster will be terminated after it becomes idle
-time_to_idle|N| |The time interval (in seconds) after which this cluster will become idle
+|name|N| |The name given to the cluster upon creation
+|description|N| |The description given to the cluster upon creation
+|terminate_on_idle|N| |If the value is set to either true, t or 1 this cluster will be terminated after it becomes idle
+|time_to_idle|N| |The time interval (in seconds) after which this cluster will become idle
 
 ### Request (Curl Call) Syntax
 ```shell

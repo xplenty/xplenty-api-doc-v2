@@ -26,7 +26,11 @@ Create a new connection. Xplenty provides the following types of connections:
 * [Intercom](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/intercom-connection.md)
 * [Facebook Ads Insights](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/facebook-ads-insights-connection.md)
 * [Xero](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/xero-connection.md)
+<<<<<<< HEAD
+* [Snowflake](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/snowflake-connection.md)
+=======
 * [Azure Blob Storage](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/azure-blob-storage-connection.md)
+>>>>>>> 0d56c188650d3a555c153279d3ef4e8232d2e994
 
 ### Input Parameters
 The **connection type** must be supplied at the end of the request URL.
