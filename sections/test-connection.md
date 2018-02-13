@@ -28,6 +28,7 @@ Checks if it is possible to establish connection. Xplenty provides the following
 * [Xero](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/xero-connection.md)
 * [Snowflake](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/snowflake-connection.md)
 * [Azure Blob Storage](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/azure-blob-storage-connection.md)
+* [LinkedIn](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/linkedin-connection.md)
 
 ### Input Parameters for above connections
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
