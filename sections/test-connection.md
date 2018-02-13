@@ -55,7 +55,7 @@ There is special case when **connection ID** is not required: when **type** is `
 |----|---------|-------|-----------|
 |url|Y| |url for test
 |method|N|"GET"|method used for curl **GET** or **POST**
-|response_type|N|"json"|possible values **raw**, **json**, **array**, **line_delimited_json**
+|response_type|N|"json"|possible values **raw**, **json**, **array**, **line_delimited_json**, **line_delimited_data**
 |lines|N|20|
 |username|N| |
 |password|N| |
