@@ -29,6 +29,9 @@ Update an existing Connection. Xplenty provides the following types of connectio
 * [Snowflake](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/snowflake-connection.md)
 * [Azure Blob Storage](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/azure-blob-storage-connection.md)
 * [LinkedIn](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/linkedin-connection.md)
+* [Google Sheets](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/google-sheets-connection.md)
+* [Instagram](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/instagram-connection.md)
+* [YouTube](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/youtube-connection.md)
 
 ### Input Parameters
 The **connection type** and **connection ID** must be supplied at the end of the request URL.
