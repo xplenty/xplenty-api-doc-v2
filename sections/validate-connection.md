@@ -29,6 +29,9 @@ Checks validation of the Connection. Xplenty provides the following types of con
 * [Snowflake](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/snowflake-connection.md)
 * [Azure Blob Storage](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/azure-blob-storage-connection.md)
 * [LinkedIn](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/linkedin-connection.md)
+* [Google Sheets](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/google-sheets-connection.md)
+* [Instagram](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/instagram-connection.md)
+* [YouTube](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/youtube-connection.md)
 
 ### Input Parameters
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
