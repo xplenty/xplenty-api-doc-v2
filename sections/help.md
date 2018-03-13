@@ -32,6 +32,7 @@ Xplenty provides the following types of connections:
 * [Google Sheets](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/google-sheets-connection.md)
 * [Instagram](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/instagram-connection.md)
 * [YouTube](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/youtube-connection.md)
+* [Shopify](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/shopify-connection.md)
 
 ### Input Parameters
 The **connection type** must be supplied. Possible to specify **help_action** scope as `edit`, `index` or `new`.
@@ -48,6 +49,7 @@ Additional `setup_omniauthable` for omniauthable connections:
 * [Google Sheets](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/google-sheets-connection.md)
 * [Instagram](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/instagram-connection.md)
 * [YouTube](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/youtube-connection.md)
+* [Shopify](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/shopify-connection.md)
 
 ### Request (Curl Call) Syntax
 ```shell

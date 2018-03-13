@@ -32,6 +32,7 @@ Checks if it is possible to establish connection. Xplenty provides the following
 * [Google Sheets](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/google-sheets-connection.md)
 * [Instagram](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/instagram-connection.md)
 * [YouTube](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/youtube-connection.md)
+* [Shopify](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/shopify-connection.md)
 
 ### Input Parameters for above connections
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).

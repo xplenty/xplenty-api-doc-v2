@@ -32,6 +32,7 @@ Delete an existing connection. Xplenty provides the following types of connectio
 * [Google Sheets](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/google-sheets-connection.md)
 * [Instagram](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/instagram-connection.md)
 * [YouTube](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/youtube-connection.md)
+* [Shopify](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/shopify-connection.md)
 
 ### Notes
 Please note that deleting the connection will **invalidate all items referencing it**.
