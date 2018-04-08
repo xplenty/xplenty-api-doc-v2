@@ -1,9 +1,9 @@
-### Shopify Connection Attributes
+### Pinterest Connection Attributes
 
 |Name|Read-Only?|Required?|Default|Description|
 |----|---------|---------|-------|-----------|
 |id|Y| | |the connection's numeric identifier
-|type|Y| | |`shopify`
+|type|Y| | |`pinterest`
 |name|N|Y| |the descriptive name given to the connection
 |username|N|N| |the username
 |password|N|Y unless code is provided| |the token
@@ -15,8 +15,5 @@
 |expires|N|N| |determines if connection should expire
 |expires_at|N|N| |expiration time for oauth key
 |code|N|N| |OAuth code parameter
-|hmac|Y| | |OAuth hmac parameter
-|timestamp|Y| | |OAuth timestamp parameter
-|shop|Y| | |the Shopify shop domain the connection was authorized for
 |redirect_uri|N|Y if code is provided| |OAuth redirect URI used for code generation
 |url|Y| | |the connection resource URL (API)
