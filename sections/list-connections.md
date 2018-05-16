@@ -9,7 +9,7 @@ Optionally, you can supply the input parameters to filter the connection list so
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
 type|N|"all" |Possible values are listed above or ```all```. The call will return only connections with the given types, or all the connections if the "all" value is specified. Values can be joined with commas, e.g. 's3,postgres'.
-sort|N|"created"|Possible values are ```id```, ```name```, ```type```, ```updated``` or ```created```.
+sort|N|"name"|Possible values are ```id```, ```name```, ```type```, ```updated``` or ```created```.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The connection will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The connection list will only contain connections updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
 
