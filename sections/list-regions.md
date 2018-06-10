@@ -7,7 +7,7 @@ This call returns information for the list of regions supported by Xplenty. You 
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-type|N| |The resource type to return the supported regions for. Supported values are `redshift`, `bigquery`, `s3`, `snowflake`.
+type|N| |The resource type to return the supported regions for. Supported values are `redshift`, `bigquery`, `s3`, `snowflake`, `athena`.
 
 ### Request (Curl Call) Syntax
 ```shell

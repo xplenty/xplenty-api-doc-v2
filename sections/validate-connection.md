@@ -34,6 +34,7 @@ Checks validation of the Connection. Xplenty provides the following types of con
 * [YouTube](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/youtube-connection.md)
 * [Shopify](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/shopify-connection.md)
 * [Pinterest](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/pinterest-connection.md)
+* [Amazon Athena](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/athena-connection.md)
 
 ### Input Parameters
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
@@ -53,6 +54,7 @@ For the following connection types:
 * [Google Cloud Spanner](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/google-cloud-spanner-connection.md)
 * [Oracle Database](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/oracle-connection.md)
 * [Snowflake](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/snowflake-connection.md)
+* [Amazon Athena](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/athena-connection.md)
 
 you should use these input attributes:
 
