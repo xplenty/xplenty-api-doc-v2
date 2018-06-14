@@ -34,6 +34,7 @@ Xplenty provides the following types of connections:
 * [YouTube](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/youtube-connection.md)
 * [Shopify](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/shopify-connection.md)
 * [Pinterest](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/pinterest-connection.md)
+* [Amazon Athena](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/athena-connection.md)
 
 ### Input Parameters
 The **connection type** must be supplied. Possible to specify **help_action** scope as `edit`, `index` or `new`.
