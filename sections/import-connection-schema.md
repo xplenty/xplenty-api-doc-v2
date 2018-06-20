@@ -60,9 +60,11 @@ you should use these input attributes:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-table|Y| | name of the table
+access_mode|N|object|use provided table (`table`) or query (`query`) to validate the connection
+table|Y if access mode is `table`| |name of the table
 schema_name|N| |
 where_clause|N| |SQL where clause
+query|Y if access mode is `query`| |SQL query to import schema for
 lines|N|20|row limit
 
 For the following connection type:
@@ -88,9 +90,11 @@ you should use these input attributes:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
-object_fields|N| |table fields
-object_name|Y| |name of the table
-where_clause|N| |
+access_mode|N|object|use provided object_name (`object`) or query (`query`) to import the schema
+object_fields|N| |list of Salesforce fields
+object_name|Y if access mode is `object`| |name of the Salesforce object
+where_clause|N| |SOQL where clause
+query|Y if access mode is `query`| |SOQL query to validate the connection with
 row_count|N| limit rows
 
 For the following connection types:

@@ -86,9 +86,11 @@ you should use these input attributes:
 
 |Name|Required?|Default|Description|
 |----|---------|-------|-----------|
+access_mode|N|object|use provided object_name (`object`) or query (`query`) to validate the connection
 object_fields|N| |table fields
-object_name|Y| |name of the table
+object_name|Y if access mode is `object`| |name of the Salesforce object
 where_clause|N| |
+query|Y if access mode is `query`| |SOQL query to validate the connection with
 row_count|N| limit rows
 
 For the following connection types:
