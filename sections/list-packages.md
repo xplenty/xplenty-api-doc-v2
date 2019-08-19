@@ -1,3 +1,4 @@
+
 ## List Packages
 
 ### Description
@@ -10,8 +11,9 @@ You can use this information to monitor your packages.
 |----|---------|-------|-----------|
 flow_type|N|"all"|Possible values are `workflow`, `dataflow`, `all`. The call will return only packages with the given flow_type, or all the packages if the "all" value is specified.
 sort|N|"created"|Possible values are `updated`, `created` or `name`. The packages list will be sorted by the packages' `updated_at`, `created_at` or `name` value respectively.
-direction|N|"desc"|Possible values are: `asc`, `desc`. The packages will be sorted in ascending or descending order of the "sort" attribute.
+direction|N|"desc"|Possible values are `asc`, `desc`. The packages will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The packages list will only contain packages updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
+status|N|"active"|Possible values are `active`, `archived`. Pulling both active and archived packages in a single API is currently not possible.
 
 ### Request (Curl Call) Syntax
 ```shell
