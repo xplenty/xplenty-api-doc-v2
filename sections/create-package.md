@@ -37,7 +37,7 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/packages" \
 $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/packages" \
   -H "Accept: application/vnd.xplenty+json; version=2" \
   -H "Content-Type: application/json" \
-  -d package.json
+  -d @package.json
 ```
 
 ### Response Example
