@@ -28,6 +28,11 @@ HTTP/1.1 200 OK
   "updated_at": "2014-04-13T19:38:04Z",
   "url": "https://api.xplenty.com/xplenation/api/packages/2373",
   "html_url":"https://xplenty.com/xplenation/packages/3",
+  "version": 4,
+  "flow_type": "dataflow",
+  "flow_version": "2.0.0",
+  "package_version": "1.0",
+  "item_id":2373,
   "status":"active"
 }
 ```
