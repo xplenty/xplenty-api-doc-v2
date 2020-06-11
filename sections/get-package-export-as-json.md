@@ -19,7 +19,6 @@ HTTP/1.1 200 OK
 
 ```json
 {
-  {
   "components": [
     {
       "facebook_ads_insights_source_component": {
@@ -208,6 +207,5 @@ HTTP/1.1 200 OK
     "version": "1.2",
     "description": ""
   }
-}
 }
 ```
