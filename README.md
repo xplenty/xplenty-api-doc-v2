@@ -192,7 +192,7 @@ Most of the Xplenty API calls require authentication, supplied in the form of th
 
 In order to get your API key, view your user's personal information page. See [here](http://community.xplenty.com/knowledgebase/articles/178926) for more information.
 
-Once you have an API key, you can either attach it to each request as a "key" parameter, or use HTTP Basic Authentication with the API key as a username and a blank password. Here's an example using curl (the colon separates the username and password):
+Once you have an API key, you can use HTTP Basic Authentication with the API key as a username and a blank password. Here's an example using curl (the colon separates the username and password):
 
 ```shell
 curl -H "Accept: application/vnd.xplenty+json" -u <apikeyhere>: https://api.xplenty.com/:account_id/clusters
