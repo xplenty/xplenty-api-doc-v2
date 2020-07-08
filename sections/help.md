@@ -70,21 +70,21 @@ HTTP/1.1 200 Created
     {
       "title": "Allow Xplenty access to your MongoDB",
       "type": "article",
-      "url": "http://community.xplenty.com/knowledgebase/articles/429203"
+      "url": "https://xplenty.com/docs/allowing-xplenty-access-to-mongodb/"
     }
   ],
   "index": [
     {
       "title": "Defining connections",
       "type": "article",
-      "url": "http://community.xplenty.com/knowledgebase/articles/180952"
+      "url": "https://xplenty.com/docs/defining-connections/"
     }
   ],
   "new": [
     {
       "title": "Allow Xplenty access to your MongoDB",
       "type": "article",
-      "url": "http://community.xplenty.com/knowledgebase/articles/429203"
+      "url": "https://xplenty.com/docs/allowing-xplenty-access-to-mongodb/"
     }
   ]
 }

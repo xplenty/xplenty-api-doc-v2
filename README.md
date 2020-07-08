@@ -68,14 +68,14 @@ An account is created when the user signs up to use the Xplenty service. An API 
 
 ### Using the Xplenty REST API
 
-The Xplenty REST API conforms to the design principles of [Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer).
+The Xplenty REST API conforms to the design principles of [Representational State Transfer (REST)](https://en.wikipedia.org/wiki/Representational_State_Transfer).
 
-To get a quick start with the Xplenty API, we recommend using the [curl](http://curl.haxx.se) command-line utility.
+To get a quick start with the Xplenty API, we recommend using the [curl](https://curl.haxx.se) command-line utility.
 
 All URLs start with:
     https://api.xplenty.com/{account_id}/api/
 
-Parameter values should be converted to UTF-8 and [URL encoded](http://en.wikipedia.org/wiki/Percent_encoding).
+Parameter values should be converted to UTF-8 and [URL encoded](https://en.wikipedia.org/wiki/Percent_encoding).
 
 All Xplenty APIs support jsonp, which is the json format with a callback specified, such as:
 
@@ -91,7 +91,7 @@ All published date and time objects are UTC based and returned in ISO 8601 forma
 
 ### Mime Types
 
-The API presently supports the [JSON](http://en.wikipedia.org/wiki/Json) format only.
+The API presently supports the [JSON](https://en.wikipedia.org/wiki/Json) format only.
 Specify a custom mime type in the [Accept] header as follows:
 
     application/vnd.xplenty+json
@@ -127,7 +127,7 @@ $ curl -X POST -u api_key "https://api.xplenty.com/xplenty-account/api/clusters"
 
 The Xplenty API supports Cross Origin Resource Sharing.
 
-You can read the [CORS W3C working draft](http://www.w3.org/TR/cors), or [this introduction](http://www.w3.org/TR/cors) from the HTML 5 Security Guide.
+You can read the [CORS W3C working draft](https://www.w3.org/TR/cors), or [this introduction](https://www.w3.org/TR/cors) from the HTML 5 Security Guide.
 
 The latest version of the Xplenty API (V1) supports CORS requests from any domain.
 
@@ -190,7 +190,7 @@ Xplenty provides all REST API methods over SSL. Whenever your code might be oper
 ### Authentication
 Most of the Xplenty API calls require authentication, supplied in the form of the API key which is generated for each account.
 
-In order to get your API key, view your user's personal information page. See [here](http://community.xplenty.com/knowledgebase/articles/178926) for more information.
+In order to get your API key, view your user's personal information page. See [here](https://xplenty.com/docs/modifying-your-personal-settings/) for more information.
 
 Once you have an API key, you can use HTTP Basic Authentication with the API key as a username and a blank password. Here's an example using curl (the colon separates the username and password):
 
@@ -208,7 +208,7 @@ The response to a GET request for collection resources (e.g. clusters) may not r
 * **offset** - the index of the first object to retrieve, starting from 0
 * **limit** - the number of items to return (default is 20, maximum is 100)
 
-Information about pagination is provided in [the Link header](http://tools.ietf.org/html/rfc5988) of an API call, so that you know how many more requests are needed to retrieve the complete list of collection resources:
+Information about pagination is provided in [the Link header](https://tools.ietf.org/html/rfc5988) of an API call, so that you know how many more requests are needed to retrieve the complete list of collection resources:
 
 ```shell
 $ curl -I "https://api.xplenty.com/:account_id/api/clusters?offset=3&limit=10"
@@ -367,10 +367,10 @@ These are the methods supported by the Xplenty API:
 
 ## Terms of Service
 
-Please refer to our [Terms of Service](http://www.xplenty.com/tos) page.
+Please refer to our [Terms of Service](https://www.xplenty.com/tos) page.
 
 ## References
 
-[Representational State Transfer (REST)](http://en.wikipedia.org/wiki/Representational_State_Transfer)
+[Representational State Transfer (REST)](https://en.wikipedia.org/wiki/Representational_State_Transfer)
 
-[Secure Socket Layer (SSL)](http://en.wikipedia.org/wiki/Secure_Sockets_Layer)
+[Secure Socket Layer (SSL)](https://en.wikipedia.org/wiki/Secure_Sockets_Layer)
