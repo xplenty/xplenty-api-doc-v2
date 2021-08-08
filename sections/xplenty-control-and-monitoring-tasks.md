@@ -1,5 +1,5 @@
 # Xplenty Control and Monitoring Tasks
-
+ 
 These are the main tasks you can perform with the Xplenty control and monitoring API.
 
 ## Cluster Management
