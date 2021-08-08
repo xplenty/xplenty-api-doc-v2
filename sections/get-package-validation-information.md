@@ -13,7 +13,7 @@ $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/packages/:pac
 ```
 
 ### Response Example
-```HTTP
+```HTTP 
 HTTP/1.1 200 OK
 ```
 
