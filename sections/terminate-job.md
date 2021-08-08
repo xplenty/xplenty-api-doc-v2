@@ -1,5 +1,5 @@
 ## Terminate Job
-
+ 
 ### Description
 Stop an active [job](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/job.md). Usually it's not necessary to request to terminate a job, because the job will end when its tasks are completed. You may want to actively terminate a job if you need its cluster resources for a more urgent job, or if the job is taking too long to complete.
 
