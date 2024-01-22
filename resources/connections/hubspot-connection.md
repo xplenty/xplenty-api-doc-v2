@@ -11,6 +11,6 @@
 |created_at|Y| | |the date and time the connection was created
 |updated_at|Y| | |the date and time the connection was last updated
 |owner_id|Y| | |the numeric identifier of the account's owner
-|tunnel_type|N| | |the name of the SFTP server to connect to
-|local_port|N|N|22|the TCP Port to connect to
+|tunnel_type|N| | | the method to use for accessing the database
+|local_port|N|N|46126|the TCP Port to connect to
 |url|Y| | |the connection resource URL (API)
