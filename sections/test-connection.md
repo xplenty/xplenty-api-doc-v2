@@ -35,6 +35,7 @@ Checks if it is possible to establish connection. Xplenty provides the following
 * [Shopify](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/shopify-connection.md)
 * [Pinterest](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/pinterest-connection.md)
 * [Amazon Athena](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/athena-connection.md)
+* [Hubspot](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/hubspot-connection.md)
 
 ### Input Parameters for above connections
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
