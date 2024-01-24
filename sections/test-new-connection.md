@@ -35,6 +35,7 @@ Tests a new Connection, before creation. Xplenty provides the following types of
 * [Shopify](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/shopify-connection.md)
 * [Pinterest](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/pinterest-connection.md)
 * [Amazon Athena](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/athena-connection.md)
+* [Hubspot](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/hubspot-connection.md)
 
 ### Input Parameters
 The **connection type** and **connection ID** must be supplied at the end of the request URL.

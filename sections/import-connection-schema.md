@@ -35,6 +35,7 @@ Imports schema of the connection. Xplenty provides the following types of connec
 * [Shopify](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/shopify-connection.md)
 * [Pinterest](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/pinterest-connection.md)
 * [Amazon Athena](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/athena-connection.md)
+* [Hubspot](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connections/hubspot-connection.md)
 
 ### Input Parameters for connections
 The **connection ID** and **connection type**. Possible values of the type are listed above (on the connection types' pages).
