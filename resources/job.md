@@ -7,6 +7,7 @@ When you call the Xplenty API to run a new job, you supply the name of the packa
 * **status** - the job status. Possible values are: 
   * **idle** - the user sent a request to run the job
   * **pending** - the job is initializing
+  * **queued** - the job is waiting for cluster resources
   * **running** - the job is running
   * **completed** - the job completed successfully
   * **failed** - the job failed to complete
