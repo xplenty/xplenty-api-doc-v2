@@ -7,11 +7,19 @@ You can preview the output, which will display up to 100 lines, using the previe
 View [Preview Job Output](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/preview-output.md) for details.
 
 ### Input Parameters
-The **job resource ID** must be supplied at the end of the request URL.
+* The **job resource ID** must be supplied at the end of the request URL.
+* **include** (optional) - Additional information to include in the response:
+  * `log_summary` - Includes detailed log information and error analysis for the job
 
 ### Request (Curl Call) Syntax
 ```shell
 $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/jobs/:job_id" \
+  -H "Accept: application/vnd.xplenty+json; version=2"
+```
+
+To include log summary:
+```shell
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/jobs/:job_id?include=log_summary" \
   -H "Accept: application/vnd.xplenty+json; version=2"
 ```
 
@@ -83,6 +91,24 @@ HTTP/1.1 200 OK
       "display_name": "Schedule 1",
       "url": "https://api.xplenty.com/xplenation/api/schedules/1",
       "html_url": "https://xplenty.com/xplenation/schedules/1"
+  }
+}
+```
+
+When including log_summary, the response will contain an additional `log_summary` object:
+
+```json
+{
+  "log_summary": {
+    "id": 1122631,
+    "body": "...",
+    "error_summary": "Customer ID missing",
+    "openai_extract": "Failed to send request: I/O exception: Request returned an error: com.netledger.schemabean.NLSchemaBeanException: id not found on {urn:relationships_2021_2.lists.webservices.netsuite.com}Customer",
+    "action_items": [
+      "Validate the Customer ID.",
+      "Retry the job."
+    ],
+    "created_at": "2025-01-15T13:34:41Z"
   }
 }
 ```
