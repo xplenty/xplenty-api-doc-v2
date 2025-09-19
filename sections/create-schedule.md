@@ -14,6 +14,8 @@ You can verify that a schedule has initialized successfully by [retrieving the s
 | name                    | Y         | Untitled     | Name to assign to the new schedule                                   |
 | status                  | N         | disabled     | Initial status of the schedule                                       |
 | overlap                 | N         | true         | Allows execution overlapping                                         |
+| auto_retry              | N         | false        | Boolean (true or false). Enables automatic retry on job failure       |
+| auto_retry_attempts     | N         | 3            | Maximum automatic retry attempts on failure (integer 1–5; default 3, max 5)       |
 | start_at                | Y         | Current time | Time when the task will first trigger                                |
 | description             | N         | blank        | Description to assign to the new schedule                            |
 | interval_amount         | Y         | 1            | Number of interval units between schedule's task executions          |
@@ -37,6 +39,8 @@ $ curl -X POST -u api_key: "https://api.xplenty.com/:account_id/api/schedules" \
     "interval_amount":34,
     "interval_unit":"days",
     "overlap":false,
+    "auto_retry": true,
+    "auto_retry_attempts": 3,
     "reuse_cluster_strategy":"any",
     "task": {
       "nodes":4,
@@ -79,6 +83,8 @@ HTTP/1.1 201 Created
   "last_run_at": null,
   "last_run_status": null,
   "name": "Untitled",
+  "auto_retry": true,
+  "auto_retry_attempts": 3,
   "next_run_at": "2014-12-02T08:33:00Z",
   "owner_id": 1,
   "start_at": "2014-09-25T08:33:00Z",

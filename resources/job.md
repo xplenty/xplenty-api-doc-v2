@@ -15,6 +15,8 @@ When you call the Xplenty API to run a new job, you supply the name of the packa
   * **stopping** - the job is stopping
   * **stopped** - the job has stopped
 * **variables** - a list of the variables supplied to the "run" request
+* **master_auto_retry_attempts** - the total automatic retry attempts configured by the schedule for this job; null if the job was not created by a schedule or if auto-retry is disabled.
+* **attempts** - the number of retry attempts already performed by the schedule for this job; 0 for the initial (non-retry) run, and 1, 2, ... for subsequent retries.
 * **owner_id** - the numeric user ID
 * **progress** - the job progress in percentages (a value between 0.0 and 1.0)
 * **outputs_count** - the number of output targets defined in the job's package
