@@ -13,6 +13,8 @@ If you want to use a similar schedule you can clone it using the [clone schedule
 | name                    | Y         | Untitled     | Name to assign to the new schedule                                   |
 | status                  | N         | disabled     | Initial status of the schedule                                       |
 | overlap                 | N         | true         | Allows execution overlapping                                         |
+| auto_retry              | N         | false        | Boolean (true or false). Enables automatic retry on failure           |
+| auto_retry_attempts     | N         | 3            | Maximum automatic retry attempts on failure (integer 1–5; default 3, max 5)                         |
 | start_at                | Y         | Current time | Time when the task will first trigger                                |
 | description             | N         | blank        | Description to assign to the new schedule                            |
 | interval_amount         | Y         | 1            | Number of interval units between schedule's task executions          |
@@ -36,6 +38,8 @@ $ curl -X PUT -u api_key: "https://api.xplenty.com/:account_id/api/schedules/:sc
     "interval_amount":30,
     "interval_unit":"days",
     "overlap":true,
+    "auto_retry": true,
+    "auto_retry_attempts": 3,
     "reuse_cluster_strategy":"any",
     "task": {
       "nodes":4,
@@ -82,6 +86,8 @@ HTTP/1.1 200 OK
   "owner_id": 1,
   "start_at": "2014-09-25T08:48:00Z",
   "status": "enabled",
+  "auto_retry": true,
+  "auto_retry_attempts": 3,
   "overlap":true,
   "reuse_cluster_strategy":"any",
   "task": {

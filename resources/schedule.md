@@ -27,6 +27,8 @@ An Xplenty **schedule** executes packages periodically starting at a specified d
 * **last_run_status** status of the last execution of the schedule's task
 * **execution_count** number of times the schedule has run
 * **overlap** allows execution overlapping
+* **auto_retry** boolean flag (true or false) enabling automatic retry on failure
+* **auto_retry_attempts** maximum automatic retry attempts on failure (integer 1–5; default 3, max 5)
 * **created_at** the date and time the schedule was created
 * **updated_at** the date and time the schedule was updated
 * **url** the schedule resource URL (API)
