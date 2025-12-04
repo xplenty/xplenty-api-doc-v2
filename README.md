@@ -290,6 +290,7 @@ These are the methods supported by the Xplenty API:
 * [Update Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/update-package.md)
 * [Export Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-export-as-json.md)
 * [Run Package Validation](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/run-package-validation.md)
+* [Run Package Validation (Synchronous)](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/run-package-validation-sync.md)
 * [Get Package Validation Information](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/get-package-validation-information.md)
 * [List Package Validation](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-package-validations.md)
 * [Create Package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-package.md)
