@@ -315,6 +315,7 @@ These are the methods supported by the Xplenty API:
 * [List Account Members](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-members.md)
 * [Update Account Members Role](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/set-member-role.md)
 * [Delete Account Member](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/delete-member.md)
+* [List Account Activity Log](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-activity-log.md)
 * [List Connection Types](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connection-types.md)
 * [List Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-connections.md)
 * [Create Account Connections](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/create-connection.md)
