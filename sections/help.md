@@ -104,7 +104,7 @@ HTTP/1.1 200 Created
 |/:account_id/api/home/help|dashboard
 |/:account_id/api/plans/help|edit
 |/:account_id/api/accounts/help|edit
-|/:account_id/api/hooks/help|index, new_index, slack, pagerduty, hipchat, email, web
+|/:account_id/api/hooks/help|index, new_index, slack, teams, pagerduty, hipchat, email, web
 
 ### Other actions without account id
 |path|help_action attributes|
