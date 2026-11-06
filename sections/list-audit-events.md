@@ -3,7 +3,7 @@
 ### Description
 List the account's audit log: who did what in the account, and when. One entry is recorded for every user-visible action — creating, updating or deleting a [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md), [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md), [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md), package group, cluster, service hook, log drain or key; member invitations, removals and role changes; sign-ins, failed sign-ins and sign-outs; API key and personal access token changes; and jobs started or stopped by a user.
 
-Entries are returned newest first and include an entry for resources that have since been deleted. Secret values (passwords, tokens, keys) are never recorded; a changed secret appears as `"[FILTERED]"`. Entries are kept for 90 days.
+Entries are returned newest first and include an entry for resources that have since been deleted. Secret values (passwords, tokens, keys) are never recorded; a changed secret appears as `"[FILTERED]"`. Recording starts when the Audit Log feature is enabled on the account, and entries are kept for 90 days.
 
 Requires the `viewAuditLog` permission (account owners and admins have it by default; custom roles must be granted it) and the Audit Log feature enabled on the account (otherwise the call returns `404`).
 
