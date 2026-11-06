@@ -13,6 +13,7 @@ status|N|"all"|Possible values are any status listed in [Job](https://github.com
 sort|N|"created"|Possible values are ```updated``` or ```created```. The job list will be sorted by the jobs' "updated_at" or "created_at" value respectively.
 direction|N|"desc"|Possible values are: ```asc```, ```desc```. The jobs will be sorted in ascending or descending order of the "sort" attribute.
 since|N| |The job list will only contain jobs updated at the given time or later. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-17T22:41:21Z”.
+before|N| |The job list will only contain jobs updated at the given time or earlier. Requires API version 2: send the ```Accept: application/vnd.xplenty+json; version=2``` header, otherwise the parameter is ignored and the job list is not filtered by it. The time must be formatted as UTC in the ISO 8601 format: ```YYYY-MM-DDTHH:MM:SSZ```. Example: “2013-01-18T22:41:21Z”. A time without fractional seconds includes that whole second, so “2013-01-18T22:41:21Z” also matches jobs updated at 22:41:21.5; a time with fractional seconds (e.g. “2013-01-18T22:41:21.250Z”) is compared exactly. Combine with ```since``` to list jobs updated within a time window (both bounds are inclusive). If ```since``` is later than ```before```, the call returns a 422 error.
 package_id|N||ID of the package that was used to run the job
 
 ### Request (Curl Call) Syntax
@@ -20,6 +21,13 @@ package_id|N||ID of the package that was used to run the job
 $ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/jobs" \
   -H "Accept: application/vnd.xplenty+json; version=2" 
 ```
+
+To list only the jobs updated within a time window, pass both ```since``` and ```before```:
+```shell
+$ curl -X GET -u api_key: "https://api.xplenty.com/:account_id/api/jobs?since=2013-03-04T00:00:00Z&before=2013-03-04T23:59:59Z" \
+  -H "Accept: application/vnd.xplenty+json; version=2"
+```
+Because ```before``` has no fractional seconds here, this window covers the whole of March 4, including jobs updated during 23:59:59. Keep the ```version=2``` Accept header: without it, ```before``` is ignored.
 ### Response Example
 ```HTTP
 HTTP/1.1 200 OK
