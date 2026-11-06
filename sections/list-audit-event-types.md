@@ -54,4 +54,4 @@ HTTP/1.1 200 OK
 }
 ```
 
-The full list of categories is ```connection```, ```package```, ```job```, ```schedule```, ```cluster```, ```workspace```, ```connection_group```, ```member```, ```custom_role```, ```account```, ```hook```, ```key```, ```user``` and ```audit_log```.
+The full list of categories is ```connection```, ```package```, ```job```, ```schedule```, ```cluster```, ```package_group```, ```connection_group```, ```member```, ```custom_role```, ```account```, ```hook```, ```key```, ```user``` and ```audit_log```.
