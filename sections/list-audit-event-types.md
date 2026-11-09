@@ -1,9 +1,9 @@
 ## List Audit Event Types
 
 ### Description
-Returns the event taxonomy the audit log records, grouped by category, with the customer-facing label of each event. Use the ```name``` values as the ```event``` filter of [List Account Audit Events](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-audit-events.md); a category ```name``` followed by ```.*``` selects every event in the category.
+Returns the options for filtering the audit log: the event taxonomy, grouped by category with the customer-facing label of each event, the actor types, and the account members. Use the event ```name``` values as the ```event``` filter of [List Account Audit Events](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/list-audit-events.md) (a category ```name``` followed by ```.*``` selects every event in the category), ```actor_types``` as its ```actor_type``` filter, and an ```actors``` entry's ```id``` as its ```actor_id``` filter.
 
-Requires the `viewAuditLog` permission and the Audit Log feature enabled on the account.
+Requires the `viewAuditLog` permission (otherwise `403`) and the Audit Log feature enabled on the account (otherwise `404`).
 
 ### Request (Curl Call) Syntax
 ```shell
@@ -18,7 +18,11 @@ HTTP/1.1 200 OK
 
 ```json
 {
-  "actor_types": ["user", "api_key", "mcp", "admin", "system"],
+  "actor_types": ["user", "api_key", "mcp", "system"],
+  "actors": [
+    { "id": 42, "name": "Jane Doe", "email": "jane@example.com" },
+    { "id": 57, "name": null, "email": "ops@example.com" }
+  ],
   "categories": [
     {
       "name": "connection",

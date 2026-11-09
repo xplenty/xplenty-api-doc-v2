@@ -5,7 +5,7 @@ Download the account's audit log as a CSV file. Accepts the same filters as [Lis
 
 An export is capped at 10,000 entries. Above the cap the call returns ```422``` and asks you to narrow the date range or filters. The export itself is recorded in the audit log as an ```audit_log.exported``` event.
 
-Requires the `viewAuditLog` permission and the Audit Log feature enabled on the account.
+Requires the `viewAuditLog` permission (otherwise `403`) and the Audit Log feature enabled on the account (otherwise `404`).
 
 ### Request (Curl Call) Syntax
 ```shell
@@ -28,3 +28,5 @@ id,timestamp_utc,event,event_label,actor_type,actor_id,actor_email,target_type,t
 ```
 
 The ```changes``` and ```metadata``` columns hold the same JSON objects the list call returns, serialized as strings.
+
+So that a spreadsheet never runs a cell as a formula, any cell that starts with ```=```, ```+```, ```-```, ```@```, a tab or a carriage return is prefixed with a single quote (```'```). A connection named ```=SUM(A1)``` is exported as ```'=SUM(A1)```.
