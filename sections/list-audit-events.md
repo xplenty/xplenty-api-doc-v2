@@ -1,9 +1,9 @@
 ## List Account Audit Events
 
 ### Description
-List the account's audit log: who did what in the account, and when. One entry is recorded for every user-visible action — creating, updating or deleting a [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md), [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md), [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md), package group, cluster, service hook, log drain or key; member invitations, removals and role changes; sign-ins, failed sign-ins and sign-outs; API key and personal access token changes; and jobs started or stopped by a user.
+List the account's audit log: who did what in the account, and when. One entry is recorded for every user-visible action — creating, updating or deleting a [connection](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/connection.md), [package](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/package.md), [schedule](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/resources/schedule.md), package group, cluster, service hook, log drain or key; changes to which connection groups a package group may use; member invitations, removals and role changes; sign-ins, failed sign-ins and sign-outs; API key and personal access token changes; and jobs started or stopped by a user.
 
-Entries are returned newest first and include an entry for resources that have since been deleted. Secret values (passwords, tokens, keys) are never recorded; a changed secret appears as `"[FILTERED]"`. Recording starts when the Audit Log feature is enabled on the account, and entries are kept for 90 days.
+Entries are returned newest first and include an entry for resources that have since been deleted. Secret values (passwords, tokens, keys) are never recorded; a changed secret appears as `"[FILTERED]"`. Where a connection points (host, port and database) is recorded as changed but without its values, as `"[CHANGED]"`. Recording starts when the Audit Log feature is enabled on the account, and entries are kept for 90 days.
 
 Requires the `viewAuditLog` permission (account owners and admins have it by default; custom roles must be granted it): without it the call returns `403`. With the permission, the call returns `404` when the Audit Log feature is not enabled on the account.
 
@@ -56,8 +56,7 @@ Link: <https://api.xplenty.com/:account_id/api/audit_events?event=connection.*&s
     "request_id": "c6c0f3a4-1b7e-4c1a-9f0d-2d5a6e7b8c9d",
     "changes": {
       "name": ["Warehouse", "Warehouse v2"],
-      "host": ["db.internal", "db2.internal"],
-      "password": "[FILTERED]"
+      "host": "[CHANGED]"
     },
     "metadata": null,
     "created_at": "2026-11-06T09:03:44Z"
@@ -89,8 +88,9 @@ Link: <https://api.xplenty.com/:account_id/api/audit_events?event=connection.*&s
 
 ### Notes
 
-* ```changes``` is present on update events as ```{"field": [old_value, new_value]}``` for the fields the audit log tracks for that resource. Delete events carry the deleted resource's tracked values as ```{"field": [old_value, null]}```. Create events carry no ```changes```; the resource's name is in ```target_name```.
+* ```changes``` is present on update events as ```{"field": [old_value, new_value]}``` for the fields the audit log tracks for that resource. A field whose values are not recorded appears as ```{"field": "[CHANGED]"}``` (a connection's ```host```, ```port``` and ```database```), and a settings field records only the names of the keys that changed, e.g. ```{"properties_keys": ["region"]}```. Delete events carry the deleted resource's tracked values as ```{"field": [old_value, null]}```, without the fields whose values are not recorded. Create events carry no ```changes```; the resource's name is in ```target_name```.
 * ```target_exists``` is ```true``` while the resource acted on still exists (it is ```false``` once it is deleted, or for a package once it is archived). For connections, ```target_subtype``` is the connection's ```type``` as returned by the connections API, e.g. ```postgres``` or ```s3```; it is ```null``` for other resources and once the connection is deleted.
-* ```metadata``` carries event-specific details, e.g. ```{"from": "operator", "to": "admin"}``` on ```member.role_updated```, ```{"reason": "invalid_credentials"}``` on ```user.sign_in_failed```, or ```{"package_id": 7, "cluster_id": 3}``` on ```job.run```.
+* ```metadata``` carries event-specific details, e.g. ```{"from": "operator", "to": "admin"}``` on ```member.role_updated```, ```{"reason": "invalid_credentials"}``` on ```user.sign_in_failed```, ```{"added": ["Production"], "removed": ["Staging"], "unrestricted": false}``` on ```package_group.connection_access_updated```, or ```{"package_id": 7, "cluster_id": 3}``` on ```job.run```.
+* ```user.sign_in_failed``` has one of two reasons: ```invalid_credentials``` (wrong password) or ```mfa_code_invalid``` (the password was right but the multi-factor code was wrong).
 * Sign-in, sign-out, password, MFA and API key events are user-level: they appear in every account the user belongs to that has the Audit Log enabled. ```member.joined``` appears in the account that sent the invitation.
 * To export the log as a file, see [Export Account Audit Events](https://github.com/xplenty/xplenty-api-doc-v2/blob/master/sections/export-audit-events.md).
